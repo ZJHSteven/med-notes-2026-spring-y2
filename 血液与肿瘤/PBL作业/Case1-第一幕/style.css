@@ -1,0 +1,224 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #0056b3;
+    --bg-color: #f4f6f9;
+    --text-color: #333333;
+    --border-color: #e0e6ed;
+}
+
+body {
+    font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif; /* 学术/社论风格字体 */
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 210mm; /* A4宽度标准 */
+    margin: 0 auto;
+    padding: 30mm 20mm; /* 模拟A4纸边距 */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* 打印及导出PDF时的A4优化 */
+@page {
+    size: A4;
+    margin: 20mm;
+}
+@media print {
+    body {
+        background-color: transparent;
+        padding: 0;
+    }
+    .container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .qa-section {
+        page-break-inside: auto;
+        break-inside: auto;
+    }
+    p, li {
+        orphans: 2;
+        widows: 2;
+    }
+}
+
+/* 主标题 */
+.main-title {
+    text-align: center;
+    font-size: 2.2em;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* 学生信息区 */
+.student-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #555;
+    border: 1px solid #eaeaea;
+}
+
+.student-info p {
+    margin: 0;
+    font-size: 1.05em;
+    font-weight: 500;
+}
+
+/* 章节大标题 */
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    border-left: 6px solid var(--accent-color);
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #f0f4f8;
+    padding: 10px 10px 10px 15px;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 列表区 */
+.question-list {
+    background-color: #fafafa;
+    padding: 20px 20px 20px 40px;
+    border-radius: 8px;
+    border-left: 3px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.question-list li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+/* 关键词气泡 */
+.keyword-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+}
+
+.keyword {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 1.05em;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.keyword:hover {
+    transform: translateY(-2px);
+}
+
+/* Q&A 问答区 */
+.qa-section {
+    margin-bottom: 40px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+.qa-title {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* 子版块 (学习内容/出处/实际应用) */
+.sub-section {
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 1.15em;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.sub-title::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 18px;
+    background-color: var(--accent-color);
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+/* 文本与链接 */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #1a252f;
+    font-weight: bold;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-color);
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #f0f4f8;
+}
+
+/* 分隔线 */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+/* 结论/提示框 */
+.summary-text {
+    font-weight: bold;
+    background-color: #fff9e6;
+    padding: 20px;
+    border-left: 6px solid #ffc107;
+    border-radius: 4px;
+    color: #5c4600;
+    margin-top: 20px;
+}

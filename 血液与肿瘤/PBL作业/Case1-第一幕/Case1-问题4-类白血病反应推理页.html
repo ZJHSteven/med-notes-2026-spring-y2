@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题4：严重感染时，幼稚粒细胞左移就一定等于白血病吗？</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans SC"', 'sans-serif'],
+                    },
+                    colors: {
+                        bgMain: '#F6F8FB',
+                        bgSub: '#EEF2F6',
+                        textMain: '#1F2937',
+                        textSub: '#6B7280',
+                        accentOrange: '#F59E0B',
+                        accentTeal: '#0F766E',
+                        accentRed: '#991B1B',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F6F8FB;
+            color: #1F2937;
+            scroll-behavior: smooth;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .progress-container {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50vh;
+            width: 2px;
+            background: #E5E7EB;
+            z-index: 50;
+        }
+        .progress-bar {
+            width: 100%;
+            background: #0F766E;
+            height: 0%;
+            transition: height 0.1s;
+        }
+        .section-min-height {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-accentTeal selection:text-white">
+
+    <!-- 左侧进度条 -->
+    <div class="progress-container hidden md:block rounded-full">
+        <div class="progress-bar rounded-full" id="progress-bar"></div>
+    </div>
+
+    <!-- 镜头 1：承接上文 -->
+    <section class="section-min-height flex flex-col justify-center items-center px-6 py-20 relative">
+        <div class="max-w-4xl w-full text-center animate-on-scroll delay-100">
+            <h3 class="text-accentOrange font-medium tracking-widest text-sm mb-4">LENS 1 / 建立前提</h3>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-12 text-textMain">
+                问题4｜严重感染时，幼稚细胞左移<br><span class="text-accentTeal">就一定等于白血病吗？</span>
+            </h1>
+            
+            <div class="flex flex-wrap justify-center gap-3 mb-16">
+                <!-- 感染证据标签 -->
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">高热</span>
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">咳嗽、气短</span>
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">双肺炎性病变</span>
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">胸腔积液</span>
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">PCT 显著升高</span>
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">CRP / ESR 显著升高</span>
+                <span class="px-5 py-2.5 bg-accentOrange/10 text-accentOrange border border-accentOrange/20 rounded-full text-sm font-medium shadow-sm">抗感染后症状一度缓解</span>
+            </div>
+
+            <div class="inline-block bg-white px-8 py-5 rounded-2xl shadow-sm border border-gray-100">
+                <p class="text-xl md:text-2xl font-medium text-textMain">
+                    所以我这一页不是否定感染，而是<span class="text-accentTeal font-bold">提出一个鉴别问题</span>。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 镜头 2：引出核心概念 -->
+    <section class="section-min-height flex flex-col justify-center items-center px-6 py-20 bg-white relative">
+        <div class="max-w-4xl w-full text-center animate-on-scroll">
+            <h3 class="text-accentTeal font-medium tracking-widest text-sm mb-4">LENS 2 / 核心概念</h3>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12">一个容易被忽视的思路：<br><span class="text-accentTeal">类白血病反应</span></h2>
+            
+            <div class="bg-bgMain rounded-3xl p-8 md:p-12 mb-12 border border-bgSub text-left md:text-center shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-2 h-full bg-accentTeal"></div>
+                <p class="text-xl md:text-2xl leading-relaxed font-light text-textMain">
+                    机体在严重感染、炎症或应激状态下，<br>
+                    外周血可出现明显白细胞增多与幼稚粒细胞左移，<br>
+                    <span class="font-medium text-accentTeal">看起来像白血病，但本质上是反应性改变。</span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl flex flex-col items-center">
+                    <div class="w-12 h-12 bg-accentTeal/10 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accentTeal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <p class="font-medium text-textMain">白细胞明显升高</p>
+                </div>
+                <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl flex flex-col items-center">
+                    <div class="w-12 h-12 bg-accentTeal/10 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accentTeal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <p class="font-medium text-textMain">中性粒/杆状核左移</p>
+                </div>
+                <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl flex flex-col items-center">
+                    <div class="w-12 h-12 bg-accentTeal/10 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accentTeal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <p class="font-medium text-textMain">非肿瘤性造血</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 镜头 3：证明思路合理 -->
+    <section class="section-min-height flex flex-col justify-center items-center px-6 py-20 relative">
+        <div class="max-w-5xl w-full animate-on-scroll">
+            <h3 class="text-accentTeal font-medium tracking-widest text-sm mb-4 text-center">LENS 3 / 现实依据</h3>
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">为什么这条思路在本例<span class="text-accentTeal">成立</span>？</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- 卡片1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h4 class="text-accentOrange font-bold text-lg mb-6 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-accentOrange mr-3"></span>感染临床证据
+                    </h4>
+                    <ul class="space-y-4 text-textMain">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>高热、咳嗽、气短</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>双肺湿性啰音</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>胸 CT 双肺炎性病变 + 右胸腔积液</li>
+                    </ul>
+                </div>
+                <!-- 卡片2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h4 class="text-accentOrange font-bold text-lg mb-6 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-accentOrange mr-3"></span>炎症生化证据
+                    </h4>
+                    <ul class="space-y-4 text-textMain">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>PCT 7.966 ng/mL</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>CRP 显著升高 (59.7 mg/dL)</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>ESR 115 mm/h</li>
+                    </ul>
+                </div>
+                <!-- 卡片3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <h4 class="text-accentOrange font-bold text-lg mb-6 flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-accentOrange mr-3"></span>感染治疗反应
+                    </h4>
+                    <ul class="space-y-4 text-textMain">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-accentOrange/60 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>抗感染后症状曾一度减轻</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-center text-xl md:text-2xl font-medium text-textMain mt-8 px-4 border-l-4 border-accentTeal indent-4 max-w-3xl mx-auto">
+                也就是说，本例并不是“无感染背景下突然左移”，而是<span class="text-accentTeal">在强感染背景下出现异常血象</span>。
+            </p>
+        </div>
+    </section>
+
+    <!-- 镜头 4：展示特点 -->
+    <section class="section-min-height flex flex-col justify-center items-center px-6 py-20 bg-white relative">
+        <div class="max-w-5xl w-full animate-on-scroll">
+            <h3 class="text-accentTeal font-medium tracking-widest text-sm mb-4 text-center">LENS 4 / 画像建立</h3>
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">如果真是类白血病反应，<span class="text-accentTeal">通常会看到什么？</span></h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-8 border border-gray-100 bg-gray-50 rounded-2xl relative overflow-hidden group hover:border-accentTeal/30 transition-colors">
+                    <div class="text-5xl font-black text-gray-200 absolute -top-2 -right-2 right-0 group-hover:text-accentTeal/10 transition-colors">01</div>
+                    <h4 class="text-xl font-bold text-textMain mb-3 relative z-10">病程更偏急性</h4>
+                    <p class="text-textSub leading-relaxed relative z-10">以感染或炎症为主诉，随原发感染进展而波动。</p>
+                </div>
+                <div class="p-8 border border-gray-100 bg-gray-50 rounded-2xl relative overflow-hidden group hover:border-accentTeal/30 transition-colors">
+                    <div class="text-5xl font-black text-gray-200 absolute -top-2 -right-2 right-0 group-hover:text-accentTeal/10 transition-colors">02</div>
+                    <h4 class="text-xl font-bold text-textMain mb-3 relative z-10">血象以反应性粒细胞增多/左移为主</h4>
+                    <p class="text-textSub leading-relaxed relative z-10">中性粒细胞增多、杆状核增多，可出现较早阶段粒细胞。</p>
+                </div>
+                <div class="p-8 border border-gray-100 bg-gray-50 rounded-2xl relative overflow-hidden group hover:border-accentTeal/30 transition-colors">
+                    <div class="text-5xl font-black text-gray-200 absolute -top-2 -right-2 right-0 group-hover:text-accentTeal/10 transition-colors">03</div>
+                    <h4 class="text-xl font-bold text-textMain mb-3 relative z-10">更像“感染驱动”的血液变化</h4>
+                    <p class="text-textSub leading-relaxed relative z-10">若外周血涂片见中毒颗粒、空泡、Döhle 小体，更支持反应性过程。</p>
+                </div>
+                <div class="p-8 border border-gray-100 bg-gray-50 rounded-2xl relative overflow-hidden group hover:border-accentTeal/30 transition-colors">
+                    <div class="text-5xl font-black text-gray-200 absolute -top-2 -right-2 right-0 group-hover:text-accentTeal/10 transition-colors">04</div>
+                    <h4 class="text-xl font-bold text-textMain mb-3 relative z-10">核心判断不靠表面像不像</h4>
+                    <p class="text-textSub leading-relaxed relative z-10">最终仍要看：它能否解释病例全貌。必要时要靠骨髓和分子检查排除真正血液病。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 镜头 5：全页重点：核心对比 -->
+    <section class="section-min-height flex flex-col justify-center items-center px-6 py-20 relative">
+        <div class="max-w-6xl w-full animate-on-scroll">
+            <h3 class="text-accentRed font-medium tracking-widest text-sm mb-4 text-center">LENS 5 / 剥丝抽茧 (核心对照)</h3>
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-center">回到赵阿姨：<span class="text-accentRed">这个思路能解释多少？</span></h2>
+
+            <div class="flex flex-col md:flex-row gap-8 items-stretch">
+                <!-- 左侧：符合 -->
+                <div class="flex-1 bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+                    <div class="inline-flex items-center justify-center px-4 py-1.5 bg-accentTeal/10 text-accentTeal rounded-full font-bold mb-8 text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 符合类白血病反应的地方
+                    </div>
+                    <ul class="space-y-5">
+                        <li class="flex items-start text-lg text-textMain"><span class="text-accentTeal mr-3 font-bold">·</span> 存在明确而且较重的肺部感染</li>
+                        <li class="flex items-start text-lg text-textMain"><span class="text-accentTeal mr-3 font-bold">·</span> 炎症指标显著升高</li>
+                        <li class="flex items-start text-lg text-textMain"><span class="text-accentTeal mr-3 font-bold">·</span> 白细胞明显增高</li>
+                        <li class="flex items-start text-lg text-textMain"><span class="text-accentTeal mr-3 font-bold">·</span> 中性粒细胞比例升高</li>
+                        <li class="flex items-start text-lg text-textMain"><span class="text-accentTeal mr-3 font-bold">·</span> 杆状核 23%，存在明显左移</li>
+                        <li class="flex items-start text-lg text-textMain"><span class="text-accentTeal mr-3 font-bold">·</span> 抗感染后症状曾减轻</li>
+                    </ul>
+                </div>
+
+                <!-- 右侧：不符合 (视觉较重) -->
+                <div class="flex-1 bg-red-50/50 p-8 md:p-10 rounded-3xl shadow-lg border-2 border-accentRed/20 transform md:scale-105 relative z-10">
+                    <div class="inline-flex items-center justify-center px-4 py-1.5 bg-accentRed/10 text-accentRed rounded-full font-bold mb-8 text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg> 单靠严重感染解释不了的地方
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="flex items-start text-lg text-textMain font-medium"><span class="text-accentRed mr-3 font-bold">✕</span> 近三四年反复乏力、腹胀，病程太长</li>
+                        <li class="flex items-start text-lg text-textMain font-medium"><span class="text-accentRed mr-3 font-bold">✕</span> 体重明显下降，不像单纯这次感染才出现</li>
+                        <li class="flex items-start text-lg text-textMain font-medium bg-white/60 p-2 rounded -ml-2 -mt-2"><span class="text-accentRed mr-3 font-bold">✕</span> 脾肋下 6cm、肝肋下 2cm，且伴压痛</li>
+                        <li class="flex items-start text-lg text-textMain font-medium"><span class="text-accentRed mr-3 font-bold">✕</span> 胸骨下段明显压痛</li>
+                        <li class="flex items-start text-lg text-textMain font-medium bg-white/60 p-2 rounded -ml-2 -mt-2"><span class="text-accentRed mr-3 font-bold">✕</span> 嗜碱细胞 3% 升高，不太像普通感染反应</li>
+                        <li class="flex items-start text-lg text-textMain font-medium"><span class="text-accentRed mr-3 font-bold">✕</span> 血小板 76×10⁹/L 下降，非单纯白细胞反应</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="inline-block text-2xl md:text-3xl font-bold text-textMain border-b-4 border-accentRed/30 pb-2">
+                    因此：类白血病反应“可以解释一部分”，<br class="md:hidden"><span class="text-accentRed">但解释不了全部。</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 镜头 6：结论与交棒 -->
+    <section class="section-min-height flex flex-col justify-center items-center px-6 py-20 bg-gray-900 text-white relative">
+        <div class="max-w-4xl w-full text-center animate-on-scroll">
+            <h3 class="text-gray-400 font-medium tracking-widest text-sm mb-8">LENS 6 / 阶段性结论</h3>
+            
+            <h2 class="text-3xl md:text-4xl font-light leading-snug mb-8">
+                “严重感染导致类白血病反应”是一个<span class="font-bold text-white">合理的鉴别思路</span>，<br>
+                <span class="font-bold text-accentRed">但不足以解释本例全部异常。</span>
+            </h2>
+
+            <p class="text-xl md:text-2xl text-gray-300 font-light mb-20">
+                所以这一页完成的不是终诊，<br>
+                而是把问题从“有没有感染”推进到 <span class="text-accentOrange font-medium">“感染之外还有什么？”</span>
+            </p>
+
+            <div class="inline-flex flex-col items-center justify-center p-8 bg-white/5 border border-white/10 rounded-3xl animate-pulse">
+                <span class="text-sm text-gray-400 uppercase tracking-widest mb-3">下一步需要回答的问题</span>
+                <p class="text-xl md:text-2xl font-bold">
+                    如果不是单纯感染，<br>剩下的躯体异常与血象，该如何解释？
+                </p>
+                <svg class="w-8 h-8 mt-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+        </div>
+
+        <!-- 极简参考文献区 -->
+        <div class="absolute bottom-6 left-0 right-0 max-w-5xl mx-auto px-6 text-xs text-gray-500 flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <span>Metlay JP, et al. Am J Respir Crit Care Med. 2019.</span>
+            <span>Ozbay S, et al. Diagnostics (Basel). 2023.</span>
+            <span>Suttorp M, et al. Cancers (Basel). 2021.</span>
+            <span>Thompson PA, et al. Mayo Clin Proc. 2015.</span>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // 进度条逻辑
+            window.addEventListener('scroll', () => {
+                const scrollPx = document.documentElement.scrollTop;
+                const winHeightPx = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (scrollPx / winHeightPx) * 100;
+                const progressBar = document.getElementById('progress-bar');
+                if (progressBar) {
+                    progressBar.style.height = scrolled + '%';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
