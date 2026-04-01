@@ -322,6 +322,33 @@ def build_document(markdown_text: str, fallback_title: str) -> DocumentModel:
     question_list_title, question_list_body = find_section_body(lines, headings, "①列出所有问题")
     keyword_title, keyword_body = find_section_body(lines, headings, "②整幕关键词")
 
+    # 先提前记住“第一个问题标题”的行号，后面切关键词与导语时要用到。
+    first_question_line = len(lines)
+    for line_no, _, heading_text in headings:
+        if heading_text.startswith("问题"):
+            first_question_line = line_no
+            break
+
+    # 第二幕和第一幕都存在这样的结构：
+    # “关键词标题 -> 关键词正文 -> --- -> 问题区前导说明 -> 第一个问题”
+    # 如果直接取到下一个同级标题，就会把导语也错吞进关键词里。
+    lead_content_override = ""
+    for line_no, _, heading_text in headings:
+        if heading_text == keyword_title:
+            keyword_and_lead_lines = lines[line_no + 1 : first_question_line]
+            separator_index = None
+            for index, line in enumerate(keyword_and_lead_lines):
+                if re.fullmatch(r"(?:-{3,}|\*{3,}|_{3,})", line.strip()):
+                    separator_index = index
+                    break
+
+            if separator_index is not None:
+                keyword_body = "\n".join(keyword_and_lead_lines[:separator_index]).strip()
+                lead_content_override = "\n".join(keyword_and_lead_lines[separator_index + 1 :]).strip()
+            else:
+                keyword_body = "\n".join(keyword_and_lead_lines).strip() or keyword_body
+            break
+
     # 问题列表按 Markdown 的有序列表行提取；正文里即使换了题目顺序也能自动跟上。
     question_list = [
         match.group(1).strip()
@@ -348,16 +375,9 @@ def build_document(markdown_text: str, fallback_title: str) -> DocumentModel:
             summary_level = level
             break
 
-    # lead_start_line 指向“关键词区正文结束之后”的下一行。
-    lead_start_line = 0
-    for i, (line_no, level, heading_text) in enumerate(headings):
-        if heading_text == keyword_title:
-            lead_start_line = len(lines)
-            for next_heading_line, next_level, _ in headings[i + 1 :]:
-                if next_level <= level:
-                    lead_start_line = next_heading_line
-                    break
-            break
+    # 这里把 lead_start_line 直接设为第一个问题行号。
+    # 真正的前导内容若存在，前面已经通过 `---` 做过精确切分并放进 lead_content_override。
+    lead_start_line = first_question_line
 
     lead_content, questions = split_question_sections(
         lines=lines,
@@ -365,6 +385,10 @@ def build_document(markdown_text: str, fallback_title: str) -> DocumentModel:
         summary_line=summary_heading_line,
         lead_start_line=lead_start_line,
     )
+
+    # 若前面已经从“关键词区后的分隔线”切出了导语，这里用更精确的结果覆盖默认值。
+    if lead_content_override:
+        lead_content = lead_content_override
 
     # 只有真正找到总结标题时，才截总结正文；否则留空。
     if summary_heading_line < len(lines):
