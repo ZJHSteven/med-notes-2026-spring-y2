@@ -21,6 +21,7 @@ import html
 import re
 import subprocess
 import sys
+import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -736,21 +737,33 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> None:
     if pdf_path.exists():
         pdf_path.unlink()
 
-    command = [
-        str(edge_path),
-        "--headless",
-        "--disable-gpu",
-        "--print-to-pdf-no-header",
-        f"--print-to-pdf={pdf_path}",
-        html_path.resolve().as_uri(),
-    ]
+    # 实测发现：Edge 在 Windows 上直接输出到“带中文文件名的 PDF 路径”时，
+    # 可能静默失败却不报错。这里先输出到 ASCII 临时文件，再移动到目标文件名。
+    with tempfile.TemporaryDirectory(prefix="case1_pdf_") as temp_dir:
+        temp_pdf_path = Path(temp_dir) / "export.pdf"
+        command = [
+            str(edge_path),
+            "--headless",
+            "--disable-gpu",
+            "--print-to-pdf-no-header",
+            f"--print-to-pdf={temp_pdf_path}",
+            html_path.resolve().as_uri(),
+        ]
 
-    # 这里使用 check=True，只要打印失败就立刻抛错，让调用方能给出清晰提示。
-    subprocess.run(command, check=True, capture_output=True, text=True)
+        # 这里保留标准输出/错误输出，后面若失败可直接带回错误上下文。
+        completed = subprocess.run(command, check=True, capture_output=True, text=True)
 
-    # 最后再确认 PDF 真的落盘了，而不是浏览器进程静默失败。
-    if not pdf_path.exists():
-        raise RuntimeError(f"Edge 打印命令执行后没有生成 PDF：{pdf_path}")
+        # 最后确认临时 PDF 已生成，再移动到目标位置。
+        if not temp_pdf_path.exists():
+            raise RuntimeError(
+                "Edge 打印命令执行后没有生成临时 PDF。"
+                f"\nstdout: {completed.stdout.strip()}"
+                f"\nstderr: {completed.stderr.strip()}"
+            )
+
+        # 目标目录理论上已经存在，但这里仍做一次兜底，避免跨目录输出时报错。
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        temp_pdf_path.replace(pdf_path)
 
 
 def main() -> int:
