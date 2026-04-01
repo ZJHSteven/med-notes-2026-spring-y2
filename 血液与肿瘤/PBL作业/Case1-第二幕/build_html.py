@@ -778,7 +778,28 @@ def find_edge_executable() -> Path | None:
     return None
 
 
-def export_pdf_with_playwright(html_path: Path, pdf_path: Path, edge_path: Path) -> None:
+def place_pdf_output(temp_pdf_path: Path, pdf_path: Path) -> Path:
+    """将临时 PDF 放到目标位置；若目标文件被占用，则退回到“更新版”文件名。"""
+
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+
+    try:
+        # 优先覆盖原目标文件，这符合用户最直观的预期。
+        temp_pdf_path.replace(pdf_path)
+        return pdf_path
+    except PermissionError:
+        # Windows 上如果 PDF 正在被预览/打开，原路径会被锁住。
+        # 这时不再中断流程，而是自动输出一个“更新版”文件，保证本次导出仍然成功。
+        fallback_path = pdf_path.with_name(f"{pdf_path.stem}-更新版{pdf_path.suffix}")
+        counter = 2
+        while fallback_path.exists():
+            fallback_path = pdf_path.with_name(f"{pdf_path.stem}-更新版{counter}{pdf_path.suffix}")
+            counter += 1
+        shutil.copy2(temp_pdf_path, fallback_path)
+        return fallback_path
+
+
+def export_pdf_with_playwright(html_path: Path, pdf_path: Path, edge_path: Path) -> Path:
     """借助 `uv run --with playwright` 临时拉起 Playwright，并调用浏览器原生 PDF 能力。"""
 
     # 这里不污染当前 Python 环境，完全依赖 uv 的临时依赖能力。
@@ -832,11 +853,10 @@ with sync_playwright() as p:
                 f"\nstderr: {completed.stderr.strip()}"
             )
 
-        pdf_path.parent.mkdir(parents=True, exist_ok=True)
-        temp_pdf_path.replace(pdf_path)
+        return place_pdf_output(temp_pdf_path, pdf_path)
 
 
-def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> None:
+def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> Path:
     """调用 Edge 的无头打印能力，将 HTML 导出成 A4 PDF。"""
 
     edge_path = find_edge_executable()
@@ -872,11 +892,10 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> None:
             )
 
         # 目标目录理论上已经存在，但这里仍做一次兜底，避免跨目录输出时报错。
-        pdf_path.parent.mkdir(parents=True, exist_ok=True)
-        temp_pdf_path.replace(pdf_path)
+        return place_pdf_output(temp_pdf_path, pdf_path)
 
 
-def export_pdf(html_path: Path, pdf_path: Path) -> None:
+def export_pdf(html_path: Path, pdf_path: Path) -> Path:
     """统一封装 PDF 导出策略：优先 Playwright，失败时再退回 Edge 命令行。"""
 
     edge_path = find_edge_executable()
@@ -885,11 +904,10 @@ def export_pdf(html_path: Path, pdf_path: Path) -> None:
 
     # 如果系统里有 uv，就优先走 Playwright。这条链更接近真正的浏览器“打印为 PDF”。
     if shutil.which("uv"):
-        export_pdf_with_playwright(html_path, pdf_path, edge_path)
-        return
+        return export_pdf_with_playwright(html_path, pdf_path, edge_path)
 
     # 没有 uv 时，才使用更原始的 Edge 命令行打印作为兜底。
-    export_pdf_with_edge(html_path, pdf_path)
+    return export_pdf_with_edge(html_path, pdf_path)
 
 
 def main() -> int:
@@ -919,8 +937,8 @@ def main() -> int:
             return 0
 
         # 自动导出 PDF；若失败，保留 HTML，并给出明确提示。
-        export_pdf(output_html, output_pdf)
-        print(f"[成功] PDF 已生成：{output_pdf}")
+        actual_pdf_output = export_pdf(output_html, output_pdf)
+        print(f"[成功] PDF 已生成：{actual_pdf_output}")
         return 0
 
     except Exception as exc:  # noqa: BLE001
