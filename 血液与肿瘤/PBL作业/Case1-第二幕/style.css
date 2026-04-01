@@ -222,8 +222,7 @@ hr {
     margin: 40px 0;
 }
 
-/* 结论/提示框 */
-.summary-text,
+/* 引用提示框 */
 .callout {
     font-weight: bold;
     background-color: #fff9e6;
@@ -244,6 +243,10 @@ hr {
     border-left: 4px solid #b5cbe1;
     border-radius: 4px;
     padding: 14px 18px;
+}
+
+.summary-text {
+    margin-top: 20px;
 }
 
 .lead-text p:last-child,
