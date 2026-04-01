@@ -6,7 +6,8 @@
    - 旧写法：`[显示文字][引用名]` / `[引用名]`
 3. 保留“问题区前的导语段落”，不再像旧脚本那样直接吞掉。
 4. 将 Markdown 的块引用 `>` 渲染成黄色提示框，和总结区保持同一视觉语言。
-5. 尝试自动调用本机 Edge 的无头打印能力，导出 A4 PDF，并尽量保留背景颜色。
+5. 优先通过 `uv run --with playwright` 调用浏览器内核导出 A4 PDF；
+   若本机没有 `uv`，再退回 Edge 命令行打印作为兜底。
 
 使用方式：
 1. 在第二幕目录内直接运行：`python build_html.py`
@@ -19,6 +20,7 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -726,6 +728,64 @@ def find_edge_executable() -> Path | None:
     return None
 
 
+def export_pdf_with_playwright(html_path: Path, pdf_path: Path, edge_path: Path) -> None:
+    """借助 `uv run --with playwright` 临时拉起 Playwright，并调用浏览器原生 PDF 能力。"""
+
+    # 这里不污染当前 Python 环境，完全依赖 uv 的临时依赖能力。
+    helper_code = """
+from pathlib import Path
+import sys
+from playwright.sync_api import sync_playwright
+
+html_path = Path(sys.argv[1]).resolve()
+pdf_path = Path(sys.argv[2]).resolve()
+edge_path = Path(sys.argv[3]).resolve()
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(executable_path=str(edge_path), headless=True)
+    page = browser.new_page()
+    page.goto(html_path.as_uri(), wait_until="networkidle")
+    page.pdf(
+        path=str(pdf_path),
+        format="A4",
+        print_background=True,
+        prefer_css_page_size=True,
+    )
+    browser.close()
+"""
+
+    # 仍然使用 ASCII 临时文件，是为了进一步规避第三方工具对中文输出文件名的兼容问题。
+    with tempfile.TemporaryDirectory(prefix="case1_pdf_") as temp_dir:
+        temp_pdf_path = Path(temp_dir) / "export.pdf"
+        completed = subprocess.run(
+            [
+                "uv",
+                "run",
+                "--with",
+                "playwright",
+                "python",
+                "-c",
+                helper_code,
+                str(html_path),
+                str(temp_pdf_path),
+                str(edge_path),
+            ],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+
+        if not temp_pdf_path.exists():
+            raise RuntimeError(
+                "Playwright 导出命令执行后没有生成临时 PDF。"
+                f"\nstdout: {completed.stdout.strip()}"
+                f"\nstderr: {completed.stderr.strip()}"
+            )
+
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        temp_pdf_path.replace(pdf_path)
+
+
 def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> None:
     """调用 Edge 的无头打印能力，将 HTML 导出成 A4 PDF。"""
 
@@ -766,6 +826,22 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> None:
         temp_pdf_path.replace(pdf_path)
 
 
+def export_pdf(html_path: Path, pdf_path: Path) -> None:
+    """统一封装 PDF 导出策略：优先 Playwright，失败时再退回 Edge 命令行。"""
+
+    edge_path = find_edge_executable()
+    if edge_path is None:
+        raise FileNotFoundError("未找到 Microsoft Edge，无法自动导出 PDF。")
+
+    # 如果系统里有 uv，就优先走 Playwright。这条链更接近真正的浏览器“打印为 PDF”。
+    if shutil.which("uv"):
+        export_pdf_with_playwright(html_path, pdf_path, edge_path)
+        return
+
+    # 没有 uv 时，才使用更原始的 Edge 命令行打印作为兜底。
+    export_pdf_with_edge(html_path, pdf_path)
+
+
 def main() -> int:
     """主流程：读取 Markdown -> 解析 -> 写 HTML -> 可选写 PDF。"""
 
@@ -793,7 +869,7 @@ def main() -> int:
             return 0
 
         # 自动导出 PDF；若失败，保留 HTML，并给出明确提示。
-        export_pdf_with_edge(output_html, output_pdf)
+        export_pdf(output_html, output_pdf)
         print(f"[成功] PDF 已生成：{output_pdf}")
         return 0
 
