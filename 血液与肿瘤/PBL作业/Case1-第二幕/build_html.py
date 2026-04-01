@@ -643,6 +643,32 @@ def render_block_content(block_text: str, refs: dict[str, ReferenceLink]) -> str
     return "\n".join(html_blocks)
 
 
+def trim_outer_horizontal_rules(block_text: str) -> str:
+    """去掉块内容首尾紧贴边界的 Markdown 分割线，避免和页面结构分隔重复。"""
+
+    lines = block_text.splitlines()
+
+    # 先去掉首尾空行，防止后面判断分割线时被空白干扰。
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    while lines and not lines[-1].strip():
+        lines.pop()
+
+    # 若块的最开头就是 `---`，通常说明它只是承接上一块的边界线。
+    while lines and re.fullmatch(r"(?:-{3,}|\*{3,}|_{3,})", lines[0].strip()):
+        lines.pop(0)
+        while lines and not lines[0].strip():
+            lines.pop(0)
+
+    # 若块的最结尾就是 `---`，通常说明它只是为下一块做视觉分隔。
+    while lines and re.fullmatch(r"(?:-{3,}|\*{3,}|_{3,})", lines[-1].strip()):
+        lines.pop()
+        while lines and not lines[-1].strip():
+            lines.pop()
+
+    return "\n".join(lines).strip()
+
+
 def render_student_info(student: StudentInfo) -> str:
     """生成顶部学生信息区；全空时则不输出该区域。"""
 
@@ -699,7 +725,7 @@ def render_document(document: DocumentModel, css_name: str = "style.css") -> str
     if document.lead_content.strip():
         parts.append('        <section class="lead-section">')
         parts.append('            <div class="lead-text">')
-        parts.append(render_block_content(document.lead_content, document.refs))
+        parts.append(render_block_content(trim_outer_horizontal_rules(document.lead_content), document.refs))
         parts.append("            </div>")
         parts.append("        </section>")
 
@@ -710,13 +736,13 @@ def render_document(document: DocumentModel, css_name: str = "style.css") -> str
 
         if question.intro.strip():
             parts.append('            <div class="question-intro">')
-            parts.append(render_block_content(question.intro, document.refs))
+            parts.append(render_block_content(trim_outer_horizontal_rules(question.intro), document.refs))
             parts.append("            </div>")
 
         for sub_section in question.sub_sections:
             parts.append('            <div class="sub-section">')
             parts.append(f'                <h3 class="sub-title">{render_inline(sub_section.title, document.refs)}</h3>')
-            parts.append(render_block_content(sub_section.content, document.refs))
+            parts.append(render_block_content(trim_outer_horizontal_rules(sub_section.content), document.refs))
             parts.append("            </div>")
 
         parts.append("        </section>")
@@ -726,7 +752,7 @@ def render_document(document: DocumentModel, css_name: str = "style.css") -> str
         parts.append("        <hr>")
         parts.append(f'        <h2 class="section-title">{html.escape(document.summary_title)}</h2>')
         parts.append('        <div class="summary-text">')
-        parts.append(render_block_content(document.summary_content, document.refs))
+        parts.append(render_block_content(trim_outer_horizontal_rules(document.summary_content), document.refs))
         parts.append("        </div>")
 
     parts.append("    </div>")
