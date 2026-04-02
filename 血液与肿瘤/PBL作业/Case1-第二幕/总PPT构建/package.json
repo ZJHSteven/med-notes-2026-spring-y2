@@ -1,0 +1,13 @@
+{
+  "name": "case1-second-act-final-deck",
+  "version": "1.0.0",
+  "private": true,
+  "description": "用于生成并合并 PBL Case1 第二幕总汇报 PPT 的构建脚本",
+  "main": "build_support_deck.js",
+  "scripts": {
+    "build:support": "node build_support_deck.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}
