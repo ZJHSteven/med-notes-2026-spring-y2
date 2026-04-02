@@ -13,7 +13,6 @@
   },
   "actions": [
     { "type": "support", "id": "cover", "label": "封面" },
-    { "type": "support", "id": "agenda", "label": "目录" },
 
     { "type": "support", "id": "section_q1", "label": "Q1 过渡页" },
     { "type": "file", "fileKey": "qiu", "start": 3, "end": 3, "label": "仇维健 - Q1 胸水穿刺检查" },
@@ -28,7 +27,6 @@
     { "type": "support", "id": "image_q4_1", "label": "自制 Q4-1 主线页" },
     { "type": "support", "id": "image_q4_2", "label": "自制 Q4-2 主线页" },
     { "type": "support", "id": "image_q4_3", "label": "自制 Q4-3 主线页" },
-    { "type": "support", "id": "transition_q4_extra", "label": "Q4 同学补充过渡页" },
     { "type": "file", "fileKey": "qiao", "start": 1, "end": 1, "label": "乔智 - 基础 BCR-ABL 驱动" },
     { "type": "file", "fileKey": "shan", "start": 1, "end": 1, "label": "善玥 - RAPSYN 稳定 BCR-ABL" },
     { "type": "file", "fileKey": "qiu", "start": 1, "end": 2, "label": "仇维健 - MS4A3 分化调控" },
