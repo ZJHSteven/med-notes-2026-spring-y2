@@ -37,6 +37,21 @@ const SELF_SLIDE_IMAGES = {
 };
 
 /**
+ * 自制截图页在总稿里需要补回原网页页脚。
+ * 这里不再改 HTML 本体，而是在最终 PPT 合成阶段把页脚作为原生元素叠加回去。
+ */
+const SELF_IMAGE_FOOTERS = {
+  q2: "来源：《内科学》第10版 九章白血病；Li W. WHO 5th Ed Classification. Leukemia, 2022.",
+  q3: "来源：国家卫健委《慢性髓性白血病诊疗指南（2022年版）》；《内科学》第10版；中国 CML 指南 2025.",
+  q4_1: "引证：Hantschel O, et al. Nat Chem Biol. 2012；Targeting Leukemic Stem Cells, 2021.",
+  q4_2: "引证：Hayashi Y, et al. Leukemia. 2013；Srutova K, et al. Haematologica. 2018.",
+  q4_3: "引证：Peled A, Stem Cells 2002；Zhang B, Cancer Cell 2012；Krishnan V, Blood 2023；Warfvinge R, eLife 2024；Purhonen M, Leukemia 2025.",
+  q5: "来源：《内科学》第10版 p.585；Gianelli U, et al. Virchows Arch, 2023；Case1-第二幕报告正文。",
+};
+
+const SELF_IMAGE_AUTHOR = "张家赫｜学号：2024193112｜儿科班｜PBL Case 1";
+
+/**
  * 组员名单。
  * 封面页只做两件事：交代“这是哪一幕”，以及“谁来汇报”。
  */
@@ -92,6 +107,7 @@ const SUPPORT_SLIDES = [
     id: "image_q2",
     type: "image",
     imagePath: SELF_SLIDE_IMAGES.q2,
+    footerRef: SELF_IMAGE_FOOTERS.q2,
   },
   {
     id: "section_q3",
@@ -103,6 +119,7 @@ const SUPPORT_SLIDES = [
     id: "image_q3",
     type: "image",
     imagePath: SELF_SLIDE_IMAGES.q3,
+    footerRef: SELF_IMAGE_FOOTERS.q3,
   },
   {
     id: "section_q4",
@@ -114,16 +131,19 @@ const SUPPORT_SLIDES = [
     id: "image_q4_1",
     type: "image",
     imagePath: SELF_SLIDE_IMAGES.q4_1,
+    footerRef: SELF_IMAGE_FOOTERS.q4_1,
   },
   {
     id: "image_q4_2",
     type: "image",
     imagePath: SELF_SLIDE_IMAGES.q4_2,
+    footerRef: SELF_IMAGE_FOOTERS.q4_2,
   },
   {
     id: "image_q4_3",
     type: "image",
     imagePath: SELF_SLIDE_IMAGES.q4_3,
+    footerRef: SELF_IMAGE_FOOTERS.q4_3,
   },
   {
     id: "section_q5",
@@ -135,6 +155,7 @@ const SUPPORT_SLIDES = [
     id: "image_q5",
     type: "image",
     imagePath: SELF_SLIDE_IMAGES.q5,
+    footerRef: SELF_IMAGE_FOOTERS.q5,
   },
   {
     id: "section_q6",
@@ -506,6 +527,45 @@ function addImageSlide(pptx, slideDef) {
     y: 0,
     w: 13.333,
     h: 7.5,
+  });
+
+  /*
+   * 这些截图页本来在 HTML 里就有页脚信息。
+   * 由于浏览器导图时底部页脚没有被带进最终 PNG，这里在 PPT 合成阶段补回去。
+   */
+  slide.addShape("rect", {
+    x: 0,
+    y: 7.015,
+    w: 13.333,
+    h: 0.485,
+    line: { color: "E2E8F0", width: 0.8 },
+    fill: { color: "F8FAFC" },
+  });
+
+  slide.addText(slideDef.footerRef, {
+    x: 0.42,
+    y: 7.12,
+    w: 7.65,
+    h: 0.18,
+    fontFace: "Microsoft YaHei",
+    fontSize: 8.2,
+    color: "94A3B8",
+    italic: true,
+    margin: 0,
+    fit: "shrink",
+  });
+
+  slide.addText(SELF_IMAGE_AUTHOR, {
+    x: 8.2,
+    y: 7.11,
+    w: 4.72,
+    h: 0.2,
+    fontFace: "Microsoft YaHei",
+    fontSize: 8.4,
+    color: "64748B",
+    align: "right",
+    margin: 0,
+    fit: "shrink",
   });
 
   return slide;
