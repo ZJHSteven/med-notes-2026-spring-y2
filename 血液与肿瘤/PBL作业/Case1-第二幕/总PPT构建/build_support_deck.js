@@ -87,71 +87,69 @@ const QUESTION_TITLES = {
 const DISCUSSION_SLIDES = {
   differential: {
     id: "discussion_q3_differential",
-    type: "discussion",
+    type: "doc_text",
     headerText: "问题 3｜补充讨论",
     title: "鉴别诊断",
-    subtitle: "具体鉴别点课上展开，这里只保留需要点到的对象。",
-    sections: [
-      {
-        label: "重点对象",
-        accentColor: "1D4ED8",
-        bgColor: "EFF6FF",
-        borderColor: "BFDBFE",
-        items: [
-          "其他原因引起的脾大",
-          "类白血病反应",
-          "骨髓纤维化",
-        ],
-      },
-      {
-        label: "课堂提示",
-        accentColor: "0F766E",
-        bgColor: "F0FDF4",
-        borderColor: "BBF7D0",
-        items: [
-          "结合脾大背景、血象和骨髓象讨论",
-          "重点回到 Ph 染色体 / BCR::ABL1 证据",
-          "必要时补充 NAP、JAK2 / CALR / MPL 等线索",
-        ],
-      },
-    ],
+    subtitle: "",
+    leftText: [
+      "鉴别诊断：",
+      "（1）其他原因引起的脾大 血吸虫病、慢性疟疾、黑热病、肝硬化、脾功能亢进",
+      "等均有脾大,但均有各自原发病的临床特点，并且血象及骨髓象无 CML 的典型改",
+      "变。 Ph 染色体及 BCR::ABLI 融合基因均阴性。",
+    ].join("\n"),
+    rightText: [
+      "（2）类白血病反应 常并发于严重感染、恶性肿瘤等基础疾病,并有相应原发病的",
+      "临床表现。粒细胞胞质中常有中毒颗粒和空泡。嗜酸性粒细胞和嗜碱性粒细胞不",
+      "增多。NAP 反应强阳性。Ph 染色体及 BCR::ABLI 融合基因阴性。血小板和血红蛋",
+      "白大多正常。原发病控制后,白细胞恢复正常。",
+      "",
+      "（3）骨髓纤维化 原发性骨髓纤维化脾大显著，血象中白细胞增多，并出现幼粒",
+      "细胞等，易与 CML 混淆。但骨髓纤维化外周血白细胞数一般比 CML 少，多不超",
+      "过 30x109/L。 NAP 阳性。此外幼红细胞持续出现于外周血中，红细胞形态异常，",
+      "特别是泪滴状红细胞易见。 Ph 染色体及 BCR::ABLI 融合基因阴性。患者可存在",
+      "JAK2 V617F、CALR、MPL 基因突变。多次多部位骨髓穿刺干抽。骨髓活检网状纤",
+      "维染色阳性。",
+    ].join("\n"),
     footerText: "补充页｜依据 Word 标注整理：鉴别诊断",
   },
   riskFactors: {
     id: "discussion_q6_risk",
-    type: "discussion",
+    type: "doc_text",
     headerText: "问题 6｜补充讨论",
     title: "病因、基本机制、诱因与高危因素",
-    subtitle: "不放长段解释，只保留课堂要展开的主轴。",
-    sections: [
-      {
-        label: "病因与基本机制",
-        accentColor: "DC2626",
-        bgColor: "FEF2F2",
-        borderColor: "FECACA",
-        items: [
-          "费城染色体 t(9;22)",
-          "BCR::ABL1 融合基因",
-          "持续活化酪氨酸激酶",
-          "髓系细胞异常增殖、抗凋亡",
-        ],
-      },
-      {
-        label: "诱因与高危因素",
-        accentColor: "7C3AED",
-        bgColor: "FAF5FF",
-        borderColor: "DDD6FE",
-        items: [
-          "生物因素",
-          "物理因素：电离辐射",
-          "化学因素：苯 / 有机溶剂等",
-          "遗传因素",
-          "其他血液病背景",
-          "年龄因素",
-          "性别因素",
-        ],
-      },
-    ],
+    subtitle: "",
+    leftText: [
+      "费城染色体（Ph 染色体）及其融合基因是 CML 的 确定性病因分子机制：9 号染色体长臂（9q34）上的 ABL 原癌基因，与 22 号染色体长臂（22q11）上的 BCR 基因发生易位，形成 t(9;22)(q34;q11)易位，即费城染色体（Ph 染色体）。",
+      "易位后产生 BCR-ABL1 融合基因，其编码的 BCR-ABL 融合蛋白具有持续激活的酪氨酸激酶活性，不受细胞正常调控，导致髓系细胞（粒细胞为主）不受控增殖、凋亡受抑，最终引发",
+      "CML。",
+    ].join("\n"),
+    rightText: [
+      "诱因及高危因素：",
+      "1）生物因素 主要是病毒感染和免疫功能异常。成人 T 细胞白血病、 类 T 淋",
+      "巴细胞病毒 I 型所致。病毒感染机件后，可作为内源性病毒整合并潜伏在宿主细",
+      "胞内，在某些理化因素作用下，被激活表达而诱发白血病;或作为外源性病毒在",
+      "外界以横向方式传播感染，直接致病。部分免疫功能异常者,如某些自身免疫病",
+      "患者,患白血病风险会增加。",
+      "2）物理因素 包括 X 射线、y 射线等电离辐射。1911 年首次报道了放射工作者",
+      "发生白血病的病例。日本广岛及长崎受原子弹袭击后， 幸存者中白血病发病率",
+      "比未受照射的人群高 30 倍和 17 倍，患者多为 AL 和 CML。研究表明，大面积和",
+      "大剂量照射可导致骨髓抑制和机体免疫力下降，DNA 突变、 断裂和重组,导致白",
+      "血病的发生。",
+      "3）化学因素 多年接触苯以及含有苯的有机溶剂与白血病的发生有关。乙双吗",
+      "啉是乙亚胺的衍生物,具有极强的致染色体畸变和致白血病作用。抗肿瘤药物中",
+      "烷化剂和拓扑异构酶Ⅱ抑制剂有致白血病的作用。化学物质所致的白血病以 AML",
+      "为多。",
+      "4）遗传因素 家族性白血病约占白血病的 0.7%。单卵孪生子,如果一个人发生",
+      "白血病,另一个人的发病率为 1/5,比双卵孪生者高 12 倍。Down 综合征(唐氏综合",
+      "征）有 21 号染色体三体改变,其白血病发病率达 50/10 万,是正常人群的 20 倍。",
+      "Fanconi 贫血、Bloom 综合征(侏儒面部毛细血管扩张)、 共济失调-毛细血管扩张",
+      "症及先天性免疫球蛋白缺乏症等患者的白血病发病率均较高。",
+      "5）其他血液病 某些血液病最终可能发展为白血病，如 MDS、PNH 等，亦有",
+      "淋巴瘤和骨髓瘤继发白血病的报道,但具体机制不明。",
+      "6）年龄因素 CML 发病高峰为 45~55 岁，年龄增长是重要的发病相关因素，儿童罕见发病，",
+      "老年人群发病率相对升高。",
+      "7）性别因素 男性发病率略高于女性（约 1.4:1），但具体机制尚未明确，仅为流行病学关联。",
+    ].join("\n"),
     footerText: "补充页｜依据 Word 标注整理：病因 / 基本机制 / 诱因 / 高危因素",
   },
 };
@@ -655,41 +653,45 @@ function addImageSlide(pptx, slideDef) {
  * - 用双卡片布局把“老师要求临时补的块”清楚塞进总稿；
  * - 保持与当前总稿同一套蓝色标题带和浅底卡片风格。
  */
-function addDiscussionSlide(pptx, slideDef) {
+function addDocTextSlide(pptx, slideDef) {
   const slide = pptx.addSlide();
   addBaseChrome(slide, slideDef.headerText);
 
   slide.addText(slideDef.title, {
     x: 0.78,
     y: 1.18,
-    w: 7.15,
-    h: 0.7,
+    w: 7.7,
+    h: 0.55,
     fontFace: "Microsoft YaHei",
-    fontSize: 22,
+    fontSize: 21,
     bold: true,
     color: "1E3C72",
     margin: 0,
   });
 
-  slide.addText(slideDef.subtitle, {
-    x: 0.8,
-    y: 1.9,
-    w: 8.8,
-    h: 0.28,
-    fontFace: "Microsoft YaHei",
-    fontSize: 13,
-    color: "64748B",
-    margin: 0,
-  });
+  if (slideDef.subtitle) {
+    slide.addText(slideDef.subtitle, {
+      x: 0.8,
+      y: 1.82,
+      w: 8.8,
+      h: 0.28,
+      fontFace: "Microsoft YaHei",
+      fontSize: 13,
+      color: "64748B",
+      margin: 0,
+    });
+  }
 
   const cardPositions = [
-    { x: 0.82, y: 2.15, w: 5.85, h: 3.95 },
-    { x: 6.68, y: 2.15, w: 5.85, h: 3.95 },
+    { x: 0.82, y: 2.0, w: 5.88, h: 4.95 },
+    { x: 6.66, y: 2.0, w: 5.88, h: 4.95 },
   ];
 
-  slideDef.sections.forEach((section, index) => {
+  [
+    { text: slideDef.leftText, accentColor: "1D4ED8", bgColor: "F8FAFC", borderColor: "CBD5E1", fontSize: slideDef.leftFontSize || 11.2 },
+    { text: slideDef.rightText, accentColor: "0F766E", bgColor: "F8FAFC", borderColor: "CBD5E1", fontSize: slideDef.rightFontSize || 10.6 },
+  ].forEach((section, index) => {
     const card = cardPositions[index];
-    const textLines = section.items.map((item) => ({ text: item, options: { bullet: true } }));
 
     slide.addShape("roundRect", {
       x: card.x,
@@ -701,38 +703,18 @@ function addDiscussionSlide(pptx, slideDef) {
       fill: { color: section.bgColor },
     });
 
-    slide.addText(section.label, {
-      x: card.x + 0.24,
-      y: card.y + 0.24,
-      w: card.w - 0.48,
-      h: 0.3,
+    slide.addText(section.text, {
+      x: card.x + 0.22,
+      y: card.y + 0.18,
+      w: card.w - 0.44,
+      h: card.h - 0.36,
       fontFace: "Microsoft YaHei",
-      fontSize: 17,
-      bold: true,
-      color: section.accentColor,
-      margin: 0,
-    });
-
-    slide.addShape("line", {
-      x: card.x + 0.24,
-      y: card.y + 0.62,
-      w: card.w - 0.48,
-      h: 0,
-      line: { color: section.borderColor, width: 1 },
-    });
-
-    slide.addText(textLines, {
-      x: card.x + 0.28,
-      y: card.y + 0.84,
-      w: card.w - 0.56,
-      h: card.h - 1.08,
-      fontFace: "Microsoft YaHei",
-      fontSize: 18,
+      fontSize: section.fontSize,
       color: "334155",
-      breakLine: false,
       margin: 0,
-      paraSpaceAfterPt: 10,
-      bullet: { indent: 14 },
+      breakLine: false,
+      valign: "top",
+      fit: "shrink",
     });
   });
 
@@ -828,8 +810,8 @@ function buildSlideByType(pptx, slideDef) {
     return addImageSlide(pptx, slideDef);
   }
 
-  if (slideDef.type === "discussion") {
-    return addDiscussionSlide(pptx, slideDef);
+  if (slideDef.type === "doc_text") {
+    return addDocTextSlide(pptx, slideDef);
   }
 
   if (slideDef.type === "closing") {
