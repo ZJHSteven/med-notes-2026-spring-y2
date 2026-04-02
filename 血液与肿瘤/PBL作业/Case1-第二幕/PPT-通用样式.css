@@ -61,6 +61,7 @@ body {
 
 .slide-content {
     flex: 1;
+    min-height: 0;
     padding: 50px 80px;
     display: flex;
     flex-direction: column;
@@ -113,6 +114,7 @@ body {
 
 .flex-row {
     display: flex;
+    min-height: 0;
     gap: 40px;
     justify-content: center;
     align-items: stretch;
@@ -121,6 +123,7 @@ body {
 .flex-col {
     display: flex;
     flex: 1;
+    min-height: 0;
     flex-direction: column;
 }
 
