@@ -1,0 +1,52 @@
+{
+  "finalDeckName": "Case1-第二幕-总汇报-整合版.pptx",
+  "studentFiles": {
+    "qiu": "../同学ppt/Case 1 第二幕 ppt 姓名 仇维健 班级 24 临床朱宪彝班 学号 2024194112.pptx",
+    "qiao": "../同学ppt/乔智-4,6幼白机制和图PPT.pptx",
+    "ye": "../同学ppt/叶潇潇-第二幕.pptx",
+    "shan": "../同学ppt/善玥-Q4.pptx",
+    "dai": "../同学ppt/戴思如-Case1 第二幕.pptx",
+    "li": "../同学ppt/李宗垚.pptx",
+    "fan": "../同学ppt/樊滨瑞-cml产生幼稚白细胞的机制？.pptx",
+    "wang": "../同学ppt/王语萱-文献分享.pptx",
+    "zhong": "../同学ppt/钟琬毓-Q4.pptx"
+  },
+  "actions": [
+    { "type": "support", "id": "cover", "label": "封面" },
+    { "type": "support", "id": "agenda", "label": "目录" },
+
+    { "type": "support", "id": "section_q1", "label": "Q1 过渡页" },
+    { "type": "file", "fileKey": "qiu", "start": 3, "end": 3, "label": "仇维健 - Q1 胸水穿刺检查" },
+
+    { "type": "support", "id": "section_q2", "label": "Q2 过渡页" },
+    { "type": "support", "id": "image_q2", "label": "自制 Q2 图页" },
+
+    { "type": "support", "id": "section_q3", "label": "Q3 过渡页" },
+    { "type": "support", "id": "image_q3", "label": "自制 Q3 图页" },
+
+    { "type": "support", "id": "section_q4", "label": "Q4 过渡页" },
+    { "type": "support", "id": "image_q4_1", "label": "自制 Q4-1 主线页" },
+    { "type": "support", "id": "image_q4_2", "label": "自制 Q4-2 主线页" },
+    { "type": "support", "id": "image_q4_3", "label": "自制 Q4-3 主线页" },
+    { "type": "support", "id": "transition_q4_extra", "label": "Q4 同学补充过渡页" },
+    { "type": "file", "fileKey": "qiao", "start": 1, "end": 1, "label": "乔智 - 基础 BCR-ABL 驱动" },
+    { "type": "file", "fileKey": "shan", "start": 1, "end": 1, "label": "善玥 - RAPSYN 稳定 BCR-ABL" },
+    { "type": "file", "fileKey": "qiu", "start": 1, "end": 2, "label": "仇维健 - MS4A3 分化调控" },
+    { "type": "file", "fileKey": "li", "start": 1, "end": 1, "label": "李宗垚 - MS4A3 文献补充" },
+    { "type": "file", "fileKey": "dai", "start": 2, "end": 3, "label": "戴思如 - CT63 与分化 / 代谢" },
+    { "type": "file", "fileKey": "fan", "start": 1, "end": 1, "label": "樊滨瑞 - miR-142 与急变期" },
+    { "type": "file", "fileKey": "zhong", "start": 1, "end": 1, "label": "钟琬毓 - PABPC1 与急变 / 耐药" },
+    { "type": "file", "fileKey": "wang", "start": 1, "end": 2, "label": "王语萱 - RHOA / IGFBP2 与归巢进展" },
+    { "type": "file", "fileKey": "ye", "start": 1, "end": 2, "label": "叶潇潇 - BCR::ABL1 演化轨迹" },
+
+    { "type": "support", "id": "section_q5", "label": "Q5 过渡页" },
+    { "type": "support", "id": "image_q5", "label": "自制 Q5 图页" },
+    { "type": "file", "fileKey": "dai", "start": 1, "end": 1, "label": "戴思如 - 骨髓相特征" },
+    { "type": "file", "fileKey": "qiao", "start": 2, "end": 2, "label": "乔智 - 幼稚白细胞镜下特征" },
+
+    { "type": "support", "id": "section_q6", "label": "Q6 过渡页" },
+    { "type": "file", "fileKey": "ye", "start": 3, "end": 3, "label": "叶潇潇 - 一级 / 二级预防" },
+
+    { "type": "support", "id": "closing", "label": "结束页" }
+  ]
+}
