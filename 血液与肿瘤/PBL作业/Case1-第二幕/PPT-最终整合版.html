@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PBL Case 1 - 第二幕汇报演示</title>
+    <style>
+        /* CSS Reset & Basic Setup */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html {
+            width: 100%; height: 100%;
+            overflow: hidden;
+            background-color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+            user-select: none;
+            touch-action: none;
+        }
+
+        /* 核心 16:9 容器 */
+        #presentation-area {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform-origin: center center;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 统一布局：三段式 */
+        .slide {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(100px) scale(0.98);
+        }
+        .slide.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0) scale(1);
+            z-index: 5;
+        }
+        .slide.prev {
+            transform: translateX(-100px) scale(0.98);
+            z-index: 1;
+        }
+
+        /* 1. 顶部标题区 */
+        .slide-header {
+            height: 120px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+            font-size: 42px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            z-index: 10;
+            letter-spacing: 2px;
+        }
+
+        /* 2. 中部主体内容区 */
+        .slide-content {
+            flex: 1;
+            padding: 50px 80px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            font-size: 28px;
+            line-height: 1.6;
+            overflow: hidden; /* 防止内容溢出画布 */
+        }
+
+        /* 3. 底部独立页脚区 */
+        .slide-footer {
+            height: 70px;
+            background-color: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 80px;
+            font-size: 18px;
+            color: #64748b;
+            z-index: 10;
+        }
+        .footer-ref {
+            font-size: 16px;
+            color: #94a3b8;
+            max-width: 65%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-style: italic;
+        }
+
+        /* --- 动画系统 (核心) --- */
+        
+        /* 基础步进显现 (Fade In Up) */
+        .step {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .step.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 替换/离场动画 (元素推出) */
+        .step-out {
+            transition: all 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) !important;
+        }
+        .step-out.hidden {
+            opacity: 0 !important;
+            transform: translateY(-50px) scale(0.95) !important;
+            pointer-events: none;
+            position: absolute; /* 使其脱离文档流，不占空间 */
+        }
+
+        /* 进场替换动画 (元素推入) */
+        .step-in {
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: absolute;
+            top: 50px; left: 80px; right: 80px; /* 占据 content 区域 */
+            pointer-events: none;
+        }
+        .step-in.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
+            position: relative;
+            top: auto; left: auto; right: auto;
+        }
+
+        /* --- 通用组件样式 --- */
+        .highlight { color: #1e3c72; font-weight: 700; }
+        .accent { color: #dc2626; font-weight: 700; }
+        
+        .box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-left: 6px solid #3b82f6;
+            border-radius: 8px;
+            padding: 30px 40px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        .flex-row { display: flex; gap: 40px; justify-content: center; align-items: stretch; }
+        .flex-col { display: flex; flex-direction: column; flex: 1; }
+        
+        /* 表格样式 */
+        .academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .academic-table th, .academic-table td {
+            padding: 18px 24px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+        .academic-table th {
+            background-color: #f1f5f9;
+            font-weight: bold;
+            color: #1e293b;
+            font-size: 26px;
+        }
+        .academic-table td {
+            font-size: 24px;
+            color: #334155;
+        }
+        .academic-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* 树状图/结构卡片 */
+        .tree-container { display: flex; justify-content: space-around; margin-top: 20px; }
+        .tree-node {
+            background: #f0fdfa; border: 2px solid #0d9488;
+            padding: 20px; border-radius: 8px; text-align: center;
+            font-weight: bold; margin: 10px; flex: 1;
+            box-shadow: 0 4px 6px rgba(13, 148, 136, 0.1);
+        }
+        
+        /* 文献小标签 (用于页内特定观点的引用) */
+        .ref-tag {
+            display: inline-block;
+            font-size: 16px;
+            color: #64748b;
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 10px;
+            vertical-align: middle;
+            border: 1px solid #cbd5e1;
+        }
+
+        #controls-hint {
+            position: absolute; bottom: 20px; right: 20px; color: rgba(255,255,255,0.4); font-size: 14px; z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="presentation-area">
+
+        <!-- ==========================================
+             第一页：Q2 白血病分类（同屏元素替换动画）
+        =========================================== -->
+        <div class="slide" data-slide-index="0">
+            <div class="slide-header">Q2｜白血病分类：从传统到现代</div>
+            <div class="slide-content" style="gap:24px;">
+                <div class="box" style="margin-bottom:0; padding:24px 36px;">
+                    <h3 class="highlight" style="font-size:34px; margin-bottom:12px;">传统“四大型”是入门框架，但只够完成第一层粗分</h3>
+                    <p style="font-size: 24px; color: #64748b; margin-bottom: 0;">先按病程快慢（急性 / 慢性）和细胞谱系（髓系 / 淋系）完成初筛，再进入现代的谱系-成熟阶段-分子遗传学细分。</p>
+                </div>
+
+                <table class="academic-table" style="margin:0;">
+                    <tr>
+                        <th width="20%"></th>
+                        <th width="40%" class="center-text">急性 (Acute)</th>
+                        <th width="40%" class="center-text">慢性 (Chronic)</th>
+                    </tr>
+                    <tr>
+                        <th>髓系 (Myeloid)</th>
+                        <td>急性髓系白血病 <span class="highlight">(AML)</span></td>
+                        <td style="background: #eff6ff; font-weight: bold;">慢性髓系白血病 <span class="accent">(CML)</span></td>
+                    </tr>
+                    <tr>
+                        <th>淋系 (Lymphoid)</th>
+                        <td>急性淋巴细胞白血病 <span class="highlight">(ALL)</span></td>
+                        <td>慢性淋巴细胞白血病 <span class="highlight">(CLL)</span></td>
+                    </tr>
+                </table>
+
+                <div class="box" style="border-left-color: #0d9488; margin-bottom:0; padding:28px 34px 30px;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:28px; margin-bottom:24px;">
+                        <div style="flex:1;">
+                            <h3 style="color:#0d9488; font-size:32px; margin-bottom:10px;">现代精细分类：谱系 + 成熟阶段 + 分子遗传学</h3>
+                            <p style="font-size: 24px; color: #64748b; margin-bottom: 0;">WHO 第5版 / ICC 2022 不再满足于“四大型”，而是把具有定义性遗传异常的疾病实体单独拎出来。</p>
+                        </div>
+                        <div style="width:520px; background:#f0fdf4; border:1px solid #bbf7d0; border-radius:12px; padding:18px 20px; text-align:center;">
+                            <div style="font-size:22px; color:#166534; margin-bottom:8px; font-weight:700;">本病例最关键的定位</div>
+                            <div style="font-size:28px; color:#166534; font-weight:800; line-height:1.5;">CML 更准确的位置是<br>MPN 中的“慢性髓系白血病，BCR::ABL1 阳性型”</div>
+                        </div>
+                    </div>
+
+                    <div class="flex-row" style="gap:26px; align-items:stretch;">
+                        <div class="flex-col" style="background:#f8fafc; padding:20px 22px; border-radius:12px; border:1px solid #e2e8f0;">
+                            <h4 style="color:#0f766e; border-bottom:2px solid #ccfbf1; padding-bottom:10px; margin-bottom:15px; font-size:28px;">髓系肿瘤主要类别</h4>
+                            <ul style="font-size: 22px; line-height: 1.75; margin-left: 28px; color: #334155;">
+                                <li>急性髓系白血病（AML，越来越强调遗传学定义）</li>
+                                <li style="background:#ccfbf1; font-weight:bold; padding:5px 10px; border-radius:4px; margin-left:-10px;">骨髓增殖性肿瘤（MPN）: CML 归属此类</li>
+                                <li>骨髓增生异常性肿瘤（MDS）</li>
+                                <li>MDS / MPN 重叠肿瘤</li>
+                                <li>伴嗜酸性粒细胞增多和特定基因重排的髓/淋系肿瘤</li>
+                            </ul>
+                        </div>
+                        <div class="flex-col" style="background:#f8fafc; padding:20px 22px; border-radius:12px; border:1px solid #e2e8f0;">
+                            <h4 style="color:#4338ca; border-bottom:2px solid #f3e8ff; padding-bottom:10px; margin-bottom:15px; font-size:28px;">淋系及其他重要类别</h4>
+                            <ul style="font-size: 22px; line-height: 1.75; margin-left: 28px; color: #334155;">
+                                <li>前体淋系肿瘤（B-ALL / LBL，T-ALL / LBL）</li>
+                                <li>成熟 B 细胞肿瘤（CLL / SLL、HCL 等）</li>
+                                <li>成熟 T / NK 细胞肿瘤（T-PLL、T-LGLL 等）</li>
+                                <li>急性未分化白血病（AUL）</li>
+                                <li>混合表型急性白血病（MPAL）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide-footer">
+                <div class="footer-ref">来源：《内科学》第10版 九章白血病；Li W. WHO 5th Ed Classification. Leukemia, 2022.</div>
+                <div>张家赫｜学号：2024193112｜儿科班｜PBL Case 1</div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             第二页：Q3 CML诊断与分期（纯净数据呈现）
+        =========================================== -->
+        <div class="slide" data-slide-index="1">
+            <div class="slide-header">Q3｜CML 的诊断与分期标准</div>
+            <div class="slide-content">
+                
+                <div class="flex-row" style="height: 100%;">
+                    
+                    <!-- 左侧：诊断标准 -->
+                    <div class="flex-col" style="flex: 1.2;">
+                        <div class="box" style="height: 100%; margin-bottom:0;">
+                            <h3 class="highlight" style="margin-bottom: 20px; font-size:36px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">诊断标准</h3>
+                            
+                            <h4 style="color:#475569; margin-bottom: 10px; font-size: 26px;">1. 临床与形态学疑诊条件</h4>
+                            <ul style="font-size: 24px; line-height: 1.8; margin-left: 30px; margin-bottom: 25px; color: #334155;">
+                                <li>外周血白细胞明显增多</li>
+                                <li>伴或不伴脾大</li>
+                                <li>外周血可见髓系不成熟细胞</li>
+                                <li>骨髓增生明显，以粒系增生为主</li>
+                            </ul>
+
+                            <h4 style="color:#dc2626; margin-bottom: 10px; font-size: 26px;">2. 确诊必要条件 (金标准)</h4>
+                            <div style="background:#fef2f2; border: 1px solid #fecaca; padding: 20px; border-radius: 8px; text-align: center;">
+                                <strong style="font-size: 30px; color: #991b1b;">Ph 染色体 (+)</strong> <br>
+                                <span style="font-size: 24px; color:#ef4444;">和/或</span> <br>
+                                <strong style="font-size: 30px; color: #991b1b;">BCR::ABL1 融合基因 (+)</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 右侧：分期标准 -->
+                    <div class="flex-col step" style="flex: 1;">
+                        <div class="box" style="height: 100%; border-left-color: #f59e0b; margin-bottom:0;">
+                            <h3 style="color:#d97706; font-weight:bold; margin-bottom: 20px; font-size:36px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">疾病分期标准</h3>
+                            
+                            <ul style="font-size: 26px; line-height: 1.6; list-style: none; margin-left: 0; padding:0;">
+                                <li style="margin-bottom: 20px; background:#f0fdf4; padding: 15px; border-radius: 8px;">
+                                    <strong style="color:#166534;">慢性期 (CP)</strong><br>
+                                    <span style="font-size: 22px; color:#475569;">原始细胞 &lt; 10%，未达加速/急变标准</span>
+                                </li>
+                                <li style="margin-bottom: 20px; background:#fffbeb; padding: 15px; border-radius: 8px;">
+                                    <strong style="color:#b45309;">加速期 (AP)</strong><br>
+                                    <span style="font-size: 22px; color:#475569;">原始细胞 10%～19%<br>或 外周血嗜碱粒细胞 ≥20% 等</span>
+                                </li>
+                                <li style="background:#fef2f2; padding: 15px; border-radius: 8px;">
+                                    <strong style="color:#991b1b;">急变期 (BP)</strong><br>
+                                    <span style="font-size: 22px; color:#475569;">原始细胞 ≥ 20%<br>或 髓外原始细胞浸润</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide-footer">
+                <div class="footer-ref">来源：国家卫健委《慢性髓性白血病诊疗指南（2022年版）》；《内科学》第10版</div>
+                <div>张家赫｜学号：2024193112｜儿科班｜PBL Case 1</div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             第三页：Q5 CML形态学特征（表格直列）
+        =========================================== -->
+        <div class="slide" data-slide-index="2">
+            <div class="slide-header">Q5｜CML 外周血涂片与骨髓象典型形态学特征</div>
+            <div class="slide-content">
+                
+                <table class="academic-table" style="margin-top: 0; height: 100%;">
+                    <tr>
+                        <th width="15%" style="background:#e2e8f0; text-align:center;">检查项目</th>
+                        <th width="42.5%">典型 CML 形态学特征</th>
+                        <th width="42.5%" style="background:#fefce8;">赵阿姨（第二幕）检查结果匹配度</th>
+                    </tr>
+                    <tr class="step">
+                        <td style="font-weight:bold; text-align:center; background:#f8fafc;">外周血<br>及<br>血涂片</td>
+                        <td>
+                            <ul style="margin-left: 20px; font-size:22px; line-height:1.6;">
+                                <li>白细胞计数显著增多</li>
+                                <li>可见各阶段髓系不成熟细胞</li>
+                                <li><strong style="color:#0f4c81;">成熟谱连续左移，无裂孔</strong></li>
+                                <li>嗜酸性或嗜碱性粒细胞增多</li>
+                            </ul>
+                        </td>
+                        <td style="background:#fffbeb;">
+                            <ul style="margin-left: 20px; font-size:22px; line-height:1.6;">
+                                <li>WBC 44.6×10⁹/L (剧增)</li>
+                                <li>血涂片见幼稚白细胞，<strong style="color:#059669;">以中幼和晚幼为主</strong></li>
+                                <li><strong style="color:#059669;">高度匹配</strong> 外周血连续左移特征</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="step">
+                        <td style="font-weight:bold; text-align:center; background:#f8fafc;">骨髓象</td>
+                        <td>
+                            <ul style="margin-left: 20px; font-size:22px; line-height:1.6;">
+                                <li>骨髓增生明显或极度活跃</li>
+                                <li><strong style="color:#0f4c81;">粒系增生为主，粒红比显著升高</strong></li>
+                                <li>中、晚幼及杆状核粒细胞明显增多</li>
+                                <li>嗜酸/嗜碱粒细胞易见或增多</li>
+                                <li>慢性期巨核常不减少或增多</li>
+                            </ul>
+                        </td>
+                        <td style="background:#fffbeb;">
+                            <ul style="margin-left: 20px; font-size:22px; line-height:1.6;">
+                                <li>骨髓增生极度活跃，粒系为主，粒红比升高</li>
+                                <li>中幼/晚幼/杆状核明显增多，嗜酸/嗜碱增多</li>
+                                <li><strong style="color:#dc2626;">原始粒细胞 > 10% </strong> (提示加速期风险)</li>
+                                <li><strong style="color:#dc2626;">巨核细胞减少</strong> (不符合典型慢性期)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="slide-footer">
+                <div class="footer-ref">来源：《内科学》第10版 p.585；Gianelli U, et al. Virchows Arch, 2023.</div>
+                <div>张家赫｜学号：2024193112｜儿科班｜PBL Case 1</div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             第四页：Q4 (第1页) - 左移现象与总开关分子机制
+        =========================================== -->
+        <div class="slide" data-slide-index="3">
+            <div class="slide-header">Q4｜机制①：长期过载的造血流水线与驱动开关</div>
+            <div class="slide-content">
+                
+                <div class="flex-row" style="height: 100%;">
+                    
+                    <!-- 现象界定 -->
+                    <div class="flex-col" style="flex:1.02;">
+                        <div class="box" style="height:100%; border-left-color:#8b5cf6; padding:36px 40px 44px; display:flex; flex-direction:column; justify-content:center;">
+                            <h3 style="color:#7c3aed; font-size:38px; border-bottom:2px solid #ede9fe; padding-bottom:14px; margin-bottom:30px;">现象界定：不是某一点异常，而是整条粒系成熟谱整体拓展</h3>
+                            <p style="font-size: 27px; line-height: 1.85; margin-bottom: 28px;">与急性白血病常见的“原始细胞堆积”不同，CML 更典型的图像是<strong>外周血和骨髓内粒细胞谱系整体向未成熟阶段扩展</strong>，从原始粒细胞到成熟中性粒细胞都可能一起增多。</p>
+                            <p style="font-size: 26px; line-height: 1.85; background:#f5f3ff; padding:22px 24px; border-radius:8px;">也就是说，异常不是某一个点“卡住”了，而是疾病在<strong>保留一定分化能力</strong>的同时，出现<span class="accent">失控的髓系扩增</span>，于是成熟序列整体左偏。<span class="ref-tag">Leukemia Stem Cells, 2021</span></p>
+                        </div>
+                    </div>
+
+                    <!-- 机制第一层 -->
+                    <div class="flex-col step" style="flex:1.2;">
+                        <div class="box" style="height:100%; background:#fafaf9;">
+                            <h3 class="highlight" style="font-size:32px; border-bottom:2px solid #e2e8f0; padding-bottom:10px; margin-bottom:20px;">第一层机制：BCR::ABL1 总开关</h3>
+                            
+                            <div style="display:flex; flex-direction:column; align-items:center; gap: 15px;">
+                                <div style="background:#fee2e2; border:2px solid #fca5a5; padding:15px; border-radius:8px; font-weight:bold; font-size:28px; width:80%; text-align:center;">
+                                    Ph染色体 / BCR::ABL1 融合激酶
+                                </div>
+                                <div style="font-size:30px; color:#94a3b8;">↓</div>
+                                <div style="background:#e0e7ff; border:2px solid #a5b4fc; padding:15px; border-radius:8px; font-weight:bold; font-size:26px; width:80%; text-align:center;">
+                                    直接磷酸化 STAT5 通路 <span class="ref-tag" style="font-size:14px;">Nat Chem Biol, 2012</span>
+                                </div>
+                                <div style="font-size:30px; color:#94a3b8;">↓</div>
+                                <div style="background:#f1f5f9; padding:15px; border-radius:8px; font-size:22px; width:100%; line-height:1.6; text-align:center; border:1px solid #cbd5e1;">
+                                    <strong>后果：</strong> 粒系祖细胞更能活、更能分裂、对死亡信号更不敏感，为后续“过度生成”奠定物理基础。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide-footer">
+                <div class="footer-ref">引证：Hantschel O, et al. Nat Chem Biol. 2012; Targeting Leukemic Stem Cells Cancers 2021.</div>
+                <div>张家赫｜学号：2024193112｜儿科班｜PBL Case 1</div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             第五页：Q4 (第2页) - 应激生成劫持与分化失衡
+        =========================================== -->
+        <div class="slide" data-slide-index="4">
+            <div class="slide-header">Q4｜机制②：程序劫持与分化网络失衡</div>
+            <div class="slide-content">
+                
+                <!-- 机制第二层和第三层的水平对比 -->
+                <div class="flex-row" style="flex:1; align-items:stretch;">
+                    
+                    <div class="flex-col" style="flex:1;">
+                        <h3 style="color:#0f766e; margin-bottom:18px; font-size: 32px;">第二层机制：劫持“应激生成”</h3>
+                        <div style="background:#f0fdfa; border:1px solid #ccfbf1; padding:32px 28px 34px; border-radius:12px; height: 100%; display:flex; flex-direction:column; justify-content:space-between;">
+                            <p style="font-size:22px; margin-bottom:15px; line-height:1.6;">
+                                BCR-ABL 诱导上调转录因子 <strong>C/EBPβ</strong>（部分通过STAT5实现）。
+                            </p>
+                            <p style="font-size:24px; line-height:1.8; font-weight:500; color:#0f766e; margin-bottom:18px;">
+                                正常用于应对严重感染的“紧急粒细胞生成程序 (emergency granulopoiesis)”被<span class="accent">长期病理性打开</span>。
+                            </p>
+                            <ul style="font-size:22px; line-height:1.9; margin-top:8px; margin-left:25px; color:#334155;">
+                                <li>粒系扩增，各阶段转换加快</li>
+                                <li>中/晚幼、杆状核等“过渡态”大量涌现</li>
+                            </ul>
+                            <div style="text-align:right; margin-top:18px;"><span class="ref-tag">Leukemia, 2013</span></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col step" style="flex:1;">
+                        <h3 style="color:#b45309; margin-bottom:18px; font-size: 32px;">第三层机制：分化网络失衡</h3>
+                        <div style="background:#fffbeb; border:1px solid #fef3c7; padding:32px 28px 34px; border-radius:12px; height: 100%; display:flex; flex-direction:column; justify-content:space-between;">
+                            <p style="font-size:22px; margin-bottom:15px; line-height:1.6;">
+                                BCR-ABL1活性重塑 <strong>MYC/miR-150/PU.1</strong> 等分化调控网络，损害正常的髓系分化。
+                            </p>
+                            <p style="font-size:24px; line-height:1.8; font-weight:500; color:#b45309; margin-bottom:18px;">
+                                细胞向粒系强烈偏向，但走得“不够稳定”，导致中间成熟阶段的细胞异常堆积。
+                            </p>
+                            <ul style="font-size:22px; line-height:1.9; margin-top:8px; margin-left:25px; color:#334155;">
+                                <li>保留了分化能力，但成熟极度不匀</li>
+                                <li>形成典型的外周血幼稚细胞群</li>
+                            </ul>
+                            <div style="text-align:right; margin-top:18px;"><span class="ref-tag">Haematologica, 2018</span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="box step" style="margin-top:26px; font-weight:bold; font-size:32px; text-align:center; background:#f8fafc; margin-bottom:0; padding:24px 36px;">
+                    阶段小结：生成多 (增殖激活) + 推得快 (应激程序常开) + 熟不匀 (分化受损)
+                </div>
+
+            </div>
+            <div class="slide-footer">
+                <div class="footer-ref">引证：Hayashi Y, et al. Leukemia. 2013; Srutova K, et al. Haematologica. 2018.</div>
+                <div>张家赫｜学号：2024193112｜儿科班｜PBL Case 1</div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             第六页：Q4 (第3页) - 骨髓释出失控与前沿单细胞视角
+        =========================================== -->
+        <div class="slide" data-slide-index="5">
+            <div class="slide-header">Q4｜机制③：仓储失效、释放失控与患者异质性</div>
+            <div class="slide-content">
+                
+                <div class="flex-row" style="height: 100%;">
+                    
+                    <div class="flex-col">
+                        <div class="box" style="height:100%; border-left-color:#3b82f6;">
+                            <h3 style="color:#1d4ed8; font-size:30px; margin-bottom:15px;">第四层机制：骨髓留不住，释出失控</h3>
+                            <ul style="font-size:24px; line-height:1.8; margin-left:25px; margin-bottom:20px; color:#334155;">
+                                <li>白血病干/祖细胞的骨髓归巢和滞留能力显著下降。</li>
+                                <li>骨髓微环境 <strong>CXCL12 (SDF-1)</strong> 表达下降，干细胞依赖整合素的迁移/黏附受损。</li>
+                                <li>白血病细胞分泌大量 G-CSF，重塑微环境。</li>
+                            </ul>
+                            <div style="background:#eff6ff; padding:15px; border-radius:8px; font-size:24px; font-weight:bold; color:#1e3a8a;">
+                                结果：仓库失效，未成熟粒细胞过早、过易被释放至外周血。
+                            </div>
+                            <div style="margin-top:10px;"><span class="ref-tag">Stem Cells, 2002</span> <span class="ref-tag">Cancer Cell, 2012</span></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col step">
+                        <div class="box" style="height:100%; border-left-color:#10b981; background:#f0fdf4;">
+                            <h3 style="color:#047857; font-size:30px; margin-bottom:15px;">第五层：前沿单细胞多组学视角</h3>
+                            <ul style="font-size:24px; line-height:1.8; margin-left:25px; margin-bottom:15px; color:#334155;">
+                                <li>起病时患者骨髓的“单细胞干/祖生态”存在巨大差异。</li>
+                                <li>不同的炎症驱动基因 (MYC/IRF1 vs TAL1)、以及 BCR::ABL1+ 原始细胞与正常 HSC 的混合比例，决定了耐药性和临床异质性。</li>
+                            </ul>
+                            <p style="font-size:22px; color:#065f46; font-style:italic;">
+                                “左移程度不只是形态学描述，它背后连接着特异的治疗反应。”
+                            </p>
+                            <div style="margin-top:10px;"><span class="ref-tag">Blood, 2023</span> <span class="ref-tag">eLife, 2024</span> <span class="ref-tag">Leukemia, 2025</span></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="slide-footer">
+                <div class="footer-ref">引证：Peled A, Stem Cells 2002; Zhang B, Cancer Cell 2012; Krishnan V, Blood 2023; Warfvinge R, eLife 2024; Purhonen M, Leukemia 2025.</div>
+                <div>张家赫｜学号：2024193112｜儿科班｜PBL Case 1</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="controls-hint">按 F11 / 双击大半屏全屏 • 右键点击 或 →下一页/动画 • 左点击 或 ←上一页</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const area = document.getElementById('presentation-area');
+            const slides = document.querySelectorAll('.slide');
+            let slideIdx = 0;
+            let stepIdx = -1; // -1 means initial state of the slide
+            
+            // 响应式缩放适配 16:9 画布
+            function resize() {
+                const tr = 16 / 9, wr = window.innerWidth / window.innerHeight;
+                let scale = wr > tr ? window.innerHeight / 1080 : window.innerWidth / 1920;
+                area.style.transform = `translate(-50%, -50%) scale(${scale})`;
+            }
+            window.addEventListener('resize', resize); resize();
+
+            function update() {
+                slides.forEach((s, i) => {
+                    s.className = `slide ${i === slideIdx ? 'active' : (i < slideIdx ? 'prev' : '')}`;
+                    
+                    if (i === slideIdx) {
+                        // 处理普通叠加步进 .step
+                        s.querySelectorAll('.step').forEach((st, p) => {
+                            st.classList.toggle('visible', p <= stepIdx);
+                        });
+                        
+                        // 处理同屏替换步进 [data-step-out] and [data-step-in] (例如第一页)
+                        const outs = s.querySelectorAll('.step-out');
+                        const ins = s.querySelectorAll('.step-in');
+                        
+                        outs.forEach(outNode => {
+                            const targetStep = parseInt(outNode.getAttribute('data-step-out')) - 1;
+                            // 如果当前 stepIdx 已经达到或超过触发点，该元素隐藏离场
+                            if (stepIdx >= targetStep) {
+                                outNode.classList.add('hidden');
+                            } else {
+                                outNode.classList.remove('hidden');
+                            }
+                        });
+
+                        ins.forEach(inNode => {
+                            const targetStep = parseInt(inNode.getAttribute('data-step-in')) - 1;
+                            // 如果当前 stepIdx 已经达到或超过触发点，新元素现身进场
+                            if (stepIdx >= targetStep) {
+                                inNode.classList.add('visible');
+                            } else {
+                                inNode.classList.remove('visible');
+                            }
+                        });
+                    }
+                });
+            }
+
+            function getTotalSteps(slide) {
+                // 计算不仅包含普通的 .step，还有作为触发器的 in/out
+                const normalSteps = slide.querySelectorAll('.step').length;
+                let maxCustomStep = 0;
+                slide.querySelectorAll('[data-step-in]').forEach(el => {
+                    const v = parseInt(el.getAttribute('data-step-in'));
+                    if (v > maxCustomStep) maxCustomStep = v;
+                });
+                return Math.max(normalSteps, maxCustomStep);
+            }
+
+            function next() {
+                const totalSteps = getTotalSteps(slides[slideIdx]);
+                if (stepIdx < totalSteps - 1) { 
+                    stepIdx++; 
+                    update(); 
+                } else if (slideIdx < slides.length - 1) { 
+                    slideIdx++; 
+                    stepIdx = -1; 
+                    update(); 
+                } 
+            }
+
+            function prev() { 
+                if (stepIdx >= 0) { 
+                    stepIdx--; 
+                    update(); 
+                } else if (slideIdx > 0) { 
+                    slideIdx--; 
+                    stepIdx = getTotalSteps(slides[slideIdx]) - 1; 
+                    update(); 
+                } 
+            }
+
+            // Keyboard
+            document.addEventListener('keydown', e => { 
+                if (['ArrowRight', 'Space', 'Enter', 'PageDown'].includes(e.key)) next(); 
+                else if (['ArrowLeft', 'Backspace', 'PageUp'].includes(e.key)) prev(); 
+            });
+
+            // Touch Swipe
+            let sx = 0; 
+            document.addEventListener('touchstart', e => sx = e.changedTouches[0].screenX, {passive: false});
+            document.addEventListener('touchend', e => { 
+                let ex = e.changedTouches[0].screenX; 
+                if (sx - ex > 50) next(); 
+                else if (ex - sx > 50) prev(); 
+                else if (Math.abs(sx - ex) < 10) ex > window.innerWidth / 2 ? next() : prev(); 
+            }, {passive: false});
+
+            // Mouse Click
+            document.addEventListener('click', e => { 
+                if (Date.now() - (window.lastClickTime||0) < 300) return; 
+                window.lastClickTime = Date.now(); 
+                e.clientX > window.innerWidth / 2 ? next() : prev(); 
+            });
+            document.addEventListener('contextmenu', e => {
+                e.preventDefault();
+                prev();
+            });
+
+            // Fullscreen
+            document.addEventListener('dblclick', () => 
+                document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen()
+            );
+
+            update();
+        });
+    </script>
+</body>
+</html>
