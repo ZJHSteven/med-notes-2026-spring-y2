@@ -42,7 +42,8 @@ body {
 .slide {
     position: absolute;
     inset: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .slide-header {
@@ -59,12 +60,7 @@ body {
 }
 
 .slide-content {
-    position: absolute;
-    top: 120px;
-    right: 0;
-    bottom: 70px;
-    left: 0;
-    min-height: 0;
+    flex: 1;
     padding: 50px 80px;
     display: flex;
     flex-direction: column;
@@ -74,10 +70,6 @@ body {
 }
 
 .slide-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
     height: 70px;
     padding: 0 80px;
     display: flex;
@@ -121,7 +113,6 @@ body {
 
 .flex-row {
     display: flex;
-    min-height: 0;
     gap: 40px;
     justify-content: center;
     align-items: stretch;
@@ -130,7 +121,6 @@ body {
 .flex-col {
     display: flex;
     flex: 1;
-    min-height: 0;
     flex-direction: column;
 }
 
