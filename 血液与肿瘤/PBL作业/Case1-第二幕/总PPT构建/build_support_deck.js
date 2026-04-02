@@ -14,7 +14,6 @@ const fs = require("fs");
 const path = require("path");
 const PptxGenJS = require("pptxgenjs");
 const { imageSizingContain } = require("./pptxgenjs_helpers/image");
-const ShapeType = PptxGenJS.ShapeType;
 
 /**
  * 统一路径根目录。
@@ -209,7 +208,7 @@ function addFooter(slide, leftText) {
 function addBaseChrome(slide, headerText) {
   slide.background = { color: "F8FAFC" };
 
-  slide.addShape(ShapeType.rect, {
+  slide.addShape("rect", {
     x: 0,
     y: 0,
     w: 13.333,
@@ -230,7 +229,7 @@ function addBaseChrome(slide, headerText) {
     margin: 0,
   });
 
-  slide.addShape(ShapeType.line, {
+  slide.addShape("line", {
     x: 0,
     y: 0.95,
     w: 13.333,
@@ -251,7 +250,7 @@ function addCoverSlide(pptx, slideDef) {
     color: "F8FAFC",
   };
 
-  slide.addShape(ShapeType.rect, {
+  slide.addShape("rect", {
     x: 0,
     y: 0,
     w: 13.333,
@@ -260,7 +259,7 @@ function addCoverSlide(pptx, slideDef) {
     fill: { color: "274B87" },
   });
 
-  slide.addShape(ShapeType.roundRect, {
+  slide.addShape("roundRect", {
     x: 0.72,
     y: 1.75,
     w: 11.9,
@@ -306,7 +305,7 @@ function addCoverSlide(pptx, slideDef) {
     margin: 0,
   });
 
-  slide.addShape(ShapeType.roundRect, {
+  slide.addShape("roundRect", {
     x: 8.95,
     y: 2.0,
     w: 2.95,
@@ -391,7 +390,7 @@ function addAgendaSlide(pptx, slideDef) {
     const pos = cardPositions[index];
     const orderText = `0${index + 1}`;
 
-    slide.addShape(ShapeType.roundRect, {
+    slide.addShape("roundRect", {
       x: pos.x,
       y: pos.y,
       w: 3.25,
@@ -442,7 +441,7 @@ function addSectionSlide(pptx, slideDef) {
   const slide = pptx.addSlide();
   addBaseChrome(slide, `${slideDef.indexLabel}｜问题过渡`);
 
-  slide.addShape(ShapeType.roundRect, {
+  slide.addShape("roundRect", {
     x: 0.9,
     y: 1.75,
     w: 11.55,
@@ -452,7 +451,7 @@ function addSectionSlide(pptx, slideDef) {
     fill: { color: "FFFFFF" },
   });
 
-  slide.addShape(ShapeType.roundRect, {
+  slide.addShape("roundRect", {
     x: 1.15,
     y: 2.15,
     w: 1.25,
@@ -526,7 +525,7 @@ function addClosingSlide(pptx, slideDef) {
   const slide = pptx.addSlide();
   addBaseChrome(slide, "汇报结束");
 
-  slide.addShape(ShapeType.roundRect, {
+  slide.addShape("roundRect", {
     x: 1.1,
     y: 1.85,
     w: 11.1,
@@ -559,7 +558,7 @@ function addClosingSlide(pptx, slideDef) {
     margin: 0,
   });
 
-  slide.addShape(ShapeType.roundRect, {
+  slide.addShape("roundRect", {
     x: 8.1,
     y: 2.18,
     w: 2.7,
