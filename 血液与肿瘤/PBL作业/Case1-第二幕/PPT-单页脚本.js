@@ -13,6 +13,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const area = document.getElementById('presentation-area');
     const slide = document.querySelector('.slide');
+    const slideContent = document.querySelector('.slide-content');
+    const slideFooter = document.querySelector('.slide-footer');
     const controlsHint = document.getElementById('controls-hint');
     const steps = slide ? Array.from(slide.querySelectorAll('.step')) : [];
     let currentStepIndex = -1;
@@ -58,6 +60,31 @@ document.addEventListener('DOMContentLoaded', () => {
         area.style.transform = 'none';
         area.style.transformOrigin = 'top left';
         area.style.boxShadow = 'none';
+
+        /*
+         * 这里只在导出模式下临时把“正文区”和“页脚”改成固定分区。
+         * 这样可以保证截图时页脚一定留在 1080 画布内，但不会影响你平时打开 HTML 的正常排版。
+         */
+        if (slide) {
+            slide.style.display = 'block';
+        }
+
+        if (slideContent) {
+            slideContent.style.position = 'absolute';
+            slideContent.style.top = '120px';
+            slideContent.style.right = '0';
+            slideContent.style.bottom = '70px';
+            slideContent.style.left = '0';
+            slideContent.style.minHeight = '0';
+        }
+
+        if (slideFooter) {
+            slideFooter.style.position = 'absolute';
+            slideFooter.style.right = '0';
+            slideFooter.style.bottom = '0';
+            slideFooter.style.left = '0';
+            slideFooter.style.zIndex = '5';
+        }
 
         if (controlsHint) {
             controlsHint.style.display = 'none';
