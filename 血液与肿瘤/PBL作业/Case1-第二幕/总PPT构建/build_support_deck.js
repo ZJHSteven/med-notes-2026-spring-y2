@@ -13,7 +13,6 @@
 const fs = require("fs");
 const path = require("path");
 const PptxGenJS = require("pptxgenjs");
-const { imageSizingContain } = require("./pptxgenjs_helpers/image");
 
 /**
  * 统一路径根目录。
@@ -38,6 +37,35 @@ const SELF_SLIDE_IMAGES = {
 };
 
 /**
+ * 组员名单。
+ * 封面页只做两件事：交代“这是哪一幕”，以及“谁来汇报”。
+ */
+const GROUP_MEMBERS = [
+  "张家赫",
+  "戴思如",
+  "樊滨瑞",
+  "李宗垚",
+  "乔智",
+  "善玥",
+  "王语萱",
+  "叶潇潇",
+  "钟琬毓",
+  "仇维健",
+];
+
+/**
+ * 题目原文必须与报告保持一致，不能在总稿里再次自行概括。
+ */
+const QUESTION_TITLES = {
+  q1: "诊断性胸腔穿刺后常做哪些实验室检查？赵阿姨现有胸水结果说明了什么？",
+  q2: "白血病如何分类？CML 在白血病与骨髓增殖性肿瘤谱系中处于什么位置？",
+  q3: "CML 的诊断标准与分期标准是什么？本病例目前符合哪些条目，还缺哪些确诊信息？",
+  q4: "为什么 CML 会出现幼稚白细胞、核左移以及嗜酸/嗜碱粒细胞增多？",
+  q5: "CML 的外周血涂片和骨髓象有哪些典型形态学特征？赵阿姨的检查结果是否匹配？",
+  q6: "CML 的病因、诱因和高危因素有哪些？本病例哪些暴露史值得追问，并如何落实一级、二级预防？",
+};
+
+/**
  * 支持页顺序表。
  * id 用于后续 merge 脚本精确引用；title/subtitle/content 只服务于本次生成。
  */
@@ -46,35 +74,19 @@ const SUPPORT_SLIDES = [
     id: "cover",
     type: "cover",
     title: "PBL Case 1 第二幕",
-    subtitle: "血液与肿瘤课程汇报总整合版",
-    note: "主持串讲稿 · 问题1到问题6完整顺序",
-  },
-  {
-    id: "agenda",
-    type: "agenda",
-    title: "汇报主线",
-    items: [
-      "问题1：胸水穿刺检查与当前胸水性质判断",
-      "问题2：白血病分类与 CML 在现代分类中的位置",
-      "问题3：CML 的诊断标准、分期标准与病例缺口",
-      "问题4：为什么会出现幼稚白细胞、核左移及相关机制",
-      "问题5：外周血涂片与骨髓象的典型形态学特征",
-      "问题6：病因、高危暴露与一级 / 二级预防",
-    ],
+    members: GROUP_MEMBERS,
   },
   {
     id: "section_q1",
     type: "section",
-    indexLabel: "Q1",
-    title: "胸水穿刺检查与当前胸水性质判断",
-    description: "先把胸水性质讲清楚，再把诊断重心转回 CML 主线。",
+    indexLabel: "问题 1",
+    title: QUESTION_TITLES.q1,
   },
   {
     id: "section_q2",
     type: "section",
-    indexLabel: "Q2",
-    title: "白血病分类与 CML 的现代定位",
-    description: "从传统“四大型”入门，再过渡到 WHO / ICC 下的 MPN 定位。",
+    indexLabel: "问题 2",
+    title: QUESTION_TITLES.q2,
   },
   {
     id: "image_q2",
@@ -84,9 +96,8 @@ const SUPPORT_SLIDES = [
   {
     id: "section_q3",
     type: "section",
-    indexLabel: "Q3",
-    title: "CML 的诊断标准、分期标准与病例缺口",
-    description: "先定疑诊方向，再指出确诊和分期仍缺少哪些关键证据。",
+    indexLabel: "问题 3",
+    title: QUESTION_TITLES.q3,
   },
   {
     id: "image_q3",
@@ -96,9 +107,8 @@ const SUPPORT_SLIDES = [
   {
     id: "section_q4",
     type: "section",
-    indexLabel: "Q4",
-    title: "为什么会产生幼稚白细胞与核左移",
-    description: "这一题是第二幕重点，先走主线机制，再接同学补充文献与前沿研究。",
+    indexLabel: "问题 4",
+    title: QUESTION_TITLES.q4,
   },
   {
     id: "image_q4_1",
@@ -116,18 +126,10 @@ const SUPPORT_SLIDES = [
     imagePath: SELF_SLIDE_IMAGES.q4_3,
   },
   {
-    id: "transition_q4_extra",
-    type: "section",
-    indexLabel: "Q4-补充",
-    title: "同学补充文献：从驱动机制到急变、微环境与演化",
-    description: "排序原则：基础驱动在前，分化与急变居中，微环境与演化收尾。",
-  },
-  {
     id: "section_q5",
     type: "section",
-    indexLabel: "Q5",
-    title: "外周血涂片与骨髓象的典型形态学特征",
-    description: "先看我们的总表，再看同学补充的骨髓相与镜下形态图片。",
+    indexLabel: "问题 5",
+    title: QUESTION_TITLES.q5,
   },
   {
     id: "image_q5",
@@ -137,9 +139,8 @@ const SUPPORT_SLIDES = [
   {
     id: "section_q6",
     type: "section",
-    indexLabel: "Q6",
-    title: "病因、高危暴露与一级 / 二级预防",
-    description: "回到暴露史追问、风险因素判断以及如何做一级、二级预防。",
+    indexLabel: "问题 6",
+    title: QUESTION_TITLES.q6,
   },
   {
     id: "closing",
@@ -188,7 +189,7 @@ function addFooter(slide, leftText) {
     margin: 0,
   });
 
-  slide.addText("张家赫｜儿科班｜PBL Case 1 第二幕", {
+  slide.addText("血液与肿瘤｜PBL Case 1 第二幕", {
     x: 8.65,
     y: 7.0,
     w: 4.1,
@@ -250,110 +251,75 @@ function addCoverSlide(pptx, slideDef) {
     color: "F8FAFC",
   };
 
-  slide.addShape("rect", {
-    x: 0,
-    y: 0,
-    w: 13.333,
-    h: 1.2,
-    line: { color: "274B87", transparency: 100 },
-    fill: { color: "274B87" },
-  });
-
   slide.addShape("roundRect", {
-    x: 0.72,
-    y: 1.75,
-    w: 11.9,
-    h: 3.45,
-    rectRadius: 0.08,
-    line: { color: "DCE6F2", width: 1 },
+    x: 0.88,
+    y: 1.05,
+    w: 11.58,
+    h: 5.55,
+    rectRadius: 0.06,
+    line: { color: "DCE6F2", width: 1.1 },
     fill: { color: "FFFFFF" },
-    shadow: { type: "outer", color: "000000", blur: 1, angle: 45, distance: 1, opacity: 0.08 },
   });
 
   slide.addText(slideDef.title, {
-    x: 0.92,
-    y: 2.15,
-    w: 7.8,
-    h: 0.7,
+    x: 1.35,
+    y: 1.72,
+    w: 10.6,
+    h: 0.8,
     fontFace: "Microsoft YaHei",
-    fontSize: 26,
+    fontSize: 28,
     bold: true,
     color: "1E3C72",
+    align: "center",
     margin: 0,
   });
 
-  slide.addText(slideDef.subtitle, {
-    x: 0.92,
-    y: 2.95,
-    w: 7.8,
-    h: 0.45,
+  slide.addShape("line", {
+    x: 3.05,
+    y: 2.7,
+    w: 7.2,
+    h: 0,
+    line: { color: "BFDBFE", width: 1.3 },
+  });
+
+  slide.addText("汇报成员", {
+    x: 1.35,
+    y: 3.05,
+    w: 10.6,
+    h: 0.34,
+    fontFace: "Microsoft YaHei",
+    fontSize: 15,
+    bold: true,
+    color: "475569",
+    align: "center",
+    margin: 0,
+  });
+
+  slide.addText(slideDef.members.join("  ·  "), {
+    x: 1.18,
+    y: 3.58,
+    w: 11.0,
+    h: 1.1,
     fontFace: "Microsoft YaHei",
     fontSize: 18,
     color: "475569",
+    align: "center",
     margin: 0,
+    breakLine: false,
   });
 
-  slide.addText(slideDef.note, {
-    x: 0.92,
-    y: 3.55,
-    w: 5.2,
-    h: 0.38,
+  slide.addText("血液与肿瘤课程 PBL 汇报", {
+    x: 1.35,
+    y: 5.22,
+    w: 10.6,
+    h: 0.3,
     fontFace: "Microsoft YaHei",
     fontSize: 13,
-    color: "0F766E",
-    bold: true,
-    margin: 0,
-  });
-
-  slide.addShape("roundRect", {
-    x: 8.95,
-    y: 2.0,
-    w: 2.95,
-    h: 1.65,
-    rectRadius: 0.06,
-    line: { color: "BFDBFE", width: 1.2 },
-    fill: { color: "EFF6FF" },
-  });
-
-  slide.addText("第二幕问题主线", {
-    x: 9.2,
-    y: 2.25,
-    w: 2.45,
-    h: 0.28,
-    fontFace: "Microsoft YaHei",
-    fontSize: 12,
-    color: "2563EB",
-    bold: true,
-    align: "center",
-    margin: 0,
-  });
-
-  slide.addText("Q1 → Q2 → Q3 → Q4 → Q5 → Q6", {
-    x: 9.2,
-    y: 2.72,
-    w: 2.45,
-    h: 0.46,
-    fontFace: "Microsoft YaHei",
-    fontSize: 16,
-    bold: true,
-    color: "1E3A8A",
-    align: "center",
-    margin: 0,
-  });
-
-  slide.addText("主持人负责串讲顺序与起承转合", {
-    x: 8.98,
-    y: 3.25,
-    w: 2.9,
-    h: 0.24,
-    fontFace: "Microsoft YaHei",
-    fontSize: 10,
     color: "64748B",
     align: "center",
     margin: 0,
   });
 
-  addFooter(slide, "第二幕总汇报封面");
   return slide;
 }
 
@@ -439,13 +405,13 @@ function addAgendaSlide(pptx, slideDef) {
  */
 function addSectionSlide(pptx, slideDef) {
   const slide = pptx.addSlide();
-  addBaseChrome(slide, `${slideDef.indexLabel}｜问题过渡`);
+  addBaseChrome(slide, slideDef.indexLabel);
 
   slide.addShape("roundRect", {
     x: 0.9,
-    y: 1.75,
+    y: 1.55,
     w: 11.55,
-    h: 3.1,
+    h: 4.15,
     rectRadius: 0.08,
     line: { color: "DCE6F2", width: 1 },
     fill: { color: "FFFFFF" },
@@ -453,9 +419,9 @@ function addSectionSlide(pptx, slideDef) {
 
   slide.addShape("roundRect", {
     x: 1.15,
-    y: 2.15,
-    w: 1.25,
-    h: 0.78,
+    y: 2.0,
+    w: 1.55,
+    h: 0.9,
     rectRadius: 0.06,
     line: { color: "BBF7D0", width: 1 },
     fill: { color: "F0FDF4" },
@@ -463,11 +429,11 @@ function addSectionSlide(pptx, slideDef) {
 
   slide.addText(slideDef.indexLabel, {
     x: 1.15,
-    y: 2.33,
-    w: 1.25,
-    h: 0.26,
+    y: 2.22,
+    w: 1.55,
+    h: 0.3,
     fontFace: "Microsoft YaHei",
-    fontSize: 18,
+    fontSize: 19,
     bold: true,
     color: "166534",
     align: "center",
@@ -475,29 +441,19 @@ function addSectionSlide(pptx, slideDef) {
   });
 
   slide.addText(slideDef.title, {
-    x: 2.7,
-    y: 2.02,
-    w: 8.4,
-    h: 0.52,
+    x: 3.05,
+    y: 1.98,
+    w: 8.45,
+    h: 2.25,
     fontFace: "Microsoft YaHei",
-    fontSize: 24,
+    fontSize: 23,
     bold: true,
     color: "1E3C72",
     margin: 0,
+    valign: "mid",
   });
 
-  slide.addText(slideDef.description, {
-    x: 2.72,
-    y: 2.88,
-    w: 8.55,
-    h: 0.7,
-    fontFace: "Microsoft YaHei",
-    fontSize: 15,
-    color: "475569",
-    margin: 0,
-  });
-
-  addFooter(slide, `${slideDef.indexLabel} 过渡页`);
+  addFooter(slide, `${slideDef.indexLabel} 标题页`);
   return slide;
 }
 
@@ -508,10 +464,13 @@ function addSectionSlide(pptx, slideDef) {
 function addImageSlide(pptx, slideDef) {
   const slide = pptx.addSlide();
 
-  slide.background = { color: "111827" };
+  slide.background = { color: "FFFFFF" };
   slide.addImage({
     path: slideDef.imagePath,
-    ...imageSizingContain(slideDef.imagePath, 0, 0, 13.333, 7.5),
+    x: 0,
+    y: 0,
+    w: 13.333,
+    h: 7.5,
   });
 
   return slide;
