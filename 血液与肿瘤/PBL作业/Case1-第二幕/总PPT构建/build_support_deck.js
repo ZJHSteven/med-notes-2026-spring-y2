@@ -662,10 +662,10 @@ function addDiscussionSlide(pptx, slideDef) {
   slide.addText(slideDef.title, {
     x: 0.78,
     y: 1.18,
-    w: 4.9,
-    h: 0.42,
+    w: 7.15,
+    h: 0.7,
     fontFace: "Microsoft YaHei",
-    fontSize: 24,
+    fontSize: 22,
     bold: true,
     color: "1E3C72",
     margin: 0,
@@ -673,7 +673,7 @@ function addDiscussionSlide(pptx, slideDef) {
 
   slide.addText(slideDef.subtitle, {
     x: 0.8,
-    y: 1.66,
+    y: 1.9,
     w: 8.8,
     h: 0.28,
     fontFace: "Microsoft YaHei",
