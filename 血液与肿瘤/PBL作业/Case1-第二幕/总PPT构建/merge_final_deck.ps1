@@ -56,6 +56,42 @@ foreach ($property in $deckOrder.studentFiles.PSObject.Properties) {
 }
 
 <#
+如果目标总稿文件正在被 WPS / PowerPoint / VS Code 占用，就自动换一个“修订版”文件名继续输出。
+这样老师或同学在查看旧稿时，也不会阻塞新的总稿构建。
+#>
+function Get-WritableOutputPath {
+    param(
+        [Parameter(Mandatory = $true)] [string] $PreferredPath
+    )
+
+    if (-not (Test-Path -LiteralPath $PreferredPath)) {
+        return $PreferredPath
+    }
+
+    try {
+        $fileStream = [System.IO.File]::Open($PreferredPath, "Open", "ReadWrite", "None")
+        $fileStream.Close()
+        return $PreferredPath
+    }
+    catch [System.IO.IOException], [System.UnauthorizedAccessException] {
+        $directory = Split-Path -Parent $PreferredPath
+        $baseName = [System.IO.Path]::GetFileNameWithoutExtension($PreferredPath)
+        $extension = [System.IO.Path]::GetExtension($PreferredPath)
+        $fallbackIndex = 1
+
+        while ($true) {
+            $candidatePath = Join-Path $directory ("{0}-修订版{1}{2}" -f $baseName, $fallbackIndex, $extension)
+
+            if (-not (Test-Path -LiteralPath $candidatePath)) {
+                return $candidatePath
+            }
+
+            $fallbackIndex += 1
+        }
+    }
+}
+
+<#
 小工具函数：
 给当前总稿末尾插入指定文件的指定页范围。
 这里固定插到末尾，逻辑最直观，也最不容易算错偏移量。
@@ -87,9 +123,7 @@ $ppt = New-Object -ComObject PowerPoint.Application
 $ppt.Visible = $true
 
 try {
-    if (Test-Path -LiteralPath $finalDeckPath) {
-        Remove-Item -LiteralPath $finalDeckPath -Force
-    }
+    $finalDeckPath = Get-WritableOutputPath -PreferredPath $finalDeckPath
 
     $finalPresentation = $ppt.Presentations.Add($true)
 
