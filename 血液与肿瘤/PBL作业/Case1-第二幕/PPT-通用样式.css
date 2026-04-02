@@ -1,0 +1,188 @@
+/*
+ * 文件作用：
+ * 1. 为第二幕拆分后的单页 PPT HTML 提供统一的 16:9 画布、标题栏、正文区、页脚区样式。
+ * 2. 保持与“PPT-最终整合版.html”相同的视觉语言，避免拆分后风格跑偏。
+ * 3. 提供 step 动画、通用卡片、表格、引用标签等基础组件，方便每一页只关注内容布局。
+ *
+ * 设计取舍：
+ * - 这里保留了整合版的主色、留白和阴影系统，确保拆分页与总稿一致。
+ * - 只抽取本次单页文件真正用到的样式，不额外塞入无关组件，便于初学者阅读。
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333333;
+    user-select: none;
+    touch-action: none;
+}
+
+#presentation-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1920px;
+    height: 1080px;
+    transform-origin: center center;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-header {
+    height: 120px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.slide-content {
+    flex: 1;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.slide-footer {
+    height: 70px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 18px;
+}
+
+.footer-ref {
+    max-width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.highlight {
+    color: #1e3c72;
+    font-weight: 700;
+}
+
+.accent {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.box {
+    margin-bottom: 25px;
+    padding: 30px 40px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid #3b82f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.flex-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.academic-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.academic-table th,
+.academic-table td {
+    padding: 18px 24px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+.academic-table th {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.academic-table td {
+    color: #334155;
+    font-size: 24px;
+}
+
+.academic-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.ref-tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.step {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.step.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#controls-hint {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
