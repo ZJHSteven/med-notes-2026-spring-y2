@@ -22,6 +22,7 @@
 
     { "type": "support", "id": "section_q3", "label": "Q3 过渡页" },
     { "type": "support", "id": "image_q3", "label": "自制 Q3 图页" },
+    { "type": "support", "id": "discussion_q3_differential", "label": "Q3 鉴别诊断补充页" },
 
     { "type": "support", "id": "section_q4", "label": "Q4 过渡页" },
     { "type": "support", "id": "image_q4_1", "label": "自制 Q4-1 主线页" },
@@ -43,6 +44,7 @@
     { "type": "file", "fileKey": "qiao", "start": 2, "end": 2, "label": "乔智 - 幼稚白细胞镜下特征" },
 
     { "type": "support", "id": "section_q6", "label": "Q6 过渡页" },
+    { "type": "support", "id": "discussion_q6_risk", "label": "Q6 病因与高危因素补充页" },
     { "type": "file", "fileKey": "ye", "start": 3, "end": 3, "label": "叶潇潇 - 一级 / 二级预防" },
 
     { "type": "support", "id": "closing", "label": "结束页" }
