@@ -20,7 +20,7 @@ const PptxGenJS = require("pptxgenjs");
  */
 const ROOT_DIR = __dirname;
 const OUTPUT_DIR = path.join(ROOT_DIR, "output");
-const SUPPORT_DECK_PATH = path.join(OUTPUT_DIR, "第二幕总汇报-支持页.pptx");
+const SUPPORT_DECK_NAME = "第二幕总汇报-支持页.pptx";
 const MANIFEST_PATH = path.join(OUTPUT_DIR, "support_manifest.json");
 
 /**
@@ -149,6 +149,41 @@ const SUPPORT_SLIDES = [
     subtitle: "欢迎老师和同学继续提问讨论",
   },
 ];
+
+/**
+ * 如果目标文件被 WPS / PowerPoint / VS Code 预览占用，就自动换一个“修订版”文件名继续写。
+ * 这样不会因为旧稿还开着而让整套重建流程直接失败。
+ */
+function resolveWritableOutputPath(outputDir, fileName) {
+  const parsedPath = path.parse(fileName);
+  const primaryPath = path.join(outputDir, fileName);
+
+  try {
+    if (fs.existsSync(primaryPath)) {
+      const testFileHandle = fs.openSync(primaryPath, "r+");
+      fs.closeSync(testFileHandle);
+    }
+
+    return primaryPath;
+  } catch (error) {
+    if (!["EBUSY", "EPERM"].includes(error.code)) {
+      throw error;
+    }
+  }
+
+  let fallbackIndex = 1;
+
+  while (true) {
+    const fallbackName = `${parsedPath.name}-修订版${fallbackIndex}${parsedPath.ext}`;
+    const fallbackPath = path.join(outputDir, fallbackName);
+
+    if (!fs.existsSync(fallbackPath)) {
+      return fallbackPath;
+    }
+
+    fallbackIndex += 1;
+  }
+}
 
 /**
  * 统一的演示主题与尺寸。
@@ -580,6 +615,7 @@ function buildSlideByType(pptx, slideDef) {
  */
 async function main() {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  const supportDeckPath = resolveWritableOutputPath(OUTPUT_DIR, SUPPORT_DECK_NAME);
 
   Object.entries(SELF_SLIDE_IMAGES).forEach(([id, imagePath]) => {
     if (!fs.existsSync(imagePath)) {
@@ -589,7 +625,7 @@ async function main() {
 
   const pptx = createPresentation();
   const manifest = {
-    supportDeckPath: SUPPORT_DECK_PATH,
+    supportDeckPath,
     slides: {},
   };
 
@@ -598,10 +634,10 @@ async function main() {
     manifest.slides[slideDef.id] = index + 1;
   });
 
-  await pptx.writeFile({ fileName: SUPPORT_DECK_PATH });
+  await pptx.writeFile({ fileName: supportDeckPath });
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), "utf8");
 
-  console.log(`支持页 PPT 已生成：${SUPPORT_DECK_PATH}`);
+  console.log(`支持页 PPT 已生成：${supportDeckPath}`);
   console.log(`支持页清单已生成：${MANIFEST_PATH}`);
 }
 
