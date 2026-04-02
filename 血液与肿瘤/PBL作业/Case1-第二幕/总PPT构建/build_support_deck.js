@@ -81,6 +81,82 @@ const QUESTION_TITLES = {
 };
 
 /**
+ * 老师临时要求补入的两张“讨论提示页”。
+ * 这里不照搬 Word 大段正文，而是只保留课堂展示真正需要的短标题和关键词。
+ */
+const DISCUSSION_SLIDES = {
+  differential: {
+    id: "discussion_q3_differential",
+    type: "discussion",
+    headerText: "问题 3｜补充讨论",
+    title: "鉴别诊断",
+    subtitle: "具体鉴别点课上展开，这里只保留需要点到的对象。",
+    sections: [
+      {
+        label: "重点对象",
+        accentColor: "1D4ED8",
+        bgColor: "EFF6FF",
+        borderColor: "BFDBFE",
+        items: [
+          "其他原因引起的脾大",
+          "类白血病反应",
+          "骨髓纤维化",
+        ],
+      },
+      {
+        label: "课堂提示",
+        accentColor: "0F766E",
+        bgColor: "F0FDF4",
+        borderColor: "BBF7D0",
+        items: [
+          "结合脾大背景、血象和骨髓象讨论",
+          "重点回到 Ph 染色体 / BCR::ABL1 证据",
+          "必要时补充 NAP、JAK2 / CALR / MPL 等线索",
+        ],
+      },
+    ],
+    footerText: "补充页｜依据 Word 标注整理：鉴别诊断",
+  },
+  riskFactors: {
+    id: "discussion_q6_risk",
+    type: "discussion",
+    headerText: "问题 6｜补充讨论",
+    title: "病因、基本机制、诱因与高危因素",
+    subtitle: "不放长段解释，只保留课堂要展开的主轴。",
+    sections: [
+      {
+        label: "病因与基本机制",
+        accentColor: "DC2626",
+        bgColor: "FEF2F2",
+        borderColor: "FECACA",
+        items: [
+          "费城染色体 t(9;22)",
+          "BCR::ABL1 融合基因",
+          "持续活化酪氨酸激酶",
+          "髓系细胞异常增殖、抗凋亡",
+        ],
+      },
+      {
+        label: "诱因与高危因素",
+        accentColor: "7C3AED",
+        bgColor: "FAF5FF",
+        borderColor: "DDD6FE",
+        items: [
+          "生物因素",
+          "物理因素：电离辐射",
+          "化学因素：苯 / 有机溶剂等",
+          "遗传因素",
+          "其他血液病背景",
+          "年龄因素",
+          "性别因素",
+        ],
+      },
+    ],
+    footerText: "补充页｜依据 Word 标注整理：病因 / 基本机制 / 诱因 / 高危因素",
+  },
+};
+
+/**
  * 支持页顺序表。
  * id 用于后续 merge 脚本精确引用；title/subtitle/content 只服务于本次生成。
  */
@@ -121,6 +197,7 @@ const SUPPORT_SLIDES = [
     imagePath: SELF_SLIDE_IMAGES.q3,
     footerRef: SELF_IMAGE_FOOTERS.q3,
   },
+  DISCUSSION_SLIDES.differential,
   {
     id: "section_q4",
     type: "section",
@@ -163,6 +240,7 @@ const SUPPORT_SLIDES = [
     indexLabel: "问题 6",
     title: QUESTION_TITLES.q6,
   },
+  DISCUSSION_SLIDES.riskFactors,
   {
     id: "closing",
     type: "closing",
@@ -572,6 +650,97 @@ function addImageSlide(pptx, slideDef) {
 }
 
 /**
+ * 讨论提示页：
+ * - 只承载课堂上需要点到的主题词，不展开成长段文献摘要；
+ * - 用双卡片布局把“老师要求临时补的块”清楚塞进总稿；
+ * - 保持与当前总稿同一套蓝色标题带和浅底卡片风格。
+ */
+function addDiscussionSlide(pptx, slideDef) {
+  const slide = pptx.addSlide();
+  addBaseChrome(slide, slideDef.headerText);
+
+  slide.addText(slideDef.title, {
+    x: 0.78,
+    y: 1.18,
+    w: 4.9,
+    h: 0.42,
+    fontFace: "Microsoft YaHei",
+    fontSize: 24,
+    bold: true,
+    color: "1E3C72",
+    margin: 0,
+  });
+
+  slide.addText(slideDef.subtitle, {
+    x: 0.8,
+    y: 1.66,
+    w: 8.8,
+    h: 0.28,
+    fontFace: "Microsoft YaHei",
+    fontSize: 13,
+    color: "64748B",
+    margin: 0,
+  });
+
+  const cardPositions = [
+    { x: 0.82, y: 2.15, w: 5.85, h: 3.95 },
+    { x: 6.68, y: 2.15, w: 5.85, h: 3.95 },
+  ];
+
+  slideDef.sections.forEach((section, index) => {
+    const card = cardPositions[index];
+    const textLines = section.items.map((item) => ({ text: item, options: { bullet: true } }));
+
+    slide.addShape("roundRect", {
+      x: card.x,
+      y: card.y,
+      w: card.w,
+      h: card.h,
+      rectRadius: 0.05,
+      line: { color: section.borderColor, width: 1.1 },
+      fill: { color: section.bgColor },
+    });
+
+    slide.addText(section.label, {
+      x: card.x + 0.24,
+      y: card.y + 0.24,
+      w: card.w - 0.48,
+      h: 0.3,
+      fontFace: "Microsoft YaHei",
+      fontSize: 17,
+      bold: true,
+      color: section.accentColor,
+      margin: 0,
+    });
+
+    slide.addShape("line", {
+      x: card.x + 0.24,
+      y: card.y + 0.62,
+      w: card.w - 0.48,
+      h: 0,
+      line: { color: section.borderColor, width: 1 },
+    });
+
+    slide.addText(textLines, {
+      x: card.x + 0.28,
+      y: card.y + 0.84,
+      w: card.w - 0.56,
+      h: card.h - 1.08,
+      fontFace: "Microsoft YaHei",
+      fontSize: 18,
+      color: "334155",
+      breakLine: false,
+      margin: 0,
+      paraSpaceAfterPt: 10,
+      bullet: { indent: 14 },
+    });
+  });
+
+  addFooter(slide, slideDef.footerText);
+  return slide;
+}
+
+/**
  * 结束页：
  * - 让总稿有一个完整收束，而不是最后突然停在某个同学页。
  */
@@ -657,6 +826,10 @@ function buildSlideByType(pptx, slideDef) {
 
   if (slideDef.type === "image") {
     return addImageSlide(pptx, slideDef);
+  }
+
+  if (slideDef.type === "discussion") {
+    return addDiscussionSlide(pptx, slideDef);
   }
 
   if (slideDef.type === "closing") {
