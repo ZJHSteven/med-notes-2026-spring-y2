@@ -129,7 +129,13 @@ try {
     SaveAs 第二个参数用默认文件格式即可，目标扩展名是 .pptx。
     #>
     $finalPresentation.SaveAs($finalDeckPath)
-    $finalPresentation.Close()
+
+    try {
+        $finalPresentation.Close()
+    }
+    catch {
+        Write-Warning "总稿保存成功，但关闭演示文稿时出现警告：$($_.Exception.Message)"
+    }
 
     Write-Host ""
     Write-Host "总汇报 PPT 已生成：$finalDeckPath"
