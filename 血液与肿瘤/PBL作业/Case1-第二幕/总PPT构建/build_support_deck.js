@@ -13,7 +13,7 @@
 const fs = require("fs");
 const path = require("path");
 const PptxGenJS = require("pptxgenjs");
-const { imageSizingContain } = require("./pptxgenjs_helpers");
+const { imageSizingContain } = require("./pptxgenjs_helpers/image");
 
 /**
  * 统一路径根目录。
