@@ -13,6 +13,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const area = document.getElementById('presentation-area');
     const slide = document.querySelector('.slide');
+    const controlsHint = document.getElementById('controls-hint');
     const steps = slide ? Array.from(slide.querySelectorAll('.step')) : [];
     let currentStepIndex = -1;
 
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     const searchParams = new URLSearchParams(window.location.search);
     const presetStep = searchParams.get('step');
+    const isExportMode = searchParams.get('export') === '1';
 
     if (presetStep === 'all') {
         currentStepIndex = steps.length - 1;
@@ -35,7 +37,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /*
+     * 导出模式的目标是“让浏览器窗口本身就等于 PPT 画布”。
+     * 这样截图时直接截 viewport，就不会把外围深色背景、阴影和缩放留白一起带进去。
+     */
+    function applyExportLayout() {
+        if (!area) {
+            return;
+        }
+
+        document.documentElement.style.backgroundColor = '#ffffff';
+        document.body.style.backgroundColor = '#ffffff';
+        document.body.style.overflow = 'hidden';
+
+        area.style.position = 'fixed';
+        area.style.top = '0';
+        area.style.left = '0';
+        area.style.width = '1920px';
+        area.style.height = '1080px';
+        area.style.transform = 'none';
+        area.style.transformOrigin = 'top left';
+        area.style.boxShadow = 'none';
+
+        if (controlsHint) {
+            controlsHint.style.display = 'none';
+        }
+    }
+
     function resizePresentation() {
+        if (!area) {
+            return;
+        }
+
+        if (isExportMode) {
+            applyExportLayout();
+            return;
+        }
+
         const targetRatio = 16 / 9;
         const windowRatio = window.innerWidth / window.innerHeight;
         const scale = windowRatio > targetRatio
