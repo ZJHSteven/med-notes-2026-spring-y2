@@ -334,25 +334,49 @@
   </div>
 
   <script>
-    // 在 markmap 初步渲染后，附加对应的颜色样式以实现高亮
+    // 在 markmap 初步渲染后，附加对应的颜色样式以实现高亮，并消除原始的括号标记
     setInterval(() => {
         document.querySelectorAll('svg g').forEach(g => {
-            const textEl = g.querySelector('text');
-            if (textEl) {
+            // markmap 有时使用 text，有时使用 innerHTML (foreignObject)
+            const textEls = g.querySelectorAll('text');
+            textEls.forEach(textEl => {
                 const text = textEl.textContent;
-                if (text.includes('【红】')) {
-                    textEl.setAttribute('fill', '#e53e3e');
-                    textEl.style.fontWeight = 'bold';
-                } else if (text.includes('【橙】')) {
-                    textEl.setAttribute('fill', '#dd6b20');
-                } else if (text.includes('【蓝】')) {
-                    textEl.setAttribute('fill', '#3182ce');
-                } else if (text.includes('【灰】')) {
-                    textEl.setAttribute('fill', '#718096');
+                if (text.includes('【红】') || text.includes('【橙】') || text.includes('【蓝】') || text.includes('【灰】')) {
+                    if (text.includes('【红】')) {
+                        textEl.setAttribute('fill', '#e53e3e');
+                        textEl.style.fontWeight = 'bold';
+                    } else if (text.includes('【橙】')) {
+                        textEl.setAttribute('fill', '#dd6b20');
+                    } else if (text.includes('【蓝】')) {
+                        textEl.setAttribute('fill', '#3182ce');
+                    } else if (text.includes('【灰】')) {
+                        textEl.setAttribute('fill', '#718096');
+                    }
+                    // 剔除标记本身
+                    textEl.textContent = text.replace(/【红】|【橙】|【蓝】|【灰】/g, '');
                 }
-            }
+            });
+
+            // 如果后续更新了版本用到了 foreignObject
+            const htmlEls = g.querySelectorAll('div');
+            htmlEls.forEach(el => {
+                const html = el.innerHTML;
+                if (html.includes('【红】') || html.includes('【橙】') || html.includes('【蓝】') || html.includes('【灰】')) {
+                    if (html.includes('【红】')) {
+                        el.style.color = '#e53e3e';
+                        el.style.fontWeight = 'bold';
+                    } else if (html.includes('【橙】')) {
+                        el.style.color = '#dd6b20';
+                    } else if (html.includes('【蓝】')) {
+                        el.style.color = '#3182ce';
+                    } else if (html.includes('【灰】')) {
+                        el.style.color = '#718096';
+                    }
+                    el.innerHTML = html.replace(/【红】|【橙】|【蓝】|【灰】/g, '');
+                }
+            });
         });
-    }, 500); // 使用 setInterval 确保折叠/展开后也会重新着色
+    }, 100); // 缩短间隙，减少闪烁感
   </script>
 </body>
 </html>
