@@ -26,6 +26,34 @@
         font-size: 14px;
         line-height: 1.8;
     }
+    /* 第7分支：病例证据链悬浮卡片样式 */
+    .evidence-card {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        font-size: 13px;
+        max-width: 300px;
+        border-left: 4px solid #3182ce;
+    }
+    .evidence-card h3 {
+        margin-top: 0;
+        font-size: 15px;
+        color: #2d3748;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 8px;
+    }
+    .evidence-card ul {
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+    .evidence-card li {
+        margin-bottom: 6px;
+    }
     .markmap > svg {
       width: 100vw;
       height: 100vh;
@@ -36,6 +64,16 @@
   <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 </head>
 <body>
+  <!-- 第7分支：病例证据链总览 (独立于导图主干) -->
+  <div class="evidence-card">
+    <h3>病例证据链总览</h3>
+    <ul>
+      <li><b>第一幕：</b>长期乏力、腹胀、消瘦、肝脾大、胸骨压痛、异常血象、感染证据</li>
+      <li><b>第二幕：</b>胸水为炎性渗出液；血涂片与骨髓象高度提示 CML</li>
+      <li><b>第三幕：</b>Ph+、t(9;22)、BCR::ABL1（P210）+、流式异常髓系原始细胞 12.02%、最终诊断 CML 加速期</li>
+    </ul>
+  </div>
+
   <!-- 右下角图例 -->
   <div class="custom-toolbar">
     <b>节点图例</b><br>
@@ -323,13 +361,6 @@
   * 第一幕：从“肺炎/感染”思路转向“感染合并血液病可能”
   * 第二幕：通过胸水与骨髓形态学把方向推向 CML，并开始警惕加速期
   * 第三幕：通过细胞遗传学、分子生物学和流式，将诊断收束为“慢性髓性白血病（加速期）”
-
-## 7. 可选附加分支（建议做成角标或侧边小框，不做主干）
-
-* 病例证据链总览
-  * 第一幕：长期乏力、腹胀、消瘦、肝脾大、胸骨压痛、异常血象、感染证据
-  * 第二幕：胸水为炎性渗出液；血涂片与骨髓象高度提示 CML
-  * 第三幕：Ph+、t(9;22)、BCR::ABL1（P210）+、流式异常髓系原始细胞 12.02%、最终诊断 CML 加速期
     </script>
   </div>
 
