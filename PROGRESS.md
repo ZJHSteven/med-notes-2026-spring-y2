@@ -1,10 +1,10 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：`Case1-第三幕/ppt.html` 已成功导出为 1 个 4 页的宽屏 PPT，当前成品为 `血液与肿瘤/PBL作业/Case1-第三幕/Case1-第三幕-截图版.pptx`。
-- 已完成：已确认 `ppt.html` 内有 `4` 个 slide，内容对应“问题6 两页 + 问题1 两页”；已确认页面使用 `1600 x 900` 的 16:9 逻辑尺寸；已确认页面自带 `H` 键隐藏控件逻辑；已确认本机 `node`、`npm`、`npx` 可用；已在 `血液与肿瘤/PBL作业/Case1-第三幕/export_ppt/` 下新增 `package.json`、`package-lock.json`、`.gitignore` 与 `build_from_html.js`，实现本地 HTML 自动切页截图并写出宽屏 PPTX 的基础流程；已发现并修正初版脚本的切页缺陷：原页面把 `currentSlide` 定义为 `let` 局部变量，导致直接写 `window.currentSlide` 时 4 张截图会错误地重复为同一页，现已改为直接切换 `.slide` 的 `active/hidden` class；已生成 4 张源 PNG 截图并确认 SHA256 哈希各不相同；已用 PowerPoint COM 将最终 `pptx` 再导出为 4 张 `1600x900` PNG 做回归检查，确认页数正确、边缘采样颜色与源截图一致，没有黑边、没有翻页控件、没有额外留白。
-- 正在做：无。
-- 下一步：若后续继续修改 `ppt.html` 内容，可进入 `export_ppt/` 目录后重新执行 `npm run build` 直接重建成品。
+- 现状：第三幕截图版 PPT 已完成首轮导出，但用户指出第 3、4 页截图时机偏早，截到了淡入过渡中的中间态，同时清晰度还不够；当前正在修正导出脚本后重建高清版成品。
+- 已完成：已确认 `ppt.html` 内有 `4` 个 slide，内容对应“问题6 两页 + 问题1 两页”；已确认页面使用 `1600 x 900` 的 16:9 逻辑尺寸；已确认页面自带 `H` 键隐藏控件逻辑；已确认本机 `node`、`npm`、`npx` 可用；已在 `血液与肿瘤/PBL作业/Case1-第三幕/export_ppt/` 下新增 `package.json`、`package-lock.json`、`.gitignore` 与 `build_from_html.js`，实现本地 HTML 自动切页截图并写出宽屏 PPTX 的基础流程；已发现并修正初版脚本的切页缺陷：原页面把 `currentSlide` 定义为 `let` 局部变量，导致直接写 `window.currentSlide` 时 4 张截图会错误地重复为同一页，现已改为直接切换 `.slide` 的 `active/hidden` class；已进一步定位到“截到中间态”的直接原因是 `ppt.css` 中存在 `opacity 0.4s` 过渡，而旧脚本只等待 `80ms`；现已把脚本升级为“注入运行时样式禁用动画/过渡 + 等待字体与布局稳定 + 双 `requestAnimationFrame` + 额外等待 + `deviceScaleFactor=2` 高清截图”。
+- 正在做：重跑高清导出，并重新核对第 3、4 页是否仍有中间态、以及清晰度是否明显提升。
+- 下一步：完成重导出后再次用 PowerPoint 回导 PNG 校验页序、边缘和分辨率。
 
 ## 关键决策与理由（防止“吃书”）
 - 决策A：不直接人工截图，而是写自动化脚本逐页截图。（原因：这样可以稳定保证 4 页顺序、尺寸、隐藏控件与后续可复现。）
@@ -17,3 +17,4 @@
 - 坑2：如果不先隐藏控件，底部“上一页 / 下一页”会被一起截进图片。（复现：打开页面后直接截图，不按 `H` 或不通过脚本隐藏。）
 - 坑3：如果截图尺寸与 `1600 x 900` 不一致，放入 PPT 后容易出现轻微拉伸或边缘留白。（复现：使用非 16:9 比例截图并铺到宽屏 PPT。）
 - 坑4：如果页面内部用 `let currentSlide = 1` 管理页码，外部脚本直接写 `window.currentSlide = 2` 并不会真的切页。（复现：调用原页面 `updateSlides()` 前只修改 `window.currentSlide`，导出的 4 张图片会重复第一页。）
+- 坑5：如果页面有 `opacity` 或其他切页过渡，而导出脚本切页后只等待几十毫秒，就会截到“淡入一半”的中间帧。（复现：当前 `ppt.css` 中 `.slide` 带 `transition: opacity 0.4s ease;`，切页后过早截图即可重现。）

@@ -28,6 +28,7 @@ const PPTX_PATH = path.join(ROOT_DIR, "Case1-第三幕-截图版.pptx");
 const SLIDE_WIDTH_PX = 1600;
 const SLIDE_HEIGHT_PX = 900;
 const TOTAL_SLIDES = 4;
+const CAPTURE_SCALE = 2;
 
 /**
  * 确保目录存在。
@@ -58,6 +59,7 @@ async function preparePageForCapture(page) {
   await page.evaluate(() => {
     const controls = document.getElementById("controls");
     const screen = document.getElementById("screen");
+    const runtimeStyle = document.createElement("style");
 
     // 隐藏“上一页 / 下一页”控件，避免被截图。
     if (controls) {
@@ -68,7 +70,28 @@ async function preparePageForCapture(page) {
     if (screen) {
       screen.style.boxShadow = "none";
     }
+
+    // 导出时关闭所有动画和过渡，避免截到“淡入一半”的状态。
+    runtimeStyle.textContent = `
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+        caret-color: transparent !important;
+      }
+    `;
+    document.head.appendChild(runtimeStyle);
   });
+
+  // 等待字体与布局稳定，避免第三、四页在文本重排中被提前截取。
+  await page.waitForLoadState("networkidle");
+  await page.evaluate(async () => {
+    if (document.fonts && document.fonts.ready) {
+      await document.fonts.ready;
+    }
+  });
+  await page.waitForTimeout(300);
 }
 
 /**
@@ -103,8 +126,13 @@ async function switchToSlide(page, slideNumber) {
     }
   }, slideNumber);
 
-  // 等一帧，确保 CSS 过渡状态已经稳定。
-  await page.waitForTimeout(80);
+  // 等待浏览器完成两帧绘制，再额外等待一小段时间，确保布局完全稳定。
+  await page.evaluate(() => new Promise((resolve) => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(resolve);
+    });
+  }));
+  await page.waitForTimeout(500);
 }
 
 /**
@@ -122,7 +150,8 @@ async function captureSlides() {
       width: SLIDE_WIDTH_PX,
       height: SLIDE_HEIGHT_PX
     },
-    deviceScaleFactor: 1
+    // 提高清晰度：以 2 倍设备像素比截图，最终 PNG 会接近 3200x1800。
+    deviceScaleFactor: CAPTURE_SCALE
   });
 
   const htmlUrl = toFileUrl(HTML_PATH);
@@ -140,7 +169,8 @@ async function captureSlides() {
     const activeSlide = page.locator(".slide.active");
     await activeSlide.screenshot({
       path: outputImagePath,
-      type: "png"
+      type: "png",
+      scale: "device"
     });
 
     imagePaths.push(outputImagePath);
