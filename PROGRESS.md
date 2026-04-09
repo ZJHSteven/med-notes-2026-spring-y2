@@ -2,8 +2,8 @@
 
 ## 当前结论（必须最新）
 - 现状：当前正在处理 `Case1-第三幕/ppt.html` 到 `.pptx` 的导出任务，技术路线已落地为“Playwright 截取 `.slide.active` 元素 + PptxGenJS 整页铺图生成 PPTX”。
-- 已完成：已确认 `ppt.html` 内有 `4` 个 slide，内容对应“问题6 两页 + 问题1 两页”；已确认页面使用 `1600 x 900` 的 16:9 逻辑尺寸；已确认页面自带 `H` 键隐藏控件逻辑；已确认本机 `node`、`npm`、`npx` 可用；已在 `血液与肿瘤/PBL作业/Case1-第三幕/export_ppt/` 下新增 `package.json` 与 `build_from_html.js`，实现本地 HTML 自动切页截图并写出宽屏 PPTX 的基础流程。
-- 正在做：安装依赖并实际运行导出，随后做图片尺寸、黑边与页序检查。
+- 已完成：已确认 `ppt.html` 内有 `4` 个 slide，内容对应“问题6 两页 + 问题1 两页”；已确认页面使用 `1600 x 900` 的 16:9 逻辑尺寸；已确认页面自带 `H` 键隐藏控件逻辑；已确认本机 `node`、`npm`、`npx` 可用；已在 `血液与肿瘤/PBL作业/Case1-第三幕/export_ppt/` 下新增 `package.json` 与 `build_from_html.js`，实现本地 HTML 自动切页截图并写出宽屏 PPTX 的基础流程；已发现并修正初版脚本的切页缺陷：原页面把 `currentSlide` 定义为 `let` 局部变量，导致直接写 `window.currentSlide` 时 4 张截图会错误地重复为同一页，现已改为直接切换 `.slide` 的 `active/hidden` class。
+- 正在做：重跑导出，并重新检查页序、尺寸与是否存在黑边。
 - 下一步：输出 4 张无控件、无留白 PNG，并打包为 1 个 16:9 的 `pptx` 文件。
 
 ## 关键决策与理由（防止“吃书”）
