@@ -80,20 +80,27 @@ async function preparePageForCapture(page) {
  */
 async function switchToSlide(page, slideNumber) {
   await page.evaluate((targetSlideNumber) => {
-    // 复用页面原有的全局状态和更新函数，避免自己重写切页逻辑。
-    window.currentSlide = targetSlideNumber;
+    const previousButton = document.getElementById("prevBtn");
+    const nextButton = document.getElementById("nextBtn");
+    const slideElements = Array.from(document.querySelectorAll(".slide"));
 
-    if (typeof window.updateSlides === "function") {
-      window.updateSlides();
-      return;
-    }
-
-    // 兜底逻辑：如果未来页面脚本改了名字，仍然能按 class 切换显示状态。
+    // 这里直接控制 active / hidden class。
+    // 原页面把 currentSlide 定义成了 `let` 局部变量，外部无法通过 `window.currentSlide`
+    // 真正改动它，所以直接操作 DOM class 才是最稳定的导出方式。
     document.querySelectorAll(".slide").forEach((element, index) => {
       const isActive = index + 1 === targetSlideNumber;
       element.classList.toggle("active", isActive);
       element.classList.toggle("hidden", !isActive);
     });
+
+    // 按钮虽然不会被截进去，但一并同步禁用状态，便于后续人工打开页面时肉眼核对页序。
+    if (previousButton) {
+      previousButton.disabled = targetSlideNumber === 1;
+    }
+
+    if (nextButton) {
+      nextButton.disabled = targetSlideNumber === slideElements.length;
+    }
   }, slideNumber);
 
   // 等一帧，确保 CSS 过渡状态已经稳定。
