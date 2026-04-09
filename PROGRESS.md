@@ -2,7 +2,7 @@
 
 ## 当前结论（必须最新）
 - 现状：第三幕截图版 PPT 已完成首轮导出，但用户指出第 3、4 页截图时机偏早，截到了淡入过渡中的中间态，同时清晰度还不够；当前正在修正导出脚本后重建高清版成品。
-- 已完成：已确认 `ppt.html` 内有 `4` 个 slide，内容对应“问题6 两页 + 问题1 两页”；已确认页面使用 `1600 x 900` 的 16:9 逻辑尺寸；已确认页面自带 `H` 键隐藏控件逻辑；已确认本机 `node`、`npm`、`npx` 可用；已在 `血液与肿瘤/PBL作业/Case1-第三幕/export_ppt/` 下新增 `package.json`、`package-lock.json`、`.gitignore` 与 `build_from_html.js`，实现本地 HTML 自动切页截图并写出宽屏 PPTX 的基础流程；已发现并修正初版脚本的切页缺陷：原页面把 `currentSlide` 定义为 `let` 局部变量，导致直接写 `window.currentSlide` 时 4 张截图会错误地重复为同一页，现已改为直接切换 `.slide` 的 `active/hidden` class；已进一步定位到“截到中间态”的直接原因是 `ppt.css` 中存在 `opacity 0.4s` 过渡，而旧脚本只等待 `80ms`；现已把脚本升级为“注入运行时样式禁用动画/过渡 + 等待字体与布局稳定 + 双 `requestAnimationFrame` + 额外等待 + `deviceScaleFactor=2` 高清截图”。
+- 已完成：已确认 `ppt.html` 内有 `4` 个 slide，内容对应“问题6 两页 + 问题1 两页”；已确认页面使用 `1600 x 900` 的 16:9 逻辑尺寸；已确认页面自带 `H` 键隐藏控件逻辑；已确认本机 `node`、`npm`、`npx` 可用；已在 `血液与肿瘤/PBL作业/Case1-第三幕/export_ppt/` 下新增 `package.json`、`package-lock.json`、`.gitignore` 与 `build_from_html.js`，实现本地 HTML 自动切页截图并写出宽屏 PPTX 的基础流程；已发现并修正初版脚本的切页缺陷：原页面把 `currentSlide` 定义为 `let` 局部变量，导致直接写 `window.currentSlide` 时 4 张截图会错误地重复为同一页，现已改为直接切换 `.slide` 的 `active/hidden` class；已进一步定位到“截到中间态”的直接原因是 `ppt.css` 中存在 `opacity 0.4s` 过渡，而旧脚本只等待 `80ms`；现已把脚本升级为“注入运行时样式禁用动画/过渡 + 等待字体与布局稳定 + 双 `requestAnimationFrame` + 额外等待 + `deviceScaleFactor=2` 高清截图”；已确认新版源截图分辨率为 `3200x1800`；已补充输出文件兜底逻辑，默认写出“高清版”文件名，若目标文件被占用则自动顺延到“修订版N”，避免重建失败。
 - 正在做：重跑高清导出，并重新核对第 3、4 页是否仍有中间态、以及清晰度是否明显提升。
 - 下一步：完成重导出后再次用 PowerPoint 回导 PNG 校验页序、边缘和分辨率。
 

@@ -22,7 +22,7 @@ const ROOT_DIR = path.resolve(__dirname, "..");
 const HTML_PATH = path.join(ROOT_DIR, "ppt.html");
 const OUTPUT_DIR = path.join(__dirname, "output");
 const IMAGE_DIR = path.join(OUTPUT_DIR, "slides");
-const PPTX_PATH = path.join(ROOT_DIR, "Case1-第三幕-截图版.pptx");
+const PPTX_BASE_PATH = path.join(ROOT_DIR, "Case1-第三幕-截图版-高清版.pptx");
 
 // 原始 HTML 的逻辑尺寸就是 1600x900，因此截图和 PPT 都按这个比例走。
 const SLIDE_WIDTH_PX = 1600;
@@ -48,6 +48,53 @@ function ensureDir(dirPath) {
  */
 function toFileUrl(filePath) {
   return pathToFileURL(filePath).href;
+}
+
+/**
+ * 计算最终输出的 PPT 文件路径。
+ * 设计思路：
+ * - 默认输出到“高清版”文件名，避免覆盖旧版普通截图成品。
+ * - 如果目标文件正被占用，则自动顺延到“修订版N”，避免整次构建失败。
+ * 输入：无。
+ * 输出：一个当前可写入的 PPTX 绝对路径。
+ */
+function resolveWritablePptxPath() {
+  if (!fs.existsSync(PPTX_BASE_PATH)) {
+    return PPTX_BASE_PATH;
+  }
+
+  try {
+    const fd = fs.openSync(PPTX_BASE_PATH, "r+");
+    fs.closeSync(fd);
+    return PPTX_BASE_PATH;
+  } catch (error) {
+    if (!["EBUSY", "EPERM", "EACCES"].includes(error.code)) {
+      throw error;
+    }
+  }
+
+  const { dir, name, ext } = path.parse(PPTX_BASE_PATH);
+  let revisionNumber = 1;
+
+  while (true) {
+    const revisionPath = path.join(dir, `${name}-修订版${revisionNumber}${ext}`);
+
+    if (!fs.existsSync(revisionPath)) {
+      return revisionPath;
+    }
+
+    try {
+      const fd = fs.openSync(revisionPath, "r+");
+      fs.closeSync(fd);
+      return revisionPath;
+    } catch (error) {
+      if (!["EBUSY", "EPERM", "EACCES"].includes(error.code)) {
+        throw error;
+      }
+    }
+
+    revisionNumber += 1;
+  }
 }
 
 /**
@@ -187,6 +234,7 @@ async function captureSlides() {
  */
 async function buildPptx(imagePaths) {
   const pptx = new PptxGenJS();
+  const outputPptxPath = resolveWritablePptxPath();
 
   // `LAYOUT_WIDE` 是 PowerPoint 常用的宽屏 16:9 尺寸。
   pptx.layout = "LAYOUT_WIDE";
@@ -216,7 +264,8 @@ async function buildPptx(imagePaths) {
     });
   }
 
-  await pptx.writeFile({ fileName: PPTX_PATH });
+  await pptx.writeFile({ fileName: outputPptxPath });
+  return outputPptxPath;
 }
 
 /**
@@ -232,10 +281,10 @@ async function main() {
   }
 
   const imagePaths = await captureSlides();
-  await buildPptx(imagePaths);
+  const outputPptxPath = await buildPptx(imagePaths);
 
   console.log(`截图目录：${IMAGE_DIR}`);
-  console.log(`PPT 输出：${PPTX_PATH}`);
+  console.log(`PPT 输出：${outputPptxPath}`);
 }
 
 main().catch((error) => {
