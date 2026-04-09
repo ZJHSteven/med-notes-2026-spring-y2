@@ -1,0 +1,14 @@
+{
+  "name": "case1-third-act-ppt-export",
+  "version": "1.0.0",
+  "private": true,
+  "description": "将 Case1 第三幕的本地 HTML 幻灯片截图并封装为 PPTX",
+  "scripts": {
+    "build": "node build_from_html.js",
+    "install:browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1",
+    "pptxgenjs": "^4.0.1"
+  }
+}
