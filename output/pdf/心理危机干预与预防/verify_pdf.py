@@ -15,19 +15,19 @@
 - pillow：做简单像素统计，判断页面不是空白。
 
 推荐运行：
-uv run --with pypdf --with pymupdf --with pillow python output/pdf/心理危机干预与预防/verify_pdf.py
+uv run --with pymupdf --with pillow python output/pdf/心理危机干预与预防/verify_pdf.py
 """
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 import re
 import sys
 
 import fitz  # PyMuPDF
-from PIL import Image, ImageStat
-from pypdf import PdfReader
+from PIL import Image
 
 
 PDF_PATH = Path("output/pdf/心理危机干预与预防/心理危机干预与预防-开卷考试速查版.pdf")
@@ -59,11 +59,11 @@ def assert_true(condition: bool, message: str) -> None:
         raise AssertionError(message)
 
 
-def extract_text(reader: PdfReader, page_numbers: range) -> str:
+def extract_text(document: fitz.Document, page_numbers: range) -> str:
     """提取指定页范围的文字。
 
     参数：
-    - reader：已经打开的 PDF；
+    - document：已经打开的 PDF；
     - page_numbers：0 基页码范围。
 
     返回：
@@ -72,9 +72,9 @@ def extract_text(reader: PdfReader, page_numbers: range) -> str:
 
     parts: list[str] = []
     for page_number in page_numbers:
-        if page_number >= len(reader.pages):
+        if page_number >= document.page_count:
             break
-        parts.append(reader.pages[page_number].extract_text() or "")
+        parts.append(document.load_page(page_number).get_text() or "")
     return "\n".join(parts)
 
 
@@ -112,7 +112,7 @@ def band_non_white_ratio(image: Image.Image, top_ratio: float, bottom_ratio: flo
     return count_non_white_ratio(band)
 
 
-def render_pages(pdf_path: Path, sample_pages: list[int]) -> list[RenderCheck]:
+def render_pages(pdf_path: Path, sample_pages: list[int], render_dir: Path) -> list[RenderCheck]:
     """渲染抽样页并做基础像素检查。
 
     参数：
@@ -120,14 +120,14 @@ def render_pages(pdf_path: Path, sample_pages: list[int]) -> list[RenderCheck]:
     - sample_pages：1 基页码列表，更符合人类读 PDF 的习惯。
     """
 
-    RENDER_DIR.mkdir(parents=True, exist_ok=True)
+    render_dir.mkdir(parents=True, exist_ok=True)
     checks: list[RenderCheck] = []
 
     with fitz.open(pdf_path) as document:
         for page_number in sample_pages:
             page = document.load_page(page_number - 1)
             pixmap = page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False)
-            image_path = RENDER_DIR / f"page-{page_number:03d}.png"
+            image_path = render_dir / f"page-{page_number:03d}.png"
             pixmap.save(image_path)
 
             image = Image.open(image_path)
@@ -150,30 +150,64 @@ def render_pages(pdf_path: Path, sample_pages: list[int]) -> list[RenderCheck]:
     return checks
 
 
+def parse_args() -> argparse.Namespace:
+    """解析验证参数，让同一脚本可验证合订本和考试提纲。"""
+
+    parser = argparse.ArgumentParser(description="验证心理危机 PDF 排版产物")
+    parser.add_argument("--pdf", type=Path, default=PDF_PATH, help="需要验证的 PDF 路径")
+    parser.add_argument("--render-dir", type=Path, default=RENDER_DIR, help="抽样渲染 PNG 输出目录")
+    parser.add_argument("--min-pages", type=int, default=1, help="允许的最小页数")
+    parser.add_argument("--max-pages", type=int, default=200, help="允许的最大页数")
+    parser.add_argument("--expect", action="append", default=[], help="PDF 文本中必须出现的普通文本")
+    parser.add_argument("--expect-regex", action="append", default=[], help="PDF 文本中必须匹配的正则")
+    parser.add_argument("--sample-page", action="append", type=int, default=[], help="需要渲染抽查的 1 基页码")
+    return parser.parse_args()
+
+
+def default_sample_pages(page_count: int) -> list[int]:
+    """根据页数生成默认抽样页。
+
+    抽样覆盖：
+    - 首页/目录页；
+    - 正文开头附近；
+    - 中间页；
+    - 末页。
+    """
+
+    candidates = [1, 2, min(12, page_count), min(13, page_count), max(1, page_count // 2), page_count]
+    result: list[int] = []
+    for page in candidates:
+        if 1 <= page <= page_count and page not in result:
+            result.append(page)
+    return result
+
+
 def main() -> int:
     """执行全部验证并打印摘要。"""
 
-    assert_true(PDF_PATH.exists(), f"PDF 不存在：{PDF_PATH}")
+    args = parse_args()
+    pdf_path: Path = args.pdf
+    assert_true(pdf_path.exists(), f"PDF 不存在：{pdf_path}")
 
-    reader = PdfReader(str(PDF_PATH))
-    page_count = len(reader.pages)
-    assert_true(80 <= page_count <= 140, f"页数异常：{page_count}")
+    document = fitz.open(pdf_path)
+    page_count = document.page_count
+    assert_true(args.min_pages <= page_count <= args.max_pages, f"页数异常：{page_count}")
 
-    toc_text = extract_text(reader, range(0, min(14, page_count)))
-    all_text = extract_text(reader, range(0, page_count))
+    front_text = extract_text(document, range(0, min(14, page_count)))
+    all_text = extract_text(document, range(0, page_count))
 
-    assert_true("打印速查目录" in toc_text, "目录标题未出现在前 14 页")
-    assert_true("第1讲：心理危机导论" in toc_text, "目录缺少第1讲入口")
-    assert_true("第7讲：心理问题的客观存在" in toc_text, "目录缺少第7讲入口")
-    assert_true(bool(re.search(r"第1讲：心理危机导论\\s+13", toc_text)), "目录中第1讲页码不是预期的第 13 页")
-    assert_true(bool(re.search(r"第7讲：心理问题的客观存在.*\\s+103", toc_text, re.S)), "目录中第7讲页码不是预期的第 103 页")
+    assert_true("目录" in front_text, "目录未出现在前 14 页")
+    for expected_text in args.expect:
+        assert_true(expected_text in all_text, f"PDF 缺少期望文本：{expected_text}")
+    for expected_regex in args.expect_regex:
+        assert_true(bool(re.search(expected_regex, all_text, re.S)), f"PDF 未匹配期望正则：{expected_regex}")
 
     forbidden_markers = ("resourcemap", "DOMAIN-SUFFIX", "dialer-proxy", "password:")
     for marker in forbidden_markers:
         assert_true(marker not in all_text, f"PDF 仍包含非课程残留标记：{marker}")
 
-    sample_pages = [1, 2, 12, 13, 40, 80, 103, page_count]
-    render_checks = render_pages(PDF_PATH, sample_pages)
+    sample_pages = args.sample_page or default_sample_pages(page_count)
+    render_checks = render_pages(pdf_path, sample_pages, args.render_dir)
     for check in render_checks:
         assert_true(check.width > 500 and check.height > 700, f"第 {check.page_number} 页渲染尺寸异常")
         assert_true(check.non_white_ratio > 0.005, f"第 {check.page_number} 页疑似空白")
@@ -181,8 +215,8 @@ def main() -> int:
             assert_true(check.header_non_white_ratio > 0.0005, f"第 {check.page_number} 页页眉区域疑似为空")
             assert_true(check.footer_non_white_ratio > 0.0003, f"第 {check.page_number} 页页脚区域疑似为空")
 
-    print(f"验证通过：共 {page_count} 页。")
-    print("目录检查：已检测到第1讲、第7讲和对应页码。")
+    print(f"验证通过：{pdf_path}，共 {page_count} 页。")
+    print("目录检查：前置目录存在。")
     print("安全检查：未检测到非课程配置残留标记。")
     print("渲染检查：已输出抽样 PNG：")
     for check in render_checks:
