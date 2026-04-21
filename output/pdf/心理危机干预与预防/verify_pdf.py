@@ -86,13 +86,10 @@ def count_non_white_ratio(image: Image.Image) -> float:
     - 正常文字页会通过。
     """
 
-    rgb = image.convert("RGB")
-    pixels = rgb.getdata()
-    non_white = 0
-    total = rgb.width * rgb.height
-    for r, g, b in pixels:
-        if r < 245 or g < 245 or b < 245:
-            non_white += 1
+    gray = image.convert("L")
+    histogram = gray.histogram()
+    non_white = sum(histogram[:245])
+    total = gray.width * gray.height
     return non_white / total
 
 
