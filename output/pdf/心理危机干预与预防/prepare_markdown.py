@@ -32,6 +32,18 @@ NOTE_FILES: list[tuple[str, str]] = [
 ]
 
 
+# 原始第 1 讲尾部混入过非课程内容。这里不修改原始笔记，
+# 只在合订本生成阶段发现这些标记后停止读取当前文件的剩余内容。
+# 这样可以避免把与考试无关的配置片段或敏感字段打印进 PDF。
+NON_COURSE_TAIL_MARKERS: tuple[str, ...] = (
+    "你把后半段转写继续发来",
+    "resourcemap.lol/sub?",
+    "DOMAIN-SUFFIX",
+    "dialer-proxy",
+    "Clash Verge Rev",
+)
+
+
 def normalize_heading_line(line: str, is_first_heading: bool) -> str | None:
     """整理单行标题。
 
@@ -106,6 +118,16 @@ def build_combined_markdown(repo_root: Path) -> str:
 
         seen_first_heading = False
         for raw_line in source.read_text(encoding="utf-8-sig").splitlines():
+            if any(marker in raw_line for marker in NON_COURSE_TAIL_MARKERS):
+                chunks.extend(
+                    [
+                        "",
+                        "> 排版备注：原始笔记此处之后检测到非课程内容残留，合订本已自动略去。",
+                        "",
+                    ]
+                )
+                break
+
             is_heading = raw_line.lstrip().startswith("#")
             cleaned = normalize_heading_line(raw_line, is_first_heading=is_heading and not seen_first_heading)
 

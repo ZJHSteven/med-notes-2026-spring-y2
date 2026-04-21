@@ -6,7 +6,7 @@
 % 4. 每页要有页眉和页码；
 % 5. 目录必须显示真实页码，方便打印后查找。
 
-\usepackage[a4paper,left=12mm,right=12mm,top=13mm,bottom=14mm,headheight=10pt,headsep=3mm,footskip=8mm,includeheadfoot]{geometry}
+\usepackage[a4paper,left=12mm,right=12mm,top=13mm,bottom=14mm,headheight=11pt,headsep=3mm,footskip=8mm,includeheadfoot]{geometry}
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -23,6 +23,7 @@
 \setCJKmonofont{Microsoft YaHei}
 
 % 正文字号和行距：9pt + 1.03 倍行距，适合近距离打印阅读。
+\AtBeginDocument{\fontsize{9}{10.5}\selectfont}
 \linespread{1.03}
 \setlength{\parindent}{1.4em}
 \setlength{\parskip}{0.12em}
