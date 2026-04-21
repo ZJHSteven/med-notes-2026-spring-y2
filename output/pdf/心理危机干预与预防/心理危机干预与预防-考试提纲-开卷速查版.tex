@@ -1,0 +1,1027 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  a4paper,
+]{ctexart}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% 这个文件是 Pandoc 生成 LaTeX 时注入的排版头文件。
+% 目标不是做“论文式漂亮排版”，而是做“纸质开卷考试速查排版”：
+% 1. 字体要清楚；
+% 2. 页数要尽量少；
+% 3. 标题、列表、段落的间距要紧凑；
+% 4. 每页要有页眉和页码；
+% 5. 目录必须显示真实页码，方便打印后查找。
+
+\usepackage[a4paper,left=12mm,right=12mm,top=13mm,bottom=14mm,headheight=11pt,headsep=3mm,footskip=8mm,includeheadfoot]{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+
+% 中文字体：ctexart 在 Windows/XeLaTeX 下会自动使用系统中文字体。
+% 这里不强行写死字体文件，避免不同机器字体名略有差异导致编译失败。
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Consolas}
+\setCJKmainfont{SimSun}[AutoFakeBold=2.5]
+\setCJKsansfont{Microsoft YaHei}[AutoFakeBold=2.0]
+\setCJKmonofont{Microsoft YaHei}
+
+% 正文字号和行距：9pt + 1.03 倍行距，适合近距离打印阅读。
+\AtBeginDocument{\fontsize{9}{10.5}\selectfont}
+\linespread{1.03}
+\setlength{\parindent}{1.4em}
+\setlength{\parskip}{0.12em}
+
+% 列表是 Markdown 笔记最占页数的部分，所以这里显著压缩列表上下间距。
+\setlist{nosep,leftmargin=1.6em,itemsep=0.04em,topsep=0.08em,parsep=0pt,partopsep=0pt}
+\setlist[enumerate]{labelsep=0.45em}
+\setlist[itemize]{labelsep=0.45em}
+
+% 标题间距：保证能一眼看出层级，但不浪费大片空白。
+\titleformat{\section}{\large\bfseries\sffamily}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries\sffamily}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\small\bfseries\sffamily}{\thesubsubsection}{0.6em}{}
+\titleformat{\paragraph}{\small\bfseries}{\theparagraph}{0.6em}{}
+\titlespacing*{\section}{0pt}{0.7em}{0.32em}
+\titlespacing*{\subsection}{0pt}{0.45em}{0.18em}
+\titlespacing*{\subsubsection}{0pt}{0.32em}{0.12em}
+\titlespacing*{\paragraph}{0pt}{0.22em}{0.6em}
+
+% 避免标题孤零零落在页底，减少打印时的断裂感。
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{3\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{2\baselineskip}}{}{}
+
+% 页眉页脚：页眉左侧显示当前章节，右侧显示课程名；页脚居中显示页码。
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyhead[R]{\small 心理危机干预与预防}
+\fancyfoot[C]{\small 第 \thepage 页}
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 目录压缩：保留真实页码，同时减少目录本身占用页数。
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{打印速查目录}
+\setlength{\cftbeforesecskip}{0.08em}
+\setlength{\cftbeforesubsecskip}{0.02em}
+\setlength{\cftbeforesubsubsecskip}{0pt}
+\renewcommand{\cftsecfont}{\small\bfseries}
+\renewcommand{\cftsubsecfont}{\footnotesize}
+\renewcommand{\cftsubsubsecfont}{\scriptsize}
+\renewcommand{\cftparafont}{\scriptsize}
+\renewcommand{\cftsecpagefont}{\small\bfseries}
+\renewcommand{\cftsubsecpagefont}{\footnotesize}
+\renewcommand{\cftsubsubsecpagefont}{\scriptsize}
+\renewcommand{\cftparapagefont}{\scriptsize}
+
+% 让表格和代码块尽量不要把正文撑得过宽。
+\setlength{\emergencystretch}{3em}
+\sloppy
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={心理危机干预与预防考试提纲开卷速查版},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{心理危机干预与预防考试提纲开卷速查版}
+\author{}
+\date{2026-04-21}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{4}
+\tableofcontents
+}
+好，我直接给你压成一版\textbf{可用于开卷考试的总提纲}。我按``\textbf{先能答题，再细翻正文}''的思路整理：把故事、案例细节尽量压缩，只保留容易出题的概念、框架、分类、标准和论述题答法。考试要求是\textbf{开卷、只能带纸质资料、不能带电子设备}，这一点在你的笔记里老师也明确说了。
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{《心理危机干预与预防》开卷考试总提纲（压缩版）}\label{ux5fc3ux7406ux5371ux673aux5e72ux9884ux4e0eux9884ux9632ux5f00ux5377ux8003ux8bd5ux603bux63d0ux7eb2ux538bux7f29ux7248}
+
+\subsection{一、先背这几个最高频核心定义}\label{ux4e00ux5148ux80ccux8fd9ux51e0ux4e2aux6700ux9ad8ux9891ux6838ux5fc3ux5b9aux4e49}
+
+\subsubsection{1.
+心理危机的定义}\label{ux5fc3ux7406ux5371ux673aux7684ux5b9aux4e49}
+
+\textbf{心理危机}：个体面临突然的或重大的生活困境，\textbf{无法用既有方式解决}，从而出现\textbf{心理失衡}的状态。最简答法可以写成：
+
+\begin{quote}
+重大事件出现后，原有应对方式失效，个体在情绪、认知、躯体、行为等方面出现严重反应，并且自己缓不过来。
+\end{quote}
+
+\subsubsection{2.
+判断心理危机的三条标准}\label{ux5224ux65adux5fc3ux7406ux5371ux673aux7684ux4e09ux6761ux6807ux51c6}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{有重大事件 / 生活事件}
+\item
+  \textbf{有严重反应}：情绪、认知、身体、行为反应
+\item
+  \textbf{原有应对方式无效，不能有效自我缓解}
+\end{enumerate}
+
+\subsubsection{3.
+危机干预的定义}\label{ux5371ux673aux5e72ux9884ux7684ux5b9aux4e49}
+
+\textbf{危机干预}：属于广义心理治疗，运用心理治疗手段帮助危机中的当事人处理迫在眉睫的问题、恢复心理平衡、安全度过危机并重新适应生活。最早由\textbf{Caplan
+于 1954 年}提出。
+
+\subsubsection{4.
+危机干预的两个主要目的}\label{ux5371ux673aux5e72ux9884ux7684ux4e24ux4e2aux4e3bux8981ux76eeux7684}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{避免自伤或伤人}
+\item
+  \textbf{恢复心理平衡与心理动力}，让人重新运转起来。
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{二、最容易考的大框架}\label{ux4e8cux6700ux5bb9ux6613ux8003ux7684ux5927ux6846ux67b6}
+
+\subsubsection{1.
+危机的两个含义}\label{ux5371ux673aux7684ux4e24ux4e2aux542bux4e49}
+
+一是\textbf{突发事件本身}；二是\textbf{人遭遇事件后的紧张失衡状态}。
+
+\subsubsection{2. 危机的类型}\label{ux5371ux673aux7684ux7c7bux578b}
+
+按刺激来源分三类：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{发展性危机}：成长阶段转换引起，常规、可预期
+\item
+  \textbf{境遇性危机}：外部突发事件引起，如地震、疾病、战争
+\item
+  \textbf{存在性危机}：围绕人生意义、责任、自由、独立等产生的冲突与焦虑。
+\end{enumerate}
+
+\subsubsection{3.
+危机按进程分类}\label{ux5371ux673aux6309ux8fdbux7a0bux5206ux7c7b}
+
+\textbf{急性危机、慢性危机、混合性危机。}
+
+\subsubsection{4.
+危机后的四个阶段}\label{ux5371ux673aux540eux7684ux56dbux4e2aux9636ux6bb5}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{冲击期}：震惊、惊慌失措
+\item
+  \textbf{防御期}：否认、合理化等防御机制出现
+\item
+  \textbf{解决期}：开始找资源、解决问题
+\item
+  \textbf{成长期}：部分人会成长，但不是人人都会成长。
+\end{enumerate}
+
+\subsubsection{5.
+心理危机干预的分类}\label{ux5fc3ux7406ux5371ux673aux5e72ux9884ux7684ux5206ux7c7b}
+
+\textbf{预防性干预、治疗性干预、补救性干预。}老师还提到目前很多干预仍偏补救，预防性干预不够。
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{三、第二讲到第四讲：心理危机``为什么会发生''}\label{ux4e09ux7b2cux4e8cux8bb2ux5230ux7b2cux56dbux8bb2ux5fc3ux7406ux5371ux673aux4e3aux4ec0ux4e48ux4f1aux53d1ux751f}
+
+这一块特别适合考\textbf{简答题 / 论述题}。
+
+\subsubsection{1.
+总模型：生物---心理---社会医学模式}\label{ux603bux6a21ux578bux751fux7269ux5fc3ux7406ux793eux4f1aux533bux5b66ux6a21ux5f0f}
+
+心理危机不是单一原因造成，而是\textbf{生物/生理因素 + 心理因素 +
+社会文化因素}共同作用。
+
+\subsubsection{2.
+生物/生理因素}\label{ux751fux7269ux751fux7406ux56e0ux7d20}
+
+可写：
+
+\begin{itemize}
+\tightlist
+\item
+  遗传、气质、敏感性、冲动性差异
+\item
+  光照与季节变化影响情绪
+\item
+  \textbf{季节性情感障碍
+  SAD}：冬季情绪低落、嗜睡、爱吃碳水、体重增加，高纬度地区更常见。
+\end{itemize}
+
+\subsubsection{3. 心理因素}\label{ux5fc3ux7406ux56e0ux7d20}
+
+高频点直接背：
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{完美主义}，尤其是高自我批评
+\item
+  \textbf{冲动性}与情绪调节失调
+\item
+  \textbf{反刍性思维}
+\item
+  \textbf{失调的认知图式}：对自我、他人、世界的负性模板
+\item
+  \textbf{问题解决能力不足}
+\item
+  \textbf{对自身解决问题缺乏信心}。
+\end{itemize}
+
+\subsubsection{4.
+社会/文化/现实因素}\label{ux793eux4f1aux6587ux5316ux73b0ux5b9eux56e0ux7d20}
+
+\begin{itemize}
+\tightlist
+\item
+  经济压力、学业压力、就业压力、人际冲突
+\item
+  家庭环境、成长环境
+\item
+  社会文化会影响人怎么理解灾难和恢复
+\item
+  人是``\textbf{系统中的人}''，不能只怪个体本身。
+\end{itemize}
+
+\subsubsection{5.
+两种危机来源模型}\label{ux4e24ux79cdux5371ux673aux6765ux6e90ux6a21ux578b}
+
+这个很适合老师出理解题：
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{巨石模型}：突如其来的重大灾难
+\item
+  \textbf{鞋里沙子模型}：日常小压力长期积累、不断摩擦。
+\end{itemize}
+
+\subsubsection{6.
+成瘾行为背后的危机}\label{ux6210ux763eux884cux4e3aux80ccux540eux7684ux5371ux673a}
+
+老师的核心观点不是``成瘾本身''，而是：
+
+\begin{quote}
+酒精成瘾、手机成瘾等常常只是表面，背后可能掩盖情绪冲突、家庭矛盾和长期心理危机。
+单纯``戒行为''常常治标不治本。
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{四、依恋与创伤：很像论述题考点}\label{ux56dbux4f9dux604bux4e0eux521bux4f24ux5f88ux50cfux8bbaux8ff0ux9898ux8003ux70b9}
+
+\subsubsection{1. 依恋的定义}\label{ux4f9dux604bux7684ux5b9aux4e49}
+
+依恋是出生后与\textbf{重要抚养者}建立起来的情感连接，是\textbf{安全感}和\textbf{基本信任}的基础。
+
+\subsubsection{2. 0～1
+岁的重要任务}\label{ux5c81ux7684ux91cdux8981ux4efbux52a1}
+
+建立\textbf{信任感}。如果照料及时、稳定，孩子更容易形成：
+
+\begin{itemize}
+\tightlist
+\item
+  世界是安全的
+\item
+  我是可爱的
+\item
+  我是有能力的。
+\end{itemize}
+
+\subsubsection{3.
+依恋创伤为什么重要}\label{ux4f9dux604bux521bux4f24ux4e3aux4ec0ux4e48ux91cdux8981}
+
+很多危机不只是``眼前这件事''，而是旧的依恋创伤被激活了。比如失恋后极端崩溃，常常不只是因为分手本身，还因为唤醒了早年被拒绝、被抛弃体验。
+
+\subsubsection{4.
+依恋系统被激活后的矛盾}\label{ux4f9dux604bux7cfbux7edfux88abux6fc0ux6d3bux540eux7684ux77dbux76fe}
+
+创伤会让人\textbf{更渴求关系}，同时又可能\textbf{更不信任关系}。这就使人既想求助，又害怕靠近别人。
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{五、ASD、PTSD、自杀：这部分基本必考}\label{ux4e94asdptsdux81eaux6740ux8fd9ux90e8ux5206ux57faux672cux5fc5ux8003}
+
+\subsection{1. 急性应激障碍
+ASD}\label{ux6025ux6027ux5e94ux6fc0ux969cux788d-asd}
+
+\subsubsection{定义}\label{ux5b9aux4e49}
+
+强烈应激事件后，\textbf{数分钟到数小时内出现急性应激反应}，病程\textbf{3天以上，不超过1个月}。
+最关键病程标准就是：
+
+\begin{quote}
+\textbf{3天以上，不超过1个月。}
+\end{quote}
+
+\subsubsection{常见应激事件}\label{ux5e38ux89c1ux5e94ux6fc0ux4e8bux4ef6}
+
+交通事故、亲人死亡、袭击、强奸、虐待、自然灾害、战争、恐怖袭击、重大公共卫生事件等。
+
+\subsubsection{主要表现}\label{ux4e3bux8981ux8868ux73b0}
+
+\begin{itemize}
+\tightlist
+\item
+  意识范围狭窄、意识清晰度下降
+\item
+  闯入性再体验
+\item
+  精神运动性抑制或兴奋。
+\end{itemize}
+
+\subsection{2. PTSD}\label{ptsd}
+
+\subsubsection{核心诊断思路}\label{ux6838ux5fc3ux8bcaux65adux601dux8def}
+
+\begin{itemize}
+\tightlist
+\item
+  必须有创伤暴露
+\item
+  侵入性症状
+\item
+  回避
+\item
+  认知和心境负性改变
+\item
+  警觉性和反应性改变
+\item
+  \textbf{病程超过1个月}
+\item
+  社会功能受损
+\item
+  排除酒药或躯体因素。
+\end{itemize}
+
+\subsubsection{ASD 与 PTSD
+的最简区别}\label{asd-ux4e0e-ptsd-ux7684ux6700ux7b80ux533aux522b}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{ASD：3天～1个月}
+\item
+  \textbf{PTSD：超过1个月}。
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{3.
+自杀部分：最容易出题的点}\label{ux81eaux6740ux90e8ux5206ux6700ux5bb9ux6613ux51faux9898ux7684ux70b9}
+
+\subsubsection{自杀不是单独疾病}\label{ux81eaux6740ux4e0dux662fux5355ux72ecux75beux75c5}
+
+\textbf{自杀不是精神病诊断系统中的单独疾病诊断}，但会出现在许多精神障碍中，所以社会意义重大，单独讨论。
+
+\subsubsection{自杀相关概念辨析}\label{ux81eaux6740ux76f8ux5173ux6982ux5ff5ux8fa8ux6790}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{自杀意念}：有想死念头，但还没转化为行为
+\item
+  \textbf{自杀计划}：已想好时间、地点、方式
+\item
+  \textbf{自伤行为}：如割腕
+\item
+  \textbf{自杀未遂}：已实施但未死亡
+\item
+  \textbf{自杀企图}：就是自杀未遂的另一种说法
+\item
+  \textbf{自杀死亡}：最终死亡。
+\end{enumerate}
+
+\subsubsection{特殊概念}\label{ux7279ux6b8aux6982ux5ff5}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{扩大性自杀}：先杀家人再自杀
+\item
+  \textbf{间接自杀 / 曲线自杀}：通过杀人等方式借法律惩罚实现死亡目的。
+\end{itemize}
+
+\subsubsection{自杀先兆表现}\label{ux81eaux6740ux5148ux5146ux8868ux73b0}
+
+\paragraph{高危线索}\label{ux9ad8ux5371ux7ebfux7d22}
+
+\begin{itemize}
+\tightlist
+\item
+  最近自杀过
+\item
+  有明确计划
+\item
+  家庭中刚有人自杀
+\item
+  近期重大失落
+\item
+  对生活失去兴趣
+\item
+  无助、绝望
+\item
+  饮酒吸毒突然增多
+\item
+  生活习惯突变
+\item
+  把珍贵物品送人
+\item
+  经常谈到死亡。
+\end{itemize}
+
+\paragraph{言语线索}\label{ux8a00ux8bedux7ebfux7d22}
+
+直接：
+
+\begin{itemize}
+\tightlist
+\item
+  ``我不想活了''
+\item
+  ``我想自杀''
+\end{itemize}
+
+间接：
+
+\begin{itemize}
+\tightlist
+\item
+  ``没人能帮我''
+\item
+  ``没有我大家会更好''
+\item
+  ``生活没意义''
+\item
+  ``我受不了了''。
+\end{itemize}
+
+\paragraph{行为线索}\label{ux884cux4e3aux7ebfux7d22}
+
+\begin{itemize}
+\tightlist
+\item
+  严重抑郁
+\item
+  行为突然改变
+\item
+  白日梦增多
+\item
+  幻觉出现等。
+\end{itemize}
+
+\subsubsection{老师特别纠正的误区}\label{ux8001ux5e08ux7279ux522bux7ea0ux6b63ux7684ux8befux533a}
+
+\begin{itemize}
+\tightlist
+\item
+  ``有自杀想法的人就是精神病''------错
+\item
+  ``不能和有自杀念头的人谈自杀''------错，恰恰要适当沟通评估风险
+\item
+  ``危机缓解就没事了''------错，需要持续干预。
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{六、危机干预怎么做：答题万能框架}\label{ux516dux5371ux673aux5e72ux9884ux600eux4e48ux505aux7b54ux9898ux4e07ux80fdux6846ux67b6}
+
+\subsubsection{1. 总原则}\label{ux603bux539fux5219}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{生命安全第一}
+\item
+  \textbf{保障安全}
+\item
+  \textbf{聚焦当前问题}，不是先深挖人格
+\item
+  \textbf{激活资源}
+\item
+  \textbf{建立关系}。
+\end{enumerate}
+
+\subsubsection{2.
+法律伦理问题}\label{ux6cd5ux5f8bux4f26ux7406ux95eeux9898}
+
+\subsubsection{保密原则不是绝对的}\label{ux4fddux5bc6ux539fux5219ux4e0dux662fux7eddux5bf9ux7684}
+
+以下情况要突破保密：
+
+\begin{itemize}
+\tightlist
+\item
+  明确自杀计划 / 高自杀风险
+\item
+  明确要伤害他人
+\item
+  涉及违法犯罪
+\item
+  未成年人正遭受家庭暴力或其他侵害。
+\end{itemize}
+
+\subsubsection{伦理重点}\label{ux4f26ux7406ux91cdux70b9}
+
+\begin{itemize}
+\tightlist
+\item
+  信息保密
+\item
+  \textbf{最小披露}
+\item
+  避免\textbf{双重关系}。
+\end{itemize}
+
+\subsubsection{3.
+危机干预三个阶段}\label{ux5371ux673aux5e72ux9884ux4e09ux4e2aux9636ux6bb5}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{危机评估}：重点评估自杀风险和攻击他人风险
+\item
+  \textbf{行动干预}：高风险时立即通知家长/辅导员、监护、保护起来
+\item
+  \textbf{心理干预与后续治疗}：稳定情绪、解决现实问题、训练应对技巧。
+\end{enumerate}
+
+\subsubsection{4.
+创伤/危机干预三阶段模型}\label{ux521bux4f24ux5371ux673aux5e72ux9884ux4e09ux9636ux6bb5ux6a21ux578b}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{稳定化}：先安定、先止血
+\item
+  \textbf{处理创伤}：有节奏地处理，不能粗暴推进
+\item
+  \textbf{重建意义}：重新整合经历。
+\end{enumerate}
+
+\subsubsection{5.
+什么时候开始干预}\label{ux4ec0ux4e48ux65f6ux5019ux5f00ux59cbux5e72ux9884}
+
+老师明确说\textbf{不是越早越好}。灾难刚发生时先满足食物、水、帐篷、救援等安全生存需要；心理干预一般可在\textbf{24～48小时左右}开始，也可能更晚。
+
+\subsubsection{6.
+危机干预的基本技巧}\label{ux5371ux673aux5e72ux9884ux7684ux57faux672cux6280ux5de7}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{倾听}：言语倾听 + 非言语倾听
+\item
+  \textbf{共情}：站在对方位置理解，不等于同情
+\item
+  还包括情感反应、具体化、资源利用、稳定化等。
+\end{itemize}
+
+\subsubsection{7. 安全措施}\label{ux5b89ux5168ux63aaux65bd}
+
+\begin{itemize}
+\tightlist
+\item
+  远离药品、刀具、危险地点
+\item
+  必要时监护、送医
+\item
+  可签\textbf{不伤害协议}。
+\end{itemize}
+
+\subsubsection{8.
+危机中的典型反应}\label{ux5371ux673aux4e2dux7684ux5178ux578bux53cdux5e94}
+
+\paragraph{认知反应}\label{ux8ba4ux77e5ux53cdux5e94}
+
+否认、注意力不集中、失去信心、内疚自责，最突出的是\textbf{认知变窄}：只看见困难，看不见其他路。
+
+\paragraph{情绪反应}\label{ux60c5ux7eeaux53cdux5e94}
+
+害怕、悲伤、绝望、无助、羞耻、易怒、情绪失调。
+
+\paragraph{行为反应}\label{ux884cux4e3aux53cdux5e94}
+
+攻击、退缩、逃避、哭泣、饮酒增加、药物增加、坐立不安、过度警觉。
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{七、第六讲：学生心理危机三级预防，这里特别像简答题}\label{ux4e03ux7b2cux516dux8bb2ux5b66ux751fux5fc3ux7406ux5371ux673aux4e09ux7ea7ux9884ux9632ux8fd9ux91ccux7279ux522bux50cfux7b80ux7b54ux9898}
+
+\subsubsection{1.
+三级预防定义}\label{ux4e09ux7ea7ux9884ux9632ux5b9aux4e49}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{一级预防}：消除病因或减少致病因素，防患于未然
+\item
+  \textbf{二级预防}：三早------早发现、早诊断、早治疗
+\item
+  \textbf{三级预防}：康复与防复发，减少长期功能损害。
+\end{enumerate}
+
+\subsubsection{2.
+社会层面防自杀共识}\label{ux793eux4f1aux5c42ux9762ux9632ux81eaux6740ux5171ux8bc6}
+
+\begin{itemize}
+\tightlist
+\item
+  减少获取自杀手段的机会
+\item
+  积极治疗精神障碍患者
+\item
+  对自杀未遂者持续随访
+\item
+  媒体要负责任报道，防止模仿效应
+\item
+  培训基层卫生保健人员。
+\end{itemize}
+
+\subsubsection{3.
+七类学生高风险对象}\label{ux4e03ux7c7bux5b66ux751fux9ad8ux98ceux9669ux5bf9ux8c61}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  有家族史者
+\item
+  有既往史者
+\item
+  单亲家庭学生
+\item
+  经济困难学生
+\item
+  存在人格脆弱者：内向、敏感、脆弱、完美主义等
+\item
+  遭遇应激事件者
+\item
+  已出现精神症状者。
+\end{enumerate}
+
+\subsubsection{4.
+高发时间、年级、场所}\label{ux9ad8ux53d1ux65f6ux95f4ux5e74ux7ea7ux573aux6240}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{高发时间}：春夏之交、秋冬之交
+\item
+  \textbf{高发年级}：新生适应期多，但临近毕业年级更重
+\item
+  \textbf{高发场所}：宿舍楼、教学楼等高层建筑，跳楼常见。
+\end{itemize}
+
+\subsubsection{5.
+学校特色活动}\label{ux5b66ux6821ux7279ux8272ux6d3bux52a8}
+
+\paragraph{内观认知疗法}\label{ux5185ux89c2ux8ba4ux77e5ux7597ux6cd5}
+
+\begin{itemize}
+\tightlist
+\item
+  60 多期，2600 多人参加
+\item
+  对 300 多名学生统计，总有效率约 \textbf{82.5\%}
+\item
+  核心作用：感恩、体谅、改变认知方式。
+\end{itemize}
+
+\paragraph{森田疗法}\label{ux68eeux7530ux7597ux6cd5}
+
+\begin{itemize}
+\tightlist
+\item
+  创立者：\textbf{森田正马}
+\item
+  时间：\textbf{1919年}
+\item
+  核心：\textbf{接纳客观、为所当为、顺其自然}
+\item
+  适用于神经症、失眠、适应障碍、应激障碍、抑郁症等。
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{八、胡鑫宇案例：案例题基本答法}\label{ux516bux80e1ux946bux5b87ux6848ux4f8bux6848ux4f8bux9898ux57faux672cux7b54ux6cd5}
+
+这类案例你不要背时间线，重点背``\textbf{分析结构}''。
+
+\subsubsection{1. 个人因素}\label{ux4e2aux4ebaux56e0ux7d20}
+
+\begin{itemize}
+\tightlist
+\item
+  内向、孤僻、压抑
+\item
+  不适应新环境
+\item
+  睡眠障碍
+\item
+  高期待与高落差
+\item
+  负性认知、自责、自我否定
+\item
+  心身症状
+\item
+  轻生意念。
+\end{itemize}
+
+\subsubsection{2. 家庭因素}\label{ux5bb6ux5eadux56e0ux7d20}
+
+\begin{itemize}
+\tightlist
+\item
+  家长是第一道防线
+\item
+  但家长把求助信号当成``娇气''\,``意志不坚定''
+\item
+  经济压力、期待压力、名校光环加剧危机。
+\end{itemize}
+
+\subsubsection{3.
+学校/教师因素}\label{ux5b66ux6821ux6559ux5e08ux56e0ux7d20}
+
+\begin{itemize}
+\tightlist
+\item
+  过度关注成绩，忽视心理状态
+\item
+  对异常行为识别不足
+\item
+  危机识别和转介缺失。
+\end{itemize}
+
+\subsubsection{4. 同伴因素}\label{ux540cux4f34ux56e0ux7d20}
+
+\begin{itemize}
+\tightlist
+\item
+  同伴未能有效识别、承接、上报。
+\end{itemize}
+
+\subsubsection{5.
+本人应对因素}\label{ux672cux4ebaux5e94ux5bf9ux56e0ux7d20}
+
+\begin{itemize}
+\tightlist
+\item
+  退避型应对
+\item
+  不愿麻烦别人
+\item
+  缺乏主动求助。
+\end{itemize}
+
+\subsubsection{6.
+引出的理论点}\label{ux5f15ux51faux7684ux7406ux8bbaux70b9}
+
+\begin{itemize}
+\tightlist
+\item
+  生命意义教育
+\item
+  \textbf{Karen Horney：被爱的渴求}
+\item
+  缺乏稳定的爱和支持，容易形成不安全感与绝望感。
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{九、第七讲：最后这节容易考``理解题''}\label{ux4e5dux7b2cux4e03ux8bb2ux6700ux540eux8fd9ux8282ux5bb9ux6613ux8003ux7406ux89e3ux9898}
+
+\subsubsection{1.
+心理问题的客观存在}\label{ux5fc3ux7406ux95eeux9898ux7684ux5ba2ux89c2ux5b58ux5728}
+
+心理问题\textbf{看不见、摸不着，但客观存在}，不是讲道理就能立刻改变。
+
+\subsubsection{2. 内在批评者}\label{ux5185ux5728ux6279ux8bc4ux8005}
+
+有人一道题不会做就崩溃，不只是题难，而是内在有个持续批评自己的声音。老师用这个例子说明心理问题真实存在且能主导行为。
+
+\subsubsection{3.
+心理问题的三个特点（老师自己的总结）}\label{ux5fc3ux7406ux95eeux9898ux7684ux4e09ux4e2aux7279ux70b9ux8001ux5e08ux81eaux5df1ux7684ux603bux7ed3}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{主观性}：每个人痛苦方式不同
+\item
+  \textbf{必然性}：不是某件偶然小事``凭空制造''出来的，内在模式会寻找出口
+\item
+  \textbf{主导性}：越和它缠斗、越对抗，问题可能越厉害。
+\end{enumerate}
+
+\subsubsection{4.
+老师的理解重点}\label{ux8001ux5e08ux7684ux7406ux89e3ux91cdux70b9}
+
+\begin{itemize}
+\tightlist
+\item
+  痛苦未必主要来自当前外部环境
+\item
+  即使换环境，内在模式不变也可能继续痛苦
+\item
+  不要过度追求一切可控，要学会接受不确定性。
+\end{itemize}
+
+\subsubsection{5.
+最后的人生建议类考点}\label{ux6700ux540eux7684ux4ebaux751fux5efaux8baeux7c7bux8003ux70b9}
+
+老师还讲到：真正适合的事情，往往是即使没有报酬、没有肯定、暂时没结果，你仍愿意做、做着开心的事。这个更像理解题或开放题。
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{十、考场上最好用的``万能论述模板''}\label{ux5341ux8003ux573aux4e0aux6700ux597dux7528ux7684ux4e07ux80fdux8bbaux8ff0ux6a21ux677f}
+
+遇到任何案例题，几乎都可以这么写：
+
+\subsubsection{模板一：分析某学生为何出现心理危机}\label{ux6a21ux677fux4e00ux5206ux6790ux67d0ux5b66ux751fux4e3aux4f55ux51faux73b0ux5fc3ux7406ux5371ux673a}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{事件诱因}：列出重大应激事件
+\item
+  \textbf{个体易感因素}：人格、完美主义、冲动性、认知图式、既往史
+\item
+  \textbf{家庭因素}：支持不足、沟通差、依恋创伤
+\item
+  \textbf{学校与同伴因素}：识别不足、支持缺失、转介不及时
+\item
+  \textbf{危机表现}：情绪、认知、躯体、行为
+\item
+  \textbf{系统视角总结}：这是生物---心理---社会多因素共同作用结果。
+\end{enumerate}
+
+\subsubsection{模板二：写如何干预}\label{ux6a21ux677fux4e8cux5199ux5982ux4f55ux5e72ux9884}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{生命安全第一，先评估风险}
+\item
+  \textbf{必要时突破保密原则}
+\item
+  \textbf{行动干预}：通知家长、辅导员、监护、送医、限制危险工具
+\item
+  \textbf{心理干预}：倾听、共情、稳定情绪、聚焦现实问题
+\item
+  \textbf{激活资源}：家庭、学校、同伴、社会资源
+\item
+  \textbf{后续跟踪}：康复、防复发、培养应对技巧。
+\end{enumerate}
+
+\subsubsection{模板三：写预防}\label{ux6a21ux677fux4e09ux5199ux9884ux9632}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{一级预防}：健康教育、课程宣传、减少危险因素
+\item
+  \textbf{二级预防}：早发现、早诊断、早治疗
+\item
+  \textbf{三级预防}：康复、防复发
+\item
+  \textbf{重点人群管理}
+\item
+  \textbf{高发时段和高发场所防控}。
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{十一、最后给你一个``纸质速查索引''}\label{ux5341ux4e00ux6700ux540eux7ed9ux4f60ux4e00ux4e2aux7eb8ux8d28ux901fux67e5ux7d22ux5f15}
+
+\subsubsection{最该带在最前面的只有这 1
+页}\label{ux6700ux8be5ux5e26ux5728ux6700ux524dux9762ux7684ux53eaux6709ux8fd9-1-ux9875}
+
+你真上考场，最值钱的是这几条：
+
+\begin{itemize}
+\tightlist
+\item
+  心理危机定义
+\item
+  三条标准
+\item
+  危机类型
+\item
+  危机四阶段
+\item
+  危机干预定义、两个目的
+\item
+  保密例外
+\item
+  自杀相关概念
+\item
+  自杀先兆
+\item
+  ASD/PTSD 区别
+\item
+  三级预防
+\item
+  七类高危人群
+\item
+  案例题万能模板。
+\end{itemize}
+
+\subsubsection{需要细翻时看哪份笔记}\label{ux9700ux8981ux7ec6ux7ffbux65f6ux770bux54eaux4efdux7b14ux8bb0}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{定义、标准、危机干预起源与目的} → 第1讲
+\item
+  \textbf{常见原因、生物心理社会模型、成瘾、SAD} → 第2讲
+\item
+  \textbf{危机类型、四阶段、ASD/PTSD、自杀概念} → 第3讲\\
+\item
+  \textbf{依恋、创伤、倾听共情、干预时机} → 第4讲\\
+\item
+  \textbf{法律伦理、树理论、危机干预三阶段、安全措施} → 第5讲\\
+\item
+  \textbf{三级预防、高危人群、胡鑫宇、内观、森田} → 第6讲\\
+\item
+  \textbf{心理问题的客观存在、主观性/必然性/主导性} → 第7讲
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+如果你愿意，我下一条直接把这份内容再压成\textbf{``两页A4可打印版''}，做成更像真正小抄/速查表的格式。
+
+\end{document}
