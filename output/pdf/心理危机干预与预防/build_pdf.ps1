@@ -12,6 +12,11 @@ $BuildDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 # 仓库根目录：从 output/pdf/心理危机干预与预防 向上回到项目根目录。
 $RepoRoot = Resolve-Path (Join-Path $BuildDir "..\..\..")
 
+# XeLaTeX 对 Windows 中文路径偶尔会乱码。为了避免“找不到 .tex 文件”，
+# 真正编译时统一放到 ASCII 临时目录；编译成功后再把 PDF 复制回中文输出目录。
+$TempBuildDir = Join-Path $RepoRoot "tmp\pdfs\psych-crisis"
+New-Item -ItemType Directory -Force -Path $TempBuildDir | Out-Null
+
 # TinyTeX 没有进入 PATH 时，显式把用户已经安装好的 XeLaTeX 目录加入本次进程 PATH。
 $TinyTexBin = "D:\App\TinyTeX\bin\windows"
 if (Test-Path (Join-Path $TinyTexBin "xelatex.exe")) {
@@ -20,7 +25,9 @@ if (Test-Path (Join-Path $TinyTexBin "xelatex.exe")) {
 
 # 输出文件统一放在本目录，便于后续提交与查找。
 $CombinedMarkdown = Join-Path $BuildDir "心理危机干预与预防-合并稿.md"
-$TexFile = Join-Path $BuildDir "心理危机干预与预防-开卷考试速查版.tex"
+$TempMarkdown = Join-Path $TempBuildDir "combined.md"
+$TempTexFile = Join-Path $TempBuildDir "exam.tex"
+$TempPdfFile = Join-Path $TempBuildDir "exam.pdf"
 $PdfFile = Join-Path $BuildDir "心理危机干预与预防-开卷考试速查版.pdf"
 
 # 生成合并 Markdown。这个步骤会清理每讲的顶层标题，让目录更像考试索引。
@@ -28,9 +35,12 @@ python (Join-Path $BuildDir "prepare_markdown.py") `
     --repo-root $RepoRoot `
     --output $CombinedMarkdown
 
+# 同一份合并稿复制到 ASCII 临时目录，供 Pandoc/XeLaTeX 编译使用。
+Copy-Item -LiteralPath $CombinedMarkdown -Destination $TempMarkdown -Force
+
 # Pandoc 只负责把 Markdown 转为 LaTeX，不直接出 PDF。
 # 这样如果 XeLaTeX 报错，可以直接检查 .tex 和 .log，排错更清楚。
-pandoc $CombinedMarkdown `
+pandoc $TempMarkdown `
     --from markdown+smart+pipe_tables+tex_math_dollars `
     --to latex `
     --standalone `
@@ -44,11 +54,21 @@ pandoc $CombinedMarkdown `
     --variable fontsize=9pt `
     --variable colorlinks=false `
     --include-in-header (Join-Path $BuildDir "pandoc-header.tex") `
-    --output $TexFile
+    --output $TempTexFile
 
 # XeLaTeX 至少编译两遍，第一遍生成目录辅助文件，第二遍把目录页码写准。
-xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BuildDir $TexFile
-xelatex -interaction=nonstopmode -halt-on-error -output-directory=$BuildDir $TexFile
+Push-Location $TempBuildDir
+try {
+    xelatex -interaction=nonstopmode -halt-on-error exam.tex
+    xelatex -interaction=nonstopmode -halt-on-error exam.tex
+}
+finally {
+    Pop-Location
+}
+
+if (Test-Path $TempPdfFile) {
+    Copy-Item -LiteralPath $TempPdfFile -Destination $PdfFile -Force
+}
 
 if (-not (Test-Path $PdfFile)) {
     throw "PDF 没有生成：$PdfFile"
