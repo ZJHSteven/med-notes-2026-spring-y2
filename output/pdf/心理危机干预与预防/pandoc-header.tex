@@ -1,0 +1,76 @@
+% 这个文件是 Pandoc 生成 LaTeX 时注入的排版头文件。
+% 目标不是做“论文式漂亮排版”，而是做“纸质开卷考试速查排版”：
+% 1. 字体要清楚；
+% 2. 页数要尽量少；
+% 3. 标题、列表、段落的间距要紧凑；
+% 4. 每页要有页眉和页码；
+% 5. 目录必须显示真实页码，方便打印后查找。
+
+\usepackage[a4paper,left=12mm,right=12mm,top=13mm,bottom=14mm,headheight=10pt,headsep=3mm,footskip=8mm,includeheadfoot]{geometry}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+
+% 中文字体：ctexart 在 Windows/XeLaTeX 下会自动使用系统中文字体。
+% 这里不强行写死字体文件，避免不同机器字体名略有差异导致编译失败。
+\setCJKmainfont{SimSun}[AutoFakeBold=2.5]
+\setCJKsansfont{Microsoft YaHei}[AutoFakeBold=2.0]
+\setCJKmonofont{Microsoft YaHei}
+
+% 正文字号和行距：9pt + 1.03 倍行距，适合近距离打印阅读。
+\linespread{1.03}
+\setlength{\parindent}{1.4em}
+\setlength{\parskip}{0.12em}
+
+% 列表是 Markdown 笔记最占页数的部分，所以这里显著压缩列表上下间距。
+\setlist{nosep,leftmargin=1.6em,itemsep=0.04em,topsep=0.08em,parsep=0pt,partopsep=0pt}
+\setlist[enumerate]{labelsep=0.45em}
+\setlist[itemize]{labelsep=0.45em}
+
+% 标题间距：保证能一眼看出层级，但不浪费大片空白。
+\titleformat{\section}{\large\bfseries\sffamily}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries\sffamily}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\small\bfseries\sffamily}{\thesubsubsection}{0.6em}{}
+\titleformat{\paragraph}{\small\bfseries}{\theparagraph}{0.6em}{}
+\titlespacing*{\section}{0pt}{0.7em}{0.32em}
+\titlespacing*{\subsection}{0pt}{0.45em}{0.18em}
+\titlespacing*{\subsubsection}{0pt}{0.32em}{0.12em}
+\titlespacing*{\paragraph}{0pt}{0.22em}{0.6em}
+
+% 避免标题孤零零落在页底，减少打印时的断裂感。
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{3\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{2\baselineskip}}{}{}
+
+% 页眉页脚：页眉左侧显示当前章节，右侧显示课程名；页脚居中显示页码。
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyhead[R]{\small 心理危机干预与预防}
+\fancyfoot[C]{\small 第 \thepage 页}
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 目录压缩：保留真实页码，同时减少目录本身占用页数。
+\setcounter{tocdepth}{4}
+\renewcommand{\contentsname}{打印速查目录}
+\setlength{\cftbeforesecskip}{0.08em}
+\setlength{\cftbeforesubsecskip}{0.02em}
+\setlength{\cftbeforesubsubsecskip}{0pt}
+\renewcommand{\cftsecfont}{\small\bfseries}
+\renewcommand{\cftsubsecfont}{\footnotesize}
+\renewcommand{\cftsubsubsecfont}{\scriptsize}
+\renewcommand{\cftparafont}{\scriptsize}
+\renewcommand{\cftsecpagefont}{\small\bfseries}
+\renewcommand{\cftsubsecpagefont}{\footnotesize}
+\renewcommand{\cftsubsubsecpagefont}{\scriptsize}
+\renewcommand{\cftparapagefont}{\scriptsize}
+
+% 让表格和代码块尽量不要把正文撑得过宽。
+\setlength{\emergencystretch}{3em}
+\sloppy
