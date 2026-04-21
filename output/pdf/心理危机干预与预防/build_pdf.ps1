@@ -51,7 +51,6 @@ pandoc $TempMarkdown `
     --metadata date="2026-04-21" `
     --variable documentclass=ctexart `
     --variable papersize=a4 `
-    --variable fontsize=9pt `
     --variable colorlinks=false `
     --include-in-header (Join-Path $BuildDir "pandoc-header.tex") `
     --output $TempTexFile
