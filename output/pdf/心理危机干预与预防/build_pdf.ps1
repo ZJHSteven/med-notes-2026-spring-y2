@@ -55,9 +55,10 @@ pandoc $TempMarkdown `
     --include-in-header (Join-Path $BuildDir "pandoc-header.tex") `
     --output $TempTexFile
 
-# XeLaTeX 至少编译两遍，第一遍生成目录辅助文件，第二遍把目录页码写准。
+# XeLaTeX 编译三遍：复杂目录在第二遍后仍可能提示页码变化，第三遍用于收敛。
 Push-Location $TempBuildDir
 try {
+    xelatex -interaction=nonstopmode -halt-on-error exam.tex
     xelatex -interaction=nonstopmode -halt-on-error exam.tex
     xelatex -interaction=nonstopmode -halt-on-error exam.tex
 }

@@ -50,6 +50,7 @@ Push-Location $TempBuildDir
 try {
     xelatex -interaction=nonstopmode -halt-on-error outline.tex
     xelatex -interaction=nonstopmode -halt-on-error outline.tex
+    xelatex -interaction=nonstopmode -halt-on-error outline.tex
 }
 finally {
     Pop-Location
