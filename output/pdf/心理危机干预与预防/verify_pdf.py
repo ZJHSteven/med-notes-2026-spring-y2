@@ -211,7 +211,7 @@ def main() -> int:
     for check in render_checks:
         assert_true(check.width > 500 and check.height > 700, f"第 {check.page_number} 页渲染尺寸异常")
         assert_true(check.non_white_ratio > 0.005, f"第 {check.page_number} 页疑似空白")
-        if check.page_number >= 13:
+        if check.page_number >= 2:
             assert_true(check.header_non_white_ratio > 0.0005, f"第 {check.page_number} 页页眉区域疑似为空")
             assert_true(check.footer_non_white_ratio > 0.0003, f"第 {check.page_number} 页页脚区域疑似为空")
 
