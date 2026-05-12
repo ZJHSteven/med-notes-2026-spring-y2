@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PBL作业 - Case1 问题6 报告</title>
+    <link rel="stylesheet" href="ppt.css">
+</head>
+
+<body>
+
+    <div id="screen">
+
+        <!-- SLIDE 1 -->
+        <div class="slide active" id="slide-1">
+            <header>
+                <h1>问题6：CML 最新治疗进展如何？</h1>
+                <div class="header-badge">第一部分：研究设计与文献剖析</div>
+            </header>
+
+            <div class="slide-content">
+                <!-- Column 1: Background -->
+                <div class="card">
+                    <div class="card-title">研究背景与未满足需求</div>
+                    <div class="card-content">
+                        <div class="highlight-box">
+                            当前 CML 治疗已迈入高度“个体化”阶段，针对多线 TKI 失败伴复杂耐药的临床痛点极为显著。
+                        </div>
+                        <p style="margin-bottom: 20px;">
+                            尽管 <b>Ponatinib</b> 和 <b>Asciminib</b> 为 T315I 等耐药突变提供了手段，但前者伴随心脏与动脉闭塞风险，后者覆盖 T315I
+                            突变需高剂量且对复合突变疗效受限。
+                        </p>
+                        <div>
+                            <span class="tag">多中心随机</span>
+                            <span class="tag">1b 期临床试验</span>
+                            <span class="tag">JAMA Oncology, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Specific Study Details -->
+                <div class="card">
+                    <div class="card-title">纳入人群与研究方案</div>
+                    <div class="card-content">
+                        <ul class="custom-bullets">
+                            <li><b>核心文献：</b><br>Olverembatinib (奥雷巴替尼) After Failure of Tyrosine Kinase Inhibitors...
+                            </li>
+                            <li><b>研究对象：</b>对至少 <b>2种 TKI 耐药或不耐受</b>的 CML 或 Ph+ALL 成人患者（涉及 Asciminib/Ponatinib 失败者）。
+                            </li>
+                            <li><b>核心干预：</b>随机分配至 <b>30 mg</b>、<b>40 mg</b> 或 <b>50 mg</b> Olverembatinib，隔日一次（28天一周期）。
+                            </li>
+                            <li><b>关键桥接：</b>评估全球非中国人群 PK，为 III 期确定剂量。主要终点为药代动力学（PK）。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3: PK & Safety Data (Highly data dense) -->
+                <div class="card">
+                    <div class="card-title">药代动力学(PK)与安全性分析</div>
+                    <div class="card-content">
+                        <div class="data-row">
+                            <span class="data-label">吸收达峰时间 (Tmax)</span>
+                            <span class="data-val">4.0–6.0 小时 (较慢)</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">终末消除半衰期</span>
+                            <span class="data-val">约 20 小时 ("隔日可用")</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">TRAEs发生率/3级以上</span>
+                            <span class="data-val">75% / 40%</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">治疗相关严重不良事件</span>
+                            <span class="data-val">15% (0 例致死)</span>
+                        </div>
+                        <div class="data-row" style="color:var(--accent);">
+                            <span class="data-label">动脉闭塞事件(AOE)</span>
+                            <span class="data-val">仅 ~3% (显著低于前代)</span>
+                        </div>
+                        <p style="margin-top:20px; font-size:15px; color:var(--text-muted);">
+                            总结：未见27天蓄积现象；不良事件多可控，未观测到明显的剂量-毒性直线正相关。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-refs">参考文献：Jabbour E, et al. Olverembatinib After Failure of Tyrosine Kinase
+                    Inhibitors... JAMA Oncology, 2025.</div>
+                <div class="footer-meta">汇报人：张家赫 (儿科班 / 2024193112)</div>
+            </footer>
+        </div>
+
+
+        <!-- SLIDE 2 -->
+        <div class="slide hidden" id="slide-2">
+            <header>
+                <h1>问题6：CML 最新治疗进展如何？</h1>
+                <div class="header-badge">第二部分：预后疗效与病例探讨</div>
+            </header>
+
+            <div class="slide-content">
+                <!-- Column 1: Efficacy -->
+                <div class="card col-2">
+                    <div class="card-title">研究疗效与作用机制 (Efficacy & Mechanism)</div>
+                    <div class="card-content" style="display: flex; gap: 40px;">
+                        <div style="flex: 1;">
+                            <ul class="custom-bullets">
+                                <li><b>整体缓解：</b>在 CP-CML 患者中，完全细胞遗传学缓解(CCyR)率 <b>61%</b>，主要分子学缓解(MMR)率 <b>42%</b>。</li>
+                                <li><b>多重耐药突围：</b>即使曾接受过 Ponatinib（CCyR 15/26）或 Asciminib（CCyR 4/8），Olverembatinib
+                                    仍展示出深度缓解活性。</li>
+                                <li><b>机制启示：</b>不仅结合 BCR::ABL1 活性构象与非活性构象，还对包含 <b>T315I</b> 在内的混合突变有体外高抑制活性。</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1; border-left: 1px solid rgba(0,0,0,0.1); padding-left: 30px;">
+                            <div class="highlight-box" style="font-size: 16px;">
+                                <b>推荐全球 III 期剂量策略：</b><br><br>
+                                无 T315I 变异者 👉 30 mg 隔日一次<br>
+                                有 T315I 变异者 👉 40 mg 隔日一次
+                            </div>
+                            <p style="font-size: 16px; color: var(--text-muted);">
+                                局限性：作为 1b 期研究，缺乏随访时长和极深分子缓解（MR4/4.5）数据，无头对头标准治疗比较，受资助方设计干预等均对实际证据级别构成限制。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Practical Application (Focus) -->
+                <div class="card case-focus">
+                    <div class="card-title">⑤ 实际应用：对“赵阿姨”的启示</div>
+                    <div class="card-content">
+                        <ul class="custom-bullets" style="color: white;">
+                            <li>赵阿姨目前为 <b>新确诊加速期(AP)</b>，当前主要用药为 <b>一线伊马替尼 600mg/d</b>。</li>
+                            <li><b>严禁直接套用文献：</b>文献人群为≥2线失败病例，本研究<b>不能直接作为替代当前方案的依据</b>。</li>
+                            <li style="margin-top: 15px;"><b>本研究最大的落地价值（长期随访思路）：</b></li>
+                            <li
+                                style="list-style: none; padding-left: 0; font-size: 16px; color: rgba(255,255,255,0.8);">
+                                CML管理是长途跋涉，由于其加速期的性质，若今后赵阿姨出现疗效不良、病情反跳或检测出 T315I
+                                及复合突变，本研究为后续换药提供了非常有希望的落脚方案，打破了“后防空虚”的焦虑。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-refs">参考文献：Apperley JF, et al. 2025 ELN recommendations for the management of CML.
+                    Leukemia, 2025.</div>
+                <div class="footer-meta">汇报人：张家赫 (儿科班 / 2024193112)</div>
+            </footer>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide hidden" id="slide-3">
+            <header>
+                <h1 style="font-size: 32px;">问题1：显带分析、Ph染色体及 BCR::ABL1 检测有什么意义？CML 有哪些遗传学/分子分型？</h1>
+                <div class="header-badge">第一部分：临床报告单实战解析</div>
+            </header>
+
+            <div class="slide-content" style="display:flex; flex-direction:column; gap:20px;">
+                <div class="report-container">
+                    <div class="report-text">
+                        <span class="report-chunk chunk-1">Ph+</span>，<span class="report-chunk chunk-2">显带分析为
+                            t(9;22)(q34;q11)</span>，<span class="report-chunk chunk-3">BCR-ABL（P210）阳性</span>，<br>
+                        <span class="report-chunk chunk-4">BCR-ABL（拷贝数）68.64</span>，<span
+                            class="report-chunk chunk-5">ABL（拷贝数）1.89×10⁴</span>，<span class="report-chunk chunk-6">IS
+                            BCR-ABL/ABL 0.36</span>。
+                    </div>
+                </div>
+
+                <div class="report-grid">
+                    <div class="report-item">
+                        <div class="report-item-title"><span class="item-badge bg-1">1</span> 费城染色体(Ph)阳性</div>
+                        <div class="report-item-content">
+                            检出 CML 标志性的特异异常染色体。它排除了简单的反应性增多，在此病例中核心确立了骨髓异常增殖的髓系肿瘤本质。
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-item-title"><span class="item-badge bg-2">2</span> 显带分析 t(9;22)(q34;q11)
+                        </div>
+                        <div class="report-item-content">
+                            经典的染色体核型显带分析技术揭示，9号长臂(q34)与22号长臂(q11)发生了典型的物理交互易位。这是形成后续融合基因的空间结构基础。
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-item-title"><span class="item-badge bg-3">3</span> BCR-ABL(P210) 阳性</div>
+                        <div class="report-item-content">
+                            明确了其产生的是极具特征性、约210 kDa的融合蛋白。由于具持续活跃的异常酪氨酸激酶活性，成为导致该病例白细胞疯长的直接发病驱动机制。
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-item-title"><span class="item-badge bg-4">4</span> BCR-ABL(拷贝数) 68.64</div>
+                        <div class="report-item-content">
+                            由荧光定量 RT-qPCR 中实际测及并估算的融合转录本原始数量。此数值直观反映了当前病理组织中含特异性基因的实测病变分子量。
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-item-title"><span class="item-badge bg-5">5</span> ABL(拷贝数) 1.89×10⁴</div>
+                        <div class="report-item-content">
+                            利用常态高表达管家/参考基因获得的对照信号。既证实本例取材RNA合格、反应条件达标，又为下一步的定准计算提供了基线比值分母。
+                        </div>
+                    </div>
+                    <div class="report-item">
+                        <div class="report-item-title"><span class="item-badge bg-6">6</span> IS比值 0.36</div>
+                        <div class="report-item-content">
+                            国际标准化标尺下的绝对比例：(68.64 ÷ 18900 ≈ 0.36%)。提示 CML 核心分子负荷处于 0.36% 量级范围，尚未实现 ≤0.1%的 MMR 预后深缓。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-refs">参考文献：Cape Cancer Documents: CML Biomarker Reporting, 2025; Nature Leukemia
+                    Recommendations.</div>
+                <div class="footer-meta">汇报人：张家赫 (儿科班 / 2024193112)</div>
+            </footer>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="slide hidden" id="slide-4">
+            <header>
+                <h1 style="font-size: 32px;">问题1：显带分析、Ph染色体及 BCR::ABL1 检测有什么意义？CML 有哪些遗传学/分子分型？</h1>
+                <div class="header-badge">第二部分：深层检测意义与学术拓展</div>
+            </header>
+
+            <div class="slide-content" style="grid-template-columns: repeat(2, 1fr);">
+                <!-- Column 1: Multi-level detection -->
+                <div class="card">
+                    <div class="card-title">诊断检测的三重意义与应用壁垒</div>
+                    <div class="card-content">
+                        <ul class="custom-bullets">
+                            <li><b>显带核型分析：</b>并非仅单纯验证
+                                t(9;22)，核心临床用意还在于排查是否有<b>附加染色体异常(ACA)</b>，从而为探明疾病克隆演化深度、准确区分高危层级提供完整基线。</li>
+                            <li><b>Ph 染色体辨明：</b>建立经典细胞遗传学诊断支持，将临床疑似全面转化为特异性明确诊断。</li>
+                            <li><b>RT-PCR 转录本检测：</b>为治疗监测“锁定航标”。明确转录片段（如本报告 p210）后，方可对接国际标准化 IS 系统并实施定期的准确定量。</li>
+                        </ul>
+                        <div class="highlight-box" style="margin-top: 30px;">
+                            <b>检验短板与病案反思：</b><br>
+                            本检验证实了患者典型分子标志，但在证实其目前已属“加速期(AP)”时，仍有至要<b>检验短板及悬念</b>：目前尚未详出完整核型体系。一旦后续核型判定有复杂 ACA
+                            存在，必须彻底改变患者当前 TKI 单一治疗预后风险！
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Classification -->
+                <div class="card">
+                    <div class="card-title">CML 遗传分子学分型的三大维度</div>
+                    <div class="card-content">
+                        <ul class="custom-bullets">
+                            <li><b>① 染色体（细胞遗传学）层面：</b><br>
+                                区分为经典 Ph 阳性、变异易位型及隐匿性重排。“核型非典型”不等构于非 CML，确诊极度仰赖 CBA、FISH 及分子技术的互补印证。</li>
+
+                            <li style="margin-top: 25px;"><b>② 转录本分子产物层面：</b><br>
+                                主要区分为 <b>典型 p210 型</b>(含 e13a2/e14a2，构成本病绝大多数)，其随访模式已绝对标化；另有罕见少见如 p190（多见于Ph+ALL）、p230
+                                等，常面临非标准系统随访窘境。</li>
+
+                            <li style="margin-top: 25px;"><b>③ 耐药进展核心驱动面：</b><br>
+                                以 <b>核型演进 (ACA)</b> 与 <b>BCR::ABL1 激酶结构域(KD) 突变</b>(如
+                                T315I)作分水岭。这层诊断将不再侧重“是否患病”，而直接用于向三代TKI用药转换提供指南决断级依据。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-refs">参考文献：Apperley JF, et al. 2025 ELN recommendations for the management of CML.
+                    Leukemia, 2025.</div>
+                <div class="footer-meta">汇报人：张家赫 (儿科班 / 2024193112)</div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="slide-controls" id="controls">
+        <span class="hint">按 'H' 键隐藏控件，方便截图</span>
+        <button class="btn-nav" id="prevBtn" disabled>上一页</button>
+        <button class="btn-nav" id="nextBtn">下一页</button>
+    </div>
+
+    <!-- Scale Script to Ensure 1600x900 Perfectly Fits the Window -->
+    <script>
+        const screen = document.getElementById('screen');
+        function handleResize() {
+            // Target aspect ratio is 1600x900
+            const windowW = window.innerWidth;
+            const windowH = window.innerHeight;
+            // Calculate scale based on the limiting dimension
+            const scaleW = windowW / 1600;
+            const scaleH = windowH / 900;
+            const scale = Math.min(scaleW, scaleH);
+
+            screen.style.transform = `translate(-50%, -50%) scale(${scale})`;
+        }
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Initial call
+
+        // Pagination script
+        let currentSlide = 1;
+        const totalSlides = 4;
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function updateSlides() {
+            document.querySelectorAll('.slide').forEach((el, index) => {
+                if (index + 1 === currentSlide) {
+                    el.classList.add('active');
+                    el.classList.remove('hidden');
+                } else {
+                    el.classList.add('hidden');
+                    el.classList.remove('active');
+                }
+            });
+            prevBtn.disabled = currentSlide === 1;
+            nextBtn.disabled = currentSlide === totalSlides;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlides();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlides();
+            }
+        });
+
+        // Hide/Show controls with 'H' key for screenshots
+        document.addEventListener('keydown', (e) => {
+            if (e.key.toLowerCase() === 'h') {
+                const controls = document.getElementById('controls');
+                controls.style.display = controls.style.display === 'none' ? 'flex' : 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
