@@ -1,0 +1,392 @@
+/* Reset & Setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Base colors */
+:root {
+    --primary: #0A2540;     /* Deep medical navy */
+    --secondary: #00D2D3;   /* High-tech cyan/teal */
+    --accent: #FF6B6B;      /* Warning/accent red */
+    --surface: rgba(255, 255, 255, 0.92);
+    --surface-light: rgba(255, 255, 255, 0.98);
+    --text-main: #1A1A24;
+    --text-muted: #555B6E;
+}
+
+/* The Scaling Presentation Screen */
+#screen {
+    width: 1600px;
+    height: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    /* We'll load up both slides, but just place Slide 1 at top.
+       To see slide 2, user can just edit the HTML to bring slide 2 to front,
+       or we can stack them using CSS logic */
+}
+
+/* Slide Container */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1600px;
+    height: 900px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    /* Slide Background Image/Pattern */
+    background: radial-gradient(circle at top right, rgba(0, 210, 211, 0.1) 0%, transparent 40%),
+                url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1.5" fill="rgba(10,37,64,0.05)"/></svg>');
+    transition: opacity 0.4s ease;
+}
+
+.slide.hidden {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    color: var(--primary);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    max-width: 1200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-badge {
+    background: var(--secondary);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    height: 50px;
+    border-top: 1px solid rgba(10, 37, 64, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.footer-refs {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 40px;
+    font-style: italic;
+}
+
+.footer-meta {
+    font-weight: 600;
+    display: flex;
+    gap: 20px;
+}
+
+/* ---- Component Library for High Density Content ---- */
+.slide-content {
+    flex: 1;
+    display: grid;
+    gap: 30px;
+    /* Basic 3-column layout */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+/* Aesthetically pleasing cards */
+.card {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.card.col-2 {
+    grid-column: span 2;
+}
+.card.col-3 {
+    grid-column: span 3;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-title::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 24px;
+    background: var(--secondary);
+    border-radius: 3px;
+}
+
+.card-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-main);
+    flex: 1;
+}
+
+/* Emphasized Text Block */
+.highlight-box {
+    background: rgba(0, 210, 211, 0.1);
+    border-left: 4px solid var(--secondary);
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 19px;
+}
+
+/* Data summary layout (horizontal dots) */
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(10,37,64,0.1);
+}
+.data-row:last-child {
+    border-bottom: none;
+}
+.data-label {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+.data-val {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Bullet list styling */
+ul.custom-bullets {
+    list-style: none;
+}
+ul.custom-bullets li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+}
+ul.custom-bullets li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/* Tag style for keywords */
+.tag {
+    display: inline-block;
+    background: rgba(10, 37, 64, 0.08);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 4px 2px;
+    color: var(--primary);
+}
+
+/* Case Study Focus component */
+.case-focus {
+    background: linear-gradient(135deg, var(--primary) 0%, #153e66 100%);
+    color: white;
+}
+.case-focus .card-title {
+    color: white;
+}
+.case-focus .card-title::before {
+    background: var(--accent);
+}
+.case-focus .card-content {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Pagination Info */
+.slide-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.slide-controls .hint {
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.btn-nav {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-nav:hover {
+    background: #153e66;
+}
+
+.btn-nav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ---- Slide 3 Specific Styles: Report Breakdown ---- */
+.report-container {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 25px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.report-text {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 2.0;
+    color: var(--primary);
+}
+.report-chunk {
+    position: relative;
+    display: inline-block;
+    padding: 0 6px;
+    margin: 0 4px;
+    cursor: default;
+}
+.report-chunk::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    border-radius: 6px;
+    opacity: 0.6;
+    z-index: -1;
+}
+.chunk-1::after { background-color: #FF6B6B; }
+.chunk-2::after { background-color: #4ECDC4; }
+.chunk-3::after { background-color: #FFE66D; }
+.chunk-4::after { background-color: #8FD8D8; }
+.chunk-5::after { background-color: #FFAAA5; }
+.chunk-6::after { background-color: #C3B1E1; }
+
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+.report-item {
+    background: var(--surface-light);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    position: relative;
+}
+.report-item-title {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.item-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #333;
+    font-weight: 800;
+    font-size: 14px;
+    margin-right: 12px;
+}
+.bg-1 { background-color: #FF6B6B; color: white; }
+.bg-2 { background-color: #4ECDC4; color: white; }
+.bg-3 { background-color: #FFE66D; }
+.bg-4 { background-color: #8FD8D8; }
+.bg-5 { background-color: #FFAAA5; color: white; }
+.bg-6 { background-color: #C3B1E1; }
+
+.report-item-content {
+    font-size: 16px;
+    color: var(--text-main);
+    line-height: 1.6;
+}
