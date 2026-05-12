@@ -1,0 +1,6 @@
+# Node.js 依赖目录由 package.json / package-lock.json 重新安装生成。
+# 这里不提交 node_modules，避免把几百个第三方依赖文件混进课程笔记历史。
+node_modules/
+
+# Anki 卡片临时生成目录只用于本地整理和导入，不作为课程笔记资产入库。
+Anki-scripts/
