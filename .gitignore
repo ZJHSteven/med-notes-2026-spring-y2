@@ -4,3 +4,7 @@ node_modules/
 
 # Anki 卡片临时生成目录只用于本地整理和导入，不作为课程笔记资产入库。
 Anki-scripts/
+
+# 《内科学》第10版 PDF 原书体积约 177 MiB，超过 GitHub 单文件限制。
+# PBL 作业只在 Markdown 中保留具体章节和页码，不把原书 PDF 纳入版本库。
+循环系统/PBL作业/内科学 （第10版）.pdf
