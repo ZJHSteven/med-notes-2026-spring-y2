@@ -320,3 +320,67 @@ blockquote.callout {
     margin-left: 0;
     margin-right: 0;
 }
+
+/* Markdown 表格：用于第二幕监测指标、肌钙蛋白亚基对照和指标总表 */
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin: 18px 0 22px;
+}
+
+.md-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    font-size: 0.98em;
+}
+
+.md-table thead {
+    background-color: #eef4fb;
+}
+
+.md-table th,
+.md-table td {
+    border: 1px solid var(--border-color);
+    padding: 10px 12px;
+    vertical-align: top;
+}
+
+.md-table th {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.md-table tbody tr:nth-child(even) {
+    background-color: #fafcff;
+}
+
+.md-table .align-left {
+    text-align: left;
+}
+
+.md-table .align-center {
+    text-align: center;
+}
+
+.md-table .align-right {
+    text-align: right;
+}
+
+@media print {
+    .table-wrap {
+        overflow: visible;
+    }
+
+    .md-table {
+        font-size: 0.92em;
+    }
+
+    .md-table tr,
+    .md-table td,
+    .md-table th {
+        break-inside: avoid;
+    }
+}

@@ -505,6 +505,113 @@ def build_citation_anchor(citation_text: str, citation_scope: str | None) -> str
     return f'<sup class="citation">{"".join(rendered_parts)}</sup>'
 
 
+def is_table_separator_row(text: str) -> bool:
+    """判断一行是否是 GitHub 风格 Markdown 表格的分隔行。
+
+    典型形式例如：
+    - `| --- | --- |`
+    - `| :--- | :---: | ---: |`
+
+    设计说明：
+    - 这里只认由 `|`、`-`、`:` 和空格组成的分隔行，避免把普通正文误判成表格。
+    - 第二幕表格都是标准写法，因此这里不做过度复杂的兼容，保持规则清晰即可。
+    """
+
+    # 先粗筛一遍：没有竖线或没有短横线，就不可能是表格分隔行。
+    if "|" not in text or "-" not in text:
+        return False
+
+    # GitHub 风格分隔行只应包含这几类字符；出现别的字符就直接排除。
+    if re.search(r"[^|\-:\s]", text):
+        return False
+
+    # 去掉首尾可选的 `|`，再按列切开检查每一列是否合法。
+    normalized = text.strip()
+    if normalized.startswith("|"):
+        normalized = normalized[1:]
+    if normalized.endswith("|"):
+        normalized = normalized[:-1]
+
+    columns = [column.strip() for column in normalized.split("|")]
+
+    # 空表或某一列为空都不应算合法分隔行。
+    if not columns or any(not column for column in columns):
+        return False
+
+    # 每一列都必须满足 `:---` / `---:` / `:---:` / `---` 这样的模式。
+    return all(re.fullmatch(r":?-{3,}:?", column) for column in columns)
+
+
+def split_table_row(text: str) -> list[str]:
+    """把 Markdown 表格的一行拆成单元格列表。
+
+    说明：
+    - 当前课程作业里的表格都是简单文本表，不涉及反斜杠转义竖线、行内代码块跨列等复杂场景。
+    - 因此这里采用“去首尾竖线 + 按 `|` 直接切分”的实现，足够稳妥，也更容易维护。
+    """
+
+    normalized = text.strip()
+    if normalized.startswith("|"):
+        normalized = normalized[1:]
+    if normalized.endswith("|"):
+        normalized = normalized[:-1]
+    return [cell.strip() for cell in normalized.split("|")]
+
+
+def render_markdown_table(
+    table_lines: list[str],
+    refs: dict[str, ReferenceLink],
+    citation_scope: str | None,
+) -> str:
+    """把一整段 Markdown 表格渲染成 HTML `<table>`。
+
+    输入约定：
+    - `table_lines[0]` 为表头行；
+    - `table_lines[1]` 为分隔行；
+    - 其余行为数据行。
+
+    取舍：
+    - 这里只实现本项目实际需要的 GFM 基础表格能力，不额外引入第三方库。
+    - 这样可以继续复用当前脚本的自定义引用上标、链接处理和打印样式链路。
+    """
+
+    header_cells = split_table_row(table_lines[0])
+    separator_cells = split_table_row(table_lines[1])
+    body_rows = [split_table_row(line) for line in table_lines[2:]]
+
+    # 对齐信息来自第二行分隔符的冒号位置；没有冒号就默认左对齐。
+    alignments: list[str] = []
+    for cell in separator_cells:
+        stripped = cell.strip()
+        if stripped.startswith(":") and stripped.endswith(":"):
+            alignments.append("center")
+        elif stripped.endswith(":"):
+            alignments.append("right")
+        else:
+            alignments.append("left")
+
+    thead_parts = ["<thead><tr>"]
+    for index, cell in enumerate(header_cells):
+        align = alignments[index] if index < len(alignments) else "left"
+        thead_parts.append(
+            f'<th class="md-table-cell align-{align}">{render_inline(cell, refs, citation_scope)}</th>'
+        )
+    thead_parts.append("</tr></thead>")
+
+    tbody_parts = ["<tbody>"]
+    for row in body_rows:
+        tbody_parts.append("<tr>")
+        for index, cell in enumerate(row):
+            align = alignments[index] if index < len(alignments) else "left"
+            tbody_parts.append(
+                f'<td class="md-table-cell align-{align}">{render_inline(cell, refs, citation_scope)}</td>'
+            )
+        tbody_parts.append("</tr>")
+    tbody_parts.append("</tbody>")
+
+    return f'<div class="table-wrap"><table class="md-table">{"".join(thead_parts)}{"".join(tbody_parts)}</table></div>'
+
+
 def render_inline(text: str, refs: dict[str, ReferenceLink], citation_scope: str | None = None) -> str:
     """逐字符扫描一行文本，替换链接和数字引用，保留其余 Markdown 行内语法。"""
 
@@ -655,6 +762,27 @@ def render_block_content(
             html_blocks.append(f'<blockquote class="callout">{inner_html}</blockquote>')
             continue
 
+        # GitHub 风格 Markdown 表格：
+        # 只要满足“表头行 + 分隔行”，就继续向后吃掉连续数据行，整段渲染为 `<table>`。
+        if (
+            index + 1 < len(lines)
+            and "|" in stripped_line
+            and is_table_separator_row(lines[index + 1].strip())
+        ):
+            table_lines = [stripped_line, lines[index + 1].strip()]
+            index += 2
+
+            while index < len(lines):
+                candidate = lines[index].strip()
+                # 表格遇到空行就结束；否则只有带竖线的行才继续算表格数据。
+                if not candidate or "|" not in candidate:
+                    break
+                table_lines.append(candidate)
+                index += 1
+
+            html_blocks.append(render_markdown_table(table_lines, refs, citation_scope))
+            continue
+
         # 有序列表：例如 `1. xxx`
         ordered_match = re.match(r"^(\d+)\.\s+(.*\S)\s*$", stripped_line)
         if ordered_match:
@@ -702,6 +830,8 @@ def render_block_content(
             if candidate.startswith(">"):
                 break
             if re.match(r"^####\s+", lines[index]):
+                break
+            if index + 1 < len(lines) and "|" in candidate and is_table_separator_row(lines[index + 1].strip()):
                 break
             if re.match(r"^\d+\.\s+", candidate):
                 break
