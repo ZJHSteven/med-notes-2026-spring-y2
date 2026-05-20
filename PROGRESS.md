@@ -1,9 +1,10 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：`循环系统/PBL作业/Case2-第二幕/Case2-第二幕.md` 已完成原文备份、人工精读清洗、引用格式重建和美化版 HTML/PDF 导出；优先查看 `Case2-第二幕-美化版.pdf`。
+- 现状：`循环系统/PBL作业/Case2-第二幕/Case2-第二幕.md` 已完成原文备份、人工精读清洗、引用格式重建，并按最新反馈恢复第一人称判断语气后重新导出美化版 HTML/PDF；优先查看 `Case2-第二幕-美化版.pdf`。
 - 已完成：
   - Case2 第二幕作业 Markdown：已在清洗前单独提交原始 `Case2-第二幕.md` 作为 Git 备份，随后删除 AI 草稿口吻、正文直链、`utm_source`、方框式出处和无效来源提示；正文只保留 `[1]` 形式引用，链接统一放入各题 `④出处`。
+  - Case2 第二幕作业 Markdown：已按用户反馈恢复 `我认为 / 我倾向于 / 我觉得 / 我不会 / 我理解` 等第一人称判断语气，保留当前引用结构、出处列表和链接清洗结果，并重新生成对应 HTML/PDF 成品。
   - Case2 第二幕作业 Markdown：已迁移第一幕 `build_html.py` 与 `style.css`，补强引用上标跳转、每题出处锚点、分组数字列表起始编号和 `####` 内部小标题渲染。
   - Case2 第二幕作业 Markdown：已生成 `循环系统/PBL作业/Case2-第二幕/Case2-第二幕-美化版.html` 与 `循环系统/PBL作业/Case2-第二幕/Case2-第二幕-美化版.pdf`；PDF 共 41 页。
   - Case2 第二幕作业 Markdown：已验证 `python -m py_compile build_html.py`、`python build_html.py --no-pdf`、`python build_html.py`、正文外链残留为 0、`utm_source/chatgpt` 残留为 0、引用锚点缺失为 0、`qpdf --check` 无语法或流编码错误。
