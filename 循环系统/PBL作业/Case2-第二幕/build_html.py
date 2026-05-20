@@ -659,6 +659,7 @@ def render_block_content(
         ordered_match = re.match(r"^(\d+)\.\s+(.*\S)\s*$", stripped_line)
         if ordered_match:
             items: list[str] = []
+            start_number = ordered_match.group(1)
             while index < len(lines):
                 current = lines[index].strip()
                 item_match = re.match(r"^\d+\.\s+(.*\S)\s*$", current)
@@ -671,7 +672,8 @@ def render_block_content(
                 )
                 index += 1
             class_attr = ' class="reference-list"' if reference_scope else ""
-            html_blocks.append(f"<ol{class_attr}>{''.join(items)}</ol>")
+            start_attr = f' start="{html.escape(start_number)}"' if start_number != "1" else ""
+            html_blocks.append(f"<ol{class_attr}{start_attr}>{''.join(items)}</ol>")
             continue
 
         # 无序列表：当前正文里主要用 `* xxx`。
