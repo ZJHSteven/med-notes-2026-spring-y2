@@ -27,7 +27,7 @@
 
 ### ③学习内容：
 
-我认为这一题要先分清两个层次：**冠状动脉造影主要解决“责任血管在哪里、堵到什么程度”的问题；PCI 主要解决“如何尽快恢复血流、挽救濒死心肌”的问题。**在刘阿姨这个病例里，冠脉造影和 PCI 不是孤立操作，而是前面症状、心电图、心肌损伤标志物之后自然推进出的治疗决策。课堂第二幕也正是从“造影发现左前降支阻塞，并进行了 PCI”开始，引出 PCI 流程、并发症、术后监测以及心梗相关检验指标的学习问题。
+这一题需要先分清两个层次：**冠状动脉造影主要解决“责任血管在哪里、堵到什么程度”的问题；PCI 主要解决“如何尽快恢复血流、挽救濒死心肌”的问题。**在刘阿姨这个病例里，冠脉造影和 PCI 不是孤立操作，而是前面症状、心电图、心肌损伤标志物之后自然推进出的治疗决策。课堂第二幕也正是从“造影发现左前降支阻塞，并进行了 PCI”开始，引出 PCI 流程、并发症、术后监测以及心梗相关检验指标的学习问题。
 
 #### 一、为什么急性 STEMI 患者需要尽快明确冠脉情况？
 
@@ -71,33 +71,34 @@ PCI，即经皮冠状动脉介入治疗，核心目的是通过导丝、球囊�
 
 ### ④出处：
 
+【临床指南/共识】
+
+1. Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). *Circulation*. 2018;138(20):e618-e651. DOI: 10.1161/CIR.0000000000000617. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000000617> "Fourth Universal Definition of Myocardial Infarction"))
+
+2. Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. *European Heart Journal*. 2023;44(38):3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 ESC ACS Guidelines"))
+
+3. Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. *Circulation*. 2025;151:e771-e862. DOI: 10.1161/CIR.0000000000001309. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA ACS Guideline"))
+
 【教材/专著】
 
-4. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 冠状动脉粥样硬化性心脏病、急性冠状动脉综合征相关章节。
+4. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”，第四节“急性冠脉综合征”中“急性ST段抬高型心肌梗死”（p.247-257）。
 
-【指南/共识】
+【中文指南】
 
-1. Thygesen K, Alpert JS, Jaffe AS, et al. **Fourth Universal Definition of Myocardial Infarction (2018)**. *Circulation*, 2018, 138(20): e618-e651. DOI: 10.1161/CIR.0000000000000617. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000000617> "Fourth Universal Definition of Myocardial Infarction (2018)"))
-
-2. Byrne RA, Rossello X, Coughlan JJ, et al. **2023 ESC Guidelines for the management of acute coronary syndromes**. *European Heart Journal*, 2023, 44(38): 3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 Acute Coronary Syndromes"))
-
-3. Rao SV, O’Donoghue ML, Ruel M, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes**. *Circulation*, 2025, 151: e771-e862. DOI: 10.1161/CIR.0000000000001309.
-
-5. 中华医学会心血管病学分会, 中华心血管病杂志编辑委员会. **急性ST段抬高型心肌梗死诊断和治疗指南（2019）**. *中华心血管病杂志*, 2019, 47(10): 766-783. DOI: 10.3760/cma.j.issn.0253-3758.2019.10.003.
-
+5. 中华医学会心血管病学分会, 中华心血管病杂志编辑委员会. 急性ST段抬高型心肌梗死诊断和治疗指南（2019）. *中华心血管病杂志*. 2019;47(10):766-783. DOI: 10.3760/cma.j.issn.0253-3758.2019.10.003.
 ---
 
 ### ⑤实际应用：
 
-回到刘阿姨病例，我认为她需要冠脉造影和 PCI 的理由非常充分。第一幕中，她已经不是单纯“胸闷待查”或普通心绞痛。她有持续胸痛、肩背放射痛、大汗、面色苍白，心电图出现 V1–V4 导联 ST 段弓背样抬高，心肌损伤标志物明显升高，这些共同提示急性前壁 STEMI。根据心梗通用定义，肌钙蛋白升高本身只能说明心肌损伤，但当它与典型缺血症状和缺血性心电图改变同时出现时，就强烈支持急性心肌梗死[1]。因此，本例进入冠脉造影和再灌注治疗流程，不是过度检查，而是符合急性 STEMI 救治逻辑。
+回到刘阿姨病例，她需要冠脉造影和 PCI 的理由非常充分。第一幕中，她已经不是单纯“胸闷待查”或普通心绞痛。她有持续胸痛、肩背放射痛、大汗、面色苍白，心电图出现 V1–V4 导联 ST 段弓背样抬高，心肌损伤标志物明显升高，这些共同提示急性前壁 STEMI。根据心梗通用定义，肌钙蛋白升高本身只能说明心肌损伤，但当它与典型缺血症状和缺血性心电图改变同时出现时，就强烈支持急性心肌梗死[1]。因此，本例进入冠脉造影和再灌注治疗流程，不是过度检查，而是符合急性 STEMI 救治逻辑。
 
-冠脉造影发现 LAD 90%堵塞后，本病例的证据链进一步闭合。V1–V4 导联 ST 段抬高提示前壁/前间壁心肌急性缺血，LAD 正是这一区域的重要供血血管；造影发现 LAD 严重堵塞，说明心电图定位、症状表现和冠脉解剖互相吻合。我倾向于认为，LAD 90%堵塞就是刘阿姨这次急性前壁 STEMI 的关键责任病变，而不仅仅是一个偶然发现的慢性狭窄。
+冠脉造影发现 LAD 90%堵塞后，本病例的证据链进一步闭合。V1–V4 导联 ST 段抬高提示前壁/前间壁心肌急性缺血，LAD 正是这一区域的重要供血血管；造影发现 LAD 严重堵塞，说明心电图定位、症状表现和冠脉解剖互相吻合。更倾向于判断，LAD 90%堵塞就是刘阿姨这次急性前壁 STEMI 的关键责任病变，而不仅仅是一个偶然发现的慢性狭窄。
 
 从病程看，刘阿姨之前已有劳累后胸闷、休息后缓解，说明她可能早就存在冠脉狭窄和心肌供血储备不足。发病当天骑行相当于增加心率、血压和心肌耗氧量，在原本 LAD 严重狭窄的基础上，可能进一步诱发斑块破裂或侵蚀、血栓形成，导致急性冠脉事件。也就是说，她的发病不是突然从“完全健康”跳到“心梗”，而是长期危险因素和冠脉粥样硬化基础上，在某个诱因下发生急性失代偿。
 
 PCI 对她的意义，是尽快恢复 LAD 血流，尽可能挽救缺血但尚未完全坏死的心肌。前壁心梗累及范围可能较大，如果再灌注延误，坏死面积增加，后续左室收缩功能下降、心衰、恶性心律失常和死亡风险都会上升。她已有双肺底细湿啰音，提示急性左心功能不全或肺淤血可能已经出现，因此更不能长期等待保守观察。PCI 后血管再通，说明急性期最关键的“开通责任血管”目标已经实现。
 
-不过，我认为不能把“做完 PCI”理解成治疗结束。刘阿姨的 LAD 严重堵塞提示她已经存在较重冠状动脉粥样硬化基础，且合并高血压、糖尿病、血脂异常等危险因素。PCI 解决的是这次急性责任病变，但不能消除全身动脉粥样硬化环境。后续仍需双联抗血小板治疗预防支架血栓，高强度他汀稳定斑块和降低 LDL-C，控制血压血糖，评估左室射血分数和室壁运动，监测心律失常、心衰、肾功能和出血风险，并进行长期二级预防。
+不过，不能把“做完 PCI”理解成治疗结束。刘阿姨的 LAD 严重堵塞提示她已经存在较重冠状动脉粥样硬化基础，且合并高血压、糖尿病、血脂异常等危险因素。PCI 解决的是这次急性责任病变，但不能消除全身动脉粥样硬化环境。后续仍需双联抗血小板治疗预防支架血栓，高强度他汀稳定斑块和降低 LDL-C，控制血压血糖，评估左室射血分数和室壁运动，监测心律失常、心衰、肾功能和出血风险，并进行长期二级预防。
 
 因此，本病例中“冠脉造影 + PCI + LAD 90%堵塞”可以概括为：**冠脉造影把急性前壁 STEMI 的责任血管定位到 LAD；PCI 通过开通 LAD 完成急性期再灌注；LAD 90%堵塞解释了刘阿姨的前壁心电图改变、心肌坏死标志物升高和左心功能受累风险，也提示她后续需要长期、严格的冠心病二级预防。**
 
@@ -105,7 +106,7 @@ PCI 对她的意义，是尽快恢复 LAD 血流，尽可能挽救缺血但尚�
 
 ### ③学习内容：
 
-我理解这一题不能只背“穿刺、导管、球囊、支架”几个名词，而要把 PCI 看成一个连续的临床操作链：**先确认患者适合急诊介入，再通过血管入路进入冠状动脉，造影明确责任血管和病变特点，然后用导丝通过狭窄段，必要时球囊预扩张，再植入支架恢复血流，最后复查造影确认血流、支架贴壁和并发症情况。**课堂第二幕也把“PCI 具体流程、术中并发症、预防措施、术后注意事项和监测指标”放在同一组问题里，说明老师希望我们理解的是一个完整围术期过程，而不是孤立的手术步骤。
+这一题不能只背“穿刺、导管、球囊、支架”几个名词，而要把 PCI 看成一个连续的临床操作链：**先确认患者适合急诊介入，再通过血管入路进入冠状动脉，造影明确责任血管和病变特点，然后用导丝通过狭窄段，必要时球囊预扩张，再植入支架恢复血流，最后复查造影确认血流、支架贴壁和并发症情况。**课堂第二幕也把“PCI 具体流程、术中并发症、预防措施、术后注意事项和监测指标”放在同一组问题里，说明老师希望我们理解的是一个完整围术期过程，而不是孤立的手术步骤。
 
 #### 一、PCI 的核心目的：开通梗死相关血管
 
@@ -162,7 +163,7 @@ PCI 的第一步是建立动脉通路。临床常用入路包括：
 
 确认 LAD 病变后，医生会更换或使用导引导管，使导管稳定地支撑在左冠状动脉开口处。随后将细而柔软的冠脉导丝送入 LAD，通过狭窄或闭塞段，进入病变远端真腔。
 
-我理解这一步是 PCI 的关键技术环节，因为后续球囊、支架等器械都要沿着这根导丝进入病变部位。如果导丝没有进入真正的血管腔，而进入夹层或假腔，就可能导致冠脉夹层、穿孔或血流进一步受阻。因此，导丝通过病变不仅是“穿过去”，还要判断走行是否正确、远端血流是否恢复、病变能否安全处理。
+这一步是 PCI 的关键技术环节，因为后续球囊、支架等器械都要沿着这根导丝进入病变部位。如果导丝没有进入真正的血管腔，而进入夹层或假腔，就可能导致冠脉夹层、穿孔或血流进一步受阻。因此，导丝通过病变不仅是“穿过去”，还要判断走行是否正确、远端血流是否恢复、病变能否安全处理。
 
 对于 LAD 90%狭窄，如果仍有少量远端血流，导丝通常相对更容易通过；如果已经完全闭塞或血栓负荷大，导丝通过难度和风险就会增加。
 
@@ -212,7 +213,7 @@ PCI 成功不能只看“支架放进去了”，而要看血流是否真正恢�
 
 #### 九、PCI 流程可以简化为一条临床链
 
-我认为作业里可以把 LAD PCI 的流程概括成下面这条链：
+本题可以把 LAD PCI 的流程概括成下面这条链：
 
 **术前评估与抗栓准备 → 建立桡动脉/股动脉入路 → 冠脉造影明确 LAD 责任病变 → 导引导管到位 → 导丝通过 LAD 狭窄段 → 球囊预扩张或病变预处理 → 支架植入 → 必要时后扩张 → 复查造影确认血流和并发症 → 术后抗栓、心电、穿刺点、肾功能和心功能监测。**
 
@@ -222,37 +223,36 @@ PCI 成功不能只看“支架放进去了”，而要看血流是否真正恢�
 
 ### ④出处：
 
+【临床指南/共识】
+
+1. Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. *European Heart Journal*. 2023;44(38):3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 ESC ACS Guidelines"))
+
+2. Tamis-Holland JE, Abbott JD, Al-Azizi K, et al. SCAI Expert Consensus Statement on the Management of Patients With STEMI Referred for Primary PCI. *Journal of the Society for Cardiovascular Angiography & Interventions*. 2024;3(12):102294. DOI: 10.1016/j.jscai.2024.102294. ([SCAI](<https://www.scai.org/publications/clinical-documents/scai-expert-consensus-statement-management-patients-stemi-referred> "SCAI STEMI Primary PCI Consensus"))
+
+3. Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. *Circulation*. 2025;151:e771-e862. DOI: 10.1161/CIR.0000000000001309. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA ACS Guideline"))
+
 【教材/专著】
 
-4. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 冠状动脉粥样硬化性心脏病、急性冠状动脉综合征相关章节。 ([SCAI](<https://www.jscai.org/article/S2772-9303%2824%2901740-X/fulltext> "SCAI Expert Consensus Statement on the Management of ..."))
-
-【指南/共识】
-
-1. Byrne RA, Rossello X, Coughlan JJ, et al. **2023 ESC Guidelines for the management of acute coronary syndromes**. *European Heart Journal*, 2023, 44(38): 3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 Acute Coronary Syndromes"))
-
-2. Tamis-Holland JE, Abbott JD, Al-Azizi K, et al. **SCAI Expert Consensus Statement on the Management of Patients With STEMI Referred for Primary PCI**. *Journal of the Society for Cardiovascular Angiography & Interventions*, 2024, 3(12): 102294. DOI: 10.1016/j.jscai.2024.102294. ([SCAI](<https://www.scai.org/publications/clinical-documents/scai-expert-consensus-statement-management-patients-stemi-referred> "SCAI Expert Consensus Statement on the Management of Patients with STEMI Referred for Primary PCI | SCAI"))
-
-3. Rao SV, O’Donoghue ML, Ruel M, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes**. *Circulation*, 2025, 151: e771-e862. DOI: 10.1161/CIR.0000000000001309. ([JACC](<https://www.jacc.org/doi/10.1016/j.jacc.2024.11.009> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
-
+4. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”，第四节“急性冠脉综合征”中“急性ST段抬高型心肌梗死”的再灌注治疗、PCI与监护内容（p.254-257）。
 ---
 
 ### ⑤实际应用：
 
-回到刘阿姨病例，我认为她的 PCI 流程可以按“急性前壁 STEMI 的 LAD 再灌注”来理解。她入院时已有持续胸痛、前壁导联 ST 段抬高、心肌损伤标志物明显升高，因此医生首先需要快速判断她是否适合急诊冠脉造影和 PCI。她的病例材料显示家属签署知情同意后进行了冠状动脉造影，并在造影过程中发现 LAD 约 90%堵塞，这一步明确了责任血管，也解释了她的前壁 STEMI 表现。
+回到刘阿姨病例，她的 PCI 流程可以按“急性前壁 STEMI 的 LAD 再灌注”来理解。她入院时已有持续胸痛、前壁导联 ST 段抬高、心肌损伤标志物明显升高，因此医生首先需要快速判断她是否适合急诊冠脉造影和 PCI。她的病例材料显示家属签署知情同意后进行了冠状动脉造影，并在造影过程中发现 LAD 约 90%堵塞，这一步明确了责任血管，也解释了她的前壁 STEMI 表现。
 
-随后进行 PCI 的关键，是通过动脉入路把导管送到左冠状动脉开口，再用导丝通过 LAD 狭窄段。对我来说，这一步把“影像上的堵塞”转化成了“可以被器械处理的病变”。如果导丝顺利通过，说明医生可以沿着这条通路送入球囊和支架；如果不能通过，或者通过后血流仍差，就提示病变可能更复杂，需要更谨慎处理。
+随后进行 PCI 的关键，是通过动脉入路把导管送到左冠状动脉开口，再用导丝通过 LAD 狭窄段。在病例分析中，这一步把“影像上的堵塞”转化成了“可以被器械处理的病变”。如果导丝顺利通过，说明医生可以沿着这条通路送入球囊和支架；如果不能通过，或者通过后血流仍差，就提示病变可能更复杂，需要更谨慎处理。
 
 球囊扩张和支架植入是本例 PCI 的核心治疗步骤。刘阿姨的 LAD 90%堵塞意味着管腔已经严重狭窄，前壁心肌供血明显受限。球囊扩张可以先把狭窄段撑开，支架则用于维持管腔长期开放。术后图像提示血管有疏通表现，说明再灌注目标初步实现。这个结果对她很关键，因为 LAD 供血区域较大，如果再灌注延误，前壁心肌坏死范围扩大，后续左室功能下降和心衰风险都会增加。
 
-但是我认为不能把“血管疏通了”等同于“病人完全安全”。PCI 后仍要观察是否存在无复流、支架血栓、再狭窄、心律失常、穿刺点出血、造影剂肾损伤等问题。尤其刘阿姨有糖尿病、高血压和血脂异常，提示她不是单一局部病变，而是存在长期动脉粥样硬化基础。PCI 解决了这次 LAD 责任病变，但并没有消除她全身的斑块风险。
+但是，不能把“血管疏通了”等同于“病人完全安全”。PCI 后仍要观察是否存在无复流、支架血栓、再狭窄、心律失常、穿刺点出血、造影剂肾损伤等问题。尤其刘阿姨有糖尿病、高血压和血脂异常，提示她不是单一局部病变，而是存在长期动脉粥样硬化基础。PCI 解决了这次 LAD 责任病变，但并没有消除她全身的斑块风险。
 
-因此，本病例中 LAD PCI 的实际意义可以概括为：**冠脉造影确认 LAD 是前壁 STEMI 的责任血管；导丝、球囊和支架治疗使堵塞血管重新开放；复查造影用于确认再灌注效果；术后仍需抗血小板、抗凝或抗栓管理、强化降脂、监测心电和心功能，并警惕 PCI 相关并发症。**我认为这一题最应该体现的思路是：PCI 不是一个孤立“放支架”的动作，而是急性心梗救治中从诊断定位到再灌注治疗、再到术后风险管理的一整套流程。
+因此，本病例中 LAD PCI 的实际意义可以概括为：**冠脉造影确认 LAD 是前壁 STEMI 的责任血管；导丝、球囊和支架治疗使堵塞血管重新开放；复查造影用于确认再灌注效果；术后仍需抗血小板、抗凝或抗栓管理、强化降脂、监测心电和心功能，并警惕 PCI 相关并发症。**这一题最应该体现的思路是：PCI 不是一个孤立“放支架”的动作，而是急性心梗救治中从诊断定位到再灌注治疗、再到术后风险管理的一整套流程。
 
 ## 问题3：PCI 术中及围术期可能发生哪些并发症，应如何预防和处理？
 
 ### ③学习内容：
 
-我理解这一题的重点不是简单列出“出血、感染、心律失常”等并发症，而是要按 PCI 的操作过程去分析风险：**从穿刺建立血管入路开始，到导管导丝进入冠脉、球囊扩张、支架植入、再灌注恢复、术后抗栓治疗，每一步都有对应并发症。**课堂第二幕也把“PCI 操作过程中可能出现哪些并发症、如何预防并发症、术后需要注意什么”放在同一组学习问题中，说明这一题应围绕 PCI 全流程理解。
+这一题的重点不是简单列出“出血、感染、心律失常”等并发症，而是要按 PCI 的操作过程去分析风险：**从穿刺建立血管入路开始，到导管导丝进入冠脉、球囊扩张、支架植入、再灌注恢复、术后抗栓治疗，每一步都有对应并发症。**课堂第二幕也把“PCI 操作过程中可能出现哪些并发症、如何预防并发症、术后需要注意什么”放在同一组学习问题中，说明这一题应围绕 PCI 全流程理解。
 
 #### 一、穿刺入路相关并发症：出血、血肿、假性动脉瘤
 
@@ -280,7 +280,7 @@ STEMI 患者的责任血管内常有大量血栓。PCI 用球囊和支架打开�
 
 无复流的机制比较复杂，包括微血管痉挛、内皮损伤、血小板和白细胞堵塞、远端微血栓、缺血再灌注损伤和组织水肿等。它的临床意义很重：患者可出现胸痛不缓解、ST 段回落不明显、血压下降、心律失常，后续梗死面积扩大和预后变差。
 
-预防思路包括：术前和术中充分抗栓；避免粗暴操作造成大量斑块和血栓脱落；对血栓负荷大的病例谨慎处理；术中根据情况使用血管扩张药或抗血小板强化治疗。发生无复流后，需要及时识别并用冠脉内药物、循环支持等方式改善微循环灌注。这里我认为最重要的认识是：**PCI 成功不能只看主干血管有没有打开，还要看心肌是否真正获得灌注。**
+预防思路包括：术前和术中充分抗栓；避免粗暴操作造成大量斑块和血栓脱落；对血栓负荷大的病例谨慎处理；术中根据情况使用血管扩张药或抗血小板强化治疗。发生无复流后，需要及时识别并用冠脉内药物、循环支持等方式改善微循环灌注。这里最重要的认识是：**PCI 成功不能只看主干血管有没有打开，还要看心肌是否真正获得灌注。**
 
 #### 五、再灌注相关并发症：心律失常和缺血再灌注损伤
 
@@ -310,7 +310,7 @@ PCI 是微创血管内操作，真正的术后感染并不算最常见并发症�
 
 #### 九、可以按“术前—术中—术后”整理预防措施
 
-我把 PCI 并发症预防归纳为三段：
+PCI 并发症预防可归纳为三段：
 
 **术前预防**：确认 STEMI 诊断和再灌注指征；评估出血、肾功能、过敏、感染、心衰和休克风险；完善血常规、凝血、肝肾功能、电解质；准备抗栓药物、抢救药物、除颤设备和必要的循环支持。
 
@@ -322,25 +322,26 @@ PCI 是微创血管内操作，真正的术后感染并不算最常见并发症�
 
 ### ④出处：
 
+【临床指南/共识】
+
+1. Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. *European Heart Journal*. 2023;44(38):3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 ESC ACS Guidelines"))
+
+2. Tamis-Holland JE, Abbott JD, Al-Azizi K, et al. SCAI Expert Consensus Statement on the Management of Patients With STEMI Referred for Primary PCI. *Journal of the Society for Cardiovascular Angiography & Interventions*. 2024;3(12):102294. DOI: 10.1016/j.jscai.2024.102294. ([SCAI](<https://www.scai.org/publications/clinical-documents/scai-expert-consensus-statement-management-patients-stemi-referred> "SCAI STEMI Primary PCI Consensus"))
+
+3. Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. *Circulation*. 2025;151:e771-e862. DOI: 10.1161/CIR.0000000000001309. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA ACS Guideline"))
+
 【教材/专著】
 
-4. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 冠状动脉粥样硬化性心脏病、急性冠状动脉综合征、心肌梗死治疗相关章节。 ([原文链接](<https://www.sciencedirect.com/science/article/pii/S277293032401740X> "SCAI Expert Consensus Statement on the Management of ..."))
+4. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”，第四节“急性冠脉综合征”中“急性ST段抬高型心肌梗死”的再灌注治疗、PCI、心律失常和抗心力衰竭处理（p.254-257）。
 
-【指南/共识】
+【中文指南】
 
-1. Byrne RA, Rossello X, Coughlan JJ, et al. **2023 ESC Guidelines for the management of acute coronary syndromes**. *European Heart Journal*, 2023, 44(38): 3720-3826. DOI: 10.1093/eurheartj/ehad191. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
-
-2. Tamis-Holland JE, Abbott JD, Al-Azizi K, et al. **SCAI Expert Consensus Statement on the Management of Patients With STEMI Referred for Primary PCI**. *Journal of the Society for Cardiovascular Angiography & Interventions*, 2024, 3(12): 102294. DOI: 10.1016/j.jscai.2024.102294. ([原文链接](<https://eelia.gr/wp-content/uploads/2025/05/%CE%91%CE%BD%CF%84%CE%B9%CE%BC%CE%B5%CF%84%CF%8E%CF%80%CE%B9%CF%83%CE%B7-%CE%91%CF%83%CE%B8%CE%B5%CE%BD%CF%8E%CE%BD-%CE%BC%CE%B5-%CE%9F%CE%BE%CF%8D-%CE%A3%CF%84%CE%B5%CF%86%CE%B1%CE%BD%CE%B9%CE%B1%CE%AF%CE%BF-%CE%A3%CF%8D%CE%BD%CE%B4%CF%81%CE%BF%CE%BC%CE%BF-2025.pdf> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
-
-3. Rao SV, O’Donoghue ML, Ruel M, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes**. *Circulation*, 2025, 151: e771-e862. DOI: 10.1161/CIR.0000000000001309. ([SCAI](<https://www.jscai.org/article/S2772-9303%2824%2901740-X/fulltext> "SCAI Expert Consensus Statement on the Management of ..."))
-
-5. 中华医学会心血管病学分会, 中华心血管病杂志编辑委员会. **急性ST段抬高型心肌梗死诊断和治疗指南（2019）**. *中华心血管病杂志*, 2019, 47(10): 766-783. DOI: 10.3760/cma.j.issn.0253-3758.2019.10.003. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 Acute Coronary Syndromes"))
-
+5. 中华医学会心血管病学分会, 中华心血管病杂志编辑委员会. 急性ST段抬高型心肌梗死诊断和治疗指南（2019）. *中华心血管病杂志*. 2019;47(10):766-783. DOI: 10.3760/cma.j.issn.0253-3758.2019.10.003.
 ---
 
 ### ⑤实际应用：
 
-回到刘阿姨病例，我认为她 PCI 的主要风险首先来自两个方面：一是她本身是急性前壁 STEMI，LAD 90%堵塞，心肌缺血范围可能较大；二是她有高血压、糖尿病、血脂异常等基础危险因素，提示血管基础条件不佳，围术期并发症风险不能忽视。
+回到刘阿姨病例，她 PCI 的主要风险首先来自两个方面：一是她本身是急性前壁 STEMI，LAD 90%堵塞，心肌缺血范围可能较大；二是她有高血压、糖尿病、血脂异常等基础危险因素，提示血管基础条件不佳，围术期并发症风险不能忽视。
 
 从术中看，医生在处理 LAD 90%堵塞时，需要警惕冠脉夹层、急性闭塞、远端栓塞、慢血流或无复流。LAD 供应左室前壁和室间隔前部，如果 PCI 过程中出现无复流或急性闭塞，可能直接导致胸痛加重、ST 段不回落、血压下降、恶性心律失常甚至心源性休克。因此，本例术中不仅要把支架放进去，还要确认远端血流真正恢复，观察是否有残余狭窄、夹层、血栓或无复流。
 
@@ -350,9 +351,8 @@ PCI 是微创血管内操作，真正的术后感染并不算最常见并发症�
 
 造影剂相关肾损伤在刘阿姨身上也值得关注。她有糖尿病，而糖尿病患者本身肾脏微血管病变风险较高。PCI 后应复查肌酐、eGFR和尿量，避免脱水，同时也要防止因过量补液加重肺淤血。也就是说，对她这样的患者，保护肾功能和保护心功能需要同时考虑。
 
-我认为本病例最需要强调的是：**PCI 的并发症预防不是手术结束后才开始，而是贯穿术前评估、术中操作和术后管理全过程。**对刘阿姨来说，术前要识别 STEMI 和高危基础病；术中要尽快、规范、有效地开通 LAD，同时避免机械性损伤和无复流；术后要防支架血栓、防出血、防心律失常、防心衰、防肾损伤。只有这样，PCI 才不是单纯完成“放支架”这个动作，而是真正完成急性心梗患者从再灌注到安全恢复的连续管理。
+本病例最需要强调的是：**PCI 的并发症预防不是手术结束后才开始，而是贯穿术前评估、术中操作和术后管理全过程。**对刘阿姨来说，术前要识别 STEMI 和高危基础病；术中要尽快、规范、有效地开通 LAD，同时避免机械性损伤和无复流；术后要防支架血栓、防出血、防心律失常、防心衰、防肾损伤。只有这样，PCI 才不是单纯完成“放支架”这个动作，而是真正完成急性心梗患者从再灌注到安全恢复的连续管理。
 
-已改到记忆里：后续 PBL 写作会避开“不是……而是……”句式，也会减少“我理解”，优先用“我认为、我倾向于、回到病例看、我学习到”等更自然的自主学习表达。
 
 ---
 
@@ -360,7 +360,7 @@ PCI 是微创血管内操作，真正的术后感染并不算最常见并发症�
 
 ### ③学习内容：
 
-我认为 PCI 术后管理的核心，是把“血管已经开通”转化为“患者安全度过急性期，并降低再发风险”。PCI 可以恢复梗死相关血管血流，但术后仍可能发生支架血栓、出血、心律失常、心力衰竭、造影剂相关肾损伤、再梗死等问题。因此，PCI 术后观察不能只盯着支架影像结果，还要连续评估症状、生命体征、心电图、心肌损伤标志物、心功能、出血风险、肾功能和长期二级预防。课堂第二幕也把“PCI 术后患者需要注意什么、术后需要继续监测哪些指标、预后评价标准是什么”列为 PCI 相关重点问题。
+PCI 术后管理的核心，是把“血管已经开通”转化为“患者安全度过急性期，并降低再发风险”。PCI 可以恢复梗死相关血管血流，但术后仍可能发生支架血栓、出血、心律失常、心力衰竭、造影剂相关肾损伤、再梗死等问题。因此，PCI 术后观察不能只盯着支架影像结果，还要连续评估症状、生命体征、心电图、心肌损伤标志物、心功能、出血风险、肾功能和长期二级预防。课堂第二幕也把“PCI 术后患者需要注意什么、术后需要继续监测哪些指标、预后评价标准是什么”列为 PCI 相关重点问题。
 
 #### 一、术后首先要观察再灌注是否有效
 
@@ -450,22 +450,21 @@ PCI 后常用药物包括双联抗血小板药、高强度他汀、β受体阻�
 
 ### ④出处：
 
-【教材/专著】
+【临床指南/共识】
 
-4. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 冠状动脉粥样硬化性心脏病、急性冠状动脉综合征、心肌梗死治疗及二级预防相关章节。 ([JACC](<https://www.jacc.org/doi/10.1016/j.jacc.2025.01.018> "2025 Acute Coronary Syndromes Guideline-at-a-Glance"))
+1. Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. *European Heart Journal*. 2023;44(38):3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 ESC ACS Guidelines"))
 
-【指南/共识】
+2. Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. *Circulation*. 2025;151:e771-e862. DOI: 10.1161/CIR.0000000000001309. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA ACS Guideline"))
 
-1. Byrne RA, Rossello X, Coughlan JJ, et al. **2023 ESC Guidelines for the management of acute coronary syndromes**. *European Heart Journal*, 2023, 44(38): 3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 Acute Coronary Syndromes"))
-
-2. Rao SV, O’Donoghue ML, Ruel M, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes**. *Circulation*, 2025, 151: e771-e862. DOI: 10.1161/CIR.0000000000001309. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
-
-3. 中华医学会心血管病学分会, 中华心血管病杂志编辑委员会. **急性ST段抬高型心肌梗死诊断和治疗指南（2019）**. *中华心血管病杂志*, 2019, 47(10): 766-783. DOI: 10.3760/cma.j.issn.0253-3758.2019.10.003. ([ESC](<https://www.escardio.org/communities/councils/cardiology-practice/education/cardiopractice/long-term-clinical-management-after-an-acute-coronary-syndrome/> "Long-term clinical management after an acute coronary ..."))
+3. ESC Council for Cardiology Practice. Long-term clinical management after an acute coronary syndrome. ([ESC](<https://www.escardio.org/communities/councils/cardiology-practice/education/cardiopractice/long-term-clinical-management-after-an-acute-coronary-syndrome/> "Long-term clinical management after ACS"))
 
 【期刊文献】
 
-4. Sharma L, Faour A, Nguyen T, Dimitri H, Vo G, Otton J, et al. **Simple indices of infarct size post ST-Elevation Myocardial Infarction (STEMI) provides similar risk stratification to cardiac MRI**. *PLOS ONE*, 2024, 19(11): e0311157. DOI: 10.1371/journal.pone.0311157. PMID: 39570931. ([JACC](<https://www.jacc.org/doi/10.1016/j.jacc.2025.01.018> "2025 Acute Coronary Syndromes Guideline-at-a-Glance"))
+4. Sharma L, Faour A, Nguyen T, Dimitri H, Vo G, Otton J, et al. Simple indices of infarct size post ST-Elevation Myocardial Infarction (STEMI) provides similar risk stratification to cardiac MRI. *PLOS ONE*. 2024;19(11):e0311157. DOI: 10.1371/journal.pone.0311157. PMID: 39570931. ([PLOS ONE](<https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311157> "Simple indices of infarct size post STEMI"))
 
+【教材/专著】
+
+5. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”，第四节“急性冠脉综合征”中“急性ST段抬高型心肌梗死”的监护、再灌注治疗、PCI与二级预防内容（p.254-257）。
 ---
 
 ### ⑤实际应用：
@@ -484,7 +483,6 @@ PCI 后常用药物包括双联抗血小板药、高强度他汀、β受体阻�
 
 因此，刘阿姨 PCI 术后最应关注的内容可以概括为：**看胸痛和 ST段判断再灌注效果；看心电监护防心律失常；看肺部啰音、血氧和超声心动图评估心衰；看穿刺点和血红蛋白防出血；看肌钙蛋白和 CK-MB动态警惕再梗死；看肌酐、尿量和电解质保障围术期安全；看血脂、血压、血糖和用药依从性落实长期二级预防。**这才算从“手术成功”进一步推进到“患者真正获益”。
 
-下面把**问题5、问题6、问题8**一次性生成出来。整体保持前面那种“作业可直接用”的写法：正文中带引用编号，后面给出处，实际应用回到刘阿姨病例；同时避开“不是……而是……”这种句式，减少“我理解”。
 
 ---
 
@@ -510,7 +508,7 @@ HDL-C 常被称为“保护性脂蛋白”相关指标，其保护作用主要�
 
 #### 三、甘油三酯升高提示富含甘油三酯脂蛋白残粒增多
 
-TG 升高在过去常被看成“没有 LDL-C 重要”，但近年来越来越受到重视。TG 升高本身常反映 VLDL、乳糜微粒残粒等富含甘油三酯脂蛋白增多。这些残粒颗粒含有胆固醇，可以进入血管内膜，被巨噬细胞摄取，促进泡沫细胞形成和炎症反应。2025 年以后关于 TG 和富含 TG 脂蛋白的综述也持续强调，TG-rich lipoproteins 及其残粒参与 ASCVD 发生发展，不宜只把 TG 看成胰腺炎风险指标[5]。
+TG 升高在过去常被看成“没有 LDL-C 重要”，但近年来越来越受到重视。TG 升高本身常反映 VLDL、乳糜微粒残粒等富含甘油三酯脂蛋白增多。这些残粒颗粒含有胆固醇，可以进入血管内膜，被巨噬细胞摄取，促进泡沫细胞形成和炎症反应。关于富含甘油三酯脂蛋白代谢的综述强调，TRL 及其富含胆固醇的残粒具有促动脉粥样硬化作用，因此 TG 升高不宜只被看作胰腺炎风险指标[5]。
 
 刘阿姨 TG 4.6 mmol/L 明显升高，提示她可能存在糖尿病相关混合型血脂异常。糖尿病和胰岛素抵抗常导致 TG 升高、HDL-C 降低、小而密 LDL 增多，这类 LDL 更容易进入动脉壁并被氧化，从而加速动脉粥样硬化。她同时有 LDL-C 高、TG 高、HDL-C 低，这种组合比单纯 LDL-C 轻度升高更能说明整体代谢环境不良。
 
@@ -534,26 +532,23 @@ ACS 后降脂治疗有三个目标：降低 LDL-C，稳定斑块，减少再发�
 
 ### ④出处：
 
-【教材/专著】
+【临床指南/共识】
 
-7. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 冠状动脉粥样硬化性心脏病、血脂异常与动脉粥样硬化相关章节。 ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC11961988/> "The roles of neutrophils in cardiovascular diseases - PMC - NIH"))
+1. Mach F, Baigent C, Catapano AL, et al. 2019 ESC/EAS Guidelines for the management of dyslipidaemias: lipid modification to reduce cardiovascular risk. *European Heart Journal*. 2020;41(1):111-188. DOI: 10.1093/eurheartj/ehz455. ([Oxford Academic](<https://academic.oup.com/eurheartj/article/41/1/111/5556353> "2019 ESC/EAS Dyslipidaemias Guidelines"))
 
-【指南/共识】
+2. Mach F, Koskinas KC, Roeters van Lennep JE, et al. 2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias. *European Heart Journal*. 2025;46(42):4359-4378. DOI: 10.1093/eurheartj/ehaf190. ([Oxford Academic](<https://academic.oup.com/eurheartj/article/46/42/4359/8234482> "2025 ESC/EAS Dyslipidaemias Focused Update"))
 
-1. Mach F, Baigent C, Catapano AL, et al. **2019 ESC/EAS Guidelines for the management of dyslipidaemias: lipid modification to reduce cardiovascular risk**. *European Heart Journal*, 2020, 41(1): 111-188. DOI: 10.1093/eurheartj/ehz455. ([Oxford Academic](<https://academic.oup.com/eurheartj/article/41/1/111/5556353> "2019 ESC/EAS Guidelines for the management of ..."))
-
-2. Mach F, Koskinas KC, Roeters van Lennep JE, et al. **2025 Focused Update of the 2019 ESC/EAS Guidelines for the management of dyslipidaemias**. *European Heart Journal*, 2025, 46(42): 4359-4378. DOI: 10.1093/eurheartj/ehaf190. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/dyslipidaemias/> "2025 Focused Update of the 2019 ESC/EAS Guidelines ..."))
-
-3. Byrne RA, Rossello X, Coughlan JJ, et al. **2023 ESC Guidelines for the management of acute coronary syndromes**. *European Heart Journal*, 2023, 44(38): 3720-3826. DOI: 10.1093/eurheartj/ehad191. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC7955383/> "Lipid Management in Patients Presenting With Acute ... - PMC"))
-
-6. Rao SV, O’Donoghue ML, Ruel M, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes**. *Circulation*, 2025, 151: e771-e862. DOI: 10.1161/CIR.0000000000001309. ([Oxford Academic](<https://academic.oup.com/eurheartj/article/46/42/4359/8234482> "2025 Focused Update of the 2019 ESC/EAS Guidelines for ..."))
+3. Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. *European Heart Journal*. 2023;44(38):3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 ESC ACS Guidelines"))
 
 【期刊文献】
 
-4. Claessen BE, Guedeney P, Gibson CM, Angiolillo DJ, Cao D, Lepor N, et al. **Lipid Management in Patients Presenting With Acute Coronary Syndromes: A Review**. *Journal of the American Heart Association*, 2020, 9(24): e018897. DOI: 10.1161/JAHA.120.018897. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC12764623/> "Targeting Triglycerides in Cardiovascular Disease Prevention"))
+4. Claessen BE, Guedeney P, Gibson CM, Angiolillo DJ, Cao D, Lepor N, et al. Lipid Management in Patients Presenting With Acute Coronary Syndromes: A Review. *Journal of the American Heart Association*. 2020;9(24):e018897. DOI: 10.1161/JAHA.120.018897. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/JAHA.120.018897> "Lipid Management in ACS"))
 
-5. Alam U, et al. **Targeting Triglycerides in Cardiovascular Disease Prevention**. *Current Atherosclerosis Reports*, 2026. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
+5. Borén J, Packard CJ, Taskinen MR. Metabolism of triglyceride-rich lipoproteins in health and dyslipidaemia. *Nature Reviews Cardiology*. 2022;19:577-592. DOI: 10.1038/s41569-022-00676-y. ([Nature](<https://www.nature.com/articles/s41569-022-00676-y> "Triglyceride-rich lipoproteins"))
 
+【教材/专著】
+
+6. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”，第一节“动脉粥样硬化”（p.227-232）、第四节“急性冠脉综合征”中“急性ST段抬高型心肌梗死”（p.247-257）。【待核对教材页码：血脂异常专门章节】
 ---
 
 ### ⑤实际应用：
@@ -562,7 +557,7 @@ ACS 后降脂治疗有三个目标：降低 LDL-C，稳定斑块，减少再发�
 
 她的 HDL-C 0.83 mmol/L 偏低，提示保护性胆固醇转运能力不足。这个结果与 TG 4.6 mmol/L 升高同时出现，很符合糖尿病或胰岛素抵抗背景下的混合型血脂异常。这样的血脂模式使冠脉斑块环境更不稳定：脂质核心可能更大，炎症更活跃，斑块破裂或侵蚀后形成血栓的风险更高。
 
-结合第二幕造影发现 LAD 90%堵塞，我倾向于认为，刘阿姨这次急性前壁 STEMI 并非偶发事件，而是长期代谢危险因素积累后的急性表现。血脂异常帮助解释“为什么她的 LAD 会出现严重狭窄”；骑行诱发的心率、血压和剪切力变化，可能解释“为什么原有斑块在这次发作中突然转为急性血栓事件”。
+结合第二幕造影发现 LAD 90%堵塞，更倾向于判断，刘阿姨这次急性前壁 STEMI 并非偶发事件，而是长期代谢危险因素积累后的急性表现。血脂异常帮助解释“为什么她的 LAD 会出现严重狭窄”；骑行诱发的心率、血压和剪切力变化，可能解释“为什么原有斑块在这次发作中突然转为急性血栓事件”。
 
 PCI 后，血脂管理仍然是她的核心任务。支架解决了 LAD 局部血流问题，但全身动脉粥样硬化风险仍然存在。她的 LDL-C 距离 ACS 后二级预防目标差距很大，后续应使用高强度他汀，并尽早复查血脂。如果 LDL-C 下降不足，应考虑联合依折麦布，必要时进一步使用 PCSK9 抑制剂等药物。TG 升高则提示还要加强血糖控制、体重管理和饮食干预。
 
@@ -605,7 +600,7 @@ PCI 开通血管后，缺血心肌突然重新获得血流，可发生再灌注�
 感染常有发热、寒战、咳嗽咳痰、尿频尿痛、穿刺点红肿热痛、伤口渗出等表现。心梗无菌性炎症也可有低热，但通常需要结合全身感染症状判断。
 
 **3. 看炎症标志物。**
-CRP 可在心梗后升高，因为它反映全身炎症，不够特异。PCT 对细菌感染更有帮助，但在严重心肌损伤、心源性休克、复苏后、严重心衰等情况下也可能升高。JAMA Network Open 2020 年一项研究专门讨论 STEMI 患者 PCT 与心肌损伤的关系，指出在急性 STEMI 中解读 PCT 时需要考虑心肌损伤本身对炎症标志物的影响[4]。 另一项 ACS 研究显示，PCT 对细菌感染有预测价值，但对长期不良事件预测价值有限[5]。
+CRP 可在心梗后升高，因为它反映全身炎症，不够特异。PCT 对细菌感染更有帮助，但在严重心肌损伤、心源性休克、复苏后、严重心衰等情况下也可能升高。JAMA Network Open 2020 年一项研究专门讨论 STEMI 患者 PCT 与心肌损伤的关系，指出在急性 STEMI 中解读 PCT 时需要考虑心肌损伤本身对炎症标志物的影响[3]。另一项 ACS 研究显示，PCT 对细菌感染有预测价值，但对长期不良事件预测价值有限[4]。
 
 **4. 看感染灶证据。**
 肺部感染需要看咳嗽咳痰、肺部啰音性质变化、胸片或肺部 CT；尿路感染需要看尿常规、尿培养和尿路症状；穿刺点感染需要看局部红肿热痛、渗液和超声检查；血流感染需要血培养支持。
@@ -621,22 +616,19 @@ CRP 可在心梗后升高，因为它反映全身炎症，不够特异。PCT 对
 
 ### ④出处：
 
-【教材/专著】
-
-6. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 急性心肌梗死、炎症反应、感染鉴别相关章节。 ([Oxford Academic](<https://academic.oup.com/eurheartj/article/46/42/4359/8234482> "2025 Focused Update of the 2019 ESC/EAS Guidelines for ..."))
-
 【期刊文献】
 
-1. Lian Y, et al. **The roles of neutrophils in cardiovascular diseases**. *Frontiers/PMC indexed article*, 2025. ([Oxford Academic](<https://academic.oup.com/eurheartj/article/41/1/111/5556353> "2019 ESC/EAS Guidelines for the management of ..."))
+1. Lian Y, Lai X, Wu C, et al. The roles of neutrophils in cardiovascular diseases. *Frontiers in Cardiovascular Medicine*. 2025;12:1526170. DOI: 10.3389/fcvm.2025.1526170. ([Frontiers](<https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2025.1526170/full> "The roles of neutrophils in cardiovascular diseases"))
 
-2. Zhang Z, et al. **Impact of white blood cell count after percutaneous coronary intervention on long-term outcomes in patients with unstable angina**. *Vascular Health and Risk Management*, 2025. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/dyslipidaemias/> "2025 Focused Update of the 2019 ESC/EAS Guidelines ..."))
+2. Zhang Z, Wang H, Wang R, et al. Impact of White Blood Cell Count After Percutaneous Coronary Intervention on Long-Term Prognosis in Patients with Unstable Angina Pectoris: A Single-Center Retrospective Observational Cohort Study. *Vascular Health and Risk Management*. 2025;21:1-13. ([Dove Medical Press](<https://www.dovepress.com/impact-of-white-blood-cell-count-after-percutaneous-coronary-intervent-peer-reviewed-fulltext-article-VHRM> "WBC count after PCI"))
 
-3. Cao F, et al. **Prognostic value of inflammatory markers for all-cause mortality in acute myocardial infarction**. *PMC indexed article*, 2025. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC7955383/> "Lipid Management in Patients Presenting With Acute ... - PMC"))
+3. Reindl M, Tiller C, Holzknecht M, et al. Association of Myocardial Injury With Serum Procalcitonin Levels in Patients With ST-Elevation Myocardial Infarction. *JAMA Network Open*. 2020;3(6):e207030. DOI: 10.1001/jamanetworkopen.2020.7030. ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/32539151/> "Procalcitonin and STEMI"))
 
-4. Reindl M, et al. **Association of Myocardial Injury With Serum Procalcitonin Levels in Patients With ST-Elevation Myocardial Infarction**. *JAMA Network Open*, 2020. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC12764623/> "Targeting Triglycerides in Cardiovascular Disease Prevention"))
+4. Pavasini R, Fabbri G, Marchini F, et al. Procalcitonin Predicts Bacterial Infection, but Not Long-Term Occurrence of Adverse Events in Patients with Acute Coronary Syndrome. *Journal of Clinical Medicine*. 2022;11(3):554. DOI: 10.3390/jcm11030554. ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35160005/> "Procalcitonin in ACS"))
 
-5. Pavasini R, et al. **Procalcitonin Predicts Bacterial Infection, but Not Long-Term Occurrence of Adverse Events in Patients With Acute Coronary Syndrome**. *Journal/PMC indexed article*, 2022. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
+【教材/专著】
 
+5. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”中“急性ST段抬高型心肌梗死”的心肌坏死标志物和诊断内容（p.250-253）。【待核对教材页码：心梗后炎症反应与感染鉴别相关内容】
 ---
 
 ### ⑤实际应用：
@@ -657,7 +649,7 @@ CRP 可在心梗后升高，因为它反映全身炎症，不够特异。PCT 对
 
 ### ③学习内容：
 
-我认为这一题的关键不是把所有“心肌酶”简单背成一类，而是要把它们分出层次：**肌红蛋白提示早期肌细胞损伤，但特异性差；CK 和 CK-MB反映肌肉能量代谢相关酶释放，其中 CK-MB较偏心肌但已不是诊断核心；心肌肌钙蛋白，尤其高敏肌钙蛋白，才是目前判断心肌损伤和急性心肌梗死最核心的实验室指标。**第四版《心肌梗死通用定义》明确指出，只要心肌肌钙蛋白超过第99百分位参考上限，就可定义为心肌损伤；若有升高或下降的动态变化，并同时存在缺血症状、缺血性心电图改变、影像学证据或冠脉血栓证据，才进一步诊断为急性心肌梗死[1]。
+这一题的关键不是把所有“心肌酶”简单背成一类，而是要把它们分出层次：**肌红蛋白提示早期肌细胞损伤，但特异性差；CK 和 CK-MB反映肌肉能量代谢相关酶释放，其中 CK-MB较偏心肌但已不是诊断核心；心肌肌钙蛋白，尤其高敏肌钙蛋白，才是目前判断心肌损伤和急性心肌梗死最核心的实验室指标。**第四版《心肌梗死通用定义》明确指出，只要心肌肌钙蛋白超过第99百分位参考上限，就可定义为心肌损伤；若有升高或下降的动态变化，并同时存在缺血症状、缺血性心电图改变、影像学证据或冠脉血栓证据，才进一步诊断为急性心肌梗死[1]。
 
 #### 一、肌红蛋白：升高早，但不是心肌特异性指标
 
@@ -665,7 +657,7 @@ CRP 可在心梗后升高，因为它反映全身炎症，不够特异。PCT 对
 
 但是肌红蛋白的最大问题是**特异性差**。它并不只存在于心肌，骨骼肌损伤、剧烈运动、肌炎、创伤、横纹肌溶解，甚至肾功能影响其清除时，都可能使肌红蛋白升高。因此，肌红蛋白升高可以提示“肌细胞损伤”，但不能单独证明“心肌梗死”。在现代心梗诊断中，它更多是辅助理解发病时间和组织损伤程度的指标，而不是决定性诊断指标。
 
-所以我理解肌红蛋白的定位是：**早、敏感、不特异**。如果患者刚开始胸痛，肌红蛋白已经升高，而肌钙蛋白尚未明显升高，它可以提供早期线索；但在已经有典型胸痛、ST段抬高、肌钙蛋白明显升高的病例中，肌红蛋白更多是对“急性肌细胞损伤很明显”的补充证据，而不是最核心证据。
+所以肌红蛋白的定位是：**早、敏感、不特异**。如果患者刚开始胸痛，肌红蛋白已经升高，而肌钙蛋白尚未明显升高，它可以提供早期线索；但在已经有典型胸痛、ST段抬高、肌钙蛋白明显升高的病例中，肌红蛋白更多是对“急性肌细胞损伤很明显”的补充证据，而不是最核心证据。
 
 #### 二、CK 与 CK-MB：反映肌细胞能量代谢酶释放，CK-MB较偏心肌
 
@@ -719,39 +711,38 @@ CK-MB 比总 CK 更偏向心肌来源，但它仍然不是绝对心肌特异。�
 
 #### 六、文献学习：肌钙蛋白不仅用于诊断，也可提示梗死面积和预后
 
-我认为这次文献分享最适合引入 Sharma 等 2024 年发表在 PLOS ONE 的原始研究。该研究不是综述，而是 peer-reviewed research article，研究对象为 STEMI 后接受 PCI 的患者，比较了 PCI 后 ≥48 h 平台期 hsTnT、Selvester QRS评分和心脏磁共振 CMRI 测定梗死面积之间的关系，并观察这些指标对24个月主要不良心血管事件的预测价值[3]。
+本题适合引入 Sharma 等 2024 年发表在 PLOS ONE 的原始研究。该研究不是综述，而是 peer-reviewed research article，研究对象为 STEMI 后接受 PCI 的患者，比较了 PCI 后 ≥48 h 平台期 hsTnT、Selvester QRS评分和心脏磁共振 CMRI 测定梗死面积之间的关系，并观察这些指标对24个月主要不良心血管事件的预测价值[3]。
 
 这篇文章的设计和刘阿姨病例很贴近：刘阿姨是急性前壁 STEMI，并接受了 PCI；Sharma 研究中 233 例 STEMI 患者接受早期 CMRI，其中 211 例为首次 STEMI，54%为前壁心梗，78%接受 primary PCI。研究结果显示，PCI 后 ≥48 h 的 hsTnT 水平与 CMRI 测定的梗死面积在前壁心梗中存在相关性；hsTnT、QRS评分和CMRI梗死面积的最高三分位均能预测24个月主要不良心血管事件，多变量分析中72 h hsTnT可预测24个月MACE[3]。
 
-这篇文献给我的启发是：对于 STEMI 患者，肌钙蛋白不只是“诊断有没有心梗”的指标。PCI 后持续处于高水平的 hsTnT 还可能反映较大的梗死面积，进一步关联心衰住院、死亡、卒中等不良事件风险。因此，在刘阿姨这个病例中，肌钙蛋白的意义应从三个层面理解：**诊断层面确认急性心肌损伤；病变层面提示 LAD 供血区心肌坏死范围可能较大；预后层面提示后续要重视左室功能、心衰和再发事件风险。**
+这篇文献提示：对于 STEMI 患者，肌钙蛋白不只是“诊断有没有心梗”的指标。PCI 后持续处于高水平的 hsTnT 还可能反映较大的梗死面积，进一步关联心衰住院、死亡、卒中等不良事件风险。因此，在刘阿姨这个病例中，肌钙蛋白的意义应从三个层面理解：**诊断层面确认急性心肌损伤；病变层面提示 LAD 供血区心肌坏死范围可能较大；预后层面提示后续要重视左室功能、心衰和再发事件风险。**
 
 ---
 
 ### ④出处：
 
-【教材/专著】
+【临床指南/共识】
 
-6. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 冠状动脉粥样硬化性心脏病/急性冠脉综合征相关章节。 ([PLOS ONE](<https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0311157> "Simple indices of infarct size post ST-Elevation Myocardial Infarction (STEMI) provides similar risk stratification to cardiac MRI | PLOS One"))
+1. Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). *Circulation*. 2018;138(20):e618-e651. DOI: 10.1161/CIR.0000000000000617. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000000617> "Fourth Universal Definition of Myocardial Infarction"))
 
-【指南/共识】
-
-1. Thygesen K, Alpert JS, Jaffe AS, et al. **Fourth Universal Definition of Myocardial Infarction (2018)**. *Circulation*, 2018, 138(20): e618-e651. DOI: 10.1161/CIR.0000000000000617. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000000617> "Fourth Universal Definition of Myocardial Infarction (2018)"))
-
-2. Byrne RA, Rossello X, Coughlan JJ, et al. **2023 ESC Guidelines for the management of acute coronary syndromes**. *European Heart Journal*, 2023, 44(38): 3720-3826. DOI: 10.1093/eurheartj/ehad191. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC6340361/> "Biomarkers in acute myocardial infarction: current perspectives"))
+2. Byrne RA, Rossello X, Coughlan JJ, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. *European Heart Journal*. 2023;44(38):3720-3826. DOI: 10.1093/eurheartj/ehad191. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 ESC ACS Guidelines"))
 
 【期刊文献】
 
-3. Sharma L, Faour A, Nguyen T, Dimitri H, Vo G, Otton J, et al. **Simple indices of infarct size post ST-Elevation Myocardial Infarction (STEMI) provides similar risk stratification to cardiac MRI**. *PLOS ONE*, 2024, 19(11): e0311157. DOI: 10.1371/journal.pone.0311157. PMID: 39570931. ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/30697054/> "Biomarkers in acute myocardial infarction: current ..."))
+3. Sharma L, Faour A, Nguyen T, Dimitri H, Vo G, Otton J, et al. Simple indices of infarct size post ST-Elevation Myocardial Infarction (STEMI) provides similar risk stratification to cardiac MRI. *PLOS ONE*. 2024;19(11):e0311157. DOI: 10.1371/journal.pone.0311157. PMID: 39570931. ([PLOS ONE](<https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0311157> "Simple indices of infarct size post STEMI"))
 
-4. Aydin S, Aydin S. **Biomarkers in acute myocardial infarction: current perspectives**. *Vascular Health and Risk Management*, 2019, 15: 1-10. DOI: 10.2147/VHRM.S166157. PMID: 30697054. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.122.059678> "High-Sensitivity Cardiac Troponin and the 2021 AHA/ACC/ ..."))
+4. Aydin S, Aydin S. Biomarkers in acute myocardial infarction: current perspectives. *Vascular Health and Risk Management*. 2019;15:1-10. DOI: 10.2147/VHRM.S166157. PMID: 30697054. ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/30697054/> "Biomarkers in acute myocardial infarction"))
 
-5. Sandoval Y, Januzzi JL Jr, Jaffe AS. **High-Sensitivity Cardiac Troponin and the 2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guidelines for the Evaluation and Diagnosis of Acute Chest Pain**. *Circulation*, 2022, 146(7): 569-581. DOI: 10.1161/CIRCULATIONAHA.122.059678. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes-acs-guidelines/> "2023 Acute Coronary Syndromes"))
+5. Sandoval Y, Januzzi JL Jr, Jaffe AS. High-Sensitivity Cardiac Troponin and the 2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guidelines for the Evaluation and Diagnosis of Acute Chest Pain. *Circulation*. 2022;146(7):569-581. DOI: 10.1161/CIRCULATIONAHA.122.059678. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.122.059678> "High-Sensitivity Cardiac Troponin"))
 
+【教材/专著】
+
+6. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”，第四节“急性冠脉综合征”中“急性ST段抬高型心肌梗死”的心肌坏死标志物和诊断内容（p.250-253）。
 ---
 
 ### ⑤实际应用：
 
-回到刘阿姨病例，我认为这些指标不能平铺直叙地写成“都升高，所以是心梗”，而要按证据强弱来解释。刘阿姨的肌红蛋白 1091.40 ng/ml 明显升高，说明体内存在显著的肌细胞损伤。由于肌红蛋白可来自心肌和骨骼肌，所以单独看它不能确诊急性心肌梗死；但结合刘阿姨持续胸痛、前壁导联 ST 段抬高、LAD 90%堵塞和后续 PCI，它更支持“急性心肌坏死过程中有大量肌细胞内容物释放”。在这个病例中，肌红蛋白的价值主要是辅助提示损伤发生较急、程度较重，而不是作为决定性诊断依据。
+回到刘阿姨病例，这些指标不能平铺直叙地写成“都升高，所以是心梗”，而要按证据强弱来解释。刘阿姨的肌红蛋白 1091.40 ng/ml 明显升高，说明体内存在显著的肌细胞损伤。由于肌红蛋白可来自心肌和骨骼肌，所以单独看它不能确诊急性心肌梗死；但结合刘阿姨持续胸痛、前壁导联 ST 段抬高、LAD 90%堵塞和后续 PCI，它更支持“急性心肌坏死过程中有大量肌细胞内容物释放”。在这个病例中，肌红蛋白的价值主要是辅助提示损伤发生较急、程度较重，而不是作为决定性诊断依据。
 
 CK 1181 U/L 和 CK-MB 194 U/L 明显升高，也支持肌肉组织，尤其是心肌组织发生损伤。CK-MB较总CK更偏心肌来源，因此它与肌红蛋白相比更能支持心肌损伤。但我不会把 CK-MB 写成“确诊心梗的金标准”，因为现在临床诊断急性心肌梗死的核心已经是 cTn/hs-cTn。CK-MB在本例中的意义更像是“补强证据”：它和肌红蛋白、肌钙蛋白一起构成心肌坏死的生化证据链，同时也提示这次梗死不是很轻微的损伤。
 
@@ -763,7 +754,7 @@ CK 1181 U/L 和 CK-MB 194 U/L 明显升高，也支持肌肉组织，尤其是�
 
 Sharma 等 2024 年的研究对本病例很有启发。该研究发现，STEMI患者 PCI 后≥48 h 的 hsTnT水平与 CMRI测定的梗死面积相关，并且可以预测24个月主要不良心血管事件[3]。这提示我在分析刘阿姨时，不能把肌钙蛋白仅仅当作“确诊工具”。她的肌钙蛋白显著升高还提醒我们：本次 LAD相关前壁心梗可能带来较大的心肌损伤负担，后续应重点关注左室重构、心力衰竭、恶性心律失常和再发缺血事件。对于她这种合并高血压、糖尿病和血脂异常的患者，PCI开通血管只是急性期治疗的关键一步，长期还必须依靠双联抗血小板治疗、强化降脂、血压血糖管理、心脏康复和规律复查来降低再发风险。
 
-因此，本病例中各项指标的临床意义可以归纳为：**肌红蛋白提示急性肌细胞损伤明显，但特异性不足；CK和CK-MB支持心肌损伤并帮助理解损伤程度；cTnT和hsTnI是确认心肌损伤、支持急性前壁 STEMI 诊断的核心证据；而持续高水平的高敏肌钙蛋白还提示需要进一步评估梗死范围和远期预后。**我认为这一题最终应落到“从化验单读出临床问题”上：不是看到升高就结束，而是继续追问——损伤是不是急性的、是不是缺血导致的、责任血管在哪里、梗死范围大不大、PCI 后是否再灌注成功、后续心衰和再发事件风险如何。
+因此，本病例中各项指标的临床意义可以归纳为：**肌红蛋白提示急性肌细胞损伤明显，但特异性不足；CK和CK-MB支持心肌损伤并帮助理解损伤程度；cTnT和hsTnI是确认心肌损伤、支持急性前壁 STEMI 诊断的核心证据；而持续高水平的高敏肌钙蛋白还提示需要进一步评估梗死范围和远期预后。**这一题最终应落到“从化验单读出临床问题”上：不是看到升高就结束，而是继续追问——损伤是不是急性的、是不是缺血导致的、责任血管在哪里、梗死范围大不大、PCI 后是否再灌注成功、后续心衰和再发事件风险如何。
 
 ## 问题8：PCI 围术期为什么还要关注肝肾功能和电解质，而不能只看心肌损伤标志物？
 
@@ -821,24 +812,23 @@ KDIGO AKI 指南中，AKI 常用诊断标准包括血肌酐在 48 小时内升�
 
 ### ④出处：
 
-【教材/专著】
-
-6. 葛均波, 王辰, 王建安. **内科学**. 第10版. 北京: 人民卫生出版社, 2024: 急性心肌梗死、急性心力衰竭、肝肾功能与电解质监测相关章节。 ([Oxford Academic](<https://academic.oup.com/eurheartj/article/46/42/4359/8234482> "2025 Focused Update of the 2019 ESC/EAS Guidelines for ..."))
-
-【指南/共识】
-
-2. Kidney Disease: Improving Global Outcomes. **KDIGO Clinical Practice Guideline for Acute Kidney Injury**. *Kidney International Supplements*, 2012, 2(1): 1-138. ([ESC](<https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/dyslipidaemias/> "2025 Focused Update of the 2019 ESC/EAS Guidelines ..."))
-
-4. Rao SV, O’Donoghue ML, Ruel M, et al. **2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes**. *Circulation*, 2025, 151: e771-e862. DOI: 10.1161/CIR.0000000000001309. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC12764623/> "Targeting Triglycerides in Cardiovascular Disease Prevention"))
-
-5. Gorenek B, Blomström Lundqvist C, Brugada Terradellas J, et al. **Cardiac arrhythmias in acute coronary syndromes: position paper from the joint EHRA, ACCA, and EAPCI task force**. *Europace/EuroIntervention*, 2014. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the ..."))
-
 【期刊文献】
 
-1. Li Y, et al. **Contrast-induced acute kidney injury: a review of definition, pathogenesis, risk factors, prevention and treatment**. *BMC Nephrology*, 2024. DOI 信息建议提交前按 PubMed/期刊官网核对。([Springer](<https://link.springer.com/article/10.1186/s12882-024-03570-6?> "Contrast-induced acute kidney injury: a review of definition ...")) ([Oxford Academic](<https://academic.oup.com/eurheartj/article/41/1/111/5556353> "2019 ESC/EAS Guidelines for the management of ..."))
+1. Li Y, Ren K, Liu X, et al. Contrast-induced acute kidney injury: a review of definition, pathogenesis, risk factors, prevention and treatment. *BMC Nephrology*. 2024;25:140. DOI: 10.1186/s12882-024-03570-6. ([Springer](<https://link.springer.com/article/10.1186/s12882-024-03570-6> "Contrast-induced acute kidney injury"))
 
-3. van der Molen AJ, Reimer P, Dekkers IA, et al. **Post-contrast acute kidney injury – Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors**. *European Radiology*, 2018, 28: 2845-2855. DOI: 10.1007/s00330-017-5246-5. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC7955383/> "Lipid Management in Patients Presenting With Acute ... - PMC"))
+2. Kidney Disease: Improving Global Outcomes. KDIGO Clinical Practice Guideline for Acute Kidney Injury. *Kidney International Supplements*. 2012;2(1):1-138. ([KDIGO](<https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf> "KDIGO AKI Guideline"))
 
+3. van der Molen AJ, Reimer P, Dekkers IA, et al. Post-contrast acute kidney injury - Part 1: Definition, clinical features, incidence, role of contrast medium and risk factors. *European Radiology*. 2018;28:2845-2855. DOI: 10.1007/s00330-017-5246-5. ([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC5986837/> "Post-contrast acute kidney injury"))
+
+【临床指南/共识】
+
+4. Rao SV, O'Donoghue ML, Ruel M, et al. 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes. *Circulation*. 2025;151:e771-e862. DOI: 10.1161/CIR.0000000000001309. ([AHA Journals](<https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309> "2025 ACC/AHA ACS Guideline"))
+
+5. Gorenek B, Blomstrom Lundqvist C, Brugada Terradellas J, et al. Cardiac arrhythmias in acute coronary syndromes: position paper from the joint EHRA, ACCA, and EAPCI task force. *Europace*. 2014;16(11):1655-1673. DOI: 10.1093/europace/euu208. ([EuroIntervention](<https://eurointervention.pcronline.com/article/cardiac-arrhythmias-in-acute-coronary-syndromes-position-paper-from-the-joint-ehra-acca-and-eapci-task-force> "Cardiac arrhythmias in ACS"))
+
+【教材/专著】
+
+6. 葛均波，王辰，王建安. 《内科学》. 第10版. 北京：人民卫生出版社，2024：第三篇循环系统疾病，第二章“心力衰竭”中“急性心力衰竭”（p.186-188），第四章“动脉粥样硬化和冠状动脉粥样硬化性心脏病”中“急性ST段抬高型心肌梗死”的监护和再灌注治疗（p.254-257）。【待核对教材页码：肝肾功能、电解质围术期监测专门内容】
 ---
 
 ### ⑤实际应用：
