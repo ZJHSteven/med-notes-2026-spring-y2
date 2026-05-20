@@ -1,7 +1,7 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：`循环系统/PBL作业/Case2-第二幕/Case2-第二幕.md` 已完成原文备份、人工精读清洗、引用格式重建，并按最新反馈恢复第一人称判断语气后重新导出美化版 HTML/PDF；优先查看 `Case2-第二幕-美化版.pdf`。
+- 现状：`循环系统/PBL作业/Case2-第二幕/高敏肌钙蛋白T_STEMI_PCI文献汇报.pptx` 已在原 3 页文献汇报基础上追加第 4 页“肌钙蛋白升高的临床意义”，用于只讲临床意义、不重复分类/结构/释放机制；第二幕作业正文的 `Case2-第二幕-美化版.pdf` 也已保持可用。
 - 已完成：
   - Case2 第二幕作业 Markdown：已在清洗前单独提交原始 `Case2-第二幕.md` 作为 Git 备份，随后删除 AI 草稿口吻、正文直链、`utm_source`、方框式出处和无效来源提示；正文只保留 `[1]` 形式引用，链接统一放入各题 `④出处`。
   - Case2 第二幕作业 Markdown：已按用户反馈恢复 `我认为 / 我倾向于 / 我觉得 / 我不会 / 我理解` 等第一人称判断语气，保留当前引用结构、出处列表和链接清洗结果，并重新生成对应 HTML/PDF 成品。
@@ -9,6 +9,8 @@
   - Case2 第二幕作业 Markdown：已生成 `循环系统/PBL作业/Case2-第二幕/Case2-第二幕-美化版.html` 与 `循环系统/PBL作业/Case2-第二幕/Case2-第二幕-美化版.pdf`；PDF 共 41 页。
   - Case2 第二幕作业 Markdown：已验证 `python -m py_compile build_html.py`、`python build_html.py --no-pdf`、`python build_html.py`、正文外链残留为 0、`utm_source/chatgpt` 残留为 0、引用锚点缺失为 0、`qpdf --check` 无语法或流编码错误。
   - Case2 第二幕教材出处：当前未找到本地《内科学》第10版 PDF，已优先复用第一幕已核准页码；无法核准的专门内容保留 `【待核对教材页码：...】` 标记，后续拿到教材 PDF 后再补准。
+  - Case2 第二幕文献汇报 PPT：已在修改前用 Git tag `backup/case2-hstnt-ppt-before-clinical-meaning` 固定旧版回退点；随后在同一 PPT 中追加第 4 页“肌钙蛋白升高的临床意义：不止‘阳性’，更要看证据链”。
+  - Case2 第二幕文献汇报 PPT：第 4 页改为只讲肌钙蛋白升高的临床意义，不展开分类、结构和释放机制；页面沿用前 3 页纸色学术风格，包含左侧病例证据卡、中间临床解释流程图、右侧 PCI 后动态曲线示意图和底部三层意义总结。
   - Case2 第二幕文献汇报 PPT：已根据 `journal.pone.0311157.pdf` 和用户给定大纲生成 3 页 16:9 PPT；结构为封面、研究问题与设计、核心结果与病例回扣。
   - Case2 第二幕文献汇报 PPT：已嵌入 Fig 1 缩略 CONSORT 流程、Fig 2C/D 相关性散点图、Fig 3B hsTnT 分层 Kaplan-Meier 曲线；Table 6 未整表搬运，提炼为“72h hsTnT 每增加 1000 ng/L，24 月 MACE 可能性增加 1.83 倍”关键结果卡片。
   - Case2 第二幕文献汇报 PPT：已通过 artifact-tool 渲染预览和布局检查，结果为 3 页、`check_layout_quality.mjs` 0 error / 0 warning；PPTX ZIP `testzip=None`，媒体文件 4 个且无空媒体；PowerPoint COM 可打开并导出 3 页 PNG。
