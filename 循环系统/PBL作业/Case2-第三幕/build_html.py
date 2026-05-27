@@ -1043,7 +1043,7 @@ with sync_playwright() as p:
 """
 
     # 仍然使用 ASCII 临时文件，是为了进一步规避第三方工具对中文输出文件名的兼容问题。
-    with tempfile.TemporaryDirectory(prefix="case1_pdf_") as temp_dir:
+    with tempfile.TemporaryDirectory(prefix="case2_pdf_", ignore_cleanup_errors=True) as temp_dir:
         temp_pdf_path = Path(temp_dir) / "export.pdf"
         completed = subprocess.run(
             [
@@ -1061,6 +1061,8 @@ with sync_playwright() as p:
             check=True,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
         )
 
         if not temp_pdf_path.exists():
@@ -1086,7 +1088,7 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> Path:
 
     # 实测发现：Edge 在 Windows 上直接输出到“带中文文件名的 PDF 路径”时，
     # 可能静默失败却不报错。这里先输出到 ASCII 临时文件，再移动到目标文件名。
-    with tempfile.TemporaryDirectory(prefix="case1_pdf_") as temp_dir:
+    with tempfile.TemporaryDirectory(prefix="case2_pdf_", ignore_cleanup_errors=True) as temp_dir:
         temp_pdf_path = Path(temp_dir) / "export.pdf"
         command = [
             str(edge_path),
@@ -1098,7 +1100,14 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> Path:
         ]
 
         # 这里保留标准输出/错误输出，后面若失败可直接带回错误上下文。
-        completed = subprocess.run(command, check=True, capture_output=True, text=True)
+        completed = subprocess.run(
+            command,
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+        )
 
         # 最后确认临时 PDF 已生成，再移动到目标位置。
         if not temp_pdf_path.exists():
@@ -1120,8 +1129,13 @@ def export_pdf(html_path: Path, pdf_path: Path) -> Path:
         raise FileNotFoundError("未找到 Microsoft Edge，无法自动导出 PDF。")
 
     # 如果系统里有 uv，就优先走 Playwright。这条链更接近真正的浏览器“打印为 PDF”。
+    # Windows 下 uv / Playwright 偶尔会因为输出编码或临时目录锁定失败；
+    # 这类失败不应阻断作业导出，所以这里明确退回 Edge 无头打印。
     if shutil.which("uv"):
-        return export_pdf_with_playwright(html_path, pdf_path, edge_path)
+        try:
+            return export_pdf_with_playwright(html_path, pdf_path, edge_path)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[提示] Playwright 导出失败，改用 Edge 兜底：{exc}")
 
     # 没有 uv 时，才使用更原始的 Edge 命令行打印作为兜底。
     return export_pdf_with_edge(html_path, pdf_path)
