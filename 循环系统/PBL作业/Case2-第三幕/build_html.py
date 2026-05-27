@@ -1042,9 +1042,11 @@ with sync_playwright() as p:
     browser.close()
 """
 
-    # 仍然使用 ASCII 临时文件，是为了进一步规避第三方工具对中文输出文件名的兼容问题。
-    with tempfile.TemporaryDirectory(prefix="case2_pdf_", ignore_cleanup_errors=True) as temp_dir:
-        temp_pdf_path = Path(temp_dir) / "export.pdf"
+    # 使用当前目录下的 ASCII 临时文件，避开 Windows 系统 Temp 目录偶发的权限/锁定问题。
+    temp_pdf_path = pdf_path.with_name("_case2_pdf_export_tmp.pdf")
+    if temp_pdf_path.exists():
+        temp_pdf_path.unlink()
+    try:
         completed = subprocess.run(
             [
                 "uv",
@@ -1073,6 +1075,9 @@ with sync_playwright() as p:
             )
 
         return place_pdf_output(temp_pdf_path, pdf_path)
+    finally:
+        if temp_pdf_path.exists():
+            temp_pdf_path.unlink()
 
 
 def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> Path:
@@ -1087,9 +1092,11 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> Path:
         pdf_path.unlink()
 
     # 实测发现：Edge 在 Windows 上直接输出到“带中文文件名的 PDF 路径”时，
-    # 可能静默失败却不报错。这里先输出到 ASCII 临时文件，再移动到目标文件名。
-    with tempfile.TemporaryDirectory(prefix="case2_pdf_", ignore_cleanup_errors=True) as temp_dir:
-        temp_pdf_path = Path(temp_dir) / "export.pdf"
+    # 可能静默失败却不报错。这里先输出到当前目录的 ASCII 临时文件，再移动到目标文件名。
+    temp_pdf_path = pdf_path.with_name("_case2_pdf_export_tmp.pdf")
+    if temp_pdf_path.exists():
+        temp_pdf_path.unlink()
+    try:
         command = [
             str(edge_path),
             "--headless",
@@ -1119,6 +1126,9 @@ def export_pdf_with_edge(html_path: Path, pdf_path: Path) -> Path:
 
         # 目标目录理论上已经存在，但这里仍做一次兜底，避免跨目录输出时报错。
         return place_pdf_output(temp_pdf_path, pdf_path)
+    finally:
+        if temp_pdf_path.exists():
+            temp_pdf_path.unlink()
 
 
 def export_pdf(html_path: Path, pdf_path: Path) -> Path:
