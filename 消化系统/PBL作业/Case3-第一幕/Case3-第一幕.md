@@ -44,7 +44,7 @@
 
 因此，“1个月前胃镜提示食管重度静脉曲张但拒绝治疗”是本题最关键的近期危险因素。它提示患者在本次发病前已经存在明确的出血高危病灶，但没有完成预防性处理。也就是说，本次上消化道出血并不是完全突然发生，而更像是一个已经被发现、但没有及时干预的高危并发症最终出现了临床事件。
 
-长期服用恩替卡韦说明患者既往已经接受慢性乙肝抗病毒治疗。恩替卡韦属于核苷类似物，主要通过抑制HBV DNA聚合酶/逆转录酶，减少病毒复制，使血清HBV-DNA下降甚至转阴。慢性乙肝治疗的目标不是单纯改善一次肝功能，而是长期抑制病毒复制、延缓疾病进展、减少肝硬化失代偿和肝细胞癌风险。香港慢性乙肝基层管理指南也指出，强效、高耐药屏障的核苷/核苷酸类似物是长期治疗的主要选择，恩替卡韦和替诺福韦属于常用首选口服抗病毒药物；多数接受抗病毒治疗的慢乙肝患者需要长期甚至终身治疗。[3]
+长期服用恩替卡韦说明患者既往已经接受慢性乙肝抗病毒治疗。恩替卡韦属于核苷类似物，主要通过抑制HBV DNA聚合酶/逆转录酶，减少病毒复制，使血清HBV-DNA下降甚至转阴。慢性乙肝治疗的目标不是单纯改善一次肝功能，而是长期抑制病毒复制、延缓疾病进展、减少肝硬化失代偿和肝细胞癌风险。中国《慢性乙型肝炎防治指南（2022年版）》也指出，强效、高耐药屏障的核苷（酸）类似物是慢性乙肝长期治疗的主要选择，恩替卡韦和替诺福韦属于常用一线口服抗病毒药物。[3]
 
 但恩替卡韦治疗并不能简单理解为“已经治好了乙肝”。如果患者已经形成肝硬化，抗病毒治疗可以降低继续进展和部分并发症风险，却不能立刻逆转已经形成的门静脉高压和食管静脉曲张。换句话说，**HBV-DNA阴性更像是当前病毒复制受到控制，而不是肝硬化并发症风险消失**。这正好解释了本例的矛盾：患者长期服药、病毒复制可能被压低，但仍然因为既往慢性乙肝导致的肝硬化和门静脉高压，发生了食管静脉曲张破裂出血。
 
@@ -58,11 +58,11 @@
 
 1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736. 
 
-2. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298. 
+2. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226. 
 
-3. Xu X, Guo X, De Stefano V, et al. **Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension**. *Journal of Clinical and Translational Hepatology*, 2023, 11(5): 1037-1063. DOI: 10.14218/JCTH.2023.00203. PMID: 37780629. 
+3. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050. 
 
-4. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050. 
+4. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298. 
 
 【教材/专著】
 
@@ -86,7 +86,7 @@
 
 ### ③学习内容：
 
-呕血、血凝块和黑便是判断上消化道出血最直接的症状线索。**呕血 hematemesis** 通常提示出血部位位于Treitz韧带以上，包括食管、胃和十二指肠；若呕出鲜红色血液或血凝块，往往提示出血速度较快、出血量较大，血液尚未被胃酸充分消化。**柏油样黑便 melena** 是血液在胃肠道内经过消化后形成的典型表现，也支持上消化道出血方向。课堂笔记中也记录，老师引导大家把呕血、血凝块、黑便作为典型消化道出血表现来分析，并结合患者已有食管重度静脉曲张，重点考虑静脉曲张破裂出血。
+呕血、血凝块和黑便是判断上消化道出血最直接的症状线索。**呕血 hematemesis** 通常提示出血部位位于Treitz韧带以上，包括食管、胃和十二指肠；若呕出鲜红色血液或血凝块，往往提示出血速度较快、出血量较大，血液尚未被胃酸充分消化。**柏油样黑便 melena** 是血液在胃肠道内经过消化后形成的典型表现，也支持上消化道出血方向。结合患者已有食管重度静脉曲张病史，应优先考虑静脉曲张破裂出血。
 
 从初步诊断看，本例至少可以先判断为**急性上消化道出血**。在此基础上，还要进一步判断出血原因。普通上消化道出血常见病因包括消化性溃疡、急性胃黏膜病变、食管胃底静脉曲张、Mallory-Weiss综合征、上消化道肿瘤等。对于没有肝硬化背景的患者，消化性溃疡出血很常见；但本例有慢性乙肝肝硬化20多年，并且1个月前胃镜已经提示食管重度静脉曲张，因此初步诊断应进一步指向**肝硬化门静脉高压相关的食管胃底静脉曲张破裂出血**。Baveno VII共识指出，门静脉高压是肝硬化的重要后果，可导致包括静脉曲张出血在内的严重并发症。[1]
 
@@ -106,14 +106,11 @@
 
 1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
 
-2. Laine L, Barkun AN, Saltzman JR, Martel M, Leontiadis GI. **ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding**. *American Journal of Gastroenterology*, 2021, 116(5): 899-917. DOI: 10.14309/ajg.0000000000001245. PMID: 33929377.
-   ACG指南建议对上消化道出血患者进行急诊风险评估，并指出住院上消化道出血患者红细胞输注阈值通常为Hb 7 g/dL，入院或留观患者建议24小时内内镜检查。
+2. Gralnek IM, Stanley AJ, Morris AJ, et al. **Endoscopic diagnosis and management of nonvariceal upper gastrointestinal hemorrhage: ESGE Guideline - Update 2021**. *Endoscopy*, 2021, 53(3): 300-332. DOI: 10.1055/a-1369-5274. PMID: 33567467.
 
-3. Gralnek IM, Stanley AJ, Morris AJ, et al. **Endoscopic diagnosis and management of nonvariceal upper gastrointestinal hemorrhage: ESGE Guideline - Update 2021**. *Endoscopy*, 2021, 53(3): 300-332. DOI: 10.1055/a-1369-5274. PMID: 33567467.
-   ESGE推荐急性上消化道出血患者使用Glasgow-Blatchford评分进行内镜前风险分层，GBS≤1可作为极低风险标准。
+3. Lesmana CRA, Shukla A, Kumar A, et al. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025, 19(5): 1003-1031. DOI: 10.1007/s12072-025-10894-4. PMID: 40886248.
 
-4. Lesmana CRA, Shukla A, Kumar A, Sarin SK. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025.
-   该指南指出急性静脉曲张出血是门静脉高压常见且危及生命的并发症，6周死亡率约10%–20%。
+4. Laine L, Barkun AN, Saltzman JR, Martel M, Leontiadis GI. **ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding**. *American Journal of Gastroenterology*, 2021, 116(5): 899-917. DOI: 10.14309/ajg.0000000000001245. PMID: 33929377.
 
 【教材/专著】
 
@@ -134,7 +131,7 @@
 
 ### ③学习内容：
 
-本例1个月前肝炎全项结果显示：**HBsAg阳性、HBeAg阴性、抗-HBs阴性、抗-HBe阳性、抗-HBc阳性、HBV-DNA阴性**，同时甲型肝炎抗体IgM、丙型肝炎抗体IgM、戊型肝炎抗体IgM均为阴性。课堂笔记也把“小三阳”和HBV-DNA阴性列为本幕需要重点理解的内容：要弄清小三阳对应哪些血清学标志物、HBV-DNA阴性说明什么，以及慢乙肝/肝硬化患者中病毒复制水平与疾病进展风险之间不能简单画等号。
+本例1个月前肝炎全项结果显示：**HBsAg阳性、HBeAg阴性、抗-HBs阴性、抗-HBe阳性、抗-HBc阳性、HBV-DNA阴性**，同时甲型肝炎抗体IgM、丙型肝炎抗体IgM、戊型肝炎抗体IgM均为阴性。这里需要重点弄清“小三阳”对应哪些血清学标志物、HBV-DNA阴性说明什么，以及慢乙肝/肝硬化患者中病毒复制水平与疾病进展风险之间不能简单画等号。
 
 所谓“小三阳”，通常指 **HBsAg阳性、HBeAg阴性、抗-HBe阳性、抗-HBc阳性**，常伴抗-HBs阴性。它首先说明患者仍处于**HBV感染相关状态**，因为HBsAg阳性提示体内存在乙肝病毒感染标志；抗-HBc阳性提示既往或当前曾经感染过HBV；HBeAg阴性、抗-HBe阳性则提示患者不是典型HBeAg阳性的高复制状态，但不能简单理解为“没有病毒活动”或“乙肝已经好了”。
 
@@ -150,7 +147,7 @@
 
 **HBV-DNA阴性**说明外周血中当前可检测到的病毒复制水平很低，可能低于检测下限。结合她长期口服恩替卡韦，这更可能提示抗病毒治疗后病毒复制受到抑制，而不是HBV彻底清除。恩替卡韦主要抑制HBV DNA聚合酶/逆转录酶，使血清HBV-DNA下降甚至转阴；因此本例HBV-DNA阴性应被理解为“当前血清病毒复制被控制”，而不是“肝内没有HBV相关遗传物质”或“肝硬化风险消失”。
 
-需要特别强调的是，慢性乙肝患者如果已经发展为肝硬化，即使HBV-DNA阴性，也不能认为疾病风险解除。中国《慢性乙型肝炎防治指南（2022年版）》指出，只要存在乙型肝炎肝硬化的客观依据，无论代偿期还是失代偿期、无论ALT和HBV-DNA水平及HBeAg状态，均可考虑抗病毒治疗，同时还要寻找并治疗肝硬化其他病因。该指南还提到，即使HBV-DNA阴性的代偿期肝硬化患者，如果不抗病毒治疗，HCC累积发生率也显著高于接受抗病毒治疗者。[3] 这对本例很重要：她的急性出血不是由“当前HBV-DNA阳性”直接造成，而是长期慢性乙肝已经造成肝硬化、门静脉高压和食管静脉曲张。
+需要特别强调的是，慢性乙肝患者如果已经发展为肝硬化，即使HBV-DNA阴性，也不能认为疾病风险解除。中国《慢性乙型肝炎防治指南（2022年版）》指出，只要存在乙型肝炎肝硬化的客观依据，无论代偿期还是失代偿期、无论ALT和HBV-DNA水平及HBeAg状态，均可考虑抗病毒治疗，同时还要寻找并治疗肝硬化其他病因。该指南还提到，即使HBV-DNA阴性的代偿期肝硬化患者，如果不抗病毒治疗，HCC累积发生率也显著高于接受抗病毒治疗者。[1] 这对本例很重要：她的急性出血不是由“当前HBV-DNA阳性”直接造成，而是长期慢性乙肝已经造成肝硬化、门静脉高压和食管静脉曲张。
 
 至于甲肝、丙肝、戊肝IgM阴性，主要提示本次资料中**不支持急性甲型、丙型或戊型病毒性肝炎感染**。但这里要注意一个边界：丙肝的临床判断通常不能只依赖“HCV-IgM”这一项，如果考虑既往输血相关HCV感染风险，仍应进一步检测抗-HCV和HCV RNA。这个问题在本幕更适合放到“输血史对病因判断的影响”中继续展开。
 
@@ -162,15 +159,13 @@
 
 【指南/共识】
 
-1. 中华医学会肝病学分会, 中华医学会感染病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华临床感染病杂志*, 2022, 15(6): 401-427. DOI: 10.3760/cma.j.issn.1674-2397.2022.06.001.
+1. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
 
-2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025.
-
-3. World Health Organization. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. Geneva: World Health Organization, 2024.
+2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
 
 【教材/专著】
 
-4. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中HBV血清学标志物、HBV-DNA与慢性期分型（p.403-405）。
+3. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中HBV血清学标志物、HBV-DNA与慢性期分型（p.403-405）。
 ---
 
 ### ⑤实际应用：
@@ -187,19 +182,19 @@
 
 ### ③学习内容：
 
-慢性乙型病毒性肝炎的核心是**乙型肝炎病毒长期持续感染，并造成不同程度的肝脏炎症、坏死和纤维化风险**。因此，学习慢性乙肝时不能只看“乙肝五项”，还要同时看病程、病毒学指标、肝脏炎症活动、肝纤维化程度以及是否已出现肝硬化或肝癌风险。课堂中老师也提醒，慢性乙肝的诊断标准不能只停留在肝炎全项，还要考虑HBV DNA、肝功能、影像学、病程等因素。
+慢性乙型病毒性肝炎的核心是**乙型肝炎病毒长期持续感染，并造成不同程度的肝脏炎症、坏死和纤维化风险**。因此，学习慢性乙肝时不能只看“乙肝五项”，还要同时看病程、病毒学指标、肝脏炎症活动、肝纤维化程度以及是否已出现肝硬化或肝癌风险。
 
-从诊断层面看，首先要区分**慢性HBV感染**和**慢性乙型肝炎**。慢性HBV感染更强调病毒持续存在；我国相关诊断标准和《慢性乙型肝炎防治指南（2022年版）》均把HBsAg和/或HBV DNA持续阳性超过6个月作为判断慢性HBV感染的重要依据。中国疾控中心转载的指南内容也明确写到，感染HBV后病毒持续6个月仍未被清除者称为慢性HBV感染。[1] 慢性乙型肝炎则在此基础上进一步强调：HBV持续感染已经引起肝脏慢性炎症性疾病，也就是存在肝细胞炎症坏死、ALT/AST异常，或肝组织病理、无创纤维化评估提示炎症活动和纤维化进展。我国2022版指南提出，是否启动抗病毒治疗要依据HBV DNA、ALT水平、肝脏疾病严重程度，同时结合年龄、家族史和伴随疾病综合评估。[2]
+从诊断层面看，首先要区分**慢性HBV感染**和**慢性乙型肝炎**。慢性HBV感染更强调病毒持续存在；《慢性乙型肝炎防治指南（2022年版）》明确指出，感染HBV后病毒持续6个月仍未被清除者称为慢性HBV感染，HBsAg和/或HBV DNA持续阳性超过6个月是重要依据。[1] 慢性乙型肝炎则在此基础上进一步强调：HBV持续感染已经引起肝脏慢性炎症性疾病，也就是存在肝细胞炎症坏死、ALT/AST异常，或肝组织病理、无创纤维化评估提示炎症活动和纤维化进展。我国2022版指南提出，是否启动抗病毒治疗要依据HBV DNA、ALT水平、肝脏疾病严重程度，同时结合年龄、家族史和伴随疾病综合评估。[1]
 
-慢性乙肝的临床判断通常包括四类证据。第一是**血清学证据**，包括HBsAg、抗-HBs、HBeAg、抗-HBe、抗-HBc等，用来判断是否感染、是否可能有复制活跃状态以及既往感染痕迹。第二是**病毒学证据**，主要是HBV DNA定量，反映血液中可检测的病毒复制水平。第三是**肝脏炎症损伤证据**，主要包括ALT、AST、胆红素、白蛋白、凝血功能等，其中ALT升高常提示肝细胞损伤活动，但ALT正常也不能完全排除肝纤维化或肝硬化。第四是**肝脏结构和纤维化证据**，包括腹部超声、弹性成像、CT/MRI、血清纤维化指标，必要时肝活检。EASL 2025指南也强调，慢性HBV管理需要综合诊断、治疗目标、治疗指征、HCC监测、特殊人群管理和未来研究方向，而不是只根据单一血清学指标下结论。[3]
+慢性乙肝的临床判断通常包括四类证据。第一是**血清学证据**，包括HBsAg、抗-HBs、HBeAg、抗-HBe、抗-HBc等，用来判断是否感染、是否可能有复制活跃状态以及既往感染痕迹。第二是**病毒学证据**，主要是HBV DNA定量，反映血液中可检测的病毒复制水平。第三是**肝脏炎症损伤证据**，主要包括ALT、AST、胆红素、白蛋白、凝血功能等，其中ALT升高常提示肝细胞损伤活动，但ALT正常也不能完全排除肝纤维化或肝硬化。第四是**肝脏结构和纤维化证据**，包括腹部超声、弹性成像、CT/MRI、血清纤维化指标，必要时肝活检。EASL 2025指南也强调，慢性HBV管理需要综合诊断、治疗目标、治疗指征、HCC监测、特殊人群管理和未来研究方向，而不是只根据单一血清学指标下结论。[2]
 
-慢性HBV感染还具有动态分期特点。传统上可以根据HBeAg状态、HBV DNA水平、ALT水平和肝组织炎症活动分为HBeAg阳性慢性感染、HBeAg阳性慢性肝炎、HBeAg阴性慢性感染、HBeAg阴性慢性肝炎以及HBsAg阴性阶段。这个分期不是固定标签，患者可以在不同阶段之间转换。EASL既往指南也指出，慢性HBV感染可按病毒标志物、炎症活动和宿主因素分为多个阶段，并且所有慢性HBV感染者发生肝硬化和肝细胞癌的风险取决于宿主因素和病毒因素。[4] 因此，“小三阳”只能描述某一次血清学组合，不能单独等同于病情轻重，更不能替代HBV DNA、ALT和肝纤维化评估。
+慢性HBV感染还具有动态分期特点。传统上可以根据HBeAg状态、HBV DNA水平、ALT水平和肝组织炎症活动分为HBeAg阳性慢性感染、HBeAg阳性慢性肝炎、HBeAg阴性慢性感染、HBeAg阴性慢性肝炎以及HBsAg阴性阶段。这个分期不是固定标签，患者可以在不同阶段之间转换。EASL 2025指南同样强调，慢性HBV感染者发生肝硬化和肝细胞癌的风险取决于宿主因素和病毒因素，不能只凭单次血清学结果判断。[2] 因此，“小三阳”只能描述某一次血清学组合，不能单独等同于病情轻重，更不能替代HBV DNA、ALT和肝纤维化评估。
 
-HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有关。HBV进入肝细胞后，松弛环状DNA进入细胞核，被修复为**共价闭合环状DNA，cccDNA**。cccDNA可以以类似染色质的小染色体形式存在于细胞核内，是HBV转录和复制的重要模板。近年关于HBV cccDNA的综述指出，cccDNA是HBV持续存在的核心分子基础，它以染色质化小染色体形式存在并作为病毒基因转录的主要模板。[5] 现有核苷/核苷酸类似物可以有效抑制HBV DNA复制，但通常不能直接清除肝细胞核内cccDNA，这解释了为什么慢性乙肝需要长期治疗和长期监测。
+HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有关。HBV进入肝细胞后，松弛环状DNA进入细胞核，被修复为**共价闭合环状DNA，cccDNA**。cccDNA可以以类似染色质的小染色体形式存在于细胞核内，是HBV转录和复制的重要模板。近年关于HBV cccDNA的综述指出，cccDNA是HBV持续存在的核心分子基础，它以染色质化小染色体形式存在并作为病毒基因转录的主要模板。[3] 现有核苷/核苷酸类似物可以有效抑制HBV DNA复制，但通常不能直接清除肝细胞核内cccDNA，这解释了为什么慢性乙肝需要长期治疗和长期监测。
 
-第二，HBV慢性化与宿主免疫反应密切相关。HBV本身并不是强直接细胞毒性病毒，肝细胞损伤很大程度上来自宿主免疫系统在清除感染肝细胞过程中的炎症反应。Annual Review Pathology 2026年的综述明确指出，HBV本身不是直接造成肝损伤的主要原因；慢乙肝的病理过程主要由病毒与宿主免疫系统之间的相互作用驱动，慢性感染者的HBV特异性免疫反应不能有效清除病毒，却会导致异常免疫激活，长期造成肝细胞损伤、纤维化、肝硬化和肝癌风险。[6]
+第二，HBV慢性化与宿主免疫反应密切相关。HBV本身并不是强直接细胞毒性病毒，肝细胞损伤很大程度上来自宿主免疫系统在清除感染肝细胞过程中的炎症反应。Annual Review Pathology 2026年的综述明确指出，HBV本身不是直接造成肝损伤的主要原因；慢乙肝的病理过程主要由病毒与宿主免疫系统之间的相互作用驱动，慢性感染者的HBV特异性免疫反应不能有效清除病毒，却会导致异常免疫激活，长期造成肝细胞损伤、纤维化、肝硬化和肝癌风险。[4]
 
-第三，慢性乙肝的免疫状态常表现为“清除不足”和“炎症持续”并存。急性自限性HBV感染中，强而多靶点的T细胞反应有助于清除病毒；而慢性乙肝患者中，HBV特异性T细胞常出现功能障碍或耗竭，抗病毒效应不足。Frontiers 2023年的综述指出，慢性HBV感染结局取决于病毒复制和宿主免疫反应之间的复杂相互作用；HBV可通过“隐匿”方式逃避免疫识别，持续感染又会导致免疫耐受、免疫细胞功能障碍、T细胞耗竭以及抑制性细胞和细胞因子增加。[7] 这就形成了一个矛盾状态：免疫系统不能彻底清除病毒，但又反复造成肝脏炎症损伤。
+第三，慢性乙肝的免疫状态常表现为“清除不足”和“炎症持续”并存。急性自限性HBV感染中，强而多靶点的T细胞反应有助于清除病毒；而慢性乙肝患者中，HBV特异性T细胞常出现功能障碍或耗竭，抗病毒效应不足。Frontiers 2023年的综述指出，慢性HBV感染结局取决于病毒复制和宿主免疫反应之间的复杂相互作用；HBV可通过“隐匿”方式逃避免疫识别，持续感染又会导致免疫耐受、免疫细胞功能障碍、T细胞耗竭以及抑制性细胞和细胞因子增加。[5] 这就形成了一个矛盾状态：免疫系统不能彻底清除病毒，但又反复造成肝脏炎症损伤。
 
 第四，感染年龄也是决定慢性化风险的重要因素。婴幼儿时期感染HBV时，免疫系统尚未成熟，更容易进入长期免疫耐受或低反应状态，因此慢性化风险明显高于成年后感染。成年后感染HBV多数表现为急性感染并最终清除，而围生期或儿童期感染更容易发展为慢性携带或慢性乙肝。这也是为什么乙肝疫苗、母婴阻断和新生儿免疫预防在公共卫生中非常重要。
 
@@ -211,25 +206,21 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. 中华医学会肝病学分会, 中华医学会感染病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
+1. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
 
-2. World Health Organization. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. Geneva: World Health Organization, 2024.
-
-3. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
-
-4. 卫生部. **乙型病毒性肝炎诊断标准**. WS 299-2008. 北京: 人民卫生出版社, 2009.
+2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
 
 【期刊文献】
 
+3. Gómez-Moreno A, Garaigorta U. **Mechanisms of Hepatitis B Virus cccDNA and Minichromosome Formation and HBV Gene Transcription**. *Viruses*, 2024, 16(4): 609. DOI: 10.3390/v16040609.
+
+4. Lin J, Gehring AJ. **Role of Immune Cells in Hepatitis B Virus and Associated Sequelae**. *Annual Review of Pathology: Mechanisms of Disease*, 2026, 21:399-421. DOI: 10.1146/annurev-pathmechdis-042524-030646.
+
 5. Zheng P, Dou Y, Wang Q. **Immune response and treatment targets of chronic hepatitis B virus infection: innate and adaptive immunity**. *Frontiers in Cellular and Infection Microbiology*, 2023, 13:1206720. DOI: 10.3389/fcimb.2023.1206720.
-
-6. Gómez-Moreno A, Garaigorta U. **Mechanisms of Hepatitis B Virus cccDNA and Minichromosome Formation and HBV Gene Transcription**. *Viruses*, 2024, 16(4): 609. DOI: 10.3390/v16040609.
-
-7. Lin J, Gehring AJ. **Role of Immune Cells in Hepatitis B Virus and Associated Sequelae**. *Annual Review of Pathology: Mechanisms of Disease*, 2026, 21:399-421. DOI: 10.1146/annurev-pathmechdis-042524-030646.
 
 【教材/专著】
 
-8. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中HBV病因和发病机制、慢性化机制、临床分型、HBV血清学检查与慢性乙肝抗病毒指征（p.402-405）。
+6. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中HBV病因和发病机制、慢性化机制、临床分型、HBV血清学检查与慢性乙肝抗病毒指征（p.402-405）。
 ---
 
 ### ⑤实际应用：
@@ -262,7 +253,7 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 慢性乙肝进展为肝硬化还受多种因素影响。病毒因素包括HBV DNA水平、HBeAg状态、基因型、病毒变异等；宿主因素包括感染年龄、年龄增长、男性、家族史、免疫状态等；合并因素包括饮酒、肥胖、糖尿病、代谢相关脂肪性肝病、HCV/HDV/HIV合并感染等。我国《慢性乙型肝炎防治指南（2022年版）》强调，乙肝肝硬化患者即使ALT、HBV DNA水平或HBeAg状态不同，只要临床确诊为代偿期或失代偿期乙型肝炎肝硬化，均建议抗病毒治疗；同时还要寻找并治疗酒精、肥胖、糖尿病、自身免疫或遗传代谢性肝病等其他病因。
 
-需要注意的是，肝纤维化在一定阶段具有可逆性，控制病因、抑制HBV复制、减少炎症刺激后，部分纤维化可以减轻；但已经形成明显肝硬化、门静脉高压和食管静脉曲张后，风险不一定随HBV DNA阴性而立即消失。中国指南也指出，恩替卡韦可强效抑制病毒复制、改善肝脏炎症，长期治疗可改善肝硬化患者组织学病变，并降低肝硬化并发症和HCC发生率，但这说明的是“降低风险”，不是已经形成的结构性并发症立刻消失。
+需要注意的是，肝纤维化在一定阶段具有可逆性，控制病因、抑制HBV复制、减少炎症刺激后，部分纤维化可以减轻；但已经形成明显肝硬化、门静脉高压和食管静脉曲张后，风险不一定随HBV DNA阴性而立即消失。中国指南也指出，恩替卡韦可强效抑制病毒复制、改善肝脏炎症，长期治疗可改善肝硬化患者组织学病变，并降低肝硬化并发症和HCC发生率，但这说明的是“降低风险”，不是已经形成的结构性并发症立刻消失。[5]
 
 因此，慢性乙肝进展为肝硬化的机制可以归纳为一句话：**HBV持续感染提供长期刺激，宿主免疫反应反复造成肝细胞损伤，肝星状细胞在炎症和纤维化因子作用下持续激活并沉积细胞外基质，最终导致肝小叶结构被纤维间隔和再生结节重塑，形成肝硬化及门静脉高压。**
 
@@ -272,17 +263,15 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. 中华医学会肝病学分会, 中华医学会感染病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
+1. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
 
-2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
+2. You H, Wang X, Ma L, Zhang F, Zhang H, Wang Y, et al. **Insights into the impact of hepatitis B virus on hepatic stellate cell activation**. *Cell Communication and Signaling*, 2023, 21(1): 1-11. DOI: 10.1186/s12964-023-01091-7.
 
-3. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+3. Zhang Y, Ren L, Tian Y, Guo X, Wei F, Zhang Y. **Signaling pathways that activate hepatic stellate cells during liver fibrosis**. *Frontiers in Medicine*, 2024, 11:1454980. DOI: 10.3389/fmed.2024.1454980.
 
-【期刊文献】
+4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
 
-4. You H, Wang X, Ma L, Zhang F, Zhang H, Wang Y, et al. **Insights into the impact of hepatitis B virus on hepatic stellate cell activation**. *Cell Communication and Signaling*, 2023, 21(1): 1-11. DOI: 10.1186/s12964-023-01091-7.
-
-5. Zhang Y, Ren L, Tian Y, Guo X, Wei F, Zhang Y. **Signaling pathways that activate hepatic stellate cells during liver fibrosis**. *Frontiers in Medicine*, 2024, 11:1454980. DOI: 10.3389/fmed.2024.1454980.
+5. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
 
 【教材/专著】
 
@@ -305,7 +294,7 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 ### ③学习内容：
 
-肝硬化患者发生上消化道出血，不能只想到“食管静脉曲张破裂”这一种原因。课堂中老师也提醒，虽然本例1个月前胃镜提示食管重度静脉曲张，并且现在出现呕血黑便，但仍要继续追问：上消化道出血是不是只有食管静脉曲张一种原因？还有哪些疾病可以导致上消化道出血？如何根据病史、症状和检查判断出血原因？
+肝硬化患者发生上消化道出血，不能只想到“食管静脉曲张破裂”这一种原因。虽然本例1个月前胃镜提示食管重度静脉曲张，并且现在出现呕血黑便，但仍要继续追问：上消化道出血是不是只有食管静脉曲张一种原因？还有哪些疾病可以导致上消化道出血？如何根据病史、症状和检查判断出血原因？
 
 从病因上看，肝硬化患者的上消化道出血可以分为两大类：一类是**门静脉高压相关出血**，另一类是**非门静脉高压相关出血**。前者与肝硬化后门静脉压力升高直接相关，是肝硬化患者最有特异性的出血原因；后者则包括普通人群也会发生的消化性溃疡、糜烂性胃炎、Mallory-Weiss综合征、肿瘤等，只是在肝硬化患者中可能因凝血功能障碍、血小板减少、感染和肝功能储备差而表现得更凶险。
 
@@ -339,19 +328,15 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
 
-2. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
+2. Chung WJ. **Management of portal hypertensive gastropathy and other bleeding**. *Clinical and Molecular Hepatology*, 2014, 20(1): 1-5. DOI: 10.3350/cmh.2014.20.1.1.
 
-3. Xu X, Guo X, De Stefano V, et al. **Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension**. *Journal of Clinical and Translational Hepatology*, 2023, 11(5): 1037-1063. DOI: 10.14218/JCTH.2023.00203. PMID: 37780629.
+3. Lu Z, Sun X, Han J, et al. **Characteristics of peptic ulcer bleeding in cirrhotic patients with esophageal and gastric varices**. *Scientific Reports*, 2020, 10: 20068. DOI: 10.1038/s41598-020-76530-3.
 
-【期刊文献】
-
-4. Chung WJ. **Management of portal hypertensive gastropathy and other bleeding**. *Clinical and Molecular Hepatology*, 2014, 20(1): 1-5. DOI: 10.3350/cmh.2014.20.1.1.
-
-5. Lu Z, Sun X, Han J, et al. **Characteristics of peptic ulcer bleeding in cirrhotic patients with esophageal and gastric varices**. *Scientific Reports*, 2020, 10:20068. DOI: 10.1038/s41598-020-76530-3.
+4. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
 
 【教材/专著】
 
-6. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中门静脉高压、食管胃底静脉曲张出血与门静脉高压性胃肠病（p.419-421），第二十五章“消化道出血”中上消化道出血病因分类与静脉曲张性出血常见病因（p.460-461）。
+5. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中门静脉高压、食管胃底静脉曲张出血与门静脉高压性胃肠病（p.419-421），第二十五章“消化道出血”中上消化道出血病因分类与静脉曲张性出血常见病因（p.460-461）。
 ---
 
 ### ⑤实际应用：
@@ -368,7 +353,7 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 ### ③学习内容：
 
-本例既往有**脾切除术**和**术中输血史**，这两个信息不能孤立理解。课堂讨论中老师也提示，脾切除术和输血史可以归入病史分析；脾切除史要放到“慢性乙肝 → 肝硬化 → 门静脉高压 → 脾脏改变 / 食管胃底静脉曲张 / 上消化道出血”的链条中理解，而输血史则提示需要思考输血相关风险。
+本例既往有**脾切除术**和**术中输血史**，这两个信息不能孤立理解。脾切除史要放到“慢性乙肝 → 肝硬化 → 门静脉高压 → 脾脏改变 / 食管胃底静脉曲张 / 上消化道出血”的链条中理解，而输血史则提示需要思考输血相关风险。
 
 首先，脾切除术可能提示患者既往已经存在较严重的**门静脉高压和脾功能亢进**。肝硬化时，肝内血流阻力增加，门静脉压力升高，脾静脉回流受阻，可导致脾脏淤血性肿大。脾大后，脾脏对血小板、白细胞和红细胞的滞留与破坏增加，形成脾功能亢进，常表现为血小板减少、白细胞减少，严重时可影响出血风险和治疗选择。部分肝硬化门静脉高压患者曾因严重脾大、脾功能亢进或相关并发症接受脾切除，有时还会合并贲门周围血管离断等手术。因此，本例“10年前脾切除术”更像是提示患者门静脉高压病程很久、程度可能曾经较重，而不是一个与本次上消化道出血无关的普通外科史。
 
@@ -382,7 +367,7 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 不过，病例中肝炎全项显示HCV-IgM阴性，这只能说明目前资料不支持急性丙肝样表现，不能完整排除既往或慢性HCV感染。临床上评估HCV感染更常用的是**抗-HCV筛查和HCV RNA确认**。CDC 2025年关于HCV诊断检测的说明指出，HCV抗体阳性表示既往或当前感染，随后应进行HCV RNA核酸检测，以确认是否存在当前感染。[3] 因此，如果要严谨评价“输血史是否与肝病病因有关”，应补查抗-HCV和HCV RNA，而不是只依赖HCV-IgM。
 
-第四，既往输血史还会影响本次急性出血时的输血准备。输血或妊娠后，患者可能产生针对非ABO红细胞抗原的不规则抗体。红细胞同种抗体在未来输血中具有临床意义，可能导致急性或迟发性溶血性输血反应。[4] 因此，如果本例因急性上消化道出血需要输血，除了ABO/Rh血型和交叉配血，还应重视不规则抗体筛查。加拿大血液服务专业教育资料也指出，输血前检测包括ABO/RhD血型、抗体筛查和交叉配血；抗体筛查用于检测有临床意义的非ABO红细胞抗体。[5] 这一点更适合在问题8“急救和输血风险”中系统展开，但在本题中可以作为输血史的风险提示。
+第四，既往输血史还会影响本次急性出血时的输血准备。输血或妊娠后，患者可能产生针对非ABO红细胞抗原的不规则抗体。红细胞同种抗体在未来输血中具有临床意义，可能导致急性或迟发性溶血性输血反应。[4] 因此，如果本例因急性上消化道出血需要输血，除了ABO/Rh血型和交叉配血，还应重视不规则抗体筛查。输血实验室兼容性程序指南已将 ABO/RhD 定型、抗体筛查和交叉配血列为基本流程，用于发现有临床意义的非ABO红细胞抗体。[5] 这一点更适合在问题8“急救和输血风险”中系统展开，但在本题中可以作为输血史的风险提示。
 
 最后，还应注意脾切除术后的感染风险。脾脏参与清除血源性病原体，尤其对有荚膜细菌的免疫防御很重要。脾切除后患者严重感染风险升高；对于肝硬化患者，感染本身又可能诱发或加重门静脉高压相关出血、肝性脑病、肾功能损害等失代偿事件。因此，本例如果入院后出现发热、白细胞异常、CRP/PCT升高、腹水或休克表现，不能只按失血解释，也要警惕感染因素。不过目前第一幕没有提供感染证据，所以只能作为风险点，而不能作为当前出血的直接原因。
 
@@ -394,25 +379,19 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
+1. Prakash S, Dufour JF. **Portal vein thrombosis in cirrhosis: A literature review**. *Journal of Clinical and Translational Hepatology*, 2023, 11(4): 965-978. DOI: 10.14218/JCTH.2022.00352.
 
-2. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+2. Yang Z, Han G, Wu Q, et al. **Risk factors of portal vein thrombosis after splenectomy in patients with cirrhosis and portal hypertension**. *Hepatobiliary Surgery and Nutrition*, 2020, 9(6): 703-709. DOI: 10.21037/hbsn.2020.03.12.
 
-3. Centers for Disease Control and Prevention. **Clinical Screening and Diagnosis for Hepatitis C**. 2025.
+3. Centers for Disease Control and Prevention. **Clinical Screening and Diagnosis for Hepatitis C**. Updated January 31, 2025.
 
-【期刊文献】
+4. Tormey CA, Hendrickson JE. **Transfusion-related red blood cell alloantibodies: induction and consequences**. *Blood*, 2019, 133(17): 1821-1830. DOI: 10.1182/blood-2018-08-833962.
 
-4. Prakash S, Dufour JF. **Portal vein thrombosis in cirrhosis: A literature review**. *Journal of Clinical and Translational Hepatology*, 2023, 11(4): 965-978. DOI: 10.14218/JCTH.2022.00352.
-
-5. Yang Z, Han G, Wu Q, et al. **Risk factors of portal vein thrombosis after splenectomy in patients with cirrhosis and portal hypertension**. *Hepatobiliary Surgery and Nutrition*, 2020, 9(6): 703-709. DOI: 10.21037/hbsn.2020.03.12.
-
-6. Dong F, Luo SH, Zheng LJ, et al. **Incidence of portal vein thrombosis after splenectomy and its influence on transjugular intrahepatic portosystemic shunt stent patency**. *World Journal of Clinical Cases*, 2019, 7(16): 2450-2462. DOI: 10.12998/wjcc.v7.i16.2450.
-
-7. Tormey CA, Hendrickson JE. **Transfusion-related red blood cell alloantibodies: induction and consequences**. *Blood*, 2019, 133(17): 1821-1830. DOI: 10.1182/blood-2018-08-833962.
+5. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981.
 
 【教材/专著】
 
-8. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中脾功能亢进、门静脉血栓、脾切除相关风险与感染（p.419-422，p.426）；第六篇血液系统疾病，第十九章“输血和输血反应”中输血相关性溶血、不规则抗体与输血传播疾病（p.640-641）。
+6. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中脾功能亢进、门静脉血栓、脾切除相关风险与感染（p.419-422，p.426）；第六篇血液系统疾病，第十九章“输血和输血反应”中输血相关性溶血、不规则抗体与输血传播疾病（p.640-641）。
 ---
 
 ### ⑤实际应用：
@@ -431,31 +410,31 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 ### ③学习内容：
 
-肝硬化患者出现呕血、血凝块、黑便时，应首先按**急性上消化道出血**处理；若患者既往已知食管胃底静脉曲张，则应在病因未完全明确前就按**疑似急性静脉曲张破裂出血**启动处理，而不是等胃镜证实后才开始用药。课堂中老师也提示，病人收住院后首先要解决的是消化道出血，但这个病人不是单纯外伤出血，而要把出血放入慢性乙肝和肝硬化并发症中理解。
+肝硬化患者出现呕血、血凝块、黑便时，应首先按**急性上消化道出血**处理；若患者既往已知食管胃底静脉曲张，则应在病因未完全明确前就按**疑似急性静脉曲张破裂出血**启动处理，而不是等胃镜证实后才开始用药。也就是说，这个病人的出血必须放入慢性乙肝和肝硬化并发症的背景中理解。
 
 急救第一步是**快速评估生命威胁**。应立即评估意识、气道、呼吸、循环和出血活动性，监测血压、心率、血氧、尿量和意识状态。大量呕血患者要特别注意误吸和窒息风险，若存在持续呕血、意识障碍、躁动或不能保护气道，内镜前可考虑气管插管保护气道。ESGE指南也建议，对于疑似静脉曲张出血且持续呕血、脑病或不能保护气道的患者，内镜前应考虑气管插管以降低误吸风险。[1]
 
 第二步是**建立复苏通道并完善检查**。应尽快建立至少两条粗针静脉通路或中心静脉通路，给予心电监护、吸氧、禁食，抽血查血常规、血型、交叉配血、凝血功能、肝肾功能、电解质、血糖、乳酸、感染指标等，同时评估Child-Pugh评分、MELD评分和是否存在活动性出血。ESGE指南建议，晚期慢性肝病疑似急性静脉曲张出血者，应结合Child-Pugh、MELD以及内镜下活动性/非活动性出血进行风险分层。[1]
 
-第三步是**容量复苏与限制性输血**。急性出血时需要维持组织灌注，但肝硬化静脉曲张出血不能一味大量补液、快速输血，因为过度扩容可能升高门静脉压力，增加再出血风险。ESGE建议，对于血流动力学稳定、无心血管病史的急性上消化道出血患者，红细胞输注阈值可取Hb≤70 g/L，输血后目标Hb约70–90 g/L；若有急慢性心血管疾病，可采用更宽松阈值如Hb≤80 g/L。AASLD门静脉高压指导也建议，急性静脉曲张出血患者红细胞输血目标通常为Hb约7 g/dL，除非合并症需要更高目标。[1]
+第三步是**容量复苏与限制性输血**。急性出血时需要维持组织灌注，但肝硬化静脉曲张出血不能一味大量补液、快速输血，因为过度扩容可能升高门静脉压力，增加再出血风险。ESGE建议，对于血流动力学稳定、无心血管病史的急性上消化道出血患者，红细胞输注阈值可取Hb≤70 g/L，输血后目标Hb约70–90 g/L；若有急慢性心血管疾病，可采用更宽松阈值如Hb≤80 g/L。AASLD门静脉高压指导也建议，急性静脉曲张出血患者红细胞输血目标通常为Hb约7 g/dL，除非合并症需要更高目标。[3]
 
 限制性输血不是“少救人”，而是避免过度输血带来的门静脉压力升高和再出血。Villanueva等在NEJM发表的随机研究显示，与宽松输血策略相比，限制性输血策略改善急性上消化道出血患者结局；在肝硬化亚组中，限制性输血组进一步出血风险较低，宽松输血组还观察到肝静脉压力梯度升高。[2]
 
-第四步是**疑似静脉曲张出血时立即启动药物治疗**。AASLD指导明确提出，已知或疑似肝硬化患者出现急性消化道出血时，应尽早给予血管活性药物和静脉抗菌药物；常用血管活性药物包括特利加压素、生长抑素和奥曲肽，若内镜证实为门静脉高压性出血，血管活性治疗通常持续2–5天。AASLD还指出，常用抗菌药物为头孢曲松1 g/24 h，可使用至多5天，并根据当地耐药情况和过敏史调整。
+第四步是**疑似静脉曲张出血时立即启动药物治疗**。AASLD指导明确提出，已知或疑似肝硬化患者出现急性消化道出血时，应尽早给予血管活性药物和静脉抗菌药物；常用血管活性药物包括特利加压素、生长抑素和奥曲肽，若内镜证实为门静脉高压性出血，血管活性治疗通常持续2–5天。AASLD还指出，常用抗菌药物为头孢曲松1 g/24 h，可使用至多5天，并根据当地耐药情况和过敏史调整。[3]
 
 抗生素在肝硬化出血中不是“有感染才用”的附加项。肝硬化上消化道出血后，肠源性细菌移位、肺部感染、自发性细菌性腹膜炎等风险增加，而感染又会增加再出血、肝衰竭和死亡风险。因此，疑似急性静脉曲张出血时，抗生素预防是标准处理的一部分。ESGE也推荐晚期慢性肝病急性静脉曲张出血患者使用头孢曲松1 g/d，最长可用7天，或根据当地耐药和过敏情况调整。[1]
 
-第五步是**尽早内镜诊断和止血**。对于疑似静脉曲张出血，内镜既是诊断手段，也是治疗手段。ESGE建议，在完成血流动力学复苏后，疑似静脉曲张出血患者应在就诊后12小时内进行内镜评估；AASLD也建议急性静脉曲张出血患者入院后12小时内行上消化道内镜。若证实食管静脉曲张出血，推荐内镜下套扎；若为胃底或胃食管静脉曲张出血，治疗可能需要组织胶注射、套扎、EUS引导治疗、TIPS或BRTO等，需根据静脉曲张类型和医院条件决定。[1]
+第五步是**尽早内镜诊断和止血**。对于疑似静脉曲张出血，内镜既是诊断手段，也是治疗手段。ESGE建议，在完成血流动力学复苏后，疑似静脉曲张出血患者应在就诊后12小时内进行内镜评估；AASLD也建议急性静脉曲张出血患者入院后12小时内行上消化道内镜。若证实食管静脉曲张出血，推荐内镜下套扎；若为胃底或胃食管静脉曲张出血，治疗可能需要组织胶注射、套扎、EUS引导治疗、TIPS或BRTO等，需根据静脉曲张类型和医院条件决定。[1,3]
 
 内镜前可考虑促胃排空以改善视野。ESGE推荐，在无禁忌证时，疑似急性静脉曲张出血患者可于内镜前30–120分钟静脉使用红霉素250 mg，以减少胃内积血、改善内镜视野。需要注意，内镜时机不应因为INR异常而机械推迟；ESGE明确建议，疑似急性静脉曲张出血患者的内镜时机不应受入院时INR水平影响。[1]
 
-第六步是**处理止血失败和高危再出血**。如果食管静脉曲张出血经血管活性药物和内镜治疗仍不能控制，可使用覆膜自膨式食管支架或球囊压迫作为通往TIPS的桥接措施；若仍不能控制或早期再出血，应考虑急诊救援TIPS。对于高危患者，例如Child-Pugh C 10–13分，或Child-Pugh B且内镜下仍有活动性出血者，指南建议在无绝对禁忌时考虑早期/预防性TIPS，通常在72小时内、最好24小时内完成。
+第六步是**处理止血失败和高危再出血**。如果食管静脉曲张出血经血管活性药物和内镜治疗仍不能控制，可使用覆膜自膨式食管支架或球囊压迫作为通往TIPS的桥接措施；若仍不能控制或早期再出血，应考虑急诊救援TIPS。对于高危患者，例如Child-Pugh C 10–13分，或Child-Pugh B且内镜下仍有活动性出血者，指南建议在无绝对禁忌时考虑早期/预防性TIPS，通常在72小时内、最好24小时内完成。[3,5]
 
-第七步是**止血后的二级预防和病因管理**。急性出血控制后，不能只满足于“这次血止住了”。食管静脉曲张出血后需要二级预防，常用策略是非选择性β受体阻滞剂联合反复内镜套扎，直至静脉曲张根除；AASLD还提示，患者能耐受经口进食后可引入NSBB，血管活性药物不应晚于第5天停用。若已确认出血来源为静脉曲张且无其他适应证，PPI不宜长期使用，因为不必要PPI可能增加感染和肝性脑病风险。
+第七步是**止血后的二级预防和病因管理**。急性出血控制后，不能只满足于“这次血止住了”。食管静脉曲张出血后需要二级预防，常用策略是非选择性β受体阻滞剂联合反复内镜套扎，直至静脉曲张根除；AASLD还提示，患者能耐受经口进食后可引入NSBB，血管活性药物不应晚于第5天停用。[3] 若已确认出血来源为静脉曲张且无其他适应证，PPI不宜长期使用，因为不必要PPI可能增加感染和肝性脑病风险。
 
-输血风险评估要分两层：一是**是否需要输血、输多少**，二是**能不能安全输血**。需要输血时，要做ABO/RhD血型、不规则抗体筛查和交叉配血；加拿大血液服务专业教育资料指出，输血前检测包括ABO/RhD定型、抗体筛查和交叉配血，抗体筛查用于发现有临床意义的非ABO红细胞抗体。既往有输血史的患者更应重视不规则抗体，因为既往输血可诱导红细胞同种抗体，增加迟发性溶血性输血反应风险。[3]
+输血风险评估要分两层：一是**是否需要输血、输多少**，二是**能不能安全输血**。需要输血时，要做ABO/RhD血型、不规则抗体筛查和交叉配血；输血实验室兼容性程序指南将 ABO/RhD 定型、抗体筛查和交叉配血列为基本流程，抗体筛查用于发现有临床意义的非ABO红细胞抗体。[4] 既往有输血史的患者更应重视不规则抗体，因为既往输血可诱导红细胞同种抗体，增加迟发性溶血性输血反应风险。
 
-在肝硬化出血中，还要谨慎看待血浆和血小板输注。INR升高并不等于一定需要输新鲜冰冻血浆，血小板低也不等于必须按固定阈值输血小板。AASLD指导指出，不应仅根据INR或血小板计数目标常规输注新鲜冰冻血浆或血小板，因为急性静脉曲张出血中缺乏获益证据，且新鲜冰冻血浆可能有潜在伤害；ESGE也不推荐常规血小板输注或设定固定最低血小板阈值，若出血不能控制，应个体化决定。
+在肝硬化出血中，还要谨慎看待血浆和血小板输注。INR升高并不等于一定需要输新鲜冰冻血浆，血小板低也不等于必须按固定阈值输血小板。AASLD指导指出，不应仅根据INR或血小板计数目标常规输注新鲜冰冻血浆或血小板，因为急性静脉曲张出血中缺乏获益证据，且新鲜冰冻血浆可能有潜在伤害；ESGE也不推荐常规血小板输注或设定固定最低血小板阈值，若出血不能控制，应个体化决定。[1,3]
 
 因此，肝硬化上消化道出血的规范流程可以概括为：**先保命，后定位；先按疑似静脉曲张出血启动血管活性药物和抗生素，再在复苏后尽快内镜止血；输血采取限制性策略，同时重视既往输血史、不规则抗体、交叉配血和输血反应风险；止血失败或高危再出血者及时考虑TIPS等桥接或根本性降门压治疗。**
 
@@ -465,23 +444,19 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+1. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226.
 
-2. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
+2. Villanueva C, Colomo A, Bosch A, et al. **Transfusion strategies for acute upper gastrointestinal bleeding**. *New England Journal of Medicine*, 2013, 368(1): 11-21. DOI: 10.1056/NEJMoa1211801. PMID: 23281973.
 
-3. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226.
+3. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
 
-4. Xu X, Guo X, De Stefano V, et al. **Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension**. *Journal of Clinical and Translational Hepatology*, 2023, 11(5): 1037-1063. DOI: 10.14218/JCTH.2023.00203. PMID: 37780629.
+4. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981.
 
-【期刊文献】
-
-5. Villanueva C, Colomo A, Bosch A, et al. **Transfusion strategies for acute upper gastrointestinal bleeding**. *New England Journal of Medicine*, 2013, 368(1): 11-21. DOI: 10.1056/NEJMoa1211801. PMID: 23281973.
-
-6. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981.
+5. Lesmana CRA, Shukla A, Kumar A, et al. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025, 19(5): 1003-1031. DOI: 10.1007/s12072-025-10894-4. PMID: 40886248.
 
 【教材/专著】
 
-7. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中腹腔积液、EGVB的治疗及预防、TIPS与脾功能亢进处理（p.423-426），第二十五章“消化道出血”中一般急救、补充血容量、输血阈值与内镜/介入止血（p.462-464）；第六篇血液系统疾病，第十九章“输血和输血反应”中不规则抗体、迟发性溶血和输血传播疾病（p.640-641）。
+6. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中腹腔积液、EGVB的治疗及预防、TIPS与脾功能亢进处理（p.423-426），第二十五章“消化道出血”中一般急救、补充血容量、输血阈值与内镜/介入止血（p.462-464）；第六篇血液系统疾病，第十九章“输血和输血反应”中不规则抗体、迟发性溶血和输血传播疾病（p.640-641）。
 ---
 
 ### ⑤实际应用：
@@ -502,7 +477,7 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 慢性乙型肝炎的抗病毒治疗，本质上是通过长期抑制HBV复制，减轻肝脏炎症活动，延缓或阻止肝纤维化、肝硬化、肝功能失代偿和肝细胞癌的发生。WHO 2024慢乙肝指南明确将慢性HBV感染视为慢性肝病的重要原因，并更新了治疗标准、孕妇母婴阻断、HBV DNA检测、HDV检测、长期治疗依从性和肝癌监测等内容。[1]
 
-目前慢性乙肝治疗药物主要分为两大类：**核苷/核苷酸类似物 nucleos(t)ide analogues, NAs** 和 **干扰素类 interferons**。核苷/核苷酸类似物是临床最常用的长期口服治疗药物，包括恩替卡韦、富马酸替诺福韦二吡呋酯、富马酸丙酚替诺福韦等；干扰素类包括普通干扰素α和聚乙二醇干扰素α。AASLD 2018指南推荐聚乙二醇干扰素α、恩替卡韦或替诺福韦作为成人免疫活动性慢乙肝的优选初始治疗；AASLD/IDSA 2025指南信息则进一步明确，慢乙肝治疗的优选核苷/核苷酸类似物包括恩替卡韦、TDF和TAF。[2]
+目前慢性乙肝治疗药物主要分为两大类：**核苷/核苷酸类似物 nucleos(t)ide analogues, NAs** 和 **干扰素类 interferons**。核苷/核苷酸类似物是临床最常用的长期口服治疗药物，包括恩替卡韦、富马酸替诺福韦二吡呋酯、富马酸丙酚替诺福韦等；干扰素类包括普通干扰素α和聚乙二醇干扰素α。AASLD 2018指南推荐聚乙二醇干扰素α、恩替卡韦或替诺福韦作为成人免疫活动性慢乙肝的优选初始治疗；更新的AASLD/IDSA慢乙肝实践指导进一步明确，优选核苷/核苷酸类似物包括恩替卡韦、TDF和TAF。[2,7]
 
 **恩替卡韦 entecavir, ETV** 是一种鸟嘌呤核苷类似物。它进入细胞后被磷酸化为活性三磷酸形式，与天然底物脱氧鸟苷三磷酸竞争，从而抑制HBV聚合酶/逆转录酶的多个关键步骤。药品说明书中明确写到，恩替卡韦三磷酸可抑制HBV逆转录酶的三种活性：HBV聚合酶起始引物形成、由前基因组RNA逆转录生成负链DNA，以及正链DNA合成。[3]
 
@@ -528,31 +503,23 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. 中华医学会肝病学分会, 中华医学会感染病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
+1. World Health Organization. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. Geneva: World Health Organization, 2024. ISBN: 978-92-4-009090-3.
 
-2. World Health Organization. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. Geneva: World Health Organization, 2024. ISBN: 978-92-4-009090-3.
+2. Terrault NA, Lok ASF, McMahon BJ, et al. **Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance**. *Hepatology*, 2018, 67(4): 1560-1599. DOI: 10.1002/hep.29800. PMID: 29405329.
 
-3. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
+3. Bristol Myers Squibb. **BARACLUDE (entecavir) Full Prescribing Information**. Revised prescribing information.
 
-4. Terrault NA, Lok ASF, McMahon BJ, et al. **Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance**. *Hepatology*, 2018, 67(4): 1560-1599. DOI: 10.1002/hep.29800. PMID: 29405329.
+4. European Medicines Agency. **Tenofovir disoproxil product information**. European Commission summary of product characteristics.
 
-5. Ghany MG, Pan CQ, Lok AS, et al. **AASLD/IDSA Practice Guideline on treatment of chronic hepatitis B**. *Hepatology*, 2025. DOI: 10.1097/HEP.0000000000001549.
+5. Byrne R, Carey I, Agarwal K. **Tenofovir alafenamide in the treatment of chronic hepatitis B virus infection: rationale and clinical trial evidence**. *Therapeutic Advances in Gastroenterology*, 2018, 11: 1756284818786108. DOI: 10.1177/1756284818786108.
 
-【药品资料/说明书】
+6. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
 
-6. Bristol Myers Squibb. **BARACLUDE® (entecavir) Full Prescribing Information**. Revised label.
-
-7. European Medicines Agency. **Entecavir product information**.
-
-8. European Medicines Agency. **Tenofovir disoproxil product information**.
-
-【期刊文献】
-
-9. Byrne R, Carey I, Agarwal K. **Tenofovir alafenamide in the treatment of chronic hepatitis B virus infection: rationale and clinical trial evidence**. *Therapeutic Advances in Gastroenterology*, 2018, 11: 1756284818786108. DOI: 10.1177/1756284818786108.
+7. Ghany MG, Pan CQ, Lok ASF, et al. **AASLD/IDSA Practice Guideline on treatment of chronic hepatitis B**. *Hepatology*, 2026, 83: 974-997. DOI: 10.1097/HEP.0000000000001549.
 
 【教材/专著】
 
-10. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中HBV慢性化、HBV血清学检查及慢性乙肝抗病毒药物、恩替卡韦和替诺福韦的适用位置（p.402-405，尤其p.404-405），第十五章“肝硬化”中肝硬化基础上持续抗病毒与并发症管理（p.423-426）。
+8. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中HBV慢性化、HBV血清学检查及慢性乙肝抗病毒药物、恩替卡韦和替诺福韦的适用位置（p.402-405，尤其p.404-405），第十五章“肝硬化”中肝硬化基础上持续抗病毒与并发症管理（p.423-426）。
 ---
 
 ### ⑤实际应用：
