@@ -56,13 +56,13 @@
 
 【指南/共识】
 
-1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736. 
+1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.  ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
 
-2. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226. 
+2. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226.  ([DOI](<https://doi.org/10.1055/a-1939-4887> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/36270226/> "PubMed"))
 
-3. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050. 
+3. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.  ([DOI](<https://doi.org/10.3760/cma.j.cn311365-20230220-00050> "DOI"))
 
-4. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298. 
+4. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.  ([DOI](<https://doi.org/10.1097/HEP.0000000000000647> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/37870298/> "PubMed"))
 
 【教材/专著】
 
@@ -104,13 +104,13 @@
 
 【指南/共识】
 
-1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736. ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
 
-2. Gralnek IM, Stanley AJ, Morris AJ, et al. **Endoscopic diagnosis and management of nonvariceal upper gastrointestinal hemorrhage: ESGE Guideline - Update 2021**. *Endoscopy*, 2021, 53(3): 300-332. DOI: 10.1055/a-1369-5274. PMID: 33567467.
+2. Gralnek IM, Stanley AJ, Morris AJ, et al. **Endoscopic diagnosis and management of nonvariceal upper gastrointestinal hemorrhage: ESGE Guideline - Update 2021**. *Endoscopy*, 2021, 53(3): 300-332. DOI: 10.1055/a-1369-5274. PMID: 33567467. ([DOI](<https://doi.org/10.1055/a-1369-5274> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/33567467/> "PubMed"))
 
-3. Lesmana CRA, Shukla A, Kumar A, et al. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025, 19(5): 1003-1031. DOI: 10.1007/s12072-025-10894-4. PMID: 40886248.
+3. Lesmana CRA, Shukla A, Kumar A, et al. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025, 19(5): 1003-1031. DOI: 10.1007/s12072-025-10894-4. PMID: 40886248. ([DOI](<https://doi.org/10.1007/s12072-025-10894-4> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/40886248/> "PubMed"))
 
-4. Laine L, Barkun AN, Saltzman JR, Martel M, Leontiadis GI. **ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding**. *American Journal of Gastroenterology*, 2021, 116(5): 899-917. DOI: 10.14309/ajg.0000000000001245. PMID: 33929377.
+4. Laine L, Barkun AN, Saltzman JR, Martel M, Leontiadis GI. **ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding**. *American Journal of Gastroenterology*, 2021, 116(5): 899-917. DOI: 10.14309/ajg.0000000000001245. PMID: 33929377. ([DOI](<https://doi.org/10.14309/ajg.0000000000001245> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/33929377/> "PubMed"))
 
 【教材/专著】
 
@@ -159,9 +159,9 @@
 
 【指南/共识】
 
-1. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
+1. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050. ([DOI](<https://doi.org/10.3760/cma.j.cn311365-20230220-00050> "DOI"))
 
-2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
+2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683. ([DOI](<https://doi.org/10.1016/j.jhep.2025.03.018> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/40348683/> "PubMed"))
 
 【教材/专著】
 
@@ -206,17 +206,17 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
+1. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050. ([DOI](<https://doi.org/10.3760/cma.j.cn311365-20230220-00050> "DOI"))
 
-2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
+2. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683. ([DOI](<https://doi.org/10.1016/j.jhep.2025.03.018> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/40348683/> "PubMed"))
 
 【期刊文献】
 
-3. Gómez-Moreno A, Garaigorta U. **Mechanisms of Hepatitis B Virus cccDNA and Minichromosome Formation and HBV Gene Transcription**. *Viruses*, 2024, 16(4): 609. DOI: 10.3390/v16040609.
+3. Gómez-Moreno A, Garaigorta U. **Mechanisms of Hepatitis B Virus cccDNA and Minichromosome Formation and HBV Gene Transcription**. *Viruses*, 2024, 16(4): 609. DOI: 10.3390/v16040609. ([DOI](<https://doi.org/10.3390/v16040609> "DOI"))
 
-4. Lin J, Gehring AJ. **Role of Immune Cells in Hepatitis B Virus and Associated Sequelae**. *Annual Review of Pathology: Mechanisms of Disease*, 2026, 21:399-421. DOI: 10.1146/annurev-pathmechdis-042524-030646.
+4. Lin J, Gehring AJ. **Role of Immune Cells in Hepatitis B Virus and Associated Sequelae**. *Annual Review of Pathology: Mechanisms of Disease*, 2026, 21:399-421. DOI: 10.1146/annurev-pathmechdis-042524-030646. ([DOI](<https://doi.org/10.1146/annurev-pathmechdis-042524-030646> "DOI"))
 
-5. Zheng P, Dou Y, Wang Q. **Immune response and treatment targets of chronic hepatitis B virus infection: innate and adaptive immunity**. *Frontiers in Cellular and Infection Microbiology*, 2023, 13:1206720. DOI: 10.3389/fcimb.2023.1206720.
+5. Zheng P, Dou Y, Wang Q. **Immune response and treatment targets of chronic hepatitis B virus infection: innate and adaptive immunity**. *Frontiers in Cellular and Infection Microbiology*, 2023, 13:1206720. DOI: 10.3389/fcimb.2023.1206720. ([DOI](<https://doi.org/10.3389/fcimb.2023.1206720> "DOI"))
 
 【教材/专著】
 
@@ -263,15 +263,15 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
+1. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683. ([DOI](<https://doi.org/10.1016/j.jhep.2025.03.018> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/40348683/> "PubMed"))
 
-2. You H, Wang X, Ma L, Zhang F, Zhang H, Wang Y, et al. **Insights into the impact of hepatitis B virus on hepatic stellate cell activation**. *Cell Communication and Signaling*, 2023, 21(1): 1-11. DOI: 10.1186/s12964-023-01091-7.
+2. You H, Wang X, Ma L, Zhang F, Zhang H, Wang Y, et al. **Insights into the impact of hepatitis B virus on hepatic stellate cell activation**. *Cell Communication and Signaling*, 2023, 21(1): 1-11. DOI: 10.1186/s12964-023-01091-7. ([DOI](<https://doi.org/10.1186/s12964-023-01091-7> "DOI"))
 
-3. Zhang Y, Ren L, Tian Y, Guo X, Wei F, Zhang Y. **Signaling pathways that activate hepatic stellate cells during liver fibrosis**. *Frontiers in Medicine*, 2024, 11:1454980. DOI: 10.3389/fmed.2024.1454980.
+3. Zhang Y, Ren L, Tian Y, Guo X, Wei F, Zhang Y. **Signaling pathways that activate hepatic stellate cells during liver fibrosis**. *Frontiers in Medicine*, 2024, 11:1454980. DOI: 10.3389/fmed.2024.1454980. ([DOI](<https://doi.org/10.3389/fmed.2024.1454980> "DOI"))
 
-4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736. ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
 
-5. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050.
+5. 中华医学会感染病学分会, 中华医学会肝病学分会. **慢性乙型肝炎防治指南（2022年版）**. *中华传染病杂志*, 2023, 41(1): 3-28. DOI: 10.3760/cma.j.cn311365-20230220-00050. ([DOI](<https://doi.org/10.3760/cma.j.cn311365-20230220-00050> "DOI"))
 
 【教材/专著】
 
@@ -326,13 +326,13 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+1. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. **Baveno VII - Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736. ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
 
-2. Chung WJ. **Management of portal hypertensive gastropathy and other bleeding**. *Clinical and Molecular Hepatology*, 2014, 20(1): 1-5. DOI: 10.3350/cmh.2014.20.1.1.
+2. Chung WJ. **Management of portal hypertensive gastropathy and other bleeding**. *Clinical and Molecular Hepatology*, 2014, 20(1): 1-5. DOI: 10.3350/cmh.2014.20.1.1. ([DOI](<https://doi.org/10.3350/cmh.2014.20.1.1> "DOI"))
 
-3. Lu Z, Sun X, Han J, et al. **Characteristics of peptic ulcer bleeding in cirrhotic patients with esophageal and gastric varices**. *Scientific Reports*, 2020, 10: 20068. DOI: 10.1038/s41598-020-76530-3.
+3. Lu Z, Sun X, Han J, et al. **Characteristics of peptic ulcer bleeding in cirrhotic patients with esophageal and gastric varices**. *Scientific Reports*, 2020, 10: 20068. DOI: 10.1038/s41598-020-76530-3. ([DOI](<https://doi.org/10.1038/s41598-020-76530-3> "DOI"))
 
-4. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
+4. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298. ([DOI](<https://doi.org/10.1097/HEP.0000000000000647> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/37870298/> "PubMed"))
 
 【教材/专著】
 
@@ -379,15 +379,15 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. Prakash S, Dufour JF. **Portal vein thrombosis in cirrhosis: A literature review**. *Journal of Clinical and Translational Hepatology*, 2023, 11(4): 965-978. DOI: 10.14218/JCTH.2022.00352.
+1. Prakash S, Dufour JF. **Portal vein thrombosis in cirrhosis: A literature review**. *Journal of Clinical and Translational Hepatology*, 2023, 11(4): 965-978. DOI: 10.14218/JCTH.2022.00352. ([DOI](<https://doi.org/10.14218/JCTH.2022.00352> "DOI"))
 
-2. Yang Z, Han G, Wu Q, et al. **Risk factors of portal vein thrombosis after splenectomy in patients with cirrhosis and portal hypertension**. *Hepatobiliary Surgery and Nutrition*, 2020, 9(6): 703-709. DOI: 10.21037/hbsn.2020.03.12.
+2. Yang Z, Han G, Wu Q, et al. **Risk factors of portal vein thrombosis after splenectomy in patients with cirrhosis and portal hypertension**. *Hepatobiliary Surgery and Nutrition*, 2020, 9(6): 703-709. DOI: 10.21037/hbsn.2020.03.12. ([DOI](<https://doi.org/10.21037/hbsn.2020.03.12> "DOI"))
 
-3. Centers for Disease Control and Prevention. **Clinical Screening and Diagnosis for Hepatitis C**. Updated January 31, 2025.
+3. Centers for Disease Control and Prevention. **Clinical Screening and Diagnosis for Hepatitis C**. Updated January 31, 2025. ([CDC](<https://www.cdc.gov/hepatitis-c/hcp/diagnosis-testing/index.html> "CDC HCV testing"))
 
-4. Tormey CA, Hendrickson JE. **Transfusion-related red blood cell alloantibodies: induction and consequences**. *Blood*, 2019, 133(17): 1821-1830. DOI: 10.1182/blood-2018-08-833962.
+4. Tormey CA, Hendrickson JE. **Transfusion-related red blood cell alloantibodies: induction and consequences**. *Blood*, 2019, 133(17): 1821-1830. DOI: 10.1182/blood-2018-08-833962. ([DOI](<https://doi.org/10.1182/blood-2018-08-833962> "DOI"))
 
-5. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981.
+5. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981. ([DOI](<https://doi.org/10.1111/j.1365-3148.2012.01199.x> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/23216981/> "PubMed"))
 
 【教材/专著】
 
@@ -444,15 +444,15 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226.
+1. Gralnek IM, Camus Duboc M, Garcia-Pagan JC, et al. **Endoscopic diagnosis and management of esophagogastric variceal hemorrhage: European Society of Gastrointestinal Endoscopy Guideline**. *Endoscopy*, 2022, 54(11): 1094-1120. DOI: 10.1055/a-1939-4887. PMID: 36270226. ([DOI](<https://doi.org/10.1055/a-1939-4887> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/36270226/> "PubMed"))
 
-2. Villanueva C, Colomo A, Bosch A, et al. **Transfusion strategies for acute upper gastrointestinal bleeding**. *New England Journal of Medicine*, 2013, 368(1): 11-21. DOI: 10.1056/NEJMoa1211801. PMID: 23281973.
+2. Villanueva C, Colomo A, Bosch A, et al. **Transfusion strategies for acute upper gastrointestinal bleeding**. *New England Journal of Medicine*, 2013, 368(1): 11-21. DOI: 10.1056/NEJMoa1211801. PMID: 23281973. ([DOI](<https://doi.org/10.1056/NEJMoa1211801> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/23281973/> "PubMed"))
 
-3. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298.
+3. Kaplan DE, Bosch J, Ripoll C, Thiele M, Fortune BE, Simonetto DA, Garcia-Tsao G. **AASLD Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis**. *Hepatology*, 2024, 79(5): 1180-1211. DOI: 10.1097/HEP.0000000000000647. PMID: 37870298. ([DOI](<https://doi.org/10.1097/HEP.0000000000000647> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/37870298/> "PubMed"))
 
-4. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981.
+4. Milkins C, Berryman J, Cantwell C, et al. **Guidelines for pre-transfusion compatibility procedures in blood transfusion laboratories**. *Transfusion Medicine*, 2013, 23(1): 3-35. DOI: 10.1111/j.1365-3148.2012.01199.x. PMID: 23216981. ([DOI](<https://doi.org/10.1111/j.1365-3148.2012.01199.x> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/23216981/> "PubMed"))
 
-5. Lesmana CRA, Shukla A, Kumar A, et al. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025, 19(5): 1003-1031. DOI: 10.1007/s12072-025-10894-4. PMID: 40886248.
+5. Lesmana CRA, Shukla A, Kumar A, et al. **Management of acute variceal bleeding: updated APASL guidelines**. *Hepatology International*, 2025, 19(5): 1003-1031. DOI: 10.1007/s12072-025-10894-4. PMID: 40886248. ([DOI](<https://doi.org/10.1007/s12072-025-10894-4> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/40886248/> "PubMed"))
 
 【教材/专著】
 
@@ -503,19 +503,19 @@ HBV之所以容易形成慢性化，首先与它独特的病毒生命周期有�
 
 【指南/共识】
 
-1. World Health Organization. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. Geneva: World Health Organization, 2024. ISBN: 978-92-4-009090-3.
+1. World Health Organization. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. Geneva: World Health Organization, 2024. ISBN: 978-92-4-009090-3. ([WHO](<https://www.who.int/publications/i/item/9789240090903> "WHO guideline"))
 
-2. Terrault NA, Lok ASF, McMahon BJ, et al. **Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance**. *Hepatology*, 2018, 67(4): 1560-1599. DOI: 10.1002/hep.29800. PMID: 29405329.
+2. Terrault NA, Lok ASF, McMahon BJ, et al. **Update on prevention, diagnosis, and treatment of chronic hepatitis B: AASLD 2018 hepatitis B guidance**. *Hepatology*, 2018, 67(4): 1560-1599. DOI: 10.1002/hep.29800. PMID: 29405329. ([DOI](<https://doi.org/10.1002/hep.29800> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/29405329/> "PubMed"))
 
-3. Bristol Myers Squibb. **BARACLUDE (entecavir) Full Prescribing Information**. Revised prescribing information.
+3. Bristol Myers Squibb. **BARACLUDE (entecavir) Full Prescribing Information**. Revised prescribing information. ([BMS PI](<https://packageinserts.bms.com/pi/pi_baraclude.pdf> "BARACLUDE prescribing information"))
 
-4. European Medicines Agency. **Tenofovir disoproxil product information**. European Commission summary of product characteristics.
+4. European Medicines Agency. **Tenofovir disoproxil product information**. European Commission summary of product characteristics. ([EMA](<https://www.ema.europa.eu/en/documents/product-information/tenofovir-disoproxil-viatris-epar-product-information_en.pdf> "Tenofovir disoproxil product information"))
 
-5. Byrne R, Carey I, Agarwal K. **Tenofovir alafenamide in the treatment of chronic hepatitis B virus infection: rationale and clinical trial evidence**. *Therapeutic Advances in Gastroenterology*, 2018, 11: 1756284818786108. DOI: 10.1177/1756284818786108.
+5. Byrne R, Carey I, Agarwal K. **Tenofovir alafenamide in the treatment of chronic hepatitis B virus infection: rationale and clinical trial evidence**. *Therapeutic Advances in Gastroenterology*, 2018, 11: 1756284818786108. DOI: 10.1177/1756284818786108. ([DOI](<https://doi.org/10.1177/1756284818786108> "DOI"))
 
-6. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683.
+6. European Association for the Study of the Liver. **EASL Clinical Practice Guidelines on the management of hepatitis B virus infection**. *Journal of Hepatology*, 2025, 83(2): 502-583. DOI: 10.1016/j.jhep.2025.03.018. PMID: 40348683. ([DOI](<https://doi.org/10.1016/j.jhep.2025.03.018> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/40348683/> "PubMed"))
 
-7. Ghany MG, Pan CQ, Lok ASF, et al. **AASLD/IDSA Practice Guideline on treatment of chronic hepatitis B**. *Hepatology*, 2026, 83: 974-997. DOI: 10.1097/HEP.0000000000001549.
+7. Ghany MG, Pan CQ, Lok ASF, et al. **AASLD/IDSA Practice Guideline on treatment of chronic hepatitis B**. *Hepatology*, 2026, 83: 974-997. DOI: 10.1097/HEP.0000000000001549. ([DOI](<https://doi.org/10.1097/HEP.0000000000001549> "DOI"))
 
 【教材/专著】
 
@@ -676,7 +676,7 @@ Figure 3是文章最核心的图之一。图中通过饼图显示每位患者两
 
 【研究性文献】
 
-1. Taddese M, Grudda T, Belluccini G, Anderson M, Hileman H, Mehta M, et al. **Transcription of hepatitis B surface antigen shifts from cccDNA to integrated HBV DNA during treatment**. *Journal of Clinical Investigation*, 2025, 135(6): e184243. DOI: 10.1172/JCI184243. PMID: 39898797.
+1. Taddese M, Grudda T, Belluccini G, Anderson M, Hileman H, Mehta M, et al. **Transcription of hepatitis B surface antigen shifts from cccDNA to integrated HBV DNA during treatment**. *Journal of Clinical Investigation*, 2025, 135(6): e184243. DOI: 10.1172/JCI184243. PMID: 39898797. ([DOI](<https://doi.org/10.1172/JCI184243> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/39898797/> "PubMed")) ([JCI](<https://www.jci.org/articles/view/184243> "JCI article"))
 
 ---
 
