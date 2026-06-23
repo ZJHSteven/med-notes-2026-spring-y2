@@ -7,7 +7,8 @@
   - 已完成部署路径设计与落盘：编排文件在 `/opt/qqce/compose/docker-compose.yml`，QQ 数据在 `/opt/qqce/data/qq`，NapCat 配置在 `/opt/qqce/data/napcat-config`，QCE 插件在 `/opt/qqce/data/plugins/qq-chat-exporter`，QCE 数据根目录在 `/opt/qqce/data/qce-home`。
   - 已完成“本机代拉 -> 远端导入”链路：本机通过 `GHCR` 拉下 `ghcr.io/napneko/nodenapcat:latest` 的 `linux/arm64` 镜像，再用 `skopeo` 导出 tar 并通过 `scp` 传到远端 `docker load`；QCE 插件 zip 与 ARM64 esbuild 包也已一并传上并解包完成。
   - 已完成远端容器启动：`napcat-qce` 当前已启动，`6099` WebUI 正常对外，QQ 登录方式为二维码登录；当前最后的人工步骤是用户扫码授权登录。
-  - 待完成最后验收：在用户完成扫码登录后，继续验证 `40653` 上的 QCE API 与 `/qce-v4-tool` 前端是否正常起来，并复核导出目录、资源目录和清理边界。
+  - 已完成问题定位收缩：当前已排除 `OpenClash / fake-ip` 和 `QCE` 插件本身作为直接主因；在 `OpenClash` 完全停用且 `QCE` 插件临时关闭的情况下，`NapCat v4.18.7` 仍会在“登录成功”后出现 `Worker进程意外退出`。
+  - 已完成回退验证准备：已将远端镜像从 `ghcr.io/napneko/nodenapcat:latest` 切换到 `ghcr.io/napneko/nodenapcat:v4.17.10`，同时修正 QQ 持久化挂载点为 `/root/.config/QQ`（此前误挂到了 `/app/.config/QQ`）；当前待用户在 `v4.17.10` 上重新扫码一次，以验证“登录成功后 worker 是否仍然崩溃”。
 - 设计“课程笔记分享站”方案，只分发各课程公开课堂笔记，不暴露仓库中的其他私有资料。
   - 先核对当前仓库目录是否稳定满足 `课程/Notes/*.md` 与 `课程/Audio/*` 结构，并确认哪些 `Notes` 文件能安全纳入公开站点。
   - 明确公开筛选规则：默认仅纳入 `Notes` 目录下文件名满足“数字开头 + 连字符”的 Markdown 课堂笔记；默认排除 `PBL*`、`考试提纲`、`教学大纲-课堂笔记覆盖核对`、`前六组作业` 等非普通课堂笔记文件。
@@ -23,6 +24,8 @@
   - 更新 `PROGRESS.md` 并提交课程仓库本轮修正。
 
 ## 最近完成
+- 已完成 `NapCat` 回退与持久化修正：对照官方 release 与历史 issue 后，选择 `ghcr.io/napneko/nodenapcat:v4.17.10` 作为回退验证版本；该 tag 的 `linux/arm64` 镜像已在本机通过 `skopeo` 导出并重新传到远端 N1，`docker-compose.yml` 现已固定使用 `v4.17.10`。同时确认 `NapCat` 实际把 QQ 数据写到 `/root/.config/QQ` 而非 `/app/.config/QQ`，因此已把宿主挂载修正为 `/opt/qqce/data/qq:/root/.config/QQ`，避免后续快速登录和会话持久化继续失真。
+- 已完成 `QCE` 插件干扰排除：远端 `plugins.json` 当前已临时改为 `\"qq-chat-exporter\": false`，用于只验证 `NapCat` 本体稳定性；在 `4.18.7` + 禁用 `QCE` 的情况下，仍可复现“快速登录成功后 worker 意外退出”，因此本轮已基本排除 `QCE` 作为直接崩溃源。
 - 已完成 N1 上 `NapCat + QCE` 的本机代拉与远端部署：由于远端无法稳定访问 `Docker Hub / GHCR` 容器仓库，改为在本机启动 Docker Desktop，通过 `GHCR` 拉取 `ghcr.io/napneko/nodenapcat:latest` 的 `linux/arm64` 镜像，再用 `quay.io/skopeo/stable` 导出为 `docker-archive` tar，通过 `scp` 传到远端 `docker load`；同时把 `napcat-plugin-qce.zip` 与 `esbuild-linux-arm64-0.25.10.tgz` 一并传到远端，解压到 `/opt/qqce/data/plugins/qq-chat-exporter` 并补入 `node_modules/@esbuild/linux-arm64`。
 - 已完成 N1 上 `NapCat + QCE` 的目录和编排初始化：远端已生成 `/opt/qqce/compose/docker-compose.yml`，并把数据目录明确拆分为 `/opt/qqce/data/qq`、`/opt/qqce/data/napcat-config`、`/opt/qqce/data/plugins`、`/opt/qqce/data/qce-home`；其中 `plugins.json` 已启用 `qq-chat-exporter` 插件，`docker compose up -d` 后 `napcat-qce` 容器正常运行，对外暴露 `3000`、`3001`、`6099`、`40653` 端口。
 - 已完成 N1 上登录入口验收：`http://192.168.50.179:6099/` 会重定向到 `/webui`，当前日志明确给出了 WebUI token 和二维码登录提示；已确认当前必须由用户手动扫码 QQ 才能进入下一步的功能验收。

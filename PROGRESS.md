@@ -1,8 +1,12 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：N1 盒子 `192.168.50.179` 上的 `NapCat + QQ Chat Exporter` 常驻部署已经落盘并启动完成。当前实际状态是：`ghcr.io/napneko/nodenapcat:latest` 的 `linux/arm64` 镜像已通过“本机代拉 -> skopeo 导出 tar -> scp 上传 -> 远端 docker load”链路导入，远端 `napcat-qce` 容器正在运行，`6099` WebUI 已能访问并已生成二维码登录提示；QCE 插件目录、`ARM64 esbuild` 补丁、NapCat 配置挂载、QCE 数据根目录挂载都已就位。当前唯一尚未完成的人工环节是用户扫码登录 QQ；在扫码完成前，`40653` 上的 QCE API / `/qce-v4-tool` 前端是否完全可用仍待最终实机验收。并行未完成事项仍包括课程笔记分享站方案论证，以及 `循环系统/Anki/cards.csv` 中 384 张英文词根词缀卡的格式统一。
+- 现状：N1 盒子 `192.168.50.179` 上的 `NapCat + QQ Chat Exporter` 已进入“回退验证”阶段。当前已确认：在 `OpenClash` 完全停用、宿主与容器解析均恢复真实公网 IP、且 `QCE` 插件临时关闭的情况下，`NapCat v4.18.7` 仍会在“快速登录/密码登录成功”后马上出现 `Worker进程意外退出`，因此问题已基本收缩到 `NapCat` 本体或其当前 Docker ARM64 运行态。现已将远端镜像回退到 `ghcr.io/napneko/nodenapcat:v4.17.10`，并修正 QQ 持久化目录挂载到真实使用路径 `/root/.config/QQ`；下一步只需让用户在 `v4.17.10` 上重新扫码一次，即可判断这是不是最新版本回归。并行未完成事项仍包括课程笔记分享站方案论证，以及 `循环系统/Anki/cards.csv` 中 384 张英文词根词缀卡的格式统一。
 - 已完成：
+  - `NapCat` 本体问题收缩：已在 `OpenClash` 停用后再次验证宿主机与容器解析，`txz.qq.com` / `www.qq.com` 均恢复为真实公网 IP，容器内 HTTPS 访问也成功，排除了“当前仍受 fake-ip 干扰”的假设。
+  - `QCE` 插件排除：已将 `/opt/qqce/data/napcat-config/plugins.json` 临时改为 `{"qq-chat-exporter": false}`；在 `v4.18.7` 下即使完全禁用 `QCE`，日志仍出现“`正在快速登录` -> `Worker进程已登录成功` -> `Worker进程意外退出`”，因此已基本排除 `QCE` 作为直接崩溃源。
+  - `NapCat` 回退：已确认 `ghcr.io/napneko/nodenapcat:v4.17.10`、`v4.17.52`、`v4.18.4`、`v4.18.6` 这些 tag 在 GHCR 中都真实存在；本轮优先选用曾在历史 issue 中被用户提到“相对稳定”的 `v4.17.10` 做回退验证，并已重新部署到 N1。
+  - QQ 持久化挂载修正：已通过容器内文件系统实查确认，`NapCat` 当前实际把 QQ 会话与数据库写入 `/root/.config/QQ/nt_qq/...`，而不是官方旧 README 中提到的 `/app/.config/QQ`；因此已把宿主挂载修正为 `/opt/qqce/data/qq:/root/.config/QQ`，避免快速登录与会话持久化继续失真。
   - N1 / iStoreOS 本机代拉链路：已确认远端对 `Docker Hub / GHCR` 的 HTTPS 访问会超时，因此改为本机启动 Docker Desktop，通过 `GHCR` 拉下 `ghcr.io/napneko/nodenapcat:latest` 的 `linux/arm64` 镜像；随后使用 `quay.io/skopeo/stable` 将其导出为 `nodenapcat-linux-arm64.tar`，并连同 `napcat-plugin-qce.zip`、`esbuild-linux-arm64-0.25.10.tgz` 一并通过 `scp` 上传到远端。
   - N1 / iStoreOS 容器编排：已在远端生成 `/opt/qqce/compose/docker-compose.yml`，端口暴露为 `3000`、`3001`、`6099`、`40653`；数据目录拆分为 `/opt/qqce/data/qq`、`/opt/qqce/data/napcat-config`、`/opt/qqce/data/plugins`、`/opt/qqce/data/qce-home`，避免导出结果与登录态、插件本体混在一起。
   - N1 / iStoreOS 插件安装：已把 `napcat-plugin-qce.zip` 解到 `/opt/qqce/data/plugins/qq-chat-exporter`，并额外把 `@esbuild/linux-arm64@0.25.10` 解到 `node_modules/@esbuild/linux-arm64`；容器内已确认 `plugins.json`、插件 `package.json`、`@esbuild/linux-arm64/bin/esbuild` 都在位。
@@ -98,17 +102,19 @@
   - 单独考试提纲：`output/pdf/心理危机干预与预防/心理危机干预与预防-考试提纲-开卷速查版.pdf`，共 `8` 页。
   - 两份 PDF 均使用 Pandoc + XeLaTeX 生成，包含前置目录、页眉、页脚页码、紧凑字体/行距/列表间距。
   - 已用验证脚本确认目录存在、抽样页面可渲染、页眉页脚区域非空，并确认导出合订本中不含已知非课程配置残留标记。
-- 正在做：等待用户扫码登录 QQ，随后继续在 `192.168.50.179` 上验收 `40653` 的 QCE API、`/qce-v4-tool` 前端入口，以及首次导出后 `qce-home` 目录中的实际文件分布。
+- 正在做：等待用户在 `ghcr.io/napneko/nodenapcat:v4.17.10` 上重新扫码登录 QQ，以验证“登录成功后 worker 是否仍然崩溃”；若回退版稳定，再恢复 `QCE` 插件并继续验收 `40653` 与导出链路。
 - 正在做：论证“课程笔记分享站”最省事且风险可控的落地方案，重点是目录筛选规则、React 静态构建、Cloudflare Pages 部署方式，以及 Cloudflare Access 是否作为同学访问门槛。
 - 正在做：修正 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 中英文词根词缀卡的旧版格式残留，重点清理双引号嵌套、统一 `BackHtml` 行结构，并移除“本轮先按整词保留”式回退说明。
 - 正在做：已新增 `循环系统/Anki/normalize_english_cards.py` 作为可重复执行的规范化脚本，下一步将用它批量重写英文卡并做抽样验证。
-- 下一步：让用户访问 `http://192.168.50.179:6099/webui/?token=24b3438bf57c` 或直接扫日志二维码完成 QQ 登录；登录完成后继续验证 `http://192.168.50.179:40653/qce-v4-tool`、导出目录生成情况，以及“不导出媒体”场景下是否只产生轻量文本/HTML/JSON 产物。并行任务再继续完成课程笔记分享站方案边界，以及 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 的英文卡批量规范化和抽样验证。
+- 下一步：让用户在当前 `v4.17.10` 回退版上重新扫码登录；如果回退版不再出现“登录成功后 worker 意外退出”，则可基本判定 `v4.18.7` 在当前 ARM64 Docker 环境中存在回归问题。确认稳定后，再重新开启 `QCE` 插件并继续验证 `http://192.168.50.179:40653/qce-v4-tool`、导出目录生成情况，以及“不导出媒体”场景下是否只产生轻量文本/HTML/JSON 产物。并行任务再继续完成课程笔记分享站方案边界，以及 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 的英文卡批量规范化和抽样验证。
 
 ## 关键决策与理由（防止“吃书”）
 - 决策Z：N1 上的 QCE 部署默认采用 `Docker + NapCat + QCE`，不尝试在 iStoreOS 宿主机直接运行 QCE Linux 桌面版。（原因：这台机器宿主机为 `musl`，而 QCE 发布页给出的 Linux 运行前提是常规 `glibc 2.31+` 桌面发行版；同时官方已提供针对 NapCat Docker 的独立部署文档。）
 - 决策AA：QCE 的导出目录和 QQ 持久化目录应从一开始就与 NapCat 配置、插件文件分离，尽量做到“清理导出结果时不动登录态和主配置”。（原因：这是常开服务，后续最常见维护动作是清理导出产物和缓存，而不是重建整套环境。）
 - 决策AB：由于远端无法稳定访问容器仓库，本轮改用“本机代拉 + skopeo 导出 tar + scp 上传 + 远端 docker load”链路，而不继续在 N1 上强行直连 `Docker Hub / GHCR`。（原因：远端对 `registry-1.docker.io` 与 `ghcr.io` 的 HTTPS 连接 30 秒内都会超时，但本机可稳定拉取并转运。）
 - 决策AC：QCE 的宿主挂载根目录固定为 `/opt/qqce/data/qce-home`，不额外自定义 `customOutputDir`。（原因：QCE 默认就会把导出、定时导出、资源、数据库、安全配置都归到 `~/.qq-chat-exporter` 下；直接把整个根目录独立挂载出来，最利于以后统一备份和按子目录清理。）
+- 决策AD：为了区分“最新版回归”与“整体 Docker ARM64 通病”，本轮优先将 `NapCat` 从 `v4.18.7` 回退到 `v4.17.10` 做 A/B。（原因：公开 issue 中存在与当前症状相近的 `Worker进程意外退出 / EGL` 报告，且讨论里曾提到 `4.17.10` 在同类场景更稳；先回退能最快拿到有判别力的结论。）
+- 决策AE：QQ 会话持久化目录以容器实测为准，修正为挂载 `/root/.config/QQ`，不再继续沿用旧 README 的 `/app/.config/QQ`。（原因：容器内实际生成的 `login.db`、`mmkv`、`msf` 等会话数据都在 `/root/.config/QQ/nt_qq/...` 下，旧挂载点会导致“看似有登录痕迹、实际会话不持久”的假象。）
 - 决策X：课程笔记分享站后续若落地，公开文件必须按“显式筛选”处理，而不是把整个 `课程/Notes` 目录原样暴露。（原因：当前真实工作树里 `Notes` 目录已混入 `PBL*`、`考试提纲`、`核对表`、`作业` 等不适合分享或不适合公开的文件。）
 - 决策Y：这类分享站的安全目标应表述为“提高复制成本、控制访问范围”，而不是“阻止复制”。（原因：浏览器页面无论用 DOM 还是 Canvas，本质上都无法阻止用户用系统截图、录屏、拍照或 OCR 获取内容。）
 - 决策I：Case2 当前目标文件按“第一幕”处理，文件名、正文标题和目录统一为 `Case2-第一幕`。（原因：用户已确认这是 Case2 第一幕，原文件名“第二幕”会造成交付和脚本流程混乱。）
