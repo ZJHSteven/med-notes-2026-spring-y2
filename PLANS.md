@@ -11,7 +11,7 @@
   - 已完成回退验证准备：已将远端镜像从 `ghcr.io/napneko/nodenapcat:latest` 切换到 `ghcr.io/napneko/nodenapcat:v4.17.10`，同时修正 QQ 持久化挂载点为 `/root/.config/QQ`（此前误挂到了 `/app/.config/QQ`）；当前待用户在 `v4.17.10` 上重新扫码一次，以验证“登录成功后 worker 是否仍然崩溃”。
   - 已完成运行时环境补强：当前容器已额外补上 `XDG_RUNTIME_DIR=/tmp/runtime-root`、宿主 `DBus` socket 挂载、`shm_size=512m`、`LIBGL_ALWAYS_SOFTWARE=1` 与 `QT_X11_NO_MITSHM=1`，用于修正 QQNT/NapCat 在 Docker ARM64 运行态下常见的 `XDG_RUNTIME_DIR / DBus / EGL / shared memory` 缺口；下一步待用户在这个补强环境上重新扫码验证是否仍会在登录后崩溃。
   - 已完成 `Worker` 退出链路再定位：当前已确认 `NapCat` 主进程源码在 `child.on("exit")` 中只打印 `exit code`，并未打印 `signal`；而我们现场日志只有 `Worker进程意外退出` 的 `warn`，没有对应的 `退出码` `error`，这更像子进程被信号打死后 `code=null` 被主进程吞成了 `0`。同时公开 issue 已存在与当前症状高度相似的 Linux 原生崩溃样例，崩溃点落在 `MoeHoo.linux.*.node` 的 packet hook。
-  - 下一步新增实验：在保持 `QCE` 插件继续关闭的前提下，给远端容器加入 `NAPCAT_DISABLE_MULTI_PROCESS=1`，强制 `NapCat` 走单进程模式，验证能否绕开当前 `Worker/Fork` 子进程崩溃链路；若单进程后仍只剩 `ErrCode: 3`，则把“登录失败”和“worker 崩溃”这两条问题线彻底拆开分别处理。
+  - 已完成单进程绕过实验：当前远端 compose 已加入 `NAPCAT_DISABLE_MULTI_PROCESS=1` 并重建容器。切换后宿主机上只剩一个 `node /app/load.cjs` 主进程，不再有独立 `node /app/napcat/napcat.mjs` worker；连续观察一轮后，`Worker进程意外退出` 已不再复现，但 `Login Error, ErrType: 1 ErrCode: 3` 仍会约每 2 分钟出现一次并刷新二维码。说明“worker 崩溃”这条线目前已被单进程绕开，而“二维码登录失败”仍需继续单独排查。
 - 设计“课程笔记分享站”方案，只分发各课程公开课堂笔记，不暴露仓库中的其他私有资料。
   - 先核对当前仓库目录是否稳定满足 `课程/Notes/*.md` 与 `课程/Audio/*` 结构，并确认哪些 `Notes` 文件能安全纳入公开站点。
   - 明确公开筛选规则：默认仅纳入 `Notes` 目录下文件名满足“数字开头 + 连字符”的 Markdown 课堂笔记；默认排除 `PBL*`、`考试提纲`、`教学大纲-课堂笔记覆盖核对`、`前六组作业` 等非普通课堂笔记文件。
