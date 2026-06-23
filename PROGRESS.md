@@ -1,8 +1,9 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：N1 盒子 `192.168.50.179` 上的 `NapCat + QQ Chat Exporter` 已进入“回退验证”阶段。当前已确认：在 `OpenClash` 完全停用、宿主与容器解析均恢复真实公网 IP、且 `QCE` 插件临时关闭的情况下，`NapCat v4.18.7` 仍会在“快速登录/密码登录成功”后马上出现 `Worker进程意外退出`，因此问题已基本收缩到 `NapCat` 本体或其当前 Docker ARM64 运行态。现已将远端镜像回退到 `ghcr.io/napneko/nodenapcat:v4.17.10`，并修正 QQ 持久化目录挂载到真实使用路径 `/root/.config/QQ`；下一步只需让用户在 `v4.17.10` 上重新扫码一次，即可判断这是不是最新版本回归。并行未完成事项仍包括课程笔记分享站方案论证，以及 `循环系统/Anki/cards.csv` 中 384 张英文词根词缀卡的格式统一。
+- 现状：N1 盒子 `192.168.50.179` 上的 `NapCat + QQ Chat Exporter` 已进入“回退 + 运行时补强”联合验证阶段。当前已确认：在 `OpenClash` 完全停用、宿主与容器解析均恢复真实公网 IP、且 `QCE` 插件临时关闭的情况下，`NapCat v4.18.7` 仍会在“快速登录/密码登录成功”后出现 `Worker进程意外退出`，因此问题已基本收缩到 `NapCat` 本体或其 Docker ARM64 运行态。现已将远端镜像回退到 `ghcr.io/napneko/nodenapcat:v4.17.10`，修正 QQ 持久化挂载到真实路径 `/root/.config/QQ`，并额外补上 `XDG_RUNTIME_DIR`、`DBus` socket、`512MiB /dev/shm` 和软件渲染环境变量；当前需要用户在这个新运行时上重新扫码，以验证是否仍在登录后崩溃。并行未完成事项仍包括课程笔记分享站方案论证，以及 `循环系统/Anki/cards.csv` 中 384 张英文词根词缀卡的格式统一。
 - 已完成：
+  - `NapCat` 运行时补强：已检查到容器此前不存在 `XDG_RUNTIME_DIR`、`DBus` socket，且 `/dev/shm` 只有 64MiB；结合官方 issue 中频繁出现的 `XDG_RUNTIME_DIR is invalid`、`Failed to connect to the bus`、`Exiting GPU process due to errors during initialization` 症状，现已在 compose 中加入 `XDG_RUNTIME_DIR=/tmp/runtime-root`、`DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket`、宿主 `/run/dbus/system_bus_socket` 挂载、`shm_size: 512m`、`LIBGL_ALWAYS_SOFTWARE=1`、`QT_X11_NO_MITSHM=1`。当前容器内已确认这些运行时条件全部生效。
   - `NapCat` 本体问题收缩：已在 `OpenClash` 停用后再次验证宿主机与容器解析，`txz.qq.com` / `www.qq.com` 均恢复为真实公网 IP，容器内 HTTPS 访问也成功，排除了“当前仍受 fake-ip 干扰”的假设。
   - `QCE` 插件排除：已将 `/opt/qqce/data/napcat-config/plugins.json` 临时改为 `{"qq-chat-exporter": false}`；在 `v4.18.7` 下即使完全禁用 `QCE`，日志仍出现“`正在快速登录` -> `Worker进程已登录成功` -> `Worker进程意外退出`”，因此已基本排除 `QCE` 作为直接崩溃源。
   - `NapCat` 回退：已确认 `ghcr.io/napneko/nodenapcat:v4.17.10`、`v4.17.52`、`v4.18.4`、`v4.18.6` 这些 tag 在 GHCR 中都真实存在；本轮优先选用曾在历史 issue 中被用户提到“相对稳定”的 `v4.17.10` 做回退验证，并已重新部署到 N1。
@@ -102,11 +103,11 @@
   - 单独考试提纲：`output/pdf/心理危机干预与预防/心理危机干预与预防-考试提纲-开卷速查版.pdf`，共 `8` 页。
   - 两份 PDF 均使用 Pandoc + XeLaTeX 生成，包含前置目录、页眉、页脚页码、紧凑字体/行距/列表间距。
   - 已用验证脚本确认目录存在、抽样页面可渲染、页眉页脚区域非空，并确认导出合订本中不含已知非课程配置残留标记。
-- 正在做：等待用户在 `ghcr.io/napneko/nodenapcat:v4.17.10` 上重新扫码登录 QQ，以验证“登录成功后 worker 是否仍然崩溃”；若回退版稳定，再恢复 `QCE` 插件并继续验收 `40653` 与导出链路。
+- 正在做：等待用户在 `ghcr.io/napneko/nodenapcat:v4.17.10` + 运行时补强环境上重新扫码登录 QQ，以验证“登录成功后 worker 是否仍然崩溃”；若稳定，再恢复 `QCE` 插件并继续验收 `40653` 与导出链路。
 - 正在做：论证“课程笔记分享站”最省事且风险可控的落地方案，重点是目录筛选规则、React 静态构建、Cloudflare Pages 部署方式，以及 Cloudflare Access 是否作为同学访问门槛。
 - 正在做：修正 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 中英文词根词缀卡的旧版格式残留，重点清理双引号嵌套、统一 `BackHtml` 行结构，并移除“本轮先按整词保留”式回退说明。
 - 正在做：已新增 `循环系统/Anki/normalize_english_cards.py` 作为可重复执行的规范化脚本，下一步将用它批量重写英文卡并做抽样验证。
-- 下一步：让用户在当前 `v4.17.10` 回退版上重新扫码登录；如果回退版不再出现“登录成功后 worker 意外退出”，则可基本判定 `v4.18.7` 在当前 ARM64 Docker 环境中存在回归问题。确认稳定后，再重新开启 `QCE` 插件并继续验证 `http://192.168.50.179:40653/qce-v4-tool`、导出目录生成情况，以及“不导出媒体”场景下是否只产生轻量文本/HTML/JSON 产物。并行任务再继续完成课程笔记分享站方案边界，以及 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 的英文卡批量规范化和抽样验证。
+- 下一步：让用户在当前 `v4.17.10` 回退版 + 运行时补强环境上重新扫码登录；如果这次不再出现“登录成功后 worker 意外退出”，则说明本轮命中的更可能是 Docker 运行时缺口，而不只是版本回归。确认稳定后，再重新开启 `QCE` 插件并继续验证 `http://192.168.50.179:40653/qce-v4-tool`、导出目录生成情况，以及“不导出媒体”场景下是否只产生轻量文本/HTML/JSON 产物。并行任务再继续完成课程笔记分享站方案边界，以及 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 的英文卡批量规范化和抽样验证。
 
 ## 关键决策与理由（防止“吃书”）
 - 决策Z：N1 上的 QCE 部署默认采用 `Docker + NapCat + QCE`，不尝试在 iStoreOS 宿主机直接运行 QCE Linux 桌面版。（原因：这台机器宿主机为 `musl`，而 QCE 发布页给出的 Linux 运行前提是常规 `glibc 2.31+` 桌面发行版；同时官方已提供针对 NapCat Docker 的独立部署文档。）
@@ -115,6 +116,7 @@
 - 决策AC：QCE 的宿主挂载根目录固定为 `/opt/qqce/data/qce-home`，不额外自定义 `customOutputDir`。（原因：QCE 默认就会把导出、定时导出、资源、数据库、安全配置都归到 `~/.qq-chat-exporter` 下；直接把整个根目录独立挂载出来，最利于以后统一备份和按子目录清理。）
 - 决策AD：为了区分“最新版回归”与“整体 Docker ARM64 通病”，本轮优先将 `NapCat` 从 `v4.18.7` 回退到 `v4.17.10` 做 A/B。（原因：公开 issue 中存在与当前症状相近的 `Worker进程意外退出 / EGL` 报告，且讨论里曾提到 `4.17.10` 在同类场景更稳；先回退能最快拿到有判别力的结论。）
 - 决策AE：QQ 会话持久化目录以容器实测为准，修正为挂载 `/root/.config/QQ`，不再继续沿用旧 README 的 `/app/.config/QQ`。（原因：容器内实际生成的 `login.db`、`mmkv`、`msf` 等会话数据都在 `/root/.config/QQ/nt_qq/...` 下，旧挂载点会导致“看似有登录痕迹、实际会话不持久”的假象。）
+- 决策AF：在版本回退之外，同步补齐 Docker 运行时缺口：`XDG_RUNTIME_DIR`、`DBus`、更大的 `shm`、软件渲染变量。（原因：官方 issue 中多次出现 `XDG_RUNTIME_DIR / DBus / EGL / zygote` 相关错误，而当前容器实测恰好缺失这些基础条件，仅靠回退版本不足以排除运行时环境本身的系统性问题。）
 - 决策X：课程笔记分享站后续若落地，公开文件必须按“显式筛选”处理，而不是把整个 `课程/Notes` 目录原样暴露。（原因：当前真实工作树里 `Notes` 目录已混入 `PBL*`、`考试提纲`、`核对表`、`作业` 等不适合分享或不适合公开的文件。）
 - 决策Y：这类分享站的安全目标应表述为“提高复制成本、控制访问范围”，而不是“阻止复制”。（原因：浏览器页面无论用 DOM 还是 Canvas，本质上都无法阻止用户用系统截图、录屏、拍照或 OCR 获取内容。）
 - 决策I：Case2 当前目标文件按“第一幕”处理，文件名、正文标题和目录统一为 `Case2-第一幕`。（原因：用户已确认这是 Case2 第一幕，原文件名“第二幕”会造成交付和脚本流程混乱。）
