@@ -2,12 +2,12 @@
 
 ## 当前未完成计划
 - 在 `192.168.50.179` 的 Phicomm N1（`iStoreOS 24.10.6`）上评估并尽量完成 `QQ Chat Exporter` 常驻部署，优先采用 `Docker + NapCat + QCE` 路线，而不是直接在宿主机裸跑。
-  - 先复核当前机器的真实约束：CPU / 内存 / overlay 可写空间 / Docker 是否已装好 / 宿主机 libc 是否为 `musl` / 是否存在额外外置存储可作为更稳妥的数据盘。
-  - 结合 `QQ Chat Exporter` 与 `NapCat` 的官方文档，确认这台 `ARM64 + musl` 设备上最可靠的安装路径、需要下载的发布包、以及 `esbuild` 的 ARM64 兼容处理。
-  - 设计可长期常开的目录布局：把容器编排、QQ 持久化数据、NapCat 配置、QCE 前端静态文件、QCE 导出结果和可清理缓存拆开，尽量让“清空导出结果”不影响登录态和主配置。
-  - 实际在远端创建目录、下载镜像和发布包、配置 `docker-compose.yml` / `plugins.json`、完成插件启用与 ARM64 修补，并启动容器。
-  - 用真实日志和端口验证 `NapCat`、`QCE`、Web UI、QCE API、QCE 前端是否都起来；若必须扫码登录 QQ，则把需要用户配合的最小步骤压缩到最后。
-  - 最终给出“是否还要额外安装 QQ”“QQ 数据和缓存在哪”“QCE 导出和缓存在哪”“哪些目录可以定期清理、哪些不要动”的明确说明。
+  - 已完成当前机器真实约束复核：`4 核 A53 / 2GB RAM / overlay 可用约 4.8G / Docker 已安装 / 宿主机为 musl / 当前无外挂数据盘`。
+  - 已完成官方资料交叉核对：QCE 插件包自带 `webui`，默认把数据落在用户主目录下的 `.qq-chat-exporter`；`ARM64` 需要补 `@esbuild/linux-arm64@0.25.10`。
+  - 已完成部署路径设计与落盘：编排文件在 `/opt/qqce/compose/docker-compose.yml`，QQ 数据在 `/opt/qqce/data/qq`，NapCat 配置在 `/opt/qqce/data/napcat-config`，QCE 插件在 `/opt/qqce/data/plugins/qq-chat-exporter`，QCE 数据根目录在 `/opt/qqce/data/qce-home`。
+  - 已完成“本机代拉 -> 远端导入”链路：本机通过 `GHCR` 拉下 `ghcr.io/napneko/nodenapcat:latest` 的 `linux/arm64` 镜像，再用 `skopeo` 导出 tar 并通过 `scp` 传到远端 `docker load`；QCE 插件 zip 与 ARM64 esbuild 包也已一并传上并解包完成。
+  - 已完成远端容器启动：`napcat-qce` 当前已启动，`6099` WebUI 正常对外，QQ 登录方式为二维码登录；当前最后的人工步骤是用户扫码授权登录。
+  - 待完成最后验收：在用户完成扫码登录后，继续验证 `40653` 上的 QCE API 与 `/qce-v4-tool` 前端是否正常起来，并复核导出目录、资源目录和清理边界。
 - 设计“课程笔记分享站”方案，只分发各课程公开课堂笔记，不暴露仓库中的其他私有资料。
   - 先核对当前仓库目录是否稳定满足 `课程/Notes/*.md` 与 `课程/Audio/*` 结构，并确认哪些 `Notes` 文件能安全纳入公开站点。
   - 明确公开筛选规则：默认仅纳入 `Notes` 目录下文件名满足“数字开头 + 连字符”的 Markdown 课堂笔记；默认排除 `PBL*`、`考试提纲`、`教学大纲-课堂笔记覆盖核对`、`前六组作业` 等非普通课堂笔记文件。
@@ -23,6 +23,9 @@
   - 更新 `PROGRESS.md` 并提交课程仓库本轮修正。
 
 ## 最近完成
+- 已完成 N1 上 `NapCat + QCE` 的本机代拉与远端部署：由于远端无法稳定访问 `Docker Hub / GHCR` 容器仓库，改为在本机启动 Docker Desktop，通过 `GHCR` 拉取 `ghcr.io/napneko/nodenapcat:latest` 的 `linux/arm64` 镜像，再用 `quay.io/skopeo/stable` 导出为 `docker-archive` tar，通过 `scp` 传到远端 `docker load`；同时把 `napcat-plugin-qce.zip` 与 `esbuild-linux-arm64-0.25.10.tgz` 一并传到远端，解压到 `/opt/qqce/data/plugins/qq-chat-exporter` 并补入 `node_modules/@esbuild/linux-arm64`。
+- 已完成 N1 上 `NapCat + QCE` 的目录和编排初始化：远端已生成 `/opt/qqce/compose/docker-compose.yml`，并把数据目录明确拆分为 `/opt/qqce/data/qq`、`/opt/qqce/data/napcat-config`、`/opt/qqce/data/plugins`、`/opt/qqce/data/qce-home`；其中 `plugins.json` 已启用 `qq-chat-exporter` 插件，`docker compose up -d` 后 `napcat-qce` 容器正常运行，对外暴露 `3000`、`3001`、`6099`、`40653` 端口。
+- 已完成 N1 上登录入口验收：`http://192.168.50.179:6099/` 会重定向到 `/webui`，当前日志明确给出了 WebUI token 和二维码登录提示；已确认当前必须由用户手动扫码 QQ 才能进入下一步的功能验收。
 - 已完成 N1/iStoreOS 预检：直接登录 `192.168.50.179` 复核到真实机器为 `Phicomm N1`、`iStoreOS 24.10.6`、`aarch64`、`4 核`、`2GB RAM`；当前 `/overlay` 总量约 `6.3G`、可用约 `4.8G`，`Docker 27.3.1`、`containerd`、`docker-compose` 均已安装但尚无现有容器；宿主机 libc 为 `musl 1.2.5`，因此后续默认不走宿主机裸装 QCE，而转向 `Docker + NapCat + QCE`。
 - 已完成 `消化系统/PBL作业/Case3-第一幕/Case3-第一幕.md` 的提交前最后精修：按评审清单删除“课堂笔记 / 老师提示 / 课堂讨论”残留表述，逐题校正文中 `[n]` 与本题 `④出处` 的编号错位，重点修复问题1-4与问题7-9；并补全 APASL 2025、EASL 2025、AASLD/IDSA 慢乙肝实践指导等文献格式，重新生成 HTML/PDF 且通过 `qpdf --check`。
 - 已完成 `消化系统/PBL作业/Case3-第一幕/Case3-第一幕.md` 的系统清洗与转换验证：先将原稿单独提交为 Git 基线，再按 `Case2` 骨架把题目层级统一为 `## 问题` + `### ③/④/⑤`，清掉题间 AI 连接语、脚注定义、`utm_source/chatgpt`、目录中悬空的第 10 题及旧版教材写法；各题教材出处统一收敛为《内科学》第10版并补到具体页码，随后迁入 `build_html.py` 与 `style.css` 生成 `Case3-第一幕-美化版.html`、`Case3-第一幕-美化版.pdf`，并通过 `py_compile`、HTML/PDF 导出和 `qpdf --check`。
