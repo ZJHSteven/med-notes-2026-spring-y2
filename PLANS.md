@@ -1,14 +1,6 @@
 # ExecPlan
 
 ## 当前未完成计划
-- 整理 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕.md`，先按既有 PBL 链路保存原稿基线，再按 `Case2 / Case3-第一幕` 已接受格式完成 Markdown 清洗、教材页码核对、可见网页链接恢复与美化导出。
-  - 先检查当前原稿结构、问题数量、出处类型、旧版教材残留、`页码待补` 分布和是否已有可复用脚本。
-  - 先更新 `PLANS.md` 与 `PROGRESS.md`，并把当前 `Case3-第二幕.md` 原稿单独提交为 Git 基线，避免后续格式修订失去回退点。
-  - 复用 `消化系统/PBL作业/Case3-第一幕/build_html.py` 与 `style.css`，把正文结构统一为 `## 问题` + `### ③学习内容 / ④出处 / ⑤实际应用`，并补上必要的分隔线、加粗和斜体格式。
-  - 将教材出处统一到《内科学》第10版，逐题补齐真实页码，清除全部“第9版 / 页码待补 / 相关章节”式占位写法。
-  - 对在线来源补回可见链接标签，优先恢复 `[DOI]`、`[PubMed]`、必要时的官方网页链接，并检查正文 `[n]` 引用和题内 `④出处` 是否闭环。
-  - 在不改题目边界的前提下，适度提高正文引用密度，重点补强“学习内容”和“实际应用”里的证据锚点。
-  - 最后导出 `Case3-第二幕-美化版.html` 与 `Case3-第二幕-美化版.pdf`，完成 `py_compile`、HTML 结构、残留词和 `qpdf --check` 验收。
 - 在 `192.168.50.179` 的 Phicomm N1（`iStoreOS 24.10.6`）上评估并尽量完成 `QQ Chat Exporter` 常驻部署，优先采用 `Docker + NapCat + QCE` 路线，而不是直接在宿主机裸跑。
   - 已完成当前机器真实约束复核：`4 核 A53 / 2GB RAM / overlay 可用约 4.8G / Docker 已安装 / 宿主机为 musl / 当前无外挂数据盘`。
   - 已完成官方资料交叉核对：QCE 插件包自带 `webui`，默认把数据落在用户主目录下的 `.qq-chat-exporter`；`ARM64` 需要补 `@esbuild/linux-arm64@0.25.10`。
@@ -36,6 +28,9 @@
   - 更新 `PROGRESS.md` 并提交课程仓库本轮修正。
 
 ## 最近完成
+- 已完成 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕.md` 的基线保存、Markdown 清洗与 HTML/PDF 构建：先将原稿单独提交为 Git 基线，再复用 `Case3-第一幕` 的 `build_html.py` 与 `style.css`，把全文统一到 `## 问题` + `### ③学习内容 / ④出处 / ⑤实际应用` 骨架，补入题目加粗、关键词强调、题间分隔线与可见网页链接标签。
+- 已完成 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕.md` 的教材与病例修订：各题教材出处统一收敛到《内科学》第10版并补齐真实页码，清除全部 `第9版` 与 `页码待补` 占位；同时修正问题1、问题9中乙肝血清学状态与 `HBV-DNA` 表述前后不一致的问题。
+- 已完成 `消化系统/PBL作业/Case3-第二幕` 成品验证：成功生成 `Case3-第二幕-美化版.html` 与 `Case3-第二幕-美化版.pdf`，并通过 `python -m py_compile build_html.py`、`python .\build_html.py --no-pdf`、`python .\build_html.py` 与 `qpdf --check Case3-第二幕-美化版.pdf`；同时确认 Markdown 中 `第9版`、`页码待补`、`utm_source`、`chatgpt` 和错误的 `<re.Match object ...>` 链接残留均已清零。
 - 已完成 `NapCat` 运行时补丁：对照官方 issue 中常见的 `XDG_RUNTIME_DIR is invalid`、`Failed to connect to the bus`、`Exiting GPU process due to errors during initialization` 症状后，已在远端 compose 中加入 `XDG_RUNTIME_DIR=/tmp/runtime-root`、`DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket`、`/run/dbus/system_bus_socket` 挂载、`shm_size: 512m`、`LIBGL_ALWAYS_SOFTWARE=1` 与 `QT_X11_NO_MITSHM=1`。当前容器内已确认这些环境变量、DBus socket 与 512MiB 的 `/dev/shm` 全部生效。
 - 已完成 `Worker` 退出再定位：这轮重新抓了远端 `v4.17.10` 日志、容器内运行态、`NapCat` 主进程源码与宿主机进程信息。当前确认实际是 `node /app/load.cjs` 主进程再 fork 一个 `node /app/napcat/napcat.mjs` worker；源码里 `child.on("exit")` 只在 `code != 0` 时打印 `退出码`，但我们现场崩溃日志只有 `Worker进程意外退出` 的 `warn` 而没有对应 `error`，因此更像 worker 被 signal 杀死而不是正常 `exit(1/11)`。同时本轮 `strace` 抓到的最新样本里，worker 在最新阶段并未崩，而是稳定停留在“每约 2 分钟一次 `Login Error, ErrCode: 3` -> 刷新二维码”的路径上，说明“worker 崩溃”和“当前登录失败”至少在最新现场里并不总是同时出现。
 - 已完成当前 `network error` 与运行时退出拆线：本轮再次抓取重启后的完整日志，确认 `22:18:19` 那次容器退出确实发生过一次，但重启完成后直到 `22:22:29` 都只有 `ErrCode: 3` 循环，没有新的 `RestartCount` 增长，也没有新的 `Worker进程意外退出`。这意味着当前最稳定复现的问题已收缩为“二维码授权失败 / QQ 侧拒绝登录”，而不是“每次扫码必崩”。

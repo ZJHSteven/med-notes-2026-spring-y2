@@ -1,28 +1,30 @@
-Case 3 第二幕 作业
+# Case 3 第二幕 作业
 姓名：张家赫
 班级：儿科班
 学号：2024193112
 
-①列出所有问题
+## ①列出所有问题
 
-1. 第二幕中哪些临床资料支持患者处于乙肝肝硬化失代偿期？其上消化道出血与门静脉高压有什么关系？
-2. 检验项目中哪些指标提示肝脏胆红素代谢/排泄功能异常？为什么ALT、AST正常不能排除严重肝硬化？
-3. 哪些指标提示肝脏合成功能障碍？白蛋白、胆碱酯酶、胆固醇、凝血相关指标分别有什么意义？
-4. 血氨升高提示肝脏解毒功能发生了什么改变？它与肝性脑病风险有什么关系？
-5. PT延长、纤维蛋白原降低等凝血异常，对患者出血风险和止血治疗有什么影响？
-6. GFR下降、肌酐/尿素氮升高、低钠低氯和下肢水肿，如何体现肝硬化与肾功能障碍之间的联系？
-7. 查体中的贫血貌、巩膜黄染、肝掌蜘蛛痣、腹壁静脉曲张、下肢水肿分别对应哪些病理生理改变？
-8. B超和三期增强CT结果对肝硬化、门静脉高压及脾切除术后改变有什么提示意义？
-9. 乙肝肝硬化患者出现肝脏占位提示怎样的疾病转归？为什么需要进一步MRI及相关检查排除原发性肝癌？
-10. 文献学习：肝硬化从代偿期进展到失代偿期的机制是什么？门静脉高压、循环障碍、炎症反应和器官功能障碍之间有什么关系？
+1. **第二幕中哪些临床资料支持患者处于乙肝肝硬化失代偿期？其上消化道出血与门静脉高压有什么关系？**
+2. **检验项目中哪些指标提示肝脏胆红素代谢/排泄功能异常？为什么ALT、AST正常不能排除严重肝硬化？**
+3. **哪些指标提示肝脏合成功能障碍？白蛋白、胆碱酯酶、胆固醇、凝血相关指标分别有什么意义？**
+4. **血氨升高提示肝脏解毒功能发生了什么改变？它与肝性脑病风险有什么关系？**
+5. **PT延长、纤维蛋白原降低等凝血异常，对患者出血风险和止血治疗有什么影响？**
+6. **GFR下降、肌酐/尿素氮升高、低钠低氯和下肢水肿，如何体现肝硬化与肾功能障碍之间的联系？**
+7. **查体中的贫血貌、巩膜黄染、肝掌蜘蛛痣、腹壁静脉曲张、下肢水肿分别对应哪些病理生理改变？**
+8. **B超和三期增强CT结果对肝硬化、门静脉高压及脾切除术后改变有什么提示意义？**
+9. **乙肝肝硬化患者出现肝脏占位提示怎样的疾病转归？为什么需要进一步MRI及相关检查排除原发性肝癌？**
+10. **文献学习：肝硬化从代偿期进展到失代偿期的机制是什么？门静脉高压、循环障碍、炎症反应和器官功能障碍之间有什么关系？**
 
-②整幕关键词
+## ②整幕关键词
 
-乙肝肝硬化失代偿期、门静脉高压、食管胃底静脉曲张出血、肝肾功能障碍、肝占位与肝癌筛查
+**乙肝肝硬化失代偿期、门静脉高压、食管胃底静脉曲张出血、肝肾功能障碍、肝占位与肝癌筛查**
 
-问题1：第二幕中哪些临床资料支持患者处于乙肝肝硬化失代偿期？其上消化道出血与门静脉高压有什么关系？
+---
 
-③学习内容：
+## 问题1：第二幕中哪些临床资料支持患者处于乙肝肝硬化失代偿期？其上消化道出血与门静脉高压有什么关系？
+
+### ③学习内容：
 
 肝硬化是多种慢性肝病长期进展后的共同结局，其基本病理改变包括弥漫性肝纤维化、假小叶形成和肝内血管结构重建。临床上，肝硬化通常分为代偿期和失代偿期。代偿期患者可以症状不明显；而进入失代偿期后，核心问题主要集中在两方面：一是门静脉高压及其并发症，二是肝细胞功能减退。指南中通常将腹水、食管胃静脉曲张破裂出血、肝性脑病、肝肾综合征等视为失代偿期肝硬化的重要临床表现[2-4]。
 
@@ -32,30 +34,35 @@ Case 3 第二幕 作业
 
 食管胃底静脉曲张破裂出血属于肝硬化门静脉高压最危险的并发症之一。它和普通消化性溃疡出血不同，背后不仅是局部血管破裂，还叠加了肝硬化患者凝血因子合成不足、血小板异常、低白蛋白、感染风险和肾功能受累等全身问题。因此，患者一旦发生呕血、黑便，临床处理不能只停留在“止血”，还要同时评估肝功能储备、门静脉高压程度、再出血风险和器官功能状态[4,5]。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“上消化道出血”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中失代偿期、门静脉高压与食管胃底静脉曲张出血（p.417, p.419-420），第二十五章“消化道出血”中上消化道出血定义与临床表现（p.460-463）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.
-4. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.
-5. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. Baveno VII - Renewing consensus in portal hypertension. Journal of Hepatology, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.  ([DOI](<https://doi.org/10.14218/JCTH.2025.00517> "DOI"))
+4. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.  ([DOI](<https://doi.org/10.14218/JCTH.2023.00061> "DOI"))
+5. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. Baveno VII - Renewing consensus in portal hypertension. Journal of Hepatology, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.  ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
-回到本病例看，孙奶奶既往有“慢性乙型病毒性肝炎”病史，肝硬化已有20多年，且乙肝相关检查提示HBsAg阳性、HBeAg阳性、HBcAb阳性、HBV-DNA阳性，说明病例的基础病因仍然指向慢性HBV感染相关肝硬化。第一幕中她已经出现呕血、血凝块和黑便，第二幕又进一步给出低血压、贫血貌、结膜苍白等失血表现，因此“上消化道出血”本身已经成立。
+回到本病例看，孙奶奶既往有“慢性乙型病毒性肝炎”病史，肝硬化已有20多年，且乙肝相关检查提示HBsAg阳性、HBeAg阴性、抗-HBe阳性、抗-HBc阳性、HBV-DNA阴性，说明病例的基础病因仍然指向慢性HBV感染相关肝硬化。第一幕中她已经出现呕血、血凝块和黑便，第二幕又进一步给出低血压、贫血貌、结膜苍白等失血表现，因此“上消化道出血”本身已经成立。
 
 进一步分析出血来源，病例中最有指向性的证据是：1个月前胃镜已经提示食管重度静脉曲张，但当时家属拒绝治疗；本次三期强化CT又提示食管胃底静脉曲张；查体还可见腹壁静脉曲张，说明门静脉高压已经形成明显侧支循环。结合患者呕血、黑便、血压90/60 mmHg、贫血貌等表现，我倾向于认为本次上消化道出血最可能是肝硬化门静脉高压导致的食管胃底静脉曲张破裂出血，而不是单纯胃炎或普通溃疡出血。
 
 第二幕还提示患者已经不只是“有肝硬化病史”，而是进入了失代偿阶段。支持点包括：巩膜中度黄染对应总胆红素和直接胆红素明显升高；肝掌、蜘蛛痣提示慢性肝病相关内分泌和血管改变；白蛋白降低、胆碱酯酶降低、胆固醇降低、PT延长、纤维蛋白原降低提示肝脏合成功能下降；血氨升高提示解毒功能减退；肌酐升高、GFR下降、低钠低氯及双下肢水肿提示肾功能和水电解质调节也受到影响。影像学上，B超提示肝内回声弥漫性增粗增强、肝表面不光滑、可见再生结节，三期增强CT提示肝硬化和食管胃底静脉曲张，这些都与肝硬化失代偿期相互印证。
 
 不过，当前仍不能完全排除其他上消化道出血原因，例如消化性溃疡、门静脉高压性胃病、胃黏膜糜烂或肿瘤出血。因此，后续仍需要在生命体征稳定和急诊处理基础上尽快完善胃镜检查，以明确出血部位和性质，并根据曲张静脉类型选择内镜套扎、组织胶注射、血管活性药物、抗感染、输血及必要时介入治疗等方案。病例的核心矛盾不是单一“出血点”，而是慢性乙肝肝硬化长期进展后形成门静脉高压，最终导致静脉曲张破裂出血，并伴随肝功能、凝血功能和肾功能多方面受损。
-问题2：检验项目中哪些指标提示肝脏胆红素代谢/排泄功能异常？为什么ALT、AST正常不能排除严重肝硬化？
+---
 
-③学习内容：
+## 问题2：检验项目中哪些指标提示肝脏胆红素代谢/排泄功能异常？为什么ALT、AST正常不能排除严重肝硬化？
+
+### ③学习内容：
 
 胆红素是血红素代谢后的产物，主要来源于衰老红细胞中血红蛋白的分解。正常情况下，非结合胆红素与白蛋白结合后运输至肝脏，经肝细胞摄取、葡萄糖醛酸化结合，形成结合胆红素，再通过胆小管排入胆汁，最终进入肠道代谢。因此，胆红素异常能够反映肝细胞摄取、结合、排泄以及胆汁流出等多个环节的问题[1,5]。
 
@@ -69,21 +76,24 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 
 所以，在评价肝硬化患者时，不能用“ALT、AST正常”简单判断肝脏问题不重。更合理的思路是把ALT、AST、胆红素、白蛋白、胆碱酯酶、凝血功能、血氨、肾功能和影像学表现放在一起看。ALT、AST正常只能说明当前肝细胞急性坏死或炎症活动可能不突出，并不能说明肝硬化程度轻，也不能否定肝功能失代偿[3,4]。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“黄疸”“肝硬化”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中失代偿期肝功能减退、黄疸与肝功能试验特点（p.418-419, p.423）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Newsome PN, Cramb R, Davison SM, Dillon JF, Foulerton M, Godfrey EM, et al. Guidelines on the management of abnormal liver blood tests. Gut, 2018, 67(1): 6-19. DOI: 10.1136/gutjnl-2017-314924. PMID: 29122851.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Newsome PN, Cramb R, Davison SM, Dillon JF, Foulerton M, Godfrey EM, et al. Guidelines on the management of abnormal liver blood tests. Gut, 2018, 67(1): 6-19. DOI: 10.1136/gutjnl-2017-314924. PMID: 29122851.  ([DOI](<https://doi.org/10.1136/gutjnl-2017-314924> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/29122851/> "PubMed"))
 
 【期刊文献/专业资料】
-4. Lominadze Z, Kallwitz ER. You Can't Have Liver Disease With Normal Liver Chemistries. Clinical Liver Disease (Hoboken), 2018, 12(4): 96-99. DOI: 10.1002/cld.742. PMID: 30988921.
-5. Tripathi N, Jialal I. Conjugated Hyperbilirubinemia. In: StatPearls. Treasure Island (FL): StatPearls Publishing, 2025. PMID: 32965843.
+4. Lominadze Z, Kallwitz ER. You Can't Have Liver Disease With Normal Liver Chemistries. Clinical Liver Disease (Hoboken), 2018, 12(4): 96-99. DOI: 10.1002/cld.742. PMID: 30988921.  ([DOI](<https://doi.org/10.1002/cld.742> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/30988921/> "PubMed"))
+5. Tripathi N, Jialal I. Conjugated Hyperbilirubinemia. In: StatPearls. Treasure Island (FL): StatPearls Publishing, 2025. PMID: 32965843.  ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/32965843/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，患者的总胆红素T-BIL为173.2 μmol/L，明显高于正常参考范围5.1-18.8 μmol/L；直接胆红素DBIL为155.5 μmol/L，明显高于正常参考范围1.7-6.8 μmol/L；间接胆红素IBIL为17.7 μmol/L，也轻度升高。直接胆红素约占总胆红素的89.8%，说明该患者的胆红素异常以直接胆红素升高为主。这与查体中“巩膜中度黄染”能够相互印证，提示患者不是单纯实验室异常，而是已经出现临床可见的黄疸。
 
@@ -94,9 +104,11 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 因此，本病例更适合理解为“晚期肝硬化失代偿状态下，转氨酶不一定升高，但胆红素代谢/排泄、蛋白合成、凝血、解毒和肾功能等多个系统已经出现异常”。ALT、AST正常并不能推翻乙肝肝硬化失代偿的判断，反而提醒我们：对于长期肝硬化患者，评价病情不能只盯着转氨酶，而要综合判断肝功能储备和并发症风险。
 
 这一点对后续诊疗也很关键。患者目前正在发生上消化道出血，胆红素显著升高提示肝功能储备差，意味着她对失血、感染、低血压、镇静内镜操作和药物代谢的耐受性都可能下降。后续不仅要处理食管胃底静脉曲张出血，还需要动态复查肝功能、凝血功能、血常规、电解质和肾功能，评估Child-Pugh分级、MELD评分及再出血和肝衰竭风险。
-问题3：哪些指标提示肝脏合成功能障碍？白蛋白、胆碱酯酶、胆固醇、凝血相关指标分别有什么意义？
+---
 
-③学习内容：
+## 问题3：哪些指标提示肝脏合成功能障碍？白蛋白、胆碱酯酶、胆固醇、凝血相关指标分别有什么意义？
+
+### ③学习内容：
 
 肝脏不仅是代谢和解毒器官，也是人体最重要的合成器官之一。肝细胞可以合成白蛋白、多种凝血因子、纤维蛋白原、胆碱酯酶、脂蛋白和部分胆固醇等物质。因此，判断肝硬化患者的严重程度时，不能只看ALT、AST这类“肝细胞损伤指标”，还要重点关注肝脏是否还能维持足够的合成功能。对于肝硬化患者来说，白蛋白下降、凝血酶原时间延长、胆碱酯酶降低、胆固醇降低等，往往比单纯转氨酶更能反映肝功能储备下降[1-4]。
 
@@ -112,22 +124,25 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 
 综上，肝合成功能障碍并不是一个抽象概念，而是可以从多个实验室指标中体现出来。白蛋白反映长期蛋白合成和血浆胶体渗透压维持能力；胆碱酯酶反映肝细胞合成和肝储备功能；总胆固醇降低提示脂质合成和营养储备下降；PT延长、纤维蛋白原降低则提示凝血因子合成不足和凝血系统受影响。它们共同说明，患者的肝脏已经不仅是“结构硬化”，而是出现了实质性的功能失代偿。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“肝功能检查”“上消化道出血”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中低白蛋白血症、出血倾向、腹水与失代偿期肝功能减退（p.418-420）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.  ([DOI](<https://doi.org/10.14218/JCTH.2025.00517> "DOI"))
 
 【期刊文献/专业资料】
-4. Sharma P, Arora A. Value of Liver Function Tests in Cirrhosis. Journal of Clinical and Experimental Hepatology, 2022, 12(3): 948-964. DOI: 10.1016/j.jceh.2021.11.004.
-5. Meng F, Yin X, Ma X, Guo XD, Jin B, Li H. Assessment of the value of serum cholinesterase as a liver function test for cirrhotic patients. Biomedical Reports, 2013, 1(2): 265-268. DOI: 10.3892/br.2013.60. PMID: 24648933.
-6. Lisman T. How to assess hemostasis in patients with severe liver disease. Hematology. American Society of Hematology Education Program, 2023, 2023(1): 267-273. DOI: 10.1182/hematology.2023000479. PMID: 38066858.
+4. Sharma P, Arora A. Value of Liver Function Tests in Cirrhosis. Journal of Clinical and Experimental Hepatology, 2022, 12(3): 948-964. DOI: 10.1016/j.jceh.2021.11.004.  ([DOI](<https://doi.org/10.1016/j.jceh.2021.11.004> "DOI"))
+5. Meng F, Yin X, Ma X, Guo XD, Jin B, Li H. Assessment of the value of serum cholinesterase as a liver function test for cirrhotic patients. Biomedical Reports, 2013, 1(2): 265-268. DOI: 10.3892/br.2013.60. PMID: 24648933.  ([DOI](<https://doi.org/10.3892/br.2013.60> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/24648933/> "PubMed"))
+6. Lisman T. How to assess hemostasis in patients with severe liver disease. Hematology. American Society of Hematology Education Program, 2023, 2023(1): 267-273. DOI: 10.1182/hematology.2023000479. PMID: 38066858.  ([DOI](<https://doi.org/10.1182/hematology.2023000479> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/38066858/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，患者多个指标共同提示肝脏合成功能明显障碍。首先，白蛋白ALB为31.4 g/L，低于正常参考值35-55 g/L，说明肝脏蛋白合成能力下降，也可以解释患者双下肢指凹性水肿的一部分机制。白蛋白下降会使血浆胶体渗透压降低，液体更容易外渗到组织间隙；同时，肝硬化门静脉高压、有效循环血容量不足和肾素-血管紧张素-醛固酮系统激活，也会进一步促进水钠潴留。因此，病例中下肢水肿不能只归因于“肾不好”，还应放在肝硬化低白蛋白和循环功能障碍背景下理解。
 
@@ -138,9 +153,11 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 第四，患者凝血酶原时间PT为26.4 s，明显高于正常参考值11-16 s；纤维蛋白原Fg为1.020 g/L，低于正常参考值2.2-3.8 g/L。这两个指标说明肝脏合成凝血因子和纤维蛋白原的能力下降。对于正在发生呕血、黑便的患者来说，这不仅是实验室异常，更会影响止血稳定性、再出血风险和内镜治疗安全性。虽然肝硬化凝血状态具有复杂的再平衡特点，不能只根据PT判断出血风险，但在本病例这种活动性上消化道出血背景下，PT明显延长和纤维蛋白原降低仍然提示病情严重，需要动态监测并结合血红蛋白、血小板、INR、纤维蛋白原和临床出血情况综合处理。
 
 因此，问题3的核心判断是：孙奶奶已经出现比较明确的肝合成功能障碍。ALB低解释水肿和营养/肝储备下降，CHE低提示肝细胞合成功能和肝储备受损，TC低提示脂质合成及营养状态下降，PT延长和Fg降低提示凝血因子合成不足。结合第一幕的食管胃底静脉曲张出血，第二幕的这些指标说明患者不是单纯“肝硬化形态改变”，而是进入了肝功能失代偿并伴多系统并发症风险增加的阶段。后续应评估Child-Pugh分级和MELD评分，动态复查肝功能、凝血功能、血常规和肾功能，并在止血治疗同时关注白蛋白、凝血支持、感染预防和器官功能保护。
-问题4：血氨升高提示肝脏解毒功能发生了什么改变？它与肝性脑病风险有什么关系？
+---
 
-③学习内容：
+## 问题4：血氨升高提示肝脏解毒功能发生了什么改变？它与肝性脑病风险有什么关系？
+
+### ③学习内容：
 
 肝脏具有重要的解毒和代谢清除功能，其中对氨的代谢是理解肝性脑病的关键。氨主要来自肠道细菌对含氮物质的分解，也可来自蛋白质和氨基酸代谢。正常情况下，肠道产生的氨经门静脉进入肝脏，肝细胞通过尿素循环将氨转化为尿素，再经肾脏排出；部分氨也可通过谷氨酰胺合成途径被暂时固定。由于氨本身具有神经毒性，所以肝脏对氨的清除能力下降时，血氨升高就可能影响中枢神经系统功能[1,3]。
 
@@ -154,19 +171,22 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 
 治疗思路上，血氨升高和肝性脑病风险的处理重点不是单纯“降一个化验值”，而是寻找和纠正诱因。对于肝硬化相关肝性脑病，指南推荐的原则包括去除诱因、减少肠道氨生成和吸收、促进氨代谢、维持水电解质平衡、避免不必要镇静药物等。常用措施包括乳果糖调节肠道环境、促进排便、减少氨吸收；利福昔明等非吸收性抗生素可减少肠道产氨菌负荷；同时需要处理消化道出血、感染、便秘、低钾低钠、肾功能不全等诱因[3-5]。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“肝性脑病”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中肝性脑病的定义、发病机制与治疗原则（p.420, p.425）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Xu X, Ding H, Li W, Han Y, Guan Y, Xu J, et al. Chinese Guidelines on the Management of Hepatic Encephalopathy in Cirrhosis (2024). Journal of Clinical and Translational Hepatology, 2025, 13(3): 253-267. DOI: 10.14218/JCTH.2024.00484.
-4. European Association for the Study of the Liver. EASL Clinical Practice Guidelines on the management of hepatic encephalopathy. Journal of Hepatology, 2022, 77(3): 807-824. DOI: 10.1016/j.jhep.2022.06.001.
-5. American Association for the Study of Liver Diseases; European Association for the Study of the Liver. Hepatic encephalopathy in chronic liver disease: 2014 practice guideline. Journal of Hepatology, 2014, 61(3): 642-659. DOI: 10.1016/j.jhep.2014.05.042.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Xu X, Ding H, Li W, Han Y, Guan Y, Xu J, et al. Chinese Guidelines on the Management of Hepatic Encephalopathy in Cirrhosis (2024). Journal of Clinical and Translational Hepatology, 2025, 13(3): 253-267. DOI: 10.14218/JCTH.2024.00484.  ([DOI](<https://doi.org/10.14218/JCTH.2024.00484> "DOI"))
+4. European Association for the Study of the Liver. EASL Clinical Practice Guidelines on the management of hepatic encephalopathy. Journal of Hepatology, 2022, 77(3): 807-824. DOI: 10.1016/j.jhep.2022.06.001.  ([DOI](<https://doi.org/10.1016/j.jhep.2022.06.001> "DOI"))
+5. American Association for the Study of Liver Diseases; European Association for the Study of the Liver. Hepatic encephalopathy in chronic liver disease: 2014 practice guideline. Journal of Hepatology, 2014, 61(3): 642-659. DOI: 10.1016/j.jhep.2014.05.042.  ([DOI](<https://doi.org/10.1016/j.jhep.2014.05.042> "DOI"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，孙奶奶血氨为80 μmol/L，高于正常参考值20-60 μmol/L，提示肝脏对氨的清除能力下降。结合她长期慢性乙肝、肝硬化20多年、B超和CT均支持肝硬化改变，以及食管胃底静脉曲张和腹壁静脉曲张等门静脉高压表现，这个血氨升高并不是孤立指标，而是符合肝硬化失代偿背景下“肝细胞解毒能力下降 + 门体分流增加”的结果。
 
@@ -175,9 +195,11 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 这一点也能解释为什么肝硬化患者出现消化道出血后，临床处理不能只关注止血。对孙奶奶来说，后续应密切观察意识状态、睡眠节律、定向力、行为变化和扑翼样震颤；必要时可进行数字连接试验、动物命名试验等筛查轻微肝性脑病。同时需要积极处理诱因，包括控制上消化道出血、预防感染、纠正低钠低氯和肾功能异常、避免便秘、谨慎使用镇静药物。
 
 在治疗思路上，如果患者出现意识改变或肝性脑病倾向，应考虑使用乳果糖减少肠道氨吸收，并根据情况联合利福昔明等药物；同时要避免过度限制蛋白导致营养恶化。因为本病例患者同时有低白蛋白、低胆固醇、老年、急性出血等问题，营养支持和氨负荷控制需要平衡。总体来看，血氨升高在本病例中的意义是：提示肝脏解毒功能下降，并警示在上消化道出血、肾功能受损和电解质紊乱共同作用下，患者后续可能发生肝性脑病，需要提前监测和干预。
-问题5：PT延长、纤维蛋白原降低等凝血异常，对患者出血风险和止血治疗有什么影响？
+---
 
-③学习内容：
+## 问题5：PT延长、纤维蛋白原降低等凝血异常，对患者出血风险和止血治疗有什么影响？
+
+### ③学习内容：
 
 肝脏是凝血系统的重要调控器官。多数凝血因子，包括纤维蛋白原、凝血酶原以及凝血因子V、VII、IX、X、XI等，主要由肝脏合成；同时，蛋白C、蛋白S、抗凝血酶等抗凝成分也与肝脏合成密切相关。因此，肝硬化进展到失代偿阶段后，患者常出现凝血酶原时间延长、INR升高、纤维蛋白原降低、血小板减少或功能异常、纤溶系统改变等多方面异常[1-4]。
 
@@ -195,22 +217,25 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 
 因此，PT延长和纤维蛋白原降低对本病例的意义主要有三点：第一，它们提示肝脏合成凝血因子的能力下降，是肝硬化失代偿的重要表现；第二，它们会影响当前出血控制和内镜/介入治疗安全性，但不能单独解释静脉曲张破裂出血的根本原因；第三，治疗时不能简单追求“化验单正常化”，而应围绕门静脉高压性出血的核心机制，同时进行有指征的、目标明确的凝血支持。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“上消化道出血”“肝性脑病/肝功能衰竭相关凝血异常”相关内容，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中出血倾向、食管胃底静脉曲张出血与治疗原则（p.418-420, p.424-425），第二十五章“消化道出血”中失血性周围循环衰竭与贫血变化（p.460-463）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.
-4. European Association for the Study of the Liver. EASL Clinical Practice Guidelines on prevention and management of bleeding and thrombosis in patients with cirrhosis. Journal of Hepatology, 2022, 76(5): 1151-1184. DOI: 10.1016/j.jhep.2021.09.003. PMID: 35300861.
-5. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. Baveno VII - Renewing consensus in portal hypertension. Journal of Hepatology, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.  ([DOI](<https://doi.org/10.14218/JCTH.2023.00061> "DOI"))
+4. European Association for the Study of the Liver. EASL Clinical Practice Guidelines on prevention and management of bleeding and thrombosis in patients with cirrhosis. Journal of Hepatology, 2022, 76(5): 1151-1184. DOI: 10.1016/j.jhep.2021.09.003. PMID: 35300861.  ([DOI](<https://doi.org/10.1016/j.jhep.2021.09.003> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35300861/> "PubMed"))
+5. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. Baveno VII - Renewing consensus in portal hypertension. Journal of Hepatology, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.  ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
 
 【期刊文献/专业资料】
-6. Lisman T. How to assess hemostasis in patients with severe liver disease. Hematology. American Society of Hematology Education Program, 2023, 2023(1): 267-273. DOI: 10.1182/hematology.2023000479. PMID: 38066858.
+6. Lisman T. How to assess hemostasis in patients with severe liver disease. Hematology. American Society of Hematology Education Program, 2023, 2023(1): 267-273. DOI: 10.1182/hematology.2023000479. PMID: 38066858.  ([DOI](<https://doi.org/10.1182/hematology.2023000479> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/38066858/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，患者PT为26.4 s，明显高于正常参考值11-16 s；纤维蛋白原Fg为1.020 g/L，低于正常参考值2.2-3.8 g/L。结合其白蛋白降低、胆碱酯酶降低、胆固醇降低、胆红素明显升高等表现，可以判断其肝脏合成功能已经明显受损。也就是说，这两个凝血指标不是孤立异常，而是乙肝肝硬化失代偿的一部分。
 
@@ -223,9 +248,11 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 对于凝血异常本身，不能机械地为了把PT恢复正常而大量输注血浆。原因是肝硬化曲张静脉出血主要由门静脉压力驱动，大量血浆可能增加血容量和门静脉压力，反而不利于止血。更合理的策略是：如果患者存在活动性大出血、休克、纤维蛋白原进一步降低或血小板明显不足，则根据实际出血情况和操作需求进行个体化成分输血；如果只是PT延长而没有相应指征，则不应把“纠正PT”作为治疗目标。
 
 因此，问题5在本病例中的结论是：PT延长和纤维蛋白原降低说明孙奶奶肝合成功能下降、凝血系统稳定性变差，会增加止血难度和再出血风险；但本次出血的根本机制仍是门静脉高压性食管胃底静脉曲张破裂。治疗时既要尽快处理曲张静脉出血，又要避免因盲目纠正凝血指标而造成容量负荷过重和门静脉压力升高。凝血支持应根据活动性出血程度、纤维蛋白原水平、血小板、血流动力学和内镜/介入需求综合决定。
-问题6：GFR下降、肌酐/尿素氮升高、低钠低氯和下肢水肿，如何体现肝硬化与肾功能障碍之间的联系？
+---
 
-③学习内容：
+## 问题6：GFR下降、肌酐/尿素氮升高、低钠低氯和下肢水肿，如何体现肝硬化与肾功能障碍之间的联系？
+
+### ③学习内容：
 
 肝硬化失代偿期并不是单纯“肝脏变硬”，而是可以通过门静脉高压、内脏血管扩张、有效循环血容量不足、神经体液系统激活等机制，影响肾脏灌注、水钠代谢和电解质平衡。临床上，晚期肝硬化患者常出现腹水、水肿、低钠血症、肾功能下降，严重者可进展为急性肾损伤或肝肾综合征。因此，肝硬化患者出现肌酐升高、GFR下降和低钠时，必须从“肝—循环—肾”整体联系来理解，而不能把肾功能异常孤立看成单纯肾脏原发病[1-5]。
 
@@ -245,22 +272,25 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 
 综上，肝硬化与肾功能障碍的联系可以概括为：慢性肝硬化导致门静脉高压和全身循环异常，有效动脉血容量下降，继而激活神经体液系统，造成肾脏水钠潴留、低钠血症、水肿和肾灌注下降；在消化道出血、感染、低血压等诱因打击下，患者可进一步发生急性肾损伤，甚至进展为肝肾综合征。临床上必须区分肾前性损伤、急性肾小管损伤、肝肾综合征和原发肾病，不能只凭单次肌酐或GFR下结论。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“腹水”“肝肾综合征”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中腹水形成、电解质紊乱与肝肾综合征（p.419-423）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Xu X, Duan Z, Ding H, Li W, Jia J, Wei L, et al. Chinese guidelines on the management of ascites in cirrhosis. Hepatology International, 2024, 18(4): 1071-1089. DOI: 10.1007/s12072-024-10697-z. PMID: 38980598.
-4. Biggins SW, Angeli P, Garcia-Tsao G, Ginès P, Ling SC, Nadim MK, et al. Diagnosis, Evaluation, and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome: 2021 Practice Guidance by the American Association for the Study of Liver Diseases. Hepatology, 2021, 74(2): 1014-1048. DOI: 10.1002/hep.31884. PMID: 33942342.
-5. Angeli P, Bernardi M, Villanueva C, Francoz C, Mookerjee RP, Trebicka J, et al. EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis. Journal of Hepatology, 2018, 69(2): 406-460. DOI: 10.1016/j.jhep.2018.03.024. PMID: 29653741.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Xu X, Duan Z, Ding H, Li W, Jia J, Wei L, et al. Chinese guidelines on the management of ascites in cirrhosis. Hepatology International, 2024, 18(4): 1071-1089. DOI: 10.1007/s12072-024-10697-z. PMID: 38980598.  ([DOI](<https://doi.org/10.1007/s12072-024-10697-z> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/38980598/> "PubMed"))
+4. Biggins SW, Angeli P, Garcia-Tsao G, Ginès P, Ling SC, Nadim MK, et al. Diagnosis, Evaluation, and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome: 2021 Practice Guidance by the American Association for the Study of Liver Diseases. Hepatology, 2021, 74(2): 1014-1048. DOI: 10.1002/hep.31884. PMID: 33942342.  ([DOI](<https://doi.org/10.1002/hep.31884> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/33942342/> "PubMed"))
+5. Angeli P, Bernardi M, Villanueva C, Francoz C, Mookerjee RP, Trebicka J, et al. EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis. Journal of Hepatology, 2018, 69(2): 406-460. DOI: 10.1016/j.jhep.2018.03.024. PMID: 29653741.  ([DOI](<https://doi.org/10.1016/j.jhep.2018.03.024> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/29653741/> "PubMed"))
 
 【期刊文献/专业资料】
-6. Ryu JY, Baek SH, Kim S, Kim JH, Kim SU, Kim DJ, et al. Evidence-based hyponatremia management in liver disease. Clinical and Molecular Hepatology, 2023, 29(2): 263-278. DOI: 10.3350/cmh.2023.0090. PMID: 37011880.
+6. Ryu JY, Baek SH, Kim S, Kim JH, Kim SU, Kim DJ, et al. Evidence-based hyponatremia management in liver disease. Clinical and Molecular Hepatology, 2023, 29(2): 263-278. DOI: 10.3350/cmh.2023.0090. PMID: 37011880.  ([DOI](<https://doi.org/10.3350/cmh.2023.0090> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/37011880/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，孙奶奶尿素氮BUN为10.7 mmol/L，高于正常参考值1.8-7.1 mmol/L；肌酐CRE为139.0 μmol/L，高于正常参考值62-115 μmol/L；尿酸UA为535.0 μmol/L，高于正常参考值130-410 μmol/L；GFR为49.85 ml/min，低于正常参考值80-120 ml/min。这组指标说明患者已经存在肾功能受累或肾灌注不足。对于76岁的老年肝硬化患者来说，肌酐升高到139 μmol/L并不应被轻视，因为肝硬化和营养消耗可能使肌酐生成减少，实际肾功能损害可能比单看肌酐更严重。
 
@@ -275,9 +305,11 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 因此，我对本病例的判断是：患者已经存在肝硬化失代偿背景下的肾功能受累，当前最需要警惕的是出血和低灌注诱发的急性肾损伤，同时要动态观察是否向肝肾综合征方向发展。后续建议补充或动态监测：尿量、连续肌酐和尿素氮、电解质、尿常规和尿沉渣、尿钠或尿渗透压、肾脏超声、腹水评估、感染指标以及用药史，尤其要了解是否使用利尿剂、NSAIDs、造影剂或其他肾毒性药物。
 
 治疗思路上，首先应处理诱因：控制上消化道出血，纠正低血压和有效循环不足，避免肾毒性药物，预防和筛查感染，谨慎使用利尿剂。若患者存在容量不足，应进行合理液体复苏和白蛋白支持；若肾功能在充分处理出血、停用利尿剂并扩容后仍不改善，再进一步评估肝肾综合征可能。总体来看，问题6说明本病例已经从单纯肝脏疾病扩展到肝、肾、循环和水电解质共同受累，这也是肝硬化失代偿期危险性高的重要原因。
-问题7：查体中的贫血貌、巩膜黄染、肝掌蜘蛛痣、腹壁静脉曲张、下肢水肿分别对应哪些病理生理改变？
+---
 
-③学习内容：
+## 问题7：查体中的贫血貌、巩膜黄染、肝掌蜘蛛痣、腹壁静脉曲张、下肢水肿分别对应哪些病理生理改变？
+
+### ③学习内容：
 
 肝硬化患者的查体结果往往能够把病史、实验室检查和影像学表现串联起来。虽然单个体征对肝硬化的诊断敏感性有限，但多个慢性肝病体征、门静脉高压体征和肝功能减退体征同时出现时，对判断患者是否处于失代偿阶段具有重要意义。系统综述提示，体格检查发现对肝硬化诊断总体敏感性不高，但某些特异性较强的体征更常提示较晚期或失代偿性肝病[2]。
 
@@ -295,23 +327,26 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 
 这些查体结果之间并非互不相关，而是共同指向同一条病理生理链：慢性乙肝导致长期肝细胞损伤和纤维化，进一步形成肝硬化；肝硬化导致肝功能减退，出现黄疸、肝掌、蜘蛛痣、低白蛋白和凝血异常；肝内阻力升高造成门静脉高压，出现腹壁静脉曲张和食管胃底静脉曲张；曲张静脉破裂后出现呕血、黑便、贫血貌和低血压；低白蛋白、循环障碍和肾功能受累又共同导致下肢水肿。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“门静脉高压”“上消化道出血”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中失代偿期体征、门静脉高压、腹壁静脉曲张与食管胃底静脉曲张（p.418-420）。
 
 【指南/共识】
-2. de Bruyn G, Graviss EA. A systematic review of the diagnostic accuracy of physical examination for the detection of cirrhosis. BMC Medical Informatics and Decision Making, 2001, 1: 6. DOI: 10.1186/1472-6947-1-6. PMID: 11806770.
-3. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-4. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.
+2. de Bruyn G, Graviss EA. A systematic review of the diagnostic accuracy of physical examination for the detection of cirrhosis. BMC Medical Informatics and Decision Making, 2001, 1: 6. DOI: 10.1186/1472-6947-1-6. PMID: 11806770.  ([DOI](<https://doi.org/10.1186/1472-6947-1-6> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/11806770/> "PubMed"))
+3. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+4. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.  ([DOI](<https://doi.org/10.14218/JCTH.2025.00517> "DOI"))
 
 【期刊文献/专业资料】
-5. Liu Y, Liu Z, Zhang Y, Li J. Recognizing skin conditions in patients with cirrhosis. Clinical and Experimental Hepatology, 2022, 8(4): 301-309. DOI: 10.5114/ceh.2022.122476. PMID: 36514364.
-6. Sharma B, John S. Hepatic Cirrhosis. In: StatPearls. Treasure Island (FL): StatPearls Publishing, 2025. PMID: 30020644.
-7. Biggins SW, Angeli P, Garcia-Tsao G, Ginès P, Ling SC, Nadim MK, et al. Diagnosis, Evaluation, and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome: 2021 Practice Guidance by the American Association for the Study of Liver Diseases. Hepatology, 2021, 74(2): 1014-1048. DOI: 10.1002/hep.31884. PMID: 33942342.
+5. Liu Y, Liu Z, Zhang Y, Li J. Recognizing skin conditions in patients with cirrhosis. Clinical and Experimental Hepatology, 2022, 8(4): 301-309. DOI: 10.5114/ceh.2022.122476. PMID: 36514364.  ([DOI](<https://doi.org/10.5114/ceh.2022.122476> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/36514364/> "PubMed"))
+6. Sharma B, John S. Hepatic Cirrhosis. In: StatPearls. Treasure Island (FL): StatPearls Publishing, 2025. PMID: 30020644.  ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/30020644/> "PubMed"))
+7. Biggins SW, Angeli P, Garcia-Tsao G, Ginès P, Ling SC, Nadim MK, et al. Diagnosis, Evaluation, and Management of Ascites, Spontaneous Bacterial Peritonitis and Hepatorenal Syndrome: 2021 Practice Guidance by the American Association for the Study of Liver Diseases. Hepatology, 2021, 74(2): 1014-1048. DOI: 10.1002/hep.31884. PMID: 33942342.  ([DOI](<https://doi.org/10.1002/hep.31884> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/33942342/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，孙奶奶入院查体可见贫血貌、结膜苍白，结合第一幕“呕血数次、鲜血及血凝块、黑便3次”和本次血压90/60 mmHg，首先支持急性上消化道出血后的失血状态。她的贫血貌不是一个孤立体征，而是和呕血、黑便、低血压共同构成出血严重性的床旁证据。后续需要结合血红蛋白、红细胞压积、血小板和动态生命体征评估失血量及输血需求。
 
@@ -326,9 +361,11 @@ ALT和AST属于氨基转移酶，主要用于反映肝细胞损伤或坏死时�
 综合来看，第二幕查体结果把病例主线进一步坐实：贫血貌和结膜苍白对应急性上消化道出血；巩膜黄染对应胆红素代谢/排泄障碍；肝掌和蜘蛛痣提示慢性肝功能减退；腹壁静脉曲张提示门静脉高压和侧支循环开放；下肢水肿提示低白蛋白、循环障碍和肾功能受累。它们共同支持患者处于乙肝肝硬化失代偿期，并且本次出血最可能与门静脉高压导致的食管胃底静脉曲张破裂有关。
 
 从后续诊疗角度看，查体还提示需要进一步完善几个方面：第一，复查血常规和凝血功能，评估出血严重程度；第二，尽快行胃镜明确出血部位并进行内镜止血；第三，评估腹水、感染和肝性脑病风险；第四，动态监测肾功能、电解质和尿量；第五，结合Child-Pugh分级、MELD评分和影像学结果综合判断预后。当前资料已经足以支持肝硬化失代偿和门静脉高压性出血的方向，但仍需要胃镜和动态实验室指标进一步确认出血部位和严重程度。
-问题8：B超和三期增强CT结果对肝硬化、门静脉高压及脾切除术后改变有什么提示意义？
+---
 
-③学习内容：
+## 问题8：B超和三期增强CT结果对肝硬化、门静脉高压及脾切除术后改变有什么提示意义？
+
+### ③学习内容：
 
 腹部超声和CT是评价肝硬化及其并发症的重要影像学方法。肝硬化的病理基础是弥漫性肝纤维化、假小叶形成、再生结节和肝内血管结构重建，这些改变在影像学上可表现为肝脏形态、表面、实质回声或密度、血管走行和门静脉系统的异常。影像学检查不能完全替代病因学、实验室和临床判断，但在明确肝硬化形态改变、发现门静脉高压并发症、筛查肝癌风险方面具有重要价值[1-4]。
 
@@ -346,23 +383,26 @@ B超是肝硬化患者常用的一线检查。典型肝硬化超声表现包括�
 
 因此，B超和CT在本幕中的作用是互补的。B超从肝实质回声、肝表面和再生结节角度支持肝硬化；三期增强CT进一步从肝脏形态、食管胃底静脉曲张、肝占位和脾切除术后改变等方面提供更全面的信息。若把这些结果与病史和实验室检查合并分析，可以得出更完整的判断：患者不是单纯“肝酶异常”或“胆红素升高”，而是已经存在影像学明确的肝硬化形态改变、门静脉高压并发症和肝占位待查问题。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“门静脉高压”“上消化道出血”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中门静脉高压的影像学评估、腹部超声与增强CT/MRI判断要点（p.422-423）。
 
 【指南/共识】
-2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-3. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.
-4. Berzigotti A, Seijo S, Arena U, Abraldes JG, Vizzutti F, García-Pagán JC, et al. Elastography, spleen size, and platelet count identify portal hypertension in patients with compensated cirrhosis. Gastroenterology, 2013, 144(1): 102-111.e1. DOI: 10.1053/j.gastro.2012.10.001. PMID: 23058320.
-5. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.
+2. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+3. Xu X, Ding H, You H, Guan Y, Xu J, Li W, et al. Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025). Journal of Clinical and Translational Hepatology, 2026, 14(1): 96-115. DOI: 10.14218/JCTH.2025.00517.  ([DOI](<https://doi.org/10.14218/JCTH.2025.00517> "DOI"))
+4. Berzigotti A, Seijo S, Arena U, Abraldes JG, Vizzutti F, García-Pagán JC, et al. Elastography, spleen size, and platelet count identify portal hypertension in patients with compensated cirrhosis. Gastroenterology, 2013, 144(1): 102-111.e1. DOI: 10.1053/j.gastro.2012.10.001. PMID: 23058320.  ([DOI](<https://doi.org/10.1053/j.gastro.2012.10.001> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/23058320/> "PubMed"))
+5. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.  ([DOI](<https://doi.org/10.14218/JCTH.2023.00061> "DOI"))
 
 【期刊文献/专业资料】
-6. Yeom SK, Lee CH, Cha SH, Park CM. Prediction of liver cirrhosis, using diagnostic imaging tools. World Journal of Hepatology, 2015, 7(17): 2069-2079. DOI: 10.4254/wjh.v7.i17.2069. PMID: 26301031.
-7. Crary SE, Buchanan GR. Vascular complications after splenectomy for hematologic disorders. Blood, 2009, 114(14): 2861-2868. DOI: 10.1182/blood-2009-04-210112. PMID: 19636061.
+6. Yeom SK, Lee CH, Cha SH, Park CM. Prediction of liver cirrhosis, using diagnostic imaging tools. World Journal of Hepatology, 2015, 7(17): 2069-2079. DOI: 10.4254/wjh.v7.i17.2069. PMID: 26301031.  ([DOI](<https://doi.org/10.4254/wjh.v7.i17.2069> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/26301031/> "PubMed"))
+7. Crary SE, Buchanan GR. Vascular complications after splenectomy for hematologic disorders. Blood, 2009, 114(14): 2861-2868. DOI: 10.1182/blood-2009-04-210112. PMID: 19636061.  ([DOI](<https://doi.org/10.1182/blood-2009-04-210112> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/19636061/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，B超提示“肝内回声弥漫性增粗增强、深部回声衰减、可见低回声再生结节、肝表面不光滑呈波浪状”。这些表现与肝硬化的形态学改变高度一致。肝表面不光滑和波浪状改变，说明肝包膜表面已经受到纤维隔和再生结节影响；肝内回声弥漫性增粗增强，提示肝实质结构紊乱；再生结节则直接对应肝硬化病理中的结节性重塑。因此，B超结果是支持患者长期乙肝肝硬化的重要影像证据。
 
@@ -375,9 +415,11 @@ CT提示“脾切除术后改变”，与患者10年前脾切除史一致。这�
 这一幕还有一个不能忽略的点：CT提示“肝脏占位？建议MR检查”。虽然这个问题会在问题9中重点展开，但在本题中也要看到，三期增强CT已经发现了B超不能完全解释的问题。对一个长期乙肝肝硬化患者来说，肝占位需要高度警惕原发性肝癌。B超支持肝硬化，CT发现占位并提示进一步MRI，说明影像学检查正在从“确认肝硬化”转向“寻找严重转归和并发症”。
 
 所以，我对本题的总结是：B超结果支持肝硬化的实质和表面形态改变；三期强化CT进一步支持肝硬化并门静脉高压，尤其是食管胃底静脉曲张，为本次呕血黑便提供了重要解释；脾切除术后改变提示既往手术状态，会影响对脾大、脾功能亢进和血细胞变化的判断；而肝脏占位提示后续必须进入肝癌筛查和诊断路径。影像学结果使这一幕的诊断逻辑更完整：慢乙肝长期进展形成肝硬化，肝硬化导致门静脉高压和曲张静脉出血，同时还要警惕肝癌转归。
-问题9：乙肝肝硬化患者出现肝脏占位提示怎样的疾病转归？为什么需要进一步MRI及相关检查排除原发性肝癌？
+---
 
-③学习内容：
+## 问题9：乙肝肝硬化患者出现肝脏占位提示怎样的疾病转归？为什么需要进一步MRI及相关检查排除原发性肝癌？
+
+### ③学习内容：
 
 肝脏占位是影像学描述，不等同于某一种确定诊断。它可以是良性病变，如再生结节、异型增生结节、血管瘤、局灶性结节性增生、肝囊肿等；也可以是恶性病变，如原发性肝癌、肝内胆管癌、混合型肝细胞-胆管癌或转移性肝癌。因此，发现“肝脏占位”后，首先要结合患者的基础肝病背景、肿瘤标志物、影像强化方式和病灶动态变化判断其性质[1-4]。
 
@@ -397,23 +439,26 @@ MRI在肝脏占位鉴别中具有独特优势。动态增强MRI不仅可以观�
 
 因此，乙肝肝硬化患者出现肝脏占位时，合理的诊疗思路是：第一，判断患者是否属于肝癌高危人群；第二，明确占位大小、数目、位置和强化方式；第三，完善动态增强MRI，必要时使用肝细胞特异性对比剂；第四，检测AFP、PIVKA-II/DCP、AFP-L3等肿瘤标志物；第五，评估是否存在门静脉癌栓、肝静脉侵犯、淋巴结或远处转移；第六，在影像不典型或诊断仍不明确时，再权衡穿刺活检。这个过程既是为了确诊，也是为了后续分期、治疗选择和预后判断。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“原发性肝癌”“肝硬化”“慢性乙型肝炎”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十六章“原发性肝癌”中乙肝肝硬化相关肝癌风险、增强MRI表现与临床诊断（p.427-430），第十五章“肝硬化”中肝脏结节性病变鉴别（p.423）。
 
 【指南/共识】
-2. 中华医学会肝病学分会，中华医学会感染病学分会. 慢性乙型肝炎防治指南（2022年版）. 中华肝脏病杂志, 2022, 30(12): 1309-1331. DOI: 10.3760/cma.j.cn501113-20221220-00607.
-3. 中华人民共和国国家卫生健康委员会医政司. 原发性肝癌诊疗指南（2024年版）. 协和医学杂志, 2024, 15(3): 532-559. DOI: 10.12290/xhyxzz.2024-0304.
-4. Singal AG, Llovet JM, Yarchoan M, Mehta N, Heimbach JK, Dawson LA, et al. AASLD Practice Guidance on prevention, diagnosis, and treatment of hepatocellular carcinoma. Hepatology, 2023, 78(6): 1922-1965. DOI: 10.1097/HEP.0000000000000466. PMID: 37199193.
+2. 中华医学会肝病学分会，中华医学会感染病学分会. 慢性乙型肝炎防治指南（2022年版）. 中华肝脏病杂志, 2022, 30(12): 1309-1331. DOI: 10.3760/cma.j.cn501113-20221220-00607.  ([DOI](<https://doi.org/10.3760/cma.j.cn501113-20221220-00607> "DOI"))
+3. 中华人民共和国国家卫生健康委员会医政司. 原发性肝癌诊疗指南（2024年版）. 协和医学杂志, 2024, 15(3): 532-559. DOI: 10.12290/xhyxzz.2024-0304.  ([DOI](<https://doi.org/10.12290/xhyxzz.2024-0304> "DOI"))
+4. Singal AG, Llovet JM, Yarchoan M, Mehta N, Heimbach JK, Dawson LA, et al. AASLD Practice Guidance on prevention, diagnosis, and treatment of hepatocellular carcinoma. Hepatology, 2023, 78(6): 1922-1965. DOI: 10.1097/HEP.0000000000000466. PMID: 37199193.  ([DOI](<https://doi.org/10.1097/HEP.0000000000000466> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/37199193/> "PubMed"))
 
 【期刊文献/专业资料】
-5. McGlynn KA, Petrick JL, El-Serag HB. Epidemiology of Hepatocellular Carcinoma. Hepatology, 2021, 73 Suppl 1(Suppl 1): 4-13. DOI: 10.1002/hep.31288. PMID: 32319693.
+5. McGlynn KA, Petrick JL, El-Serag HB. Epidemiology of Hepatocellular Carcinoma. Hepatology, 2021, 73 Suppl 1(Suppl 1): 4-13. DOI: 10.1002/hep.31288. PMID: 32319693.  ([DOI](<https://doi.org/10.1002/hep.31288> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/32319693/> "PubMed"))
 
-⑤实际应用：
+### ⑤实际应用：
 
-回到本病例，孙奶奶有慢性乙型病毒性肝炎和肝硬化20余年病史，乙肝相关检查提示HBsAg阳性、HBeAg阳性、HBcAb阳性、HBV-DNA阳性，说明她具有长期HBV感染背景。B超已经提示肝硬化形态改变，三期增强CT也提示肝硬化，同时报告“肝脏占位？建议MR检查”。在这样的背景下，肝脏占位首先需要高度警惕原发性肝癌，尤其是肝细胞癌。
+回到本病例，孙奶奶有慢性乙型病毒性肝炎和肝硬化20余年病史，乙肝相关检查提示HBsAg阳性、HBeAg阴性、抗-HBe阳性、抗-HBc阳性、HBV-DNA阴性，说明她具有长期HBV感染背景。B超已经提示肝硬化形态改变，三期增强CT也提示肝硬化，同时报告“肝脏占位？建议MR检查”。在这样的背景下，肝脏占位首先需要高度警惕原发性肝癌，尤其是肝细胞癌。
 
 这里不能简单把“占位”直接等同于肝癌。因为肝硬化肝脏中可以出现再生结节、异型增生结节，也可能有血管瘤、囊肿等良性病变；老年患者还需要鉴别转移性肝癌或肝内胆管癌。但是，孙奶奶属于乙肝肝硬化高危人群，一旦影像提示占位，最危险也最需要优先排除的转归就是肝细胞癌。这也是为什么CT报告没有直接下结论，而是建议进一步MRI检查。
 
@@ -424,9 +469,11 @@ MRI在肝脏占位鉴别中具有独特优势。动态增强MRI不仅可以观�
 本病例目前还应注意肝癌诊断之外的分期和安全问题。患者已经有门静脉高压、食管胃底静脉曲张出血、胆红素明显升高、白蛋白降低、PT延长、纤维蛋白原降低、GFR下降等表现，说明肝功能储备较差。如果后续确诊肝癌，治疗选择不能只看肿瘤大小，还必须结合肝功能、门静脉高压程度、凝血状态、肾功能和全身状况。比如手术切除、消融、TACE、系统治疗或姑息支持，均需要在肝功能储备允许的前提下综合选择。
 
 因此，问题9在本病例中的核心结论是：肝脏占位提示乙肝肝硬化可能已经出现恶性转归，需要优先排除原发性肝癌；B超和CT已经提供了肝硬化和可疑占位线索，但由于病灶性质尚不明确，需要进一步增强MRI和肿瘤标志物评估。当前还不能直接诊断肝癌，但也绝不能把“占位？”当作普通结节忽略，因为患者的慢乙肝、肝硬化、老年和失代偿表现共同构成了高度风险背景。
-问题10：文献学习：肝硬化从代偿期进展到失代偿期的机制是什么？门静脉高压、循环障碍、炎症反应和器官功能障碍之间有什么关系？
+---
 
-③学习内容：
+## 问题10：文献学习：肝硬化从代偿期进展到失代偿期的机制是什么？门静脉高压、循环障碍、炎症反应和器官功能障碍之间有什么关系？
+
+### ③学习内容：
 
 本题选择的文献是Costa等2025年发表于Nature Reviews Gastroenterology & Hepatology的综述《Interaction of inflammation and portal hypertension in cirrhosis progression》。这篇文章的核心不是单纯讲“肝纤维化如何形成”，而是进一步讨论：当肝硬化已经形成后，患者为什么会从相对稳定的代偿期进入失代偿期，为什么会出现腹水、静脉曲张出血、肝性脑病、肾功能不全甚至急慢性肝衰竭。文章把肝硬化进展的关键机制概括为两个互相作用的主轴：门静脉高压和系统性炎症[2]。
 
@@ -458,26 +505,29 @@ Figure 3则是“机制与治疗靶点模型”。它把门静脉高压和系统
 
 总体来说，这篇文献的核心结论可以概括为：肝硬化进展到失代偿，并不是某一个指标突然异常，而是门静脉高压、循环功能障碍、肠道屏障破坏、系统性炎症和器官功能障碍逐渐相互强化的结果。门静脉高压解释了腹水、侧支循环和静脉曲张出血；系统性炎症解释了进一步失代偿、感染、肾脑等器官功能障碍和ACLF风险；二者相互作用，决定了患者从代偿期到失代偿期、再到进一步失代偿和器官衰竭的临床轨迹。
 
-④出处：
+
+---
+
+### ④出处：
 
 【教材/专著】
 
-1. 葛均波，徐永健，王辰主编. 内科学. 第9版. 北京：人民卫生出版社，2018：消化系统疾病篇“肝硬化”“门静脉高压”“上消化道出血”“肝性脑病”“肝肾综合征”相关章节，页码待补。
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中失代偿期、门静脉高压、肝性脑病、电解质紊乱与肝肾综合征（p.417-425）。
 
 【核心文献】
-2. Costa D, Trebicka J, Ripoll C, Moreau R, Jalan R, Reiberger T. Interaction of inflammation and portal hypertension in cirrhosis progression. Nature Reviews Gastroenterology & Hepatology, 2025, 22(12): 846-865. DOI: 10.1038/s41575-025-01107-2. PMID: 41023416.
+2. Costa D, Trebicka J, Ripoll C, Moreau R, Jalan R, Reiberger T. Interaction of inflammation and portal hypertension in cirrhosis progression. Nature Reviews Gastroenterology & Hepatology, 2025, 22(12): 846-865. DOI: 10.1038/s41575-025-01107-2. PMID: 41023416.  ([DOI](<https://doi.org/10.1038/s41575-025-01107-2> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/41023416/> "PubMed"))
 
 【指南/共识】
-3. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.
-4. European Association for the Study of the Liver. EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis. Journal of Hepatology, 2018, 69(2): 406-460. DOI: 10.1016/j.jhep.2018.03.024. PMID: 29653741.
-5. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. Baveno VII - Renewing consensus in portal hypertension. Journal of Hepatology, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
-6. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.
+3. 中华医学会肝病学分会. 肝硬化诊治指南. 中华肝脏病杂志, 2019, 27(11): 846-865. DOI: 10.3760/cma.j.issn.1007-3418.2019.11.008.  ([DOI](<https://doi.org/10.3760/cma.j.issn.1007-3418.2019.11.008> "DOI"))
+4. European Association for the Study of the Liver. EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis. Journal of Hepatology, 2018, 69(2): 406-460. DOI: 10.1016/j.jhep.2018.03.024. PMID: 29653741.  ([DOI](<https://doi.org/10.1016/j.jhep.2018.03.024> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/29653741/> "PubMed"))
+5. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C, Baveno VII Faculty. Baveno VII - Renewing consensus in portal hypertension. Journal of Hepatology, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.  ([DOI](<https://doi.org/10.1016/j.jhep.2021.12.022> "DOI")) ([PubMed](<https://pubmed.ncbi.nlm.nih.gov/35120736/> "PubMed"))
+6. Xu X, Tang C, Linghu E, Ding H, Chinese Society of Hepatology, Chinese Medical Association; Chinese Society of Gastroenterology, Chinese Medical Association; Chinese Society of Digestive Endoscopy, Chinese Medical Association. Guidelines for the Management of Esophagogastric Variceal Bleeding in Cirrhotic Portal Hypertension. Journal of Clinical and Translational Hepatology, 2023, 11(7): 1565-1579. DOI: 10.14218/JCTH.2023.00061.  ([DOI](<https://doi.org/10.14218/JCTH.2023.00061> "DOI"))
 
 【相关机制文献】
-7. Albillos A, Martin-Mateos R, Van der Merwe S, Wiest R, Jalan R, Álvarez-Mon M. Cirrhosis-associated immune dysfunction. Nature Reviews Gastroenterology & Hepatology, 2022, 19(2): 112-134. DOI: 10.1038/s41575-021-00520-7.
-8. Engelmann C, Clària J, Szabo G, Bosch J, Bernardi M. Pathophysiology of decompensated cirrhosis: Portal hypertension, circulatory dysfunction, inflammation, metabolism and mitochondrial dysfunction. Journal of Hepatology, 2021, 75(Suppl 1): S49-S66. DOI: 10.1016/j.jhep.2021.01.002.
+7. Albillos A, Martin-Mateos R, Van der Merwe S, Wiest R, Jalan R, Álvarez-Mon M. Cirrhosis-associated immune dysfunction. Nature Reviews Gastroenterology & Hepatology, 2022, 19(2): 112-134. DOI: 10.1038/s41575-021-00520-7.  ([DOI](<https://doi.org/10.1038/s41575-021-00520-7> "DOI"))
+8. Engelmann C, Clària J, Szabo G, Bosch J, Bernardi M. Pathophysiology of decompensated cirrhosis: Portal hypertension, circulatory dysfunction, inflammation, metabolism and mitochondrial dysfunction. Journal of Hepatology, 2021, 75(Suppl 1): S49-S66. DOI: 10.1016/j.jhep.2021.01.002.  ([DOI](<https://doi.org/10.1016/j.jhep.2021.01.002> "DOI"))
 
-⑤实际应用：
+### ⑤实际应用：
 
 回到本病例，孙奶奶的表现非常适合用Costa等提出的“门静脉高压—系统性炎症—器官功能障碍”框架来解释。她的基础病因是慢性乙型病毒性肝炎，肝硬化已有20多年。第一幕出现呕血、血凝块和黑便，第二幕查体有腹壁静脉曲张，1个月前胃镜提示食管重度静脉曲张，本次三期增强CT提示食管胃底静脉曲张。这些证据共同说明，她当前最突出的主线是门静脉高压相关的静脉曲张破裂出血。
 
