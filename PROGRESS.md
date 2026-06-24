@@ -118,6 +118,7 @@
 - 消化系统 Case3 第二幕引用可见性：已为题内大部分 DOI / PMID 来源补回可见 `[DOI]`、`[PubMed]` 链接标签；当前 Markdown 中可见 `[DOI]` 共 48 处、`[PubMed]` 共 25 处。
 - 消化系统 Case3 第二幕病例一致性修正：已修正问题1、问题9中把乙肝血清学状态误写成 `HBeAg阳性 / HBV-DNA阳性` 的矛盾表述，统一为与问题3一致的 `HBeAg阴性 / 抗-HBe阳性 / HBV-DNA阴性`。
 - 消化系统 Case3 第二幕导出验证：已生成 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕-美化版.html` 与 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕-美化版.pdf`；并通过 `python -m py_compile build_html.py`、`python .\build_html.py --no-pdf`、`python .\build_html.py`、`qpdf --check Case3-第二幕-美化版.pdf` 以及 `问题数/③④⑤ 小节数均为 10` 的结构检查。
+- 消化系统 Case3 第二幕删题收口：按用户要求已删除问题10及其整段正文、出处和实际应用，当前版本仅保留前9题；后续导出与结构检查会以“问题数 9 / ③④⑤ 小节数均为 9”为准重新验收。
 - 下一步：当前优先不再围绕 `Worker` 崩溃打转，而是针对“扫码授权后仍直接报 `ErrCode: 3` / 手机端 `network error`”继续验证 QQ 登录链路本身。如果后续仍失败，则重点转向 QQ 账号侧风控、扫码设备与宿主出口一致性、以及 Linux QQNT 登录兼容性；如果单进程下能稳定登录，再重新开启 `QCE` 插件并继续验证 `http://192.168.50.179:40653/qce-v4-tool`、导出目录生成情况，以及“不导出媒体”场景下是否只产生轻量文本/HTML/JSON 产物。并行任务再继续完成课程笔记分享站方案边界，以及 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 的英文卡批量规范化和抽样验证。
 
 ## 关键决策与理由（防止“吃书”）
