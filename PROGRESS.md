@@ -1,7 +1,7 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：N1 盒子 `192.168.50.179` 上的 `NapCat + QQ Chat Exporter` 已进入“单进程绕过后继续盯登录失败”阶段。当前已确认：在 `OpenClash` 完全停用、宿主与容器解析均恢复真实公网 IP、且 `QCE` 插件临时关闭的情况下，`NapCat v4.18.7` 的确曾多次出现 `Worker进程意外退出`；但在 `v4.17.10` + 运行时补强基础上，再额外启用 `NAPCAT_DISABLE_MULTI_PROCESS=1` 后，宿主机上已经不再存在独立 `napcat.mjs` worker，连续观察一轮后 `Worker进程意外退出` 也未再出现，说明这条崩溃链路目前已被单进程模式绕开。最新一轮更进一步收束到：`2026-06-23 22:18:19` 确实发生过 1 次容器重启，但重启后的 `22:18:24 -> 22:22:29` 连续几个二维码周期里没有再崩，只有稳定的“约每 2 分钟一次 `Login Error, ErrType: 1 ErrCode: 3` -> 刷新二维码”。因此当前用户看到的 `network error` 主因更像 QQ 登录授权链路被拒，而不是服务端持续崩溃。并行未完成事项仍包括课程笔记分享站方案论证，以及 `循环系统/Anki/cards.csv` 中 384 张英文词根词缀卡的格式统一。
+- 现状：当前并行有 4 条主线未收口：`NapCat + QQ Chat Exporter` 仍在单进程模式下继续盯 `ErrCode: 3` 登录失败；课程笔记分享站仍在做方案边界论证；`循环系统/Anki/cards.csv` 的 384 张英文词根词缀卡仍在做格式统一；以及 `消化系统/PBL作业/Case3-第二幕` 正在生成主持人最终整合版 PPT。PPT 这条线已确认目录下存在 `张家赫.pptx` 主持人底稿、9 位同学的题目/文献素材与 `新建 文本文档.txt` 顺序说明，当前主判断是继续沿用“主持人过渡页 + 同学原稿页”的整合模式，而不是重做所有页面。
 - 已完成：
   - `NapCat` 运行时补强：已检查到容器此前不存在 `XDG_RUNTIME_DIR`、`DBus` socket，且 `/dev/shm` 只有 64MiB；结合官方 issue 中频繁出现的 `XDG_RUNTIME_DIR is invalid`、`Failed to connect to the bus`、`Exiting GPU process due to errors during initialization` 症状，现已在 compose 中加入 `XDG_RUNTIME_DIR=/tmp/runtime-root`、`DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket`、宿主 `/run/dbus/system_bus_socket` 挂载、`shm_size: 512m`、`LIBGL_ALWAYS_SOFTWARE=1`、`QT_X11_NO_MITSHM=1`。当前容器内已确认这些运行时条件全部生效。
   - `Worker` 退出链路定位再收缩：已直接查看容器内 `/app/napcat/napcat.mjs`，确认当前远端在 Linux Docker 下实际走的是 `Fork` 路径，而不是 Electron `UtilityProcess` 路径；并确认 `child.on(\"exit\")` 只在 `code != 0` 时打印 `Worker进程退出，退出码: ...`。这和我们现场只看到 `Worker进程意外退出` `warn`、看不到对应 `error` 的现象吻合，说明之前那几次更像 worker 被 signal 杀死而不是普通非零退出。
@@ -112,6 +112,7 @@
 - 正在做：论证“课程笔记分享站”最省事且风险可控的落地方案，重点是目录筛选规则、React 静态构建、Cloudflare Pages 部署方式，以及 Cloudflare Access 是否作为同学访问门槛。
 - 正在做：修正 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 中英文词根词缀卡的旧版格式残留，重点清理双引号嵌套、统一 `BackHtml` 行结构，并移除“本轮先按整词保留”式回退说明。
 - 正在做：已新增 `循环系统/Anki/normalize_english_cards.py` 作为可重复执行的规范化脚本，下一步将用它批量重写英文卡并做抽样验证。
+- 正在做：生成 `消化系统/PBL作业/Case3-第二幕` 的主持人最终整合版 PPT，当前已完成素材盘点和题号映射：`Q6=刘子硕`、`Q1=张家赫`、`Q2=张志擎`、`Q4=常瑞琪`、`Q3=刘骐玮`、`Q5=谢尚锦`、`Q7=蒋玉梅`、`Q8=姚丁睿`、`Q9=林诚亚`、`Q10=王鹤`；文献部分计划按“空间转录组总框架 -> 失代偿病理生理总述 -> MIF/CD74 -> DLL4/Notch -> 白细胞跨内皮迁移 -> LSEC/利福昔明 -> YAP/EMT -> PI3K/Akt/mTOR 自噬 -> MOTS-c/Nrf2 -> HSC综述补充”顺序整合。
 - 消化系统 Case3 第二幕：已完成原稿摸底并先提交 Git 基线，确保本轮格式清洗前有可回退版本。
 - 消化系统 Case3 第二幕：已将整份 Markdown 统一为 `## 问题` + `### ③学习内容 / ④出处 / ⑤实际应用` 骨架，补入题目加粗、关键词强调、题间分隔线，并迁入 `build_html.py` 与 `style.css` 渲染链路。
 - 消化系统 Case3 第二幕教材出处：已将全部《内科学》条目改为第10版，按本地 PDF 逐题补入真实页段，覆盖肝硬化失代偿、门静脉高压、食管胃底静脉曲张出血、肝性脑病、肝肾综合征、影像学评估和原发性肝癌诊断相关内容。
