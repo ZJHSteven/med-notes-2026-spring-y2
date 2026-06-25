@@ -139,7 +139,7 @@ try {
     # 这里直接调用本机已安装的 PowerPoint，
     # 因为它对“跨文件保真插入原稿页”最稳。
     $powerPoint = New-Object -ComObject PowerPoint.Application
-    $powerPoint.Visible = 0
+    $powerPoint.Visible = -1
     $presentation = $powerPoint.Presentations.Open($OutputPptx, $false, $false, $false)
 
     # ---------------------------
