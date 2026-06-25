@@ -1,9 +1,12 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：当前并行有 4 条主线未收口：`NapCat + QQ Chat Exporter` 仍在单进程模式下继续盯 `ErrCode: 3` 登录失败；课程笔记分享站仍在做方案边界论证；`循环系统/Anki/cards.csv` 的 384 张英文词根词缀卡仍在做格式统一；以及 `消化系统/PBL作业/Case3-第二幕` 正在生成主持人最终整合版 PPT。PPT 这条线已确认目录下存在 `张家赫.pptx` 主持人底稿、9 位同学的题目/文献素材与 `新建 文本文档.txt` 顺序说明，当前主判断是继续沿用“主持人过渡页 + 同学原稿页”的整合模式，而不是重做所有页面。
+- 现状：当前并行未收口的主线已回到 3 条：`NapCat + QQ Chat Exporter` 仍在单进程模式下继续盯 `ErrCode: 3` 登录失败；课程笔记分享站仍在做方案边界论证；`循环系统/Anki/cards.csv` 的 384 张英文词根词缀卡仍在做格式统一。`消化系统/PBL作业/Case3-第二幕` 的主持人最终整合版 PPT 已完成并通过验收，当前终稿为 `Case3-第二幕-PBL汇报整合版.pptx`，总页数 47 页，采用“主持人过渡页 + 同学原稿页”的整合模式，并明确排除了误放的 `王鹤/case2第一幕.pptx`。
 - 已完成：
   - `NapCat` 运行时补强：已检查到容器此前不存在 `XDG_RUNTIME_DIR`、`DBus` socket，且 `/dev/shm` 只有 64MiB；结合官方 issue 中频繁出现的 `XDG_RUNTIME_DIR is invalid`、`Failed to connect to the bus`、`Exiting GPU process due to errors during initialization` 症状，现已在 compose 中加入 `XDG_RUNTIME_DIR=/tmp/runtime-root`、`DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket`、宿主 `/run/dbus/system_bus_socket` 挂载、`shm_size: 512m`、`LIBGL_ALWAYS_SOFTWARE=1`、`QT_X11_NO_MITSHM=1`。当前容器内已确认这些运行时条件全部生效。
+  - `消化系统/PBL作业/Case3-第二幕` 主持人整合版 PPT：已基于 `张家赫.pptx` 主持人底稿生成 `Case3-第二幕-PBL汇报整合版.pptx`，把 `Q6=刘子硕`、`Q1=张家赫`、`Q2=张志擎`、`Q4=常瑞琪`、`Q3=刘骐玮`、`Q5=谢尚锦`、`Q7=蒋玉梅`、`Q8=姚丁睿`、`Q9=林诚亚`、`Q10=王鹤` 的临床问题页，以及对应文献页按既定顺序串成 47 页终稿。
+  - `消化系统/PBL作业/Case3-第二幕` 合并脚本：已新增 `merge_case3_second_act_ppt.ps1`，脚本会先校验所有源文件是否存在，再按固定顺序插入指定页段，最后导出整套 PNG 预览用于人工验收。
+  - `消化系统/PBL作业/Case3-第二幕` 验收结果：PowerPoint 已成功导出 47 张逐页 PNG 预览，`python-pptx` 成功读取终稿并核对页序，确认不存在 `case2第一幕`、`问题1：心梗病因、诱因`、`刘阿姨` 等旧案例误混残留；`artifact-tool` 也已成功导入终稿并 round-trip 导出 47 页副本。
   - `Worker` 退出链路定位再收缩：已直接查看容器内 `/app/napcat/napcat.mjs`，确认当前远端在 Linux Docker 下实际走的是 `Fork` 路径，而不是 Electron `UtilityProcess` 路径；并确认 `child.on(\"exit\")` 只在 `code != 0` 时打印 `Worker进程退出，退出码: ...`。这和我们现场只看到 `Worker进程意外退出` `warn`、看不到对应 `error` 的现象吻合，说明之前那几次更像 worker 被 signal 杀死而不是普通非零退出。
   - `Worker` 退出与登录失败拆线：本轮已在远端挂过一次 `strace`，抓到的最新样本中没有出现新的 `Worker` 崩溃；相反，主 worker 在 `strace` 期间持续稳定运行，只表现为“二维码等待 -> 约 2 分钟后 `Login Error, ErrType: 1 ErrCode: 3` -> 重新打印二维码”。这说明当前最新现场更明确地暴露出第二条独立问题线：QQ 登录本身没有完成，而不一定每次都伴随 worker 崩。
   - 官方相似案例对照：已重新核对 `NapNeko/NapCatQQ` 公开 issue。当前存在与我们症状高度相似的 Linux 登录后崩溃案例：`#1841` 明确记录扫码授权后发生 `SIGSEGV`，native 栈落在 `MoeHoo.linux.x64.node` 的 packet hook；另有 `#1753`、`#1702` 等 issue 显示在 Linux 上即使设置禁用多进程别名、或使用 Docker 方案，也仍可能出现 `Worker进程退出` / `退出码 11` / `zygote` 相关问题。因此“worker 崩溃是 NapCat/QQNT Linux 原生链路问题”这一判断目前有外部证据支撑。
@@ -112,7 +115,6 @@
 - 正在做：论证“课程笔记分享站”最省事且风险可控的落地方案，重点是目录筛选规则、React 静态构建、Cloudflare Pages 部署方式，以及 Cloudflare Access 是否作为同学访问门槛。
 - 正在做：修正 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 中英文词根词缀卡的旧版格式残留，重点清理双引号嵌套、统一 `BackHtml` 行结构，并移除“本轮先按整词保留”式回退说明。
 - 正在做：已新增 `循环系统/Anki/normalize_english_cards.py` 作为可重复执行的规范化脚本，下一步将用它批量重写英文卡并做抽样验证。
-- 正在做：生成 `消化系统/PBL作业/Case3-第二幕` 的主持人最终整合版 PPT，当前已完成素材盘点和题号映射：`Q6=刘子硕`、`Q1=张家赫`、`Q2=张志擎`、`Q4=常瑞琪`、`Q3=刘骐玮`、`Q5=谢尚锦`、`Q7=蒋玉梅`、`Q8=姚丁睿`、`Q9=林诚亚`、`Q10=王鹤`；文献部分计划按“空间转录组总框架 -> 失代偿病理生理总述 -> MIF/CD74 -> DLL4/Notch -> 白细胞跨内皮迁移 -> LSEC/利福昔明 -> YAP/EMT -> PI3K/Akt/mTOR 自噬 -> MOTS-c/Nrf2 -> HSC综述补充”顺序整合。
 - 消化系统 Case3 第二幕：已完成原稿摸底并先提交 Git 基线，确保本轮格式清洗前有可回退版本。
 - 消化系统 Case3 第二幕：已将整份 Markdown 统一为 `## 问题` + `### ③学习内容 / ④出处 / ⑤实际应用` 骨架，补入题目加粗、关键词强调、题间分隔线，并迁入 `build_html.py` 与 `style.css` 渲染链路。
 - 消化系统 Case3 第二幕教材出处：已将全部《内科学》条目改为第10版，按本地 PDF 逐题补入真实页段，覆盖肝硬化失代偿、门静脉高压、食管胃底静脉曲张出血、肝性脑病、肝肾综合征、影像学评估和原发性肝癌诊断相关内容。
