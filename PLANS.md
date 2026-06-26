@@ -1,6 +1,21 @@
 # ExecPlan
 
 ## 当前未完成计划
+- 按“课程/材料类型”逐波次整理并提交 `大二下笔记` 当前工作区，并在收口后把仓库历史里的 `ppt/pptx` 也一并踢出后强推远端。
+  - 先核对当前脏工作区，按 `git status --short` 把内容拆成“循环系统 Anki/笔记修订”“医学人文英语/毛思想新增课堂资料”“消化系统新增课堂资料与脚本删除”“遗传学整课新增资料”几波。
+  - 先把忽略边界落盘：新增 `*.ppt`、`*.pptx`、`~$*.pptx`、`output/tmp-case3-preview/` 等规则，避免新的 PPT、PowerPoint 锁文件和临时预览图继续混进工作区。
+  - 先按课程/材料类型完成本轮普通提交，让当前非 PPT 内容有清晰提交边界。
+  - 普通提交完成后，使用历史重写工具把整个分支历史中的 `*.ppt`、`*.pptx` 从 Git 对象里移除，并同步清掉当前索引中的 PPT 跟踪。
+  - 历史改写后重新校验 `git log`、`git ls-files "*.ppt" "*.pptx"`、`git rev-list --objects --all` 与工作区状态，确认 PPT 已从历史和当前树里同时移除。
+  - 最后对 `origin/main` 执行强推，接受“远端提交哈希整体变化”的后果。
+  - 每一波提交前同步更新 `PROGRESS.md`，提交后再次检查 `git status --short`，确认该波目标文件已收口且没有误带入 PPT。
+  - 预计波次：
+    1. 仓库规则与记录：`PLANS.md`、`PROGRESS.md`、`.gitignore`
+    2. `循环系统`：Anki 规范化结果 + `10-心功能不全.md` 公式修正
+    3. `医学人文英语` + `毛思想`：新增课堂转写与课程笔记
+    4. `消化系统`：新增 `Audio/Notes`，并提交 `merge_case3_second_act_ppt.ps1` 删除
+    5. `遗传学`：整课新增 `Audio/Notes`
+
 - 在 `192.168.50.179` 的 Phicomm N1（`iStoreOS 24.10.6`）上评估并尽量完成 `QQ Chat Exporter` 常驻部署，优先采用 `Docker + NapCat + QCE` 路线，而不是直接在宿主机裸跑。
   - 已完成当前机器真实约束复核：`4 核 A53 / 2GB RAM / overlay 可用约 4.8G / Docker 已安装 / 宿主机为 musl / 当前无外挂数据盘`。
   - 已完成官方资料交叉核对：QCE 插件包自带 `webui`，默认把数据落在用户主目录下的 `.qq-chat-exporter`；`ARM64` 需要补 `@esbuild/linux-arm64@0.25.10`。

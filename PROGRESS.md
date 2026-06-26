@@ -1,8 +1,11 @@
 # 项目状态快照
 
 ## 当前结论（必须最新）
-- 现状：当前并行未收口的主线已回到 3 条：`NapCat + QQ Chat Exporter` 仍在单进程模式下继续盯 `ErrCode: 3` 登录失败；课程笔记分享站仍在做方案边界论证；`循环系统/Anki/cards.csv` 的 384 张英文词根词缀卡仍在做格式统一。`消化系统/PBL作业/Case3-第二幕` 的主持人最终整合版 PPT 已完成并通过验收，当前终稿为 `Case3-第二幕-PBL汇报整合版.pptx`，总页数 47 页，采用“主持人过渡页 + 同学原稿页”的整合模式，并明确排除了误放的 `王鹤/case2第一幕.pptx`。
+- 现状：当前并行未收口的主线已回到 4 条：`NapCat + QQ Chat Exporter` 仍在单进程模式下继续盯 `ErrCode: 3` 登录失败；课程笔记分享站仍在做方案边界论证；`循环系统/Anki/cards.csv` 的 384 张英文词根词缀卡仍在做格式统一；课程仓库当前还在执行一轮“按课程/材料类型逐波次提交，并在收口后把历史里的 PPT 一并踢出 Git 再强推”的收口。`消化系统/PBL作业/Case3-第二幕` 的主持人最终整合版 PPT 已完成并通过验收，当前终稿为 `Case3-第二幕-PBL汇报整合版.pptx`，总页数 47 页，采用“主持人过渡页 + 同学原稿页”的整合模式，并明确排除了误放的 `王鹤/case2第一幕.pptx`。
 - 已完成：
+  - 课程仓库本轮分波次提交起手式：已重新执行 `git status --short --untracked-files=all`、`git ls-files "*.ppt" "*.pptx"` 与最近提交历史核对，确认仓库历史里本来就存在多份正式成品 PPT，因此本轮不能直接全量 `git rm --cached *.pptx`。
+  - 课程仓库本轮边界决策已更新：不再停留在“以后不进 PPT”，而是改为“先完成本轮非 PPT 分波提交，再统一重写历史，把历史里所有 `ppt/pptx` 一并踢出 Git 并强推远端”。
+  - 课程仓库本轮计划拆波：当前工作区已按 `循环系统`、`医学人文英语`、`毛思想`、`消化系统`、`遗传学` 五组整理，并将 `output/tmp-case3-preview/` 与 `~$Case3-第二幕-PBL汇报整合版.pptx` 判定为临时预览/锁文件，不进入版本库。
   - `NapCat` 运行时补强：已检查到容器此前不存在 `XDG_RUNTIME_DIR`、`DBus` socket，且 `/dev/shm` 只有 64MiB；结合官方 issue 中频繁出现的 `XDG_RUNTIME_DIR is invalid`、`Failed to connect to the bus`、`Exiting GPU process due to errors during initialization` 症状，现已在 compose 中加入 `XDG_RUNTIME_DIR=/tmp/runtime-root`、`DBUS_SYSTEM_BUS_ADDRESS=unix:path=/run/dbus/system_bus_socket`、宿主 `/run/dbus/system_bus_socket` 挂载、`shm_size: 512m`、`LIBGL_ALWAYS_SOFTWARE=1`、`QT_X11_NO_MITSHM=1`。当前容器内已确认这些运行时条件全部生效。
   - `消化系统/PBL作业/Case3-第二幕` 主持人整合版 PPT：已基于 `张家赫.pptx` 主持人底稿生成 `Case3-第二幕-PBL汇报整合版.pptx`，把 `Q6=刘子硕`、`Q1=张家赫`、`Q2=张志擎`、`Q4=常瑞琪`、`Q3=刘骐玮`、`Q5=谢尚锦`、`Q7=蒋玉梅`、`Q8=姚丁睿`、`Q9=林诚亚`、`Q10=王鹤` 的临床问题页，以及对应文献页按既定顺序串成 47 页终稿。
   - `消化系统/PBL作业/Case3-第二幕` 合并脚本：已新增 `merge_case3_second_act_ppt.ps1`，脚本会先校验所有源文件是否存在，再按固定顺序插入指定页段，最后导出整套 PNG 预览用于人工验收。
@@ -115,6 +118,7 @@
 - 正在做：论证“课程笔记分享站”最省事且风险可控的落地方案，重点是目录筛选规则、React 静态构建、Cloudflare Pages 部署方式，以及 Cloudflare Access 是否作为同学访问门槛。
 - 正在做：修正 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 中英文词根词缀卡的旧版格式残留，重点清理双引号嵌套、统一 `BackHtml` 行结构，并移除“本轮先按整词保留”式回退说明。
 - 正在做：已新增 `循环系统/Anki/normalize_english_cards.py` 作为可重复执行的规范化脚本，下一步将用它批量重写英文卡并做抽样验证。
+- 正在做：按“仓库规则 -> 循环系统 -> 医学人文英语/毛思想 -> 消化系统 -> 遗传学”的顺序逐波次提交当前课程仓库内容；提交收口后，继续执行全历史 `ppt/pptx` 清洗与强推。
 - 消化系统 Case3 第二幕：已完成原稿摸底并先提交 Git 基线，确保本轮格式清洗前有可回退版本。
 - 消化系统 Case3 第二幕：已将整份 Markdown 统一为 `## 问题` + `### ③学习内容 / ④出处 / ⑤实际应用` 骨架，补入题目加粗、关键词强调、题间分隔线，并迁入 `build_html.py` 与 `style.css` 渲染链路。
 - 消化系统 Case3 第二幕教材出处：已将全部《内科学》条目改为第10版，按本地 PDF 逐题补入真实页段，覆盖肝硬化失代偿、门静脉高压、食管胃底静脉曲张出血、肝性脑病、肝肾综合征、影像学评估和原发性肝癌诊断相关内容。
@@ -123,9 +127,11 @@
 - 消化系统 Case3 第二幕导出验证：已生成 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕-美化版.html` 与 `消化系统/PBL作业/Case3-第二幕/Case3-第二幕-美化版.pdf`；并通过 `python -m py_compile build_html.py`、`python .\build_html.py --no-pdf`、`python .\build_html.py`、`qpdf --check Case3-第二幕-美化版.pdf` 以及 `问题数/③④⑤ 小节数均为 10` 的结构检查。
 - 消化系统 Case3 第二幕删题收口：按用户要求已删除问题10及其整段正文、出处和实际应用，当前版本仅保留前9题；后续导出与结构检查会以“问题数 9 / ③④⑤ 小节数均为 9”为准重新验收。
 - 下一步：当前优先不再围绕 `Worker` 崩溃打转，而是针对“扫码授权后仍直接报 `ErrCode: 3` / 手机端 `network error`”继续验证 QQ 登录链路本身。如果后续仍失败，则重点转向 QQ 账号侧风控、扫码设备与宿主出口一致性、以及 Linux QQNT 登录兼容性；如果单进程下能稳定登录，再重新开启 `QCE` 插件并继续验证 `http://192.168.50.179:40653/qce-v4-tool`、导出目录生成情况，以及“不导出媒体”场景下是否只产生轻量文本/HTML/JSON 产物。并行任务再继续完成课程笔记分享站方案边界，以及 `循环系统/Anki/cards.csv` 与 `循环系统/Anki/exports/AnkiTemp.csv` 的英文卡批量规范化和抽样验证。
+- 下一步：先完成本轮课程仓库分波次提交，确保 `.gitignore` 已拦住新的 `ppt/pptx`、锁文件和预览目录；随后依次提交 `循环系统`、`医学人文英语/毛思想`、`消化系统`、`遗传学` 四波非 PPT 内容。完成普通提交后，立刻执行全历史 `ppt/pptx` 清洗、复核对象树与当前索引，再对 `origin/main` 强推。等这轮仓库收口完成后，再回到 `NapCat` 登录链路、课程分享站方案，以及 Anki 英文卡进一步人工细化。
 
 ## 关键决策与理由（防止“吃书”）
 - 决策Z：N1 上的 QCE 部署默认采用 `Docker + NapCat + QCE`，不尝试在 iStoreOS 宿主机直接运行 QCE Linux 桌面版。（原因：这台机器宿主机为 `musl`，而 QCE 发布页给出的 Linux 运行前提是常规 `glibc 2.31+` 桌面发行版；同时官方已提供针对 NapCat Docker 的独立部署文档。）
+- 决策AK：本轮“PPT 不进 Git”最终目标已升级为“普通内容先按波次提交，随后对整个分支历史执行 `ppt/pptx` 清洗并强推”，而不是只在当前工作区层面忽略新增 PPT。（原因：用户已明确要求把历史里的 PPT 也踢出远端仓库；因此必须接受提交哈希整体变化这一代价。）
 - 决策AA：QCE 的导出目录和 QQ 持久化目录应从一开始就与 NapCat 配置、插件文件分离，尽量做到“清理导出结果时不动登录态和主配置”。（原因：这是常开服务，后续最常见维护动作是清理导出产物和缓存，而不是重建整套环境。）
 - 决策AB：由于远端无法稳定访问容器仓库，本轮改用“本机代拉 + skopeo 导出 tar + scp 上传 + 远端 docker load”链路，而不继续在 N1 上强行直连 `Docker Hub / GHCR`。（原因：远端对 `registry-1.docker.io` 与 `ghcr.io` 的 HTTPS 连接 30 秒内都会超时，但本机可稳定拉取并转运。）
 - 决策AC：QCE 的宿主挂载根目录固定为 `/opt/qqce/data/qce-home`，不额外自定义 `customOutputDir`。（原因：QCE 默认就会把导出、定时导出、资源、数据库、安全配置都归到 `~/.qq-chat-exporter` 下；直接把整个根目录独立挂载出来，最利于以后统一备份和按子目录清理。）
