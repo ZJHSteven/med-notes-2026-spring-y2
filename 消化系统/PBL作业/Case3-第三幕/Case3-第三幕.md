@@ -40,6 +40,11 @@
 需要强调的是，抗病毒治疗不是“根治乙肝”的意思。核苷/核苷酸类似物可以强力抑制 HBV DNA 复制，但通常不能清除肝细胞核内的 cccDNA，也不能完全清除整合入宿主基因组的 HBV DNA，因此 HBsAg 消失和功能性治愈只发生在少数患者中。这解释了为什么乙肝肝硬化患者即使病毒被压低，也仍需长期随访肝功能、HBV DNA、肾功能、凝血功能、腹水/脑病/再出血情况，并持续进行肝癌筛查。([国家生物技术信息中心][1])
 
 ### ④出处：
+
+【教材/专著】
+
+6. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中乙型肝炎抗病毒治疗与肝硬化进展（p.402-405），第十五章“肝硬化”中乙肝相关肝硬化、失代偿期并发症与治疗原则（p.417-426）。
+
 【指南/共识】
 
 1. World Health Organization. *Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection*. Geneva: World Health Organization, 2024. ISBN: 978-92-4-009090-3.
@@ -83,8 +88,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、病毒性肝炎相关章节.
-2. 杨宝峰, 陈建国主编. **药理学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统药理、肝胆疾病辅助用药相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十一章“病毒性肝炎”中保肝治疗与抗病毒治疗（p.404），药物性肝损伤中多烯磷脂酰胆碱、还原型谷胱甘肽等保肝药物作用（p.416），第十五章“肝硬化”中保护肝细胞药物和失代偿期治疗原则（p.423-424）。
 
 【指南/共识】
 3. Xu X, Jia J, et al. **Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025)**. *Journal of Clinical and Translational Hepatology*, 2026. DOI 信息以期刊正式页面为准.
@@ -132,8 +136,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、上消化道出血相关章节.
-2. 杨宝峰, 陈建国主编. **药理学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统药理、血液系统药物相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中食管胃底静脉曲张出血、血管活性药物、内镜和TIPS治疗（p.419, p.424-425），第二十五章“消化道出血”中上消化道出血判断与止血原则（p.460-463）。
 
 【指南/共识】
 3. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C; Baveno VII Faculty. **Baveno VII – Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022.
@@ -184,8 +187,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、门静脉高压、上消化道出血相关章节.
-2. 李兆申, 令狐恩强主编. **消化内镜学**. 北京: 人民卫生出版社, 2015: 食管胃静脉曲张内镜治疗相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中门静脉高压、食管胃底静脉曲张出血、EVL、组织胶注射和TIPS治疗（p.419-420, p.424-425）。
 
 【指南/共识】
 3. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C; Baveno VII Faculty. **Baveno VII – Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022.
@@ -237,9 +239,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、门静脉高压、上消化道出血相关章节.
-2. 李兆申, 令狐恩强主编. **消化内镜学**. 北京: 人民卫生出版社, 2015: 食管胃静脉曲张出血内镜及急救处理相关章节.
-3. 陈孝平, 汪建平, 赵继宗主编. **外科学**. 第9版. 北京: 人民卫生出版社, 2018: 门静脉高压症、上消化道大出血相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中急性食管胃底静脉曲张出血的补充血容量、气囊压迫、TIPS及二级预防（p.424-425），第二十五章“消化道出血”中活动性出血判断、循环衰竭和输血阈值（p.460-463）。
 
 【指南/共识】
 4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C; Baveno VII Faculty. **Baveno VII – Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022.
@@ -297,8 +297,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、上消化道出血、肝性脑病、肝肾综合征相关章节.
-2. 杨宝峰, 陈建国主编. **药理学**. 第9版. 北京: 人民卫生出版社, 2018: 肝胆疾病用药、抗感染药、镇痛药、利尿药相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中失代偿期并发症、保护肝细胞药物、肝性脑病用药禁忌、肝肾综合征和电解质紊乱处理（p.423-426），第二十五章“消化道出血”中活动性出血和输血相关处理（p.460-463）。
 
 【指南/共识】
 3. Fontana RJ, Liou I, Reuben A, et al. **AASLD practice guidance on drug, herbal, and dietary supplement–induced liver injury**. *Hepatology*, 2023, 77(3): 1036-1065. DOI: 10.1002/hep.32689.
@@ -348,7 +347,7 @@
 
 胆红素方面，需要先分清**间接胆红素**和**直接胆红素**。血红素分解后先形成未结合胆红素，即临床化验中的间接胆红素；它不溶于水，需要与白蛋白结合运输到肝脏，经肝细胞摄取后由 UDP-葡萄糖醛酸转移酶结合，变成结合胆红素，也就是直接胆红素，再经胆小管排入胆汁。([国家生物技术信息中心][4]) 因此，间接胆红素升高常见于胆红素生成过多、肝细胞摄取障碍或结合障碍；直接胆红素升高则更提示结合后的胆红素排泄障碍、胆汁淤积或肝细胞胆汁转运受损。
 
-在肝硬化失代偿期，胆红素异常往往不是单一机制。肝细胞数量减少、肝窦结构紊乱、胆小管排泄障碍和肝内胆汁淤积，可以使直接胆红素显著升高；同时，如果存在消化道出血、输血、血肿吸收或溶血，血红素分解增加，又会使间接胆红素上升。Harrison 手册在间接胆红素升高的原因中列出溶血、无效造血、胆红素生成增加、大量输血和血肿吸收等因素。([harrisons.unboundmedicine.com][5]) 对本病例来说，最值得注意的是“消化道出血后血液分解吸收”：大量血液进入胃肠道，被消化分解后，血红素代谢负荷增加，不仅可升高血氨，也可增加胆红素生成负荷。
+在肝硬化失代偿期，胆红素异常往往不是单一机制。肝细胞数量减少、肝窦结构紊乱、胆小管排泄障碍和肝内胆汁淤积，可以使直接胆红素显著升高；同时，如果存在消化道出血、输血、血肿吸收或溶血，血红素分解增加，又会使间接胆红素上升。从胆红素代谢机制看，溶血、血肿吸收、输血后红细胞破坏或消化道积血分解吸收，都可能增加间接胆红素生成负荷。对本病例来说，最值得注意的是“消化道出血后血液分解吸收”：大量血液进入胃肠道，被消化分解后，血红素代谢负荷增加，不仅可升高血氨，也可增加胆红素生成负荷。
 
 因此，治疗后出现“总胆红素和直接胆红素下降，但间接胆红素轻度上升”并不矛盾。它可以理解为两条变化同时发生：一方面，经过补液、抗病毒、保肝、止血和循环支持后，肝细胞排泄结合胆红素的状态有所改善，直接胆红素下降明显，总胆红素随之下降；另一方面，上消化道出血后的肠道积血、血凝块吸收，或者输血后红细胞破坏增加，使未结合胆红素生成增加，而肝硬化患者摄取和结合能力仍有限，所以间接胆红素可能短期内反而上升。
 
@@ -359,9 +358,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、黄疸、上消化道出血相关章节.
-2. 周新, 涂植光主编. **临床生物化学检验技术**. 北京: 人民卫生出版社, 相关章节：肝功能检验、胆红素代谢、血清蛋白和脂质代谢指标.
-3. Jameson JL, Fauci AS, Kasper DL, et al. **Harrison’s Principles of Internal Medicine**. 21st ed. New York: McGraw-Hill, 2022: Jaundice and Evaluation of Liver Function.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，肝功能评估和胆红素代谢相关内容（p.391-392），第十五章“肝硬化”中失代偿期肝功能减退、黄疸、低白蛋白和出血贫血表现（p.418-420），第二十五章“消化道出血”中出血后循环与血液指标变化（p.460-463）。
 
 【指南/共识】
 4. Fontana RJ, Liou I, Reuben A, et al. **AASLD practice guidance on drug, herbal, and dietary supplement–induced liver injury**. *Hepatology*, 2023, 77(3): 1036-1065. DOI: 10.1002/hep.32689.
@@ -391,7 +388,6 @@
 [2]: https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis?utm_source=chatgpt.com "Why do we use albumin in patients with cirrhosis?"
 [3]: https://pubmed.ncbi.nlm.nih.gov/22868011/?utm_source=chatgpt.com "Serum cholesterol: could it be a sixth parameter of Child ..."
 [4]: https://www.ncbi.nlm.nih.gov/books/NBK470290/?utm_source=chatgpt.com "Physiology, Bilirubin - StatPearls - NCBI Bookshelf - NIH"
-[5]: https://harrisons.unboundmedicine.com/harrisons/view/Harrisons-Manual-of-Medicine/623179/all/Jaundice_and_Evaluation_of_Liver_Function?utm_source=chatgpt.com "Chapter 44: Jaundice and Evaluation of Liver Function"
 [6]: https://pmc.ncbi.nlm.nih.gov/articles/PMC9936988/?utm_source=chatgpt.com "AASLD practice guidance on drug, herbal, and dietary ... - PMC"
 ## 问题8：医生所说“后期还需要进一步诊断和治疗”具体应包括哪些内容？应如何安排门静脉高压二级预防、肝功能评估、肾功能监测、营养支持和长期随访？
 
@@ -421,9 +417,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、门静脉高压、上消化道出血、肝性脑病、肝肾综合征相关章节.
-2. 李兆申, 令狐恩强主编. **消化内镜学**. 北京: 人民卫生出版社, 2015: 食管胃静脉曲张内镜治疗及随访相关章节.
-3. 陈孝平, 汪建平, 赵继宗主编. **外科学**. 第9版. 北京: 人民卫生出版社, 2018: 门静脉高压症、肝移植相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中诊断、分期、门静脉高压、再出血预防、肝性脑病、肝肾综合征和肝移植评估（p.421-426），第十六章“原发性肝癌”中肝癌诊断与随访筛查（p.427-430）。
 
 【指南/共识】
 4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C; Baveno VII Faculty. **Baveno VII – Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
@@ -484,9 +478,7 @@
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、门静脉高压、肝性脑病、肝肾综合征相关章节.
-2. 李兆申, 令狐恩强主编. **消化内镜学**. 北京: 人民卫生出版社, 2015: 食管胃静脉曲张出血及内镜二级预防相关章节.
-3. Jameson JL, Fauci AS, Kasper DL, et al. **Harrison’s Principles of Internal Medicine**. 21st ed. New York: McGraw-Hill, 2022: Cirrhosis and Its Complications.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中失代偿期分期、再出血、肝性脑病、肝肾综合征、低钠血症和终末期治疗（p.421-426），第十六章“原发性肝癌”中乙肝肝硬化相关肝癌风险（p.427-430）。
 
 【指南/共识】
 4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C; Baveno VII Faculty. **Baveno VII – Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
@@ -550,9 +542,7 @@ GAVAPROSEC 的主要终点是**1 年内全因死亡或临床显著再出血**。
 ### ④出处：
 【教材/专著】
 
-1. 葛均波, 徐永健, 王辰主编. **内科学**. 第9版. 北京: 人民卫生出版社, 2018: 消化系统疾病篇，肝硬化、门静脉高压、上消化道出血相关章节.
-2. 陈孝平, 汪建平, 赵继宗主编. **外科学**. 第9版. 北京: 人民卫生出版社, 2018: 门静脉高压症、介入及外科治疗相关章节.
-3. 李兆申, 令狐恩强主编. **消化内镜学**. 北京: 人民卫生出版社, 2015: 食管胃静脉曲张内镜治疗相关章节.
+1. 葛均波，王辰，王建安主编. **内科学**. 第10版. 北京：人民卫生出版社，2024：第四篇消化系统疾病，第十五章“肝硬化”中门静脉高压、食管胃底静脉曲张出血、EVL、组织胶注射、气囊压迫和TIPS治疗策略（p.419-425）。
 
 【指南/共识】
 4. de Franchis R, Bosch J, Garcia-Tsao G, Reiberger T, Ripoll C; Baveno VII Faculty. **Baveno VII – Renewing consensus in portal hypertension**. *Journal of Hepatology*, 2022, 76(4): 959-974. DOI: 10.1016/j.jhep.2021.12.022. PMID: 35120736.
@@ -581,4 +571,5 @@ GAVAPROSEC 对本病例最大的启发是：曲张静脉出血的长期治疗，
 [3]: https://www.thelancet.com/journals/langas/article/PIIS2468-1253%2825%2900156-6/fulltext?utm_source=chatgpt.com "Pre-emptive TIPS for gastric variceal bleeding in patients ..."
 [4]: https://www.transfusionevidencelibrary.com/alerts/articles/40517780?from=alert%3Aon%3D2025-07-01&utm_source=chatgpt.com "Pre-emptive TIPS for gastric variceal bleeding in patients ..."
 [5]: https://falkfoundation.org/en/fgr/detail/pre-emptive-tips-for-gastric-variceal-bleeding-in-patients-with-cirrhosis-gavaprosec-an-open-label-randomised-clinical-trial/?utm_source=chatgpt.com "Pre-emptive TIPS for gastric variceal bleeding in patients ..."
+
 
