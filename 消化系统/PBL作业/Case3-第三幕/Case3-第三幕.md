@@ -29,15 +29,15 @@
 ## 问题1：慢性乙肝失代偿期肝硬化患者为什么仍需长期抗病毒治疗？恩替卡韦等核苷/核苷酸类似物的作用机制、适应证和安全性如何？
 
 ### ③学习内容：
-慢性乙肝相关失代偿期肝硬化患者即使已经进入肝硬化阶段，仍然需要长期、规律抗病毒治疗。原因在于，HBV 持续复制会不断刺激肝细胞炎症坏死、纤维化进展和肝功能进一步衰竭；而抗病毒治疗虽然不能直接把已经形成的门静脉高压、食管胃底静脉曲张或肝硬化结节立刻逆转，但可以抑制病毒复制，减少新的肝细胞损伤，为肝功能稳定甚至部分“再代偿”创造条件。WHO 2024 年慢乙肝指南明确指出，有肝硬化证据者需要终身核苷/核苷酸类似物治疗，不应随意停药，因为停药后 HBV 再激活可诱发急性肝炎发作甚至肝衰竭。([国家生物技术信息中心](<https://www.ncbi.nlm.nih.gov/books/NBK614981/> "When to stop and restart antiviral therapy - Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection - NCBI Bookshelf"))
+慢性乙肝相关失代偿期肝硬化患者即使已经进入肝硬化阶段，仍然需要长期、规律抗病毒治疗。原因在于，HBV 持续复制会不断刺激肝细胞炎症坏死、纤维化进展和肝功能进一步衰竭；而抗病毒治疗虽然不能直接把已经形成的门静脉高压、食管胃底静脉曲张或肝硬化结节立刻逆转，但可以抑制病毒复制，减少新的肝细胞损伤，为肝功能稳定甚至部分“再代偿”创造条件。WHO 2024 年慢乙肝指南明确指出，有肝硬化证据者需要终身核苷/核苷酸类似物治疗，不应随意停药，因为停药后 HBV 再激活可诱发急性肝炎发作甚至肝衰竭。([NCBI](<https://www.ncbi.nlm.nih.gov/books/NBK614981/> "When to stop and restart antiviral therapy - Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection - NCBI Bookshelf"))
 
-目前慢乙肝抗病毒治疗的核心药物是核苷/核苷酸类似物，常见一线药物包括恩替卡韦（ETV）、替诺福韦酯（TDF）和丙酚替诺福韦（TAF）。它们的共同特点是抑制 HBV DNA 聚合酶/逆转录酶，使病毒不能有效完成从前基因组 RNA 到 HBV DNA 的复制过程。以恩替卡韦为例，它是鸟嘌呤核苷类似物，进入细胞后被磷酸化为活性三磷酸形式，竞争性抑制 HBV 聚合酶的三个关键环节：聚合酶启动、负链 DNA 逆转录合成、正链 DNA 合成。这样可以使血清 HBV DNA 下降，降低病毒复制对肝脏的持续打击。([Docetp](<https://docetp.mpa.se/LMF/Entecavir%20STADA%20film-coated%20tablet%20ENG%20SmPC_09001bee84f7db24.pdf> "Entecavir STADA film-coated tablet ..."))
+目前慢乙肝抗病毒治疗的核心药物是核苷/核苷酸类似物，常见一线药物包括恩替卡韦（ETV）、替诺福韦酯（TDF）和丙酚替诺福韦（TAF）。它们的共同特点是抑制 HBV DNA 聚合酶/逆转录酶，使病毒不能有效完成从前基因组 RNA 到 HBV DNA 的复制过程。以恩替卡韦为例，它是鸟嘌呤核苷类似物，进入细胞后被磷酸化为活性三磷酸形式，竞争性抑制 HBV 聚合酶的三个关键环节：聚合酶启动、负链 DNA 逆转录合成、正链 DNA 合成。这样可以使血清 HBV DNA 下降，降低病毒复制对肝脏的持续打击。([药品说明书](<https://docetp.mpa.se/LMF/Entecavir%20STADA%20film-coated%20tablet%20ENG%20SmPC_09001bee84f7db24.pdf> "Entecavir STADA film-coated tablet ..."))
 
 失代偿期肝硬化患者选择抗病毒药物时，要优先选择抗病毒效力强、耐药屏障高的药物。我国《慢性乙型肝炎防治指南（2022年版）》推荐 HBV 相关失代偿期肝硬化患者长期使用恩替卡韦或 TDF，必要时可考虑 TAF；聚乙二醇干扰素在失代偿期肝硬化中禁用，因为它可能加重肝功能损伤，诱发严重不良反应。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC10500285/> "Guidelines for the Prevention and Treatment of Chronic ... - PMC"))
 
 恩替卡韦总体耐受性较好，是乙肝肝硬化患者常用药物之一。成人失代偿期肝病推荐剂量通常为 1 mg，每日一次，空腹服用；如果患者存在肾功能下降，需要根据肌酐清除率调整剂量。药品说明书同时提示，停用抗乙肝治疗后可能出现严重急性乙肝加重，因此不能因为症状暂时缓解、转氨酶不高或出血停止就自行停药。核苷类药物还需警惕罕见但严重的乳酸酸中毒，TDF 需注意肾毒性和骨密度影响，TAF 相对肾脏和骨安全性较好，但在具体患者中仍需结合肾功能、经济条件和可及性综合选择。
 
-需要强调的是，抗病毒治疗不是“根治乙肝”的意思。核苷/核苷酸类似物可以强力抑制 HBV DNA 复制，但通常不能清除肝细胞核内的 cccDNA，也不能完全清除整合入宿主基因组的 HBV DNA，因此 HBsAg 消失和功能性治愈只发生在少数患者中。这解释了为什么乙肝肝硬化患者即使病毒被压低，也仍需长期随访肝功能、HBV DNA、肾功能、凝血功能、腹水/脑病/再出血情况，并持续进行肝癌筛查。([国家生物技术信息中心](<https://www.ncbi.nlm.nih.gov/books/NBK614981/> "When to stop and restart antiviral therapy - Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection - NCBI Bookshelf"))
+需要强调的是，抗病毒治疗不是“根治乙肝”的意思。核苷/核苷酸类似物可以强力抑制 HBV DNA 复制，但通常不能清除肝细胞核内的 cccDNA，也不能完全清除整合入宿主基因组的 HBV DNA，因此 HBsAg 消失和功能性治愈只发生在少数患者中。这解释了为什么乙肝肝硬化患者即使病毒被压低，也仍需长期随访肝功能、HBV DNA、肾功能、凝血功能、腹水/脑病/再出血情况，并持续进行肝癌筛查。([NCBI](<https://www.ncbi.nlm.nih.gov/books/NBK614981/> "When to stop and restart antiviral therapy - Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection - NCBI Bookshelf"))
 
 ### ④出处：
 
@@ -68,7 +68,7 @@
 ### ③学习内容：
 保肝药物不是一个作用机制完全统一的药物类别，而是临床上对一组“减轻肝细胞损伤、改善肝功能指标、促进肝细胞修复或改善胆汁淤积”的辅助治疗药物的统称。第三幕中老师也提醒，学习这类药物时不能只看“药理作用”，还要同时看适应证、禁忌证和副作用，并回到病例本身判断药物到底解决哪一层问题。
 
-从机制上看，保肝药大致可以分为几类。第一类是**肝细胞膜保护药**，代表是多烯磷脂酰胆碱。磷脂酰胆碱是细胞膜和细胞器膜的重要成分，多烯磷脂酰胆碱可以参与修复受损肝细胞膜，改善膜流动性和稳定性，减轻膜脂质过氧化、炎症反应和细胞凋亡，从而帮助肝细胞维持转运、代谢和分泌功能。2025 年中国肝硬化管理指南也把多烯磷脂酰胆碱列为常用抗炎保肝药之一，并指出这类药物可通过稳定肝细胞膜、清除自由基、调节能量代谢、促进肝细胞修复等方式改善肝功能。([xiahepublishing.com](<https://www.xiahepublishing.com/2310-8819/JCTH-2025-00517> "Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025)"))
+从机制上看，保肝药大致可以分为几类。第一类是**肝细胞膜保护药**，代表是多烯磷脂酰胆碱。磷脂酰胆碱是细胞膜和细胞器膜的重要成分，多烯磷脂酰胆碱可以参与修复受损肝细胞膜，改善膜流动性和稳定性，减轻膜脂质过氧化、炎症反应和细胞凋亡，从而帮助肝细胞维持转运、代谢和分泌功能。2025 年中国肝硬化管理指南也把多烯磷脂酰胆碱列为常用抗炎保肝药之一，并指出这类药物可通过稳定肝细胞膜、清除自由基、调节能量代谢、促进肝细胞修复等方式改善肝功能。([JCTH](<https://www.xiahepublishing.com/2310-8819/JCTH-2025-00517> "Chinese Guidelines for Clinical Diagnosis, Treatment, and Management of Cirrhosis (2025)"))
 
 第二类是**抗炎类保肝药**，常见如甘草酸制剂，包括异甘草酸镁、甘草酸二铵、复方甘草酸苷等。其核心作用是减轻肝脏炎症反应，降低炎症介质导致的肝细胞损伤，在转氨酶升高、炎症活动较明显的肝病中较常使用。但这类药有一个非常需要注意的风险：甘草酸有类似盐皮质激素样作用，可能导致水钠潴留、低钾血症、高血压和水肿加重。对于失代偿期肝硬化患者，如果本身已经有下肢水肿、腹水倾向、低钾或肾功能问题，就不能把它当成“无害的保肝药”随便叠加使用。
 
@@ -108,11 +108,11 @@
 ### ③学习内容：
 肝硬化食管胃底静脉曲张破裂出血的药物治疗，不能简单理解为“让血凝住”。它至少包括三层目的：第一，**降低门静脉系统压力和曲张静脉血流量**；第二，**改善局部止血和凝血条件**；第三，**为急诊内镜治疗、必要时三腔二囊管或 TIPS 争取时间**。课堂讨论中也提到，本病例的凝血异常会使出血后止血困难，因此药物、血液制品、内镜治疗和必要时物理压迫/TIPS 应按病情组合使用，而不是互相替代。
 
-在曲张静脉出血中，最核心的药物不是传统意义上的“促凝血药”，而是**血管活性药物**，代表包括特利加压素、生长抑素和奥曲肽。Baveno VII 共识明确建议，一旦怀疑曲张静脉出血，应尽早启动血管活性药物，并持续 2–5 天；ESGE 指南同样推荐疑似急性曲张静脉出血时立即使用特利加压素、奥曲肽或生长抑素，最长可用至 5 天。([肝脏病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension"))
+在曲张静脉出血中，最核心的药物不是传统意义上的“促凝血药”，而是**血管活性药物**，代表包括特利加压素、生长抑素和奥曲肽。Baveno VII 共识明确建议，一旦怀疑曲张静脉出血，应尽早启动血管活性药物，并持续 2–5 天；ESGE 指南同样推荐疑似急性曲张静脉出血时立即使用特利加压素、奥曲肽或生长抑素，最长可用至 5 天。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension"))
 
 奥曲肽是生长抑素类似物。它的主要作用是抑制内脏血管扩张相关激素释放，使内脏血管收缩，减少门静脉入流，从而降低门静脉压力和曲张静脉血流量。也就是说，奥曲肽并不是直接“堵住破口”，而是让破裂曲张静脉承受的血流冲击变小，使出血更容易被控制，也让内镜治疗环境更安全。对于食管胃底静脉曲张破裂出血，这类药物的优势在于可以在内镜前迅速启动，不需要等待胃镜室准备完毕；但它的局限也很明确：它通常只能降低近期出血压力，不能消除已经形成的曲张静脉，也不能逆转肝硬化导致的门静脉高压结构基础。综述和指南均将其定位为急性期联合治疗的一部分，而不是单独根治方案。([Cureus](<https://www.cureus.com/articles/381182-choosing-wisely-a-systematic-review-of-terlipressin-versus-octreotide-for-variceal-bleeding> "Choosing Wisely: A Systematic Review of Terlipressin ..."))
 
-酚磺乙胺属于改善毛细血管通透性和血小板功能的止血药，临床常用于手术前后出血、毛细血管脆性增加或血小板功能不良相关出血。其药理作用主要是增强毛细血管抵抗力、降低毛细血管通透性，同时增强血小板黏附和聚集，促进血小板释放凝血活性物质，从而缩短出血时间。2025 年围手术期止血药物选择与药学监护专家共识也将酚磺乙胺归入改善毛细血管通透性类药物，提示其属于辅助止血药物。([犹豫大本营](<https://www.yydbzz.com/EN/10.3870/j.issn.1004-0781.2025.01.002> "Expert Consensus on the Selection and Pharmaceutical Care of Perioperative Hemostatic Drugs"))
+酚磺乙胺属于改善毛细血管通透性和血小板功能的止血药，临床常用于手术前后出血、毛细血管脆性增加或血小板功能不良相关出血。其药理作用主要是增强毛细血管抵抗力、降低毛细血管通透性，同时增强血小板黏附和聚集，促进血小板释放凝血活性物质，从而缩短出血时间。2025 年围手术期止血药物选择与药学监护专家共识也将酚磺乙胺归入改善毛细血管通透性类药物，提示其属于辅助止血药物。([医药导报](<https://www.yydbzz.com/EN/10.3870/j.issn.1004-0781.2025.01.002> "Expert Consensus on the Selection and Pharmaceutical Care of Perioperative Hemostatic Drugs"))
 
 但酚磺乙胺这类药物在本病例中的地位要看清楚。食管胃底静脉曲张破裂出血的核心病理基础是**门静脉高压导致曲张静脉壁张力过高、静脉破裂**，不是单纯毛细血管渗血。因此，酚磺乙胺可以作为辅助止血药，用来改善局部渗血和血小板功能条件，但它不能降低门静脉压力，也不能封闭破裂曲张静脉，更不能替代内镜套扎、硬化或组织胶治疗。
 
@@ -152,13 +152,13 @@
 ### ③学习内容：
 内镜下治疗是食管胃底静脉曲张破裂出血治疗中的关键环节。它和奥曲肽等药物的作用层次不同：药物主要是降低门静脉入流、减轻曲张静脉压力，而内镜治疗是直接处理已经破裂或高度危险的曲张静脉。ESGE 指南建议，疑似急性曲张静脉出血患者在血流动力学复苏后，应尽量在 12 小时内完成内镜评估；对于急性食管静脉曲张出血，推荐内镜下套扎治疗。([ESGE](<https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage> "Endoscopic diagnosis and management of ..."))
 
-**内镜下食管静脉曲张套扎术**，英文常称 EVL，即 endoscopic variceal ligation。操作思路可以理解为“用橡皮圈把曲张静脉勒住”。医生在胃镜前端安装透明帽和多环套扎器，进入食管后找到曲张静脉，通常从食管胃结合部附近开始，逐点吸引曲张静脉进入透明帽，然后释放橡皮圈。被套扎的静脉局部血流阻断，随后缺血、坏死、脱落，形成浅表溃疡，最后瘢痕愈合，从而达到闭塞曲张静脉、降低再出血风险的目的。急性出血时，套扎目标是控制当前出血；出血控制后，还需要按计划重复套扎，直到曲张静脉基本消失。ESGE 建议急性食管静脉曲张出血完成 EBL 后，应每 1–4 周复查并重复套扎，直至曲张静脉根除。([www.asge.org](<https://www.asge.org/home/resources/publications/journal-scan/issue/top-recommendations-for-the-diagnosis-and-management-of-esophagogastric-variceal-bleeding> "Top Recommendations for the Diagnosis and Management ..."))
+**内镜下食管静脉曲张套扎术**，英文常称 EVL，即 endoscopic variceal ligation。操作思路可以理解为“用橡皮圈把曲张静脉勒住”。医生在胃镜前端安装透明帽和多环套扎器，进入食管后找到曲张静脉，通常从食管胃结合部附近开始，逐点吸引曲张静脉进入透明帽，然后释放橡皮圈。被套扎的静脉局部血流阻断，随后缺血、坏死、脱落，形成浅表溃疡，最后瘢痕愈合，从而达到闭塞曲张静脉、降低再出血风险的目的。急性出血时，套扎目标是控制当前出血；出血控制后，还需要按计划重复套扎，直到曲张静脉基本消失。ESGE 建议急性食管静脉曲张出血完成 EBL 后，应每 1–4 周复查并重复套扎，直至曲张静脉根除。([ASGE](<https://www.asge.org/home/resources/publications/journal-scan/issue/top-recommendations-for-the-diagnosis-and-management-of-esophagogastric-variceal-bleeding> "Top Recommendations for the Diagnosis and Management ..."))
 
 **内镜下硬化治疗**，英文常称 EIS，即 endoscopic injection sclerotherapy。它不是用橡皮圈勒住血管，而是在曲张静脉内或曲张静脉旁注射硬化剂，使血管内皮损伤、血栓形成，随后发生纤维化闭塞。常用硬化剂包括聚桂醇、乙氧硬化醇、十四烷基硫酸钠、油酸乙醇胺等，具体选择与医院经验、病变部位和患者情况有关。硬化治疗的优点是对部分难以吸入套扎器的曲张静脉、活动性喷血导致视野不清、套扎困难或特殊解剖部位可能有补充价值；但它造成的组织损伤更深，局部溃疡、狭窄、穿孔等并发症风险通常高于单纯套扎。
 
-从临床地位看，**食管静脉曲张急性出血的一线内镜治疗是套扎，而不是硬化**。硬化治疗现在更多作为套扎困难、套扎失败或特定情况下的补充选择。Baveno VII 和 ESGE 均把急性曲张静脉出血管理建立在“血管活性药物 + 抗菌药物 + 尽早内镜治疗 + 高危者考虑早期 TIPS”的综合策略上，而不是单靠某一种内镜技术。([肝病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension"))
+从临床地位看，**食管静脉曲张急性出血的一线内镜治疗是套扎，而不是硬化**。硬化治疗现在更多作为套扎困难、套扎失败或特定情况下的补充选择。Baveno VII 和 ESGE 均把急性曲张静脉出血管理建立在“血管活性药物 + 抗菌药物 + 尽早内镜治疗 + 高危者考虑早期 TIPS”的综合策略上，而不是单靠某一种内镜技术。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension"))
 
-套扎治疗的主要优点是止血效果确切、操作相对标准化、局部损伤较硬化治疗小，并且适合用于二级预防。Meta 分析显示，与硬化治疗相比，套扎治疗在食管静脉曲张出血管理中总体具有更好的安全性，硬化治疗更容易出现食管溃疡、狭窄、穿孔等局部并发症。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC4342933/> "Endoscopic variceal ligation compared with ... - PMC")) 但这并不意味着套扎没有风险。套扎后局部会形成溃疡，通常需要数周愈合；如果溃疡较深或患者凝血功能差，可能发生套扎后溃疡出血。常见不适还包括胸骨后疼痛、吞咽困难、短暂发热、恶心呕吐等；少见但严重的风险包括食管狭窄、食管穿孔、误吸、麻醉/镇静相关风险和术中再出血。([临床试验政府网站](<https://clinicaltrials.gov/study/NCT06082219> "Ulcer Bleeding After Band Ligation of Esophageal Varices"))
+套扎治疗的主要优点是止血效果确切、操作相对标准化、局部损伤较硬化治疗小，并且适合用于二级预防。Meta 分析显示，与硬化治疗相比，套扎治疗在食管静脉曲张出血管理中总体具有更好的安全性，硬化治疗更容易出现食管溃疡、狭窄、穿孔等局部并发症。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC4342933/> "Endoscopic variceal ligation compared with ... - PMC")) 但这并不意味着套扎没有风险。套扎后局部会形成溃疡，通常需要数周愈合；如果溃疡较深或患者凝血功能差，可能发生套扎后溃疡出血。常见不适还包括胸骨后疼痛、吞咽困难、短暂发热、恶心呕吐等；少见但严重的风险包括食管狭窄、食管穿孔、误吸、麻醉/镇静相关风险和术中再出血。([ClinicalTrials.gov](<https://clinicaltrials.gov/study/NCT06082219> "Ulcer Bleeding After Band Ligation of Esophageal Varices"))
 
 硬化治疗的并发症更需要重视。硬化剂造成的是化学性血管和组织损伤，因此可能出现胸痛、发热、食管深溃疡、溃疡再出血、食管狭窄、穿孔、纵隔炎、胸腔积液、菌血症等。对于肝硬化失代偿期患者，凝血功能障碍、低白蛋白、感染风险和肾功能不全会进一步放大这些风险。因此，硬化治疗不应被理解为“比套扎更强的止血方法”，而应被理解为在特定情况下可以使用、但并发症谱更重的内镜治疗手段。
 
@@ -200,7 +200,7 @@
 
 补液扩容的第一步是快速评估循环状态，包括血压、心率、意识、皮肤湿冷、尿量、乳酸、血红蛋白动态变化和休克指数。实际处理上通常需建立两条粗针静脉通路或中心静脉通路，进行心电、血压、血氧监测，必要时留置尿管观察尿量。初期可使用平衡晶体液或生理盐水进行有限度复苏；如果存在明显失血和血红蛋白下降，应及时输注浓缩红细胞。这里要强调“有限度”和“目标导向”，因为曲张静脉出血不是普通创伤失血，过度扩容会升高门静脉压力，使已经破裂的曲张静脉更容易继续出血或再出血。
 
-目前指南普遍支持限制性输血策略。Baveno VII 共识建议，急性曲张静脉出血时红细胞输注目标通常为血红蛋白 7–8 g/dL，同时根据年龄、心血管病、持续出血和血流动力学状态个体化调整。ESGE 指南也建议疑似急性曲张静脉出血患者在复苏后尽早内镜，并强调内镜前应完成基本血流动力学复苏，而不是盲目等所有化验指标“完全正常”才处理出血源。([肝病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension"))
+目前指南普遍支持限制性输血策略。Baveno VII 共识建议，急性曲张静脉出血时红细胞输注目标通常为血红蛋白 7–8 g/dL，同时根据年龄、心血管病、持续出血和血流动力学状态个体化调整。ESGE 指南也建议疑似急性曲张静脉出血患者在复苏后尽早内镜，并强调内镜前应完成基本血流动力学复苏，而不是盲目等所有化验指标“完全正常”才处理出血源。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension"))
 
 补液扩容的风险主要有四类。第一是**过度扩容导致再出血**：大量晶体液或不必要的输血会增加中心静脉压和门静脉压力，加重曲张静脉破裂出血。第二是**稀释性凝血障碍**：大量晶体液会稀释血小板、凝血因子和纤维蛋白原，而肝硬化患者本来凝血因子合成就不足。第三是**液体潴留和水肿加重**：失代偿期肝硬化常有低白蛋白、钠水潴留和肾功能受损，过量补液可能加重腹水、下肢水肿、肺水肿甚至呼吸困难。第四是**电解质和酸碱紊乱**：本病例第二幕中已有肝肾功能受累线索，补液、利尿、输血和失血本身都可能影响钠、钾、氯、二氧化碳结合力和肾小球滤过率，所以补液不是“液体越多越安全”，而是要动态复查尿量、肌酐、电解质、血气和乳酸。
 
@@ -208,9 +208,9 @@
 
 三腔二囊管常指 Sengstaken-Blakemore 管，结构上包括胃囊、食管囊和胃腔引流通道。它的原理是：胃囊充气后固定在胃底/贲门区，通过向外牵引压迫胃底静脉和贲门周围；必要时食管囊充气，直接压迫食管曲张静脉，从而实现机械止血。它的作用很直接，但也很“粗暴”：用压力暂时压住出血点。因此它只能作为暂时措施，不能长期留置，也不能替代内镜或 TIPS。Baveno VII 指出，难治性曲张静脉出血中，球囊压迫或自膨式金属支架可作为通向更确定治疗的桥接治疗；ESGE 也建议，在血管活性药物和内镜止血失败的持续性食管静脉曲张出血中，自膨式金属支架可优先于球囊压迫用于桥接，但在实际条件不足时三腔二囊管仍是可用的抢救手段。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/> "Baveno VII – Renewing consensus in portal hypertension - PMC"))
 
-三腔二囊管操作前要充分评估气道。患者如果大量呕血、意识障碍、烦躁不配合或有肝性脑病风险，应优先考虑气管插管保护气道，因为置管过程中最危险的并发症之一就是误吸。置管后必须确认胃囊位置，通常需要听诊、抽吸胃内容物、X 线或内镜确认，不能在位置不明时盲目充气。若胃囊误在食管内充气，可造成食管破裂。一般先充胃囊并牵引固定，只有胃囊压迫仍不能控制出血时才考虑食管囊充气，并应严格控制压力、定期放气观察。相关临床资料也强调，三腔二囊管不是确定性治疗，应尽量在 24 小时内完成桥接，减少严重并发症风险。([国家生物技术信息中心](<https://www.ncbi.nlm.nih.gov/books/NBK558924/> "Sengstaken-Blakemore Tube - StatPearls - NCBI Bookshelf"))
+三腔二囊管操作前要充分评估气道。患者如果大量呕血、意识障碍、烦躁不配合或有肝性脑病风险，应优先考虑气管插管保护气道，因为置管过程中最危险的并发症之一就是误吸。置管后必须确认胃囊位置，通常需要听诊、抽吸胃内容物、X 线或内镜确认，不能在位置不明时盲目充气。若胃囊误在食管内充气，可造成食管破裂。一般先充胃囊并牵引固定，只有胃囊压迫仍不能控制出血时才考虑食管囊充气，并应严格控制压力、定期放气观察。相关临床资料也强调，三腔二囊管不是确定性治疗，应尽量在 24 小时内完成桥接，减少严重并发症风险。([NCBI](<https://www.ncbi.nlm.nih.gov/books/NBK558924/> "Sengstaken-Blakemore Tube - StatPearls - NCBI Bookshelf"))
 
-三腔二囊管的风险非常高，需要重点记忆。第一是**误吸和窒息**，大量血液、胃内容物反流或球囊移位可导致气道阻塞。第二是**食管黏膜缺血、坏死、溃疡和穿孔**，尤其在食管囊压力过高、留置时间过长或位置错误时更危险。第三是**食管破裂和纵隔炎**，这是少见但可致命的并发症。第四是**再出血**，球囊放气或拔管后，如果没有完成内镜/TIPS 等确定治疗，出血可迅速复发。第五是**患者痛苦和护理风险**，包括躁动、牵引移位、口鼻黏膜损伤、吸入性肺炎、心律失常等。2025 年相关病例报道和综述均指出，球囊压迫可出现黏膜坏死、吸入性肺炎、食管穿孔和放气后再出血等严重并发症。([cureus.com](<https://www.cureus.com/articles/277146-esophageal-rupture-and-mediastinitis-following-blakemore-tube-tamponade-a-cardiothoracic-emergency-and-protocol-based-prevention.pdf?email=> "Esophageal Rupture and Mediastinitis Following ..."))
+三腔二囊管的风险非常高，需要重点记忆。第一是**误吸和窒息**，大量血液、胃内容物反流或球囊移位可导致气道阻塞。第二是**食管黏膜缺血、坏死、溃疡和穿孔**，尤其在食管囊压力过高、留置时间过长或位置错误时更危险。第三是**食管破裂和纵隔炎**，这是少见但可致命的并发症。第四是**再出血**，球囊放气或拔管后，如果没有完成内镜/TIPS 等确定治疗，出血可迅速复发。第五是**患者痛苦和护理风险**，包括躁动、牵引移位、口鼻黏膜损伤、吸入性肺炎、心律失常等。2025 年相关病例报道和综述均指出，球囊压迫可出现黏膜坏死、吸入性肺炎、食管穿孔和放气后再出血等严重并发症。([Cureus](<https://www.cureus.com/articles/277146-esophageal-rupture-and-mediastinitis-following-blakemore-tube-tamponade-a-cardiothoracic-emergency-and-protocol-based-prevention.pdf?email=> "Esophageal Rupture and Mediastinitis Following ..."))
 
 所以，补液扩容和三腔二囊管在治疗链条中的位置不同。补液扩容是“维持生命和器官灌注”的基础支持，贯穿急性期处理；三腔二囊管是“出血压不住时的临时机械止血”，只用于抢救和桥接。前者的关键是避免过度复苏，后者的关键是避免把临时压迫误当成最终治疗。真正要降低再出血和死亡风险，还需要尽早联合血管活性药物、抗菌药物、内镜治疗，并对高危或难治患者考虑 TIPS。
 
@@ -251,13 +251,13 @@
 
 第三步是**优先保留病因治疗和救命治疗**。对乙肝相关失代偿期肝硬化，抗病毒治疗是基础，不应因为担心“药伤肝”而随意停用恩替卡韦、替诺福韦等一线核苷/核苷酸类似物。相反，停药后 HBV 反弹可能诱发肝炎活动甚至肝衰竭。对于急性食管胃底静脉曲张出血，奥曲肽等血管活性药物、抗菌药物、限制性输血和尽早内镜治疗属于急性期关键处理，不能因为“少用药”而延误。Baveno VII 共识指出，疑似曲张静脉出血应尽早使用血管活性药物，并将抗菌药物预防作为肝硬化上消化道出血管理的重要组成部分。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/> "Baveno VII – Renewing consensus in portal hypertension - PMC"))
 
-第四步是**避免或慎用几类高风险药物**。最典型的是 NSAIDs，包括布洛芬、双氯芬酸、吲哚美辛、萘普生等。NSAIDs 会抑制前列腺素，降低肾血流，增加急性肾损伤和肝肾综合征风险；同时抑制血小板功能、损伤胃肠黏膜，增加消化道出血风险。EASL 腹水指南明确指出，合并腹水的肝硬化患者禁用 NSAIDs，因为会增加进一步钠水潴留、肾衰竭和胃肠道出血风险。([肝脏病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2810%2900478-2/fulltext> "EASL clinical practice guidelines on the management ...")) AASLD 面向肝硬化门诊管理的资料也提示，腹水患者应避免可降低肾灌注或增加急性肾损伤风险的药物，包括 NSAIDs、ACEI 和 ARB。([AASLD](<https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis> "Back to Basics: Outpatient Management of Cirrhosis"))
+第四步是**避免或慎用几类高风险药物**。最典型的是 NSAIDs，包括布洛芬、双氯芬酸、吲哚美辛、萘普生等。NSAIDs 会抑制前列腺素，降低肾血流，增加急性肾损伤和肝肾综合征风险；同时抑制血小板功能、损伤胃肠黏膜，增加消化道出血风险。EASL 腹水指南明确指出，合并腹水的肝硬化患者禁用 NSAIDs，因为会增加进一步钠水潴留、肾衰竭和胃肠道出血风险。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2810%2900478-2/fulltext> "EASL clinical practice guidelines on the management ...")) AASLD 面向肝硬化门诊管理的资料也提示，腹水患者应避免可降低肾灌注或增加急性肾损伤风险的药物，包括 NSAIDs、ACEI 和 ARB。([AASLD](<https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis> "Back to Basics: Outpatient Management of Cirrhosis"))
 
 止痛退热药中，对乙酰氨基酚并不是绝对禁用，但必须限量。多项肝硬化疼痛管理文献认为，在无大量饮酒、无严重营养不良和无超量使用时，对乙酰氨基酚小剂量短期使用通常比 NSAIDs 更安全；晚期肝病常建议每日总量不超过 2 g，并注意复方感冒药中可能重复含有对乙酰氨基酚。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC6385913/> "Risk of Nonsteroidal Anti‐inflammatory Drugs and Safety of ...")) 阿片类镇痛药和苯二氮䓬类药物也应尽量避免或低剂量、短疗程、严密监测，因为失代偿期肝硬化患者对中枢抑制更敏感，容易诱发嗜睡、跌倒、便秘和肝性脑病。关于肝硬化患者潜在不适当用药的研究也将 NSAIDs、阿片类、苯二氮䓬类和长期不恰当 PPI 使用列为常见风险类别。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC7943648/> "Appropriate and Potentially Inappropriate Medication Use in ..."))
 
-抗感染药物也要注意肝肾安全。曲张静脉出血时使用抗菌药物预防感染是必要的，因为感染会增加再出血、肝肾综合征和死亡风险；但选药应结合肾功能和肝功能。氨基糖苷类抗生素肾毒性较强，在肝硬化腹水、自发性细菌性腹膜炎或肾功能不全背景下应尽量避免。AASLD 腹水、SBP 和肝肾综合征指导文件明确提出，治疗细菌感染时应尽可能避免氨基糖苷类药物。([ptg-e.org.pl](<https://ptg-e.org.pl/wp-content/uploads/2022/03/4_SBPHRS_AASLD_CPG_Hepatology_2021.pdf> "Diagnosis, Evaluation, and Management of Ascites, ..."))
+抗感染药物也要注意肝肾安全。曲张静脉出血时使用抗菌药物预防感染是必要的，因为感染会增加再出血、肝肾综合征和死亡风险；但选药应结合肾功能和肝功能。氨基糖苷类抗生素肾毒性较强，在肝硬化腹水、自发性细菌性腹膜炎或肾功能不全背景下应尽量避免。AASLD 腹水、SBP 和肝肾综合征指导文件明确提出，治疗细菌感染时应尽可能避免氨基糖苷类药物。([AASLD 指南PDF](<https://ptg-e.org.pl/wp-content/uploads/2022/03/4_SBPHRS_AASLD_CPG_Hepatology_2021.pdf> "Diagnosis, Evaluation, and Management of Ascites, ..."))
 
-利尿剂和降压药要特别警惕肾损伤和电解质紊乱。螺内酯、呋塞米、托拉塞米等可用于腹水或水肿，但过度利尿会导致低血容量、低钠、低钾或高钾、肾功能恶化和肝性脑病。ACEI、ARB 和 α1 受体阻滞剂在有腹水或有效循环血量不足时可能诱发低血压和肾灌注下降，EASL 指南提示 ACEI 即使低剂量也应避免用于合并腹水的肝硬化患者，因为可能诱发动脉低血压和肾衰竭。([EASL-The Home of Hepatology.](<https://easl.eu/wp-content/uploads/2018/10/Hepatorenal-Cirrhosis-English-report.pdf> "Hepatorenal-Cirrhosis-English-report.pdf"))
+利尿剂和降压药要特别警惕肾损伤和电解质紊乱。螺内酯、呋塞米、托拉塞米等可用于腹水或水肿，但过度利尿会导致低血容量、低钠、低钾或高钾、肾功能恶化和肝性脑病。ACEI、ARB 和 α1 受体阻滞剂在有腹水或有效循环血量不足时可能诱发低血压和肾灌注下降，EASL 指南提示 ACEI 即使低剂量也应避免用于合并腹水的肝硬化患者，因为可能诱发动脉低血压和肾衰竭。([EASL](<https://easl.eu/wp-content/uploads/2018/10/Hepatorenal-Cirrhosis-English-report.pdf> "Hepatorenal-Cirrhosis-English-report.pdf"))
 
 质子泵抑制剂也不能长期无指征使用。PPI 在上消化道出血、内镜后溃疡或合并消化性溃疡时有明确价值，但如果只是“住院常规护胃”而长期延续，可能增加肠道菌群改变、感染和自发性细菌性腹膜炎风险。对于曲张静脉出血患者，PPI 可以在内镜治疗后短期使用以促进套扎后溃疡愈合，但不应被理解为治疗曲张静脉出血本身的核心药物。
 
@@ -307,7 +307,7 @@
 
 **总胆固醇**也可以反映肝脏合成储备。肝脏是胆固醇合成、脂蛋白组装和胆汁酸代谢的重要器官。失代偿期肝硬化时，肝细胞合成功能下降、脂蛋白代谢受损，可出现低胆固醇。研究显示，失代偿期肝硬化患者总胆固醇降低与 Child-Pugh 分级和预后相关，TC ≤2.8 mmol/L 曾被报道为失代偿期肝硬化预后不良的重要指标之一。([PubMed](<https://pubmed.ncbi.nlm.nih.gov/22868011/> "Serum cholesterol: could it be a sixth parameter of Child ...")) 所以治疗后总胆固醇略升，提示肝脏合成和代谢状态可能有所改善；但若仍明显低于正常，仍支持肝功能储备不足。
 
-胆红素方面，需要先分清**间接胆红素**和**直接胆红素**。血红素分解后先形成未结合胆红素，即临床化验中的间接胆红素；它不溶于水，需要与白蛋白结合运输到肝脏，经肝细胞摄取后由 UDP-葡萄糖醛酸转移酶结合，变成结合胆红素，也就是直接胆红素，再经胆小管排入胆汁。([国家生物技术信息中心](<https://www.ncbi.nlm.nih.gov/books/NBK470290/> "Physiology, Bilirubin - StatPearls - NCBI Bookshelf - NIH")) 因此，间接胆红素升高常见于胆红素生成过多、肝细胞摄取障碍或结合障碍；直接胆红素升高则更提示结合后的胆红素排泄障碍、胆汁淤积或肝细胞胆汁转运受损。
+胆红素方面，需要先分清**间接胆红素**和**直接胆红素**。血红素分解后先形成未结合胆红素，即临床化验中的间接胆红素；它不溶于水，需要与白蛋白结合运输到肝脏，经肝细胞摄取后由 UDP-葡萄糖醛酸转移酶结合，变成结合胆红素，也就是直接胆红素，再经胆小管排入胆汁。([NCBI](<https://www.ncbi.nlm.nih.gov/books/NBK470290/> "Physiology, Bilirubin - StatPearls - NCBI Bookshelf - NIH")) 因此，间接胆红素升高常见于胆红素生成过多、肝细胞摄取障碍或结合障碍；直接胆红素升高则更提示结合后的胆红素排泄障碍、胆汁淤积或肝细胞胆汁转运受损。
 
 在肝硬化失代偿期，胆红素异常往往不是单一机制。肝细胞数量减少、肝窦结构紊乱、胆小管排泄障碍和肝内胆汁淤积，可以使直接胆红素显著升高；同时，如果存在消化道出血、输血、血肿吸收或溶血，血红素分解增加，又会使间接胆红素上升。从胆红素代谢机制看，溶血、血肿吸收、输血后红细胞破坏或消化道积血分解吸收，都可能增加间接胆红素生成负荷。对本病例来说，最值得注意的是“消化道出血后血液分解吸收”：大量血液进入胃肠道，被消化分解后，血红素代谢负荷增加，不仅可升高血氨，也可增加胆红素生成负荷。
 
@@ -350,23 +350,23 @@
 ### ③学习内容：
 “进一步诊断和治疗”不是一句客套话。对于乙肝相关失代偿期肝硬化合并食管胃底静脉曲张出血的患者，急性期没有继续呕血，只能说明这一次出血暂时控制，并不等于疾病已经稳定。第三幕课堂讨论中，老师也特别提示要看病例最后一句“后续还是要进一步诊断和治疗”，并把它和病例标题“这是一场持久战”联系起来，强调这一幕重点应回到肝硬化整体管理、长期治疗和出院后风险，而不是只停留在住院期间止血。
 
-进一步诊断首先要做的是**重新评估肝硬化严重程度和当前失代偿状态**。肝硬化一旦出现静脉曲张出血、腹水、肝性脑病、黄疸、肾功能损害等事件，就已经进入失代偿期。EASL 失代偿期肝硬化指南指出，失代偿期肝硬化管理应覆盖腹水、胃肠道出血、细菌感染、急性肾损伤、肝肾综合征、肝性脑病、急性加慢性肝衰竭等多个并发症，而不能只处理某一个症状。([EASL-The Home of Hepatology.](<https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf> "decompensated-cirrhosis-English-report.pdf")) 因此，出院后应继续动态评估 Child-Pugh 分级、MELD-Na 或 MELD 3.0、血常规、肝功能、胆红素、白蛋白、INR、纤维蛋白原、肌酐、eGFR、血钠、血钾、尿量、腹水、意识状态和营养状态。这些指标不是为了“复查一堆化验”，而是为了判断她处在改善、稳定、再失代偿还是向终末期进展。
+进一步诊断首先要做的是**重新评估肝硬化严重程度和当前失代偿状态**。肝硬化一旦出现静脉曲张出血、腹水、肝性脑病、黄疸、肾功能损害等事件，就已经进入失代偿期。EASL 失代偿期肝硬化指南指出，失代偿期肝硬化管理应覆盖腹水、胃肠道出血、细菌感染、急性肾损伤、肝肾综合征、肝性脑病、急性加慢性肝衰竭等多个并发症，而不能只处理某一个症状。([EASL](<https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf> "decompensated-cirrhosis-English-report.pdf")) 因此，出院后应继续动态评估 Child-Pugh 分级、MELD-Na 或 MELD 3.0、血常规、肝功能、胆红素、白蛋白、INR、纤维蛋白原、肌酐、eGFR、血钠、血钾、尿量、腹水、意识状态和营养状态。这些指标不是为了“复查一堆化验”，而是为了判断她处在改善、稳定、再失代偿还是向终末期进展。
 
-第二个重点是**门静脉高压和曲张静脉再出血的二级预防**。所谓二级预防，是指患者已经发生过曲张静脉出血，后续治疗目标从“止住这一次血”转向“防止下一次再出血”。Baveno VII 共识将门静脉高压、急性出血管理和进一步失代偿预防作为肝硬化管理核心，并明确强调曲张静脉出血后的治疗不能只停留在急性止血，而要进入预防再出血和进一步失代偿的长期策略。([肝脏病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension")) AASLD 2024 门静脉高压实践指导也围绕肝硬化门静脉高压患者的风险分层、诊断和治疗进行管理，强调应根据曲张静脉、门静脉高压和失代偿风险选择随访和干预。([AASLD](<https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis> "Portal Hypertension Bleeding in Cirrhosis"))
+第二个重点是**门静脉高压和曲张静脉再出血的二级预防**。所谓二级预防，是指患者已经发生过曲张静脉出血，后续治疗目标从“止住这一次血”转向“防止下一次再出血”。Baveno VII 共识将门静脉高压、急性出血管理和进一步失代偿预防作为肝硬化管理核心，并明确强调曲张静脉出血后的治疗不能只停留在急性止血，而要进入预防再出血和进一步失代偿的长期策略。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2821%2902299-6/fulltext> "Baveno VII – Renewing consensus in portal hypertension")) AASLD 2024 门静脉高压实践指导也围绕肝硬化门静脉高压患者的风险分层、诊断和治疗进行管理，强调应根据曲张静脉、门静脉高压和失代偿风险选择随访和干预。([AASLD](<https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis> "Portal Hypertension Bleeding in Cirrhosis"))
 
-具体到二级预防，常规方案通常包括**非选择性 β 受体阻滞剂（NSBB）联合内镜下套扎治疗（EVL）**。NSBB 如普萘洛尔、纳多洛尔或卡维地洛可降低心输出量和内脏血流，从而降低门静脉压力；EVL 则通过反复套扎逐步消除高危食管静脉曲张。ESGE 指南建议，急性食管静脉曲张出血完成内镜套扎后，应每 1–4 周重复内镜治疗，直到曲张静脉根除。([肝脏病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2818%2931966-4/fulltext> "EASL Clinical Practice Guidelines for the management ...")) 如果患者在药物联合内镜治疗后仍反复出血，或属于高危再出血人群，则需评估 TIPS，即经颈静脉肝内门体分流术。TIPS 的意义是从血流动力学层面降低门静脉压力，而不是单纯处理局部曲张静脉；但它也会增加肝性脑病风险，因此要结合年龄、肝功能、肾功能、心功能和既往脑病情况决定。
+具体到二级预防，常规方案通常包括**非选择性 β 受体阻滞剂（NSBB）联合内镜下套扎治疗（EVL）**。NSBB 如普萘洛尔、纳多洛尔或卡维地洛可降低心输出量和内脏血流，从而降低门静脉压力；EVL 则通过反复套扎逐步消除高危食管静脉曲张。ESGE 指南建议，急性食管静脉曲张出血完成内镜套扎后，应每 1–4 周重复内镜治疗，直到曲张静脉根除。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2818%2931966-4/fulltext> "EASL Clinical Practice Guidelines for the management ...")) 如果患者在药物联合内镜治疗后仍反复出血，或属于高危再出血人群，则需评估 TIPS，即经颈静脉肝内门体分流术。TIPS 的意义是从血流动力学层面降低门静脉压力，而不是单纯处理局部曲张静脉；但它也会增加肝性脑病风险，因此要结合年龄、肝功能、肾功能、心功能和既往脑病情况决定。
 
 第三个重点是**病因治疗不能中断**。本病例病因是慢性乙肝，抗病毒治疗是整个长期管理的地基。即使出血停止、转氨酶不高，也不能随意停用恩替卡韦等核苷/核苷酸类似物。慢乙肝合并肝硬化患者需要长期抑制 HBV 复制，减少炎症坏死和进一步纤维化/失代偿风险。WHO 2024 慢乙肝指南强调，对存在肝硬化证据的慢乙肝患者，应进行长期核苷/核苷酸类似物治疗和随访；我国 2022 版慢乙肝指南也推荐 HBV 相关失代偿期肝硬化长期使用恩替卡韦、TDF 或 TAF，并禁用干扰素。([AASLD](<https://www.aasld.org/practice-guidelines> "Practice Guidelines"))
 
 第四个重点是**肝占位/肝癌风险的进一步评估与监测**。虽然第三幕正文为了避免分散重点，没有继续展开肝癌内容，老师也提醒本幕重点回到肝硬化整体管理，但第二幕已经出现“肝占位待查”线索，慢乙肝肝硬化本身又是肝细胞癌高危背景，所以长期管理中不能漏掉肝癌筛查。AASLD 2023 肝细胞癌实践指导建议，肝硬化成人应每 6 个月进行肝癌监测，常用腹部超声联合 AFP；若筛查发现异常，应进一步进行增强 CT 或增强 MRI 等横断面影像学检查。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/> "AASLD Practice Guidance on prevention, diagnosis, and ...")) 对本病例来说，不能把肝占位写成第三幕主线，但在“进一步诊断”里应写清：需要完善增强 MRI/CT、AFP 及必要时 PIVKA-II 等，以区分再生结节、异型增生结节、肝细胞癌或其他占位。
 
-第五个重点是**肾功能、电解质和肝肾综合征风险监测**。失代偿期肝硬化患者由于内脏血管扩张、有效循环血容量不足、肾血管收缩和利尿剂使用，容易发生急性肾损伤和肝肾综合征。AASLD 腹水、SBP 和肝肾综合征实践指导强调，失代偿期患者要重视肾功能、感染和循环状态，避免肾毒性药物，并根据病情处理腹水、感染和肾损伤。([EASL-The Home of Hepatology.](<https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf> "decompensated-cirrhosis-English-report.pdf")) 因此，出院后复查不应只盯着胆红素，还要看肌酐、eGFR、尿量、血钠、血钾、血氯、二氧化碳结合力、体重、腹围、水肿和血压。若出现尿量减少、肌酐升高、低钠、顽固性腹水或感染，应及时返院。
+第五个重点是**肾功能、电解质和肝肾综合征风险监测**。失代偿期肝硬化患者由于内脏血管扩张、有效循环血容量不足、肾血管收缩和利尿剂使用，容易发生急性肾损伤和肝肾综合征。AASLD 腹水、SBP 和肝肾综合征实践指导强调，失代偿期患者要重视肾功能、感染和循环状态，避免肾毒性药物，并根据病情处理腹水、感染和肾损伤。([EASL](<https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf> "decompensated-cirrhosis-English-report.pdf")) 因此，出院后复查不应只盯着胆红素，还要看肌酐、eGFR、尿量、血钠、血钾、血氯、二氧化碳结合力、体重、腹围、水肿和血压。若出现尿量减少、肌酐升高、低钠、顽固性腹水或感染，应及时返院。
 
 第六个重点是**肝性脑病和感染预防**。上消化道出血后，肠道积血分解可增加氨负荷，肝硬化患者解毒能力下降，容易诱发肝性脑病；细菌感染又会增加再出血、肝肾综合征和死亡风险。临床上应教育家属观察性格改变、嗜睡、昼夜颠倒、定向力障碍、扑翼样震颤、便秘、发热、腹痛和尿量减少等信号。若出现肝性脑病表现，应使用乳果糖调节排便、减少肠源性氨吸收；反复发作者可联合利福昔明。感染方面，应根据出血期和腹水情况决定抗菌药物预防或治疗，并避免自行滥用抗生素。
 
-第七个重点是**营养支持和肌少症预防**。肝硬化患者常存在营养不良、肌少症和能量代谢异常，长期低蛋白饮食会加重肌肉消耗，而肌肉本身也是氨代谢的重要场所。EASL 慢性肝病营养指南建议，肝硬化患者蛋白摄入通常应达到 1.2–1.5 g/kg/日，以预防或逆转肌肉丢失；同时可采用少量多餐、睡前加餐等方式缩短夜间禁食时间。([EASL-The Home of Hepatology.](<https://easl.eu/wp-content/uploads/2018/10/EASL-CPG-nutrition-in-chronic-liver-disease.pdf> "EASL Clinical Practice Guidelines on nutrition in chronic ...")) 因此，不能因为担心肝性脑病就长期严格限蛋白，而应在控制脑病诱因的基础上保证足够能量和优质蛋白摄入。
+第七个重点是**营养支持和肌少症预防**。肝硬化患者常存在营养不良、肌少症和能量代谢异常，长期低蛋白饮食会加重肌肉消耗，而肌肉本身也是氨代谢的重要场所。EASL 慢性肝病营养指南建议，肝硬化患者蛋白摄入通常应达到 1.2–1.5 g/kg/日，以预防或逆转肌肉丢失；同时可采用少量多餐、睡前加餐等方式缩短夜间禁食时间。([EASL](<https://easl.eu/wp-content/uploads/2018/10/EASL-CPG-nutrition-in-chronic-liver-disease.pdf> "EASL Clinical Practice Guidelines on nutrition in chronic ...")) 因此，不能因为担心肝性脑病就长期严格限蛋白，而应在控制脑病诱因的基础上保证足够能量和优质蛋白摄入。
 
-第八个重点是**是否需要肝移植中心或高级肝病中心评估**。发生静脉曲张出血本身就是肝硬化失代偿事件。EASL 肝移植指南指出，成人终末期肝病中最常见的肝移植适应证是肝硬化，当患者出现曲张静脉出血、腹水、肝肾综合征或肝性脑病等主要并发症时，应考虑转诊至移植中心评估。([EASL-The Home of Hepatology.](<https://easl.eu/wp-content/uploads/2018/10/Liver-Transplantation-English-report.pdf> "EASL Clinical Practice Guidelines: Liver transplantation")) 当然，本病例患者 76 岁，是否适合肝移植要结合年龄、心肺功能、肿瘤情况、感染、营养、家庭意愿和当地中心标准综合判断。即使最终不适合移植，转诊高级肝病中心也有助于评估 TIPS、介入治疗、肝癌诊疗和姑息支持方案。
+第八个重点是**是否需要肝移植中心或高级肝病中心评估**。发生静脉曲张出血本身就是肝硬化失代偿事件。EASL 肝移植指南指出，成人终末期肝病中最常见的肝移植适应证是肝硬化，当患者出现曲张静脉出血、腹水、肝肾综合征或肝性脑病等主要并发症时，应考虑转诊至移植中心评估。([EASL](<https://easl.eu/wp-content/uploads/2018/10/Liver-Transplantation-English-report.pdf> "EASL Clinical Practice Guidelines: Liver transplantation")) 当然，本病例患者 76 岁，是否适合肝移植要结合年龄、心肺功能、肿瘤情况、感染、营养、家庭意愿和当地中心标准综合判断。即使最终不适合移植，转诊高级肝病中心也有助于评估 TIPS、介入治疗、肝癌诊疗和姑息支持方案。
 
 所以，“进一步诊断和治疗”的完整含义应包括：**评估当前肝硬化严重程度，继续乙肝抗病毒治疗，进行曲张静脉再出血二级预防，完善肝占位/肝癌监测，动态监测肾功能和电解质，预防肝性脑病和感染，进行营养与肌少症管理，并根据病情评估 TIPS、移植中心转诊或长期支持治疗。**
 
@@ -406,15 +406,15 @@
 ### ③学习内容：
 肝硬化的转归不能简单写成“好转或恶化”。一旦患者已经发生静脉曲张破裂出血，就说明肝硬化已经进入失代偿阶段；此后可能出现几条不同方向：病因控制后进入相对稳定甚至再代偿；反复发生静脉曲张再出血；出现腹水、肝性脑病、肝肾综合征、感染等反复失代偿；进展为急性加慢性肝衰竭；长期还需警惕肝细胞癌和终末期肝病。课堂讨论中，老师也提示“出院后风险转归”和“这是一场持久战”是第三幕的重要落点，病例重点应回到肝硬化整体长期管理，而不是只看这次出血是否停止。
 
-第一种可能转归是**再代偿或相对稳定**。再代偿不是单纯“症状轻一点”，而是指失代偿事件消失、肝功能改善、病因得到控制，并且一段时间内不再需要针对腹水、脑病或出血等失代偿并发症的治疗。Baveno VII 提出再代偿概念，强调对可去除病因的肝硬化患者，若病因得到控制，部分患者可以从失代偿状态回到较稳定状态。近年研究也在验证和扩展 Baveno VII 再代偿标准，提示再代偿患者预后明显好于持续失代偿患者。([肝脏病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2825%2900245-4/fulltext> "Validation and expansion of Baveno VII recompensation ...")) 对乙肝相关肝硬化来说，长期规律抗病毒治疗是进入再代偿的基础。Deng 等 2024 年研究显示，恩替卡韦治疗的慢乙肝失代偿期肝硬化患者中，治疗过程中白蛋白、血小板、血钠等指标可预测后续再代偿；达到再代偿者可维持较好状态，但肝癌风险并未完全消失。([jhep-reports.eu](<https://www.jhep-reports.eu/article/S2589-5559%2824%2900095-8/fulltext> "Durability and on-treatment predictors of recompensation ..."))
+第一种可能转归是**再代偿或相对稳定**。再代偿不是单纯“症状轻一点”，而是指失代偿事件消失、肝功能改善、病因得到控制，并且一段时间内不再需要针对腹水、脑病或出血等失代偿并发症的治疗。Baveno VII 提出再代偿概念，强调对可去除病因的肝硬化患者，若病因得到控制，部分患者可以从失代偿状态回到较稳定状态。近年研究也在验证和扩展 Baveno VII 再代偿标准，提示再代偿患者预后明显好于持续失代偿患者。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2825%2900245-4/fulltext> "Validation and expansion of Baveno VII recompensation ...")) 对乙肝相关肝硬化来说，长期规律抗病毒治疗是进入再代偿的基础。Deng 等 2024 年研究显示，恩替卡韦治疗的慢乙肝失代偿期肝硬化患者中，治疗过程中白蛋白、血小板、血钠等指标可预测后续再代偿；达到再代偿者可维持较好状态，但肝癌风险并未完全消失。([JHEP Reports](<https://www.jhep-reports.eu/article/S2589-5559%2824%2900095-8/fulltext> "Durability and on-treatment predictors of recompensation ..."))
 
 第二种可能转归是**反复静脉曲张再出血**。曲张静脉出血的根源是门静脉高压，急性出血停止并不代表门静脉压力恢复正常，也不代表曲张静脉消失。AASLD 2024 门静脉高压实践指导强调，肝硬化门静脉高压管理需要进行风险分层、诊断和治疗，而不是只处理某一次出血事件。([AASLD](<https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis> "Portal Hypertension Bleeding in Cirrhosis")) 出血后若未完成内镜套扎/硬化治疗、非选择性 β 受体阻滞剂治疗不规范、门静脉压力仍高、凝血功能差、感染或肾功能恶化，再出血风险会明显升高。反复再出血会进一步诱发休克、肾损伤、感染、肝性脑病和急性加慢性肝衰竭，是决定预后的关键事件。
 
 第三种可能转归是**肝性脑病**。肝硬化患者解毒能力下降，门体侧支循环又使肠源性毒素绕过肝脏进入体循环。上消化道出血后，大量血液进入肠道，被细菌分解后产生氨和其他含氮物质，可明显增加肝性脑病风险。课堂第二幕讨论也指出，消化道出血会增加肠道产氨负担，血氨升高与肝性脑病密切相关，并需要观察性格改变、定向力障碍等早期表现。 如果出院后出现睡眠颠倒、反应迟钝、性格改变、扑翼样震颤、便秘、感染或再次黑便，应优先考虑肝性脑病或其诱因，而不能简单解释为“老人没休息好”。
 
-第四种可能转归是**肝肾综合征或急性肾损伤**。失代偿期肝硬化患者常有内脏血管扩张、有效循环血容量不足、肾血管收缩和肾小球滤过率下降。EASL 失代偿期肝硬化指南将急性肾损伤、肝肾综合征、腹水、感染、胃肠道出血和肝性脑病作为失代偿期管理重点。([EASL-The Home of Hepatology.](<https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf> "decompensated-cirrhosis-English-report.pdf")) 本病例第二幕已经提示肾功能下降、水肿、电解质异常倾向；若出院后再出血、过度利尿、感染、使用 NSAIDs 或补液不当，都可能进一步降低肾灌注，诱发肝肾综合征。一旦出现少尿、肌酐升高、低钠、腹水增加或血压下降，预后会明显变差。
+第四种可能转归是**肝肾综合征或急性肾损伤**。失代偿期肝硬化患者常有内脏血管扩张、有效循环血容量不足、肾血管收缩和肾小球滤过率下降。EASL 失代偿期肝硬化指南将急性肾损伤、肝肾综合征、腹水、感染、胃肠道出血和肝性脑病作为失代偿期管理重点。([EASL](<https://easl.eu/wp-content/uploads/2018/10/decompensated-cirrhosis-English-report.pdf> "decompensated-cirrhosis-English-report.pdf")) 本病例第二幕已经提示肾功能下降、水肿、电解质异常倾向；若出院后再出血、过度利尿、感染、使用 NSAIDs 或补液不当，都可能进一步降低肾灌注，诱发肝肾综合征。一旦出现少尿、肌酐升高、低钠、腹水增加或血压下降，预后会明显变差。
 
-第五种可能转归是**感染和急性加慢性肝衰竭（ACLF）**。失代偿期肝硬化患者免疫功能低下，曲张静脉出血、肠道菌群移位、腹水、侵入性操作都可增加感染风险。感染既可诱发再出血，也可诱发肝性脑病、急性肾损伤和 ACLF。EASL 2023 ACLF 指南指出，急性失代偿性肝硬化包括腹水、脑病、胃肠道出血等事件；ACLF 是急性失代偿中的重型形式，伴有器官衰竭，28 天死亡率可达到 20% 或更高，明显高于没有 ACLF 的急性失代偿患者。([肝脏病学杂志](<https://www.journal-of-hepatology.eu/article/S0168-8278%2823%2900244-1/fulltext> "EASL Clinical Practice Guidelines on acute-on-chronic ...")) 因此，如果孙奶奶出院后出现发热、腹痛、意识改变、少尿、黄疸迅速加深或呼吸循环不稳定，应考虑感染或 ACLF 风险，需要紧急返院。
+第五种可能转归是**感染和急性加慢性肝衰竭（ACLF）**。失代偿期肝硬化患者免疫功能低下，曲张静脉出血、肠道菌群移位、腹水、侵入性操作都可增加感染风险。感染既可诱发再出血，也可诱发肝性脑病、急性肾损伤和 ACLF。EASL 2023 ACLF 指南指出，急性失代偿性肝硬化包括腹水、脑病、胃肠道出血等事件；ACLF 是急性失代偿中的重型形式，伴有器官衰竭，28 天死亡率可达到 20% 或更高，明显高于没有 ACLF 的急性失代偿患者。([Journal of Hepatology](<https://www.journal-of-hepatology.eu/article/S0168-8278%2823%2900244-1/fulltext> "EASL Clinical Practice Guidelines on acute-on-chronic ...")) 因此，如果孙奶奶出院后出现发热、腹痛、意识改变、少尿、黄疸迅速加深或呼吸循环不稳定，应考虑感染或 ACLF 风险，需要紧急返院。
 
 第六种长期转归是**肝细胞癌或肝占位进展**。慢乙肝和肝硬化本身就是肝细胞癌高危因素，即使抗病毒治疗使 HBV DNA 得到控制，肝癌风险也不会完全消失。课堂中老师提醒，第三幕文本为了聚焦肝硬化整体管理，删去了肝癌相关内容，但第二幕已经提到肝占位，病例真实背景中肝癌问题不能完全忽略。 因此，肝癌筛查和肝占位进一步影像学评估属于长期转归判断的一部分，只是第三幕作业主线不宜把它写得喧宾夺主。
 
@@ -464,13 +464,13 @@
 
 不过，TIPS 也不是越早做越好、人人都能做。它虽然能降低门静脉压力和再出血风险，但也可能因为门静脉血流绕过肝脏，导致肠源性毒素更容易进入体循环，从而增加肝性脑病风险；此外，肝功能太差、严重心肺疾病、感染未控制、严重肝性脑病或肝癌情况复杂时，TIPS 风险会升高。因此，TIPS 的关键不是“能不能做”，而是**何时做、给谁做、是否能在降低再出血的同时不明显增加脑病和肝衰竭风险**。近年研究也在探索小直径覆膜支架和可控扩张支架，以在预防再出血和降低肝性脑病之间取得平衡。([PMC](<https://pmc.ncbi.nlm.nih.gov/articles/PMC12557597/> "Pre-emptive TIPS with 8-mm stents reduces hepatic ... - PMC"))
 
-本题选择的前沿文献是 2025 年发表在 *The Lancet Gastroenterology & Hepatology* 的 GAVAPROSEC 研究。它的全名是 **Pre-emptive TIPS for gastric variceal bleeding in patients with cirrhosis (GAVAPROSEC): an open-label randomised clinical trial**。这是一项开放标签、多中心、随机、双臂平行临床试验，研究对象是肝硬化合并急性胃底静脉曲张出血的患者。研究问题非常具体：患者经过初始组织胶闭塞止血后，后续是继续标准治疗，即**反复组织胶闭塞 + 非选择性 β 受体阻滞剂**，还是在早期直接做 **pre-emptive TIPS**，能否更好地降低 1 年内再出血或死亡风险。([thelancet.com](<https://www.thelancet.com/journals/langas/article/PIIS2468-1253%2825%2900156-6/fulltext> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
+本题选择的前沿文献是 2025 年发表在 *The Lancet Gastroenterology & Hepatology* 的 GAVAPROSEC 研究。它的全名是 **Pre-emptive TIPS for gastric variceal bleeding in patients with cirrhosis (GAVAPROSEC): an open-label randomised clinical trial**。这是一项开放标签、多中心、随机、双臂平行临床试验，研究对象是肝硬化合并急性胃底静脉曲张出血的患者。研究问题非常具体：患者经过初始组织胶闭塞止血后，后续是继续标准治疗，即**反复组织胶闭塞 + 非选择性 β 受体阻滞剂**，还是在早期直接做 **pre-emptive TIPS**，能否更好地降低 1 年内再出血或死亡风险。([The Lancet](<https://www.thelancet.com/journals/langas/article/PIIS2468-1253%2825%2900156-6/fulltext> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
 
-这篇文章之所以适合作为本幕文献，是因为它并不是在讲一个很远的基础机制，而是直接回答曲张静脉出血后的临床决策问题。研究从 2019 年 1 月到 2023 年 2 月筛选 292 例患者，最终 105 例随机分组；排除误随机和撤回同意后，101 例进入改良意向治疗分析，其中 47 例分配到 p-TIPS 组，54 例分配到组织胶闭塞联合 NSBB 的对照组。患者平均年龄 58.2 岁，男性占 80%，酒精相关肝硬化占 90%，平均 MELD 评分 14.3。这个人群和本病例不完全一样，因为本病例是乙肝肝硬化且患者年龄更大，但它们共同的问题都是肝硬化门静脉高压导致的曲张静脉出血。([transfusionevidencelibrary.com](<https://www.transfusionevidencelibrary.com/alerts/articles/40517780?from=alert%3Aon%3D2025-07-01> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
+这篇文章之所以适合作为本幕文献，是因为它并不是在讲一个很远的基础机制，而是直接回答曲张静脉出血后的临床决策问题。研究从 2019 年 1 月到 2023 年 2 月筛选 292 例患者，最终 105 例随机分组；排除误随机和撤回同意后，101 例进入改良意向治疗分析，其中 47 例分配到 p-TIPS 组，54 例分配到组织胶闭塞联合 NSBB 的对照组。患者平均年龄 58.2 岁，男性占 80%，酒精相关肝硬化占 90%，平均 MELD 评分 14.3。这个人群和本病例不完全一样，因为本病例是乙肝肝硬化且患者年龄更大，但它们共同的问题都是肝硬化门静脉高压导致的曲张静脉出血。([Transfusion Evidence Library](<https://www.transfusionevidencelibrary.com/alerts/articles/40517780?from=alert%3Aon%3D2025-07-01> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
 
-GAVAPROSEC 的主要终点是**1 年内全因死亡或临床显著再出血**。结果显示，1 年内“无死亡或无再出血”的概率，p-TIPS 组为 **77%**，而组织胶闭塞 + NSBB 组为 **37%**；风险比 HR 为 **0.25**，95% CI 为 0.12–0.51，p<0.0001。这说明早期 TIPS 显著降低了再出血或死亡的复合风险。对照组中有 20 例，也就是 **37%**，后续仍需要补救性 TIPS，提示单纯组织胶闭塞加药物治疗在相当一部分患者中仍不能长期控制风险。([falkfoundation.org](<https://falkfoundation.org/en/fgr/detail/pre-emptive-tips-for-gastric-variceal-bleeding-in-patients-with-cirrhosis-gavaprosec-an-open-label-randomised-clinical-trial/> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
+GAVAPROSEC 的主要终点是**1 年内全因死亡或临床显著再出血**。结果显示，1 年内“无死亡或无再出血”的概率，p-TIPS 组为 **77%**，而组织胶闭塞 + NSBB 组为 **37%**；风险比 HR 为 **0.25**，95% CI 为 0.12–0.51，p<0.0001。这说明早期 TIPS 显著降低了再出血或死亡的复合风险。对照组中有 20 例，也就是 **37%**，后续仍需要补救性 TIPS，提示单纯组织胶闭塞加药物治疗在相当一部分患者中仍不能长期控制风险。([Falk Foundation](<https://falkfoundation.org/en/fgr/detail/pre-emptive-tips-for-gastric-variceal-bleeding-in-patients-with-cirrhosis-gavaprosec-an-open-label-randomised-clinical-trial/> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
 
-安全性方面，文章特别关注肝性脑病。结果显示，1 年肝性脑病累积发生率在 p-TIPS 组为 **35%**，对照组为 **32%**，两组相近；组织胶迁移发生于 8 例患者，其中 p-TIPS 组 3 例、对照组 5 例；p-TIPS 组有 1 例心脏失代偿。作者据此认为，在肝硬化急性胃底静脉曲张出血患者中，早期 TIPS 显著降低 1 年再出血或死亡风险，并应考虑作为一线治疗策略。([falkfoundation.org](<https://falkfoundation.org/en/fgr/detail/pre-emptive-tips-for-gastric-variceal-bleeding-in-patients-with-cirrhosis-gavaprosec-an-open-label-randomised-clinical-trial/> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
+安全性方面，文章特别关注肝性脑病。结果显示，1 年肝性脑病累积发生率在 p-TIPS 组为 **35%**，对照组为 **32%**，两组相近；组织胶迁移发生于 8 例患者，其中 p-TIPS 组 3 例、对照组 5 例；p-TIPS 组有 1 例心脏失代偿。作者据此认为，在肝硬化急性胃底静脉曲张出血患者中，早期 TIPS 显著降低 1 年再出血或死亡风险，并应考虑作为一线治疗策略。([Falk Foundation](<https://falkfoundation.org/en/fgr/detail/pre-emptive-tips-for-gastric-variceal-bleeding-in-patients-with-cirrhosis-gavaprosec-an-open-label-randomised-clinical-trial/> "Pre-emptive TIPS for gastric variceal bleeding in patients ..."))
 
 这篇研究的创新点主要有三层。第一，它把治疗时机前移：TIPS 过去常被看作“内镜和药物失败后的补救治疗”，而 GAVAPROSEC 研究讨论的是初始止血后早期主动做 TIPS，也就是从“失败后补救”转向“高危时预防”。第二，它把治疗目标从局部闭塞曲张静脉扩大到降低门静脉高压本身。第三，它选择的是胃底静脉曲张出血这一更棘手的场景。胃底静脉曲张出血发生率低于食管静脉曲张出血，但一旦出血往往出血量大、再出血风险高，传统组织胶治疗虽能闭塞局部血管，却不能真正降低门静脉压力。
 
@@ -506,5 +506,6 @@ GAVAPROSEC 对本病例最大的启发是：曲张静脉出血的长期治疗，
 但这篇文献依然能帮助我们把病例分析提高一层。我认为，对孙奶奶最合理的实际应用不是直接说“应该马上做 TIPS”，而是说：**如果她后续内镜治疗失败、早期再出血、不能耐受 β 受体阻滞剂，或胃底静脉曲张出血风险非常高，就应尽早请消化、介入、肝病和 ICU 团队共同评估 TIPS，而不是等到多次大出血后才被动抢救。**这正是 GAVAPROSEC 给我们的启发：在合适患者中，早期主动降低门静脉压力，可能比单纯反复局部处理更能改善 1 年结局。
 
 因此，本题落回孙奶奶的结论可以写成：**她目前首先要完成内镜评估和二级预防，继续抗病毒和门静脉高压管理；若被评估为高危再出血或常规治疗失败，应把 TIPS 纳入后续诊疗方案讨论。GAVAPROSEC 研究提示，曲张静脉出血治疗的前沿趋势，是从“出血后补救”转向“高危时早期减压”，从而降低再出血和死亡风险。**这也正好呼应本病例标题：真正的治疗不是一次止血，而是一场围绕门静脉高压、肝功能储备和长期预后的持久战。
+
 
 
