@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乙肝相关失代偿期肝硬化思维导图</title>
+  <style>
+    /*
+      文件作用：
+      1. 本文件用于生成 Case3 第三幕之后的整幕思维导图。
+      2. 设计依据来自 `消化系统/Audio/6.5PBL.txt` 中老师对思维导图的课堂要求：
+         - 思维导图不是把每一幕按时间顺序堆起来。
+         - 思维导图要围绕一种疾病做概括、归纳、总结。
+         - 一级主题和二级主题之间要有并列关系与内在逻辑。
+         - 不能做成“表格式知识点汇总”，要能看出临床思维。
+      3. 本文件沿用 Case1/Case2 已验证的 markmap 模板：
+         - 右上角病例证据卡负责钉住三幕病例事实。
+         - 主导图负责呈现疾病本身的系统逻辑。
+         - 颜色标记负责区分“病例已经具备”和“通用知识主干”。
+    */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      overflow: hidden;
+      background-color: #f8f9fa;
+    }
+
+    .evidence-card {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 13px;
+      max-width: 360px;
+      border-left: 4px solid #3182ce;
+    }
+
+    .evidence-card h3 {
+      margin-top: 0;
+      font-size: 15px;
+      color: #2d3748;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+    }
+
+    .evidence-card ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .evidence-card li {
+      margin-bottom: 6px;
+    }
+
+    .custom-toolbar {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .markmap > svg {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+</head>
+<body>
+  <div class="evidence-card">
+    <h3>病例证据链总览</h3>
+    <ul>
+      <li><b>第一幕：</b>孙奶奶有慢性乙肝背景，出现呕血、黑便等上消化道出血表现；既往拒绝治疗提示病因控制和一级预防链条中断。</li>
+      <li><b>第二幕：</b>检查逐步支持乙肝相关肝硬化失代偿、门静脉高压和食管胃底静脉曲张出血；同时需要评估肝功能、凝血、肾功能和肝癌风险。</li>
+      <li><b>第三幕：</b>住院治疗包括抗病毒、保肝、止血、补液扩容、内镜套扎/硬化和风险监测；出院后重点转向再出血二级预防、长期随访和转归评估。</li>
+    </ul>
+  </div>
+
+  <div class="custom-toolbar">
+    <b>节点图例</b><br>
+    <span style="color:#e53e3e; font-weight:bold;">【红】</span> 病例已经具备<br>
+    <span style="color:#dd6b20; font-weight:bold;">【橙】</span> 需要谨慎表述<br>
+    <span style="color:#3182ce; font-weight:bold;">【蓝】</span> 通用知识主干<br>
+    <span style="color:#718096; font-weight:bold;">【灰】</span> 补充提醒
+  </div>
+
+  <div class="markmap">
+    <script type="text/template">
+# 乙肝相关失代偿期肝硬化
+
+## 中心主题
+
+* 【红】孙奶奶病例：乙肝相关失代偿期肝硬化
+  * 主要并发症：食管胃底静脉曲张破裂出血
+  * 急性处理：药物止血、补液扩容、内镜治疗
+  * 病因治疗：长期抗 HBV 治疗
+  * 长期重点：再出血二级预防与随访
+
+## 1. 病因与危险因素
+
+* 【蓝】根本病因
+  * 慢性 HBV 感染
+  * 肝细胞长期炎症坏死
+  * 纤维化逐步进展
+  * 假小叶形成
+  * 肝硬化建立
+
+* 【红】本病例病因线索
+  * 慢性乙肝病史
+  * 既往未规范治疗
+  * 出现失代偿事件
+  * 呕血和黑便
+  * 肝功能储备下降
+
+* 【蓝】失代偿诱发因素
+  * 门静脉高压加重
+  * 曲张静脉压力升高
+  * 凝血功能下降
+  * 感染或应激
+  * 不规范用药
+
+* 【橙】表述边界
+  * 出血不是单独病因
+  * 出血是肝硬化失代偿表现
+  * 抗病毒不能马上止血
+  * 保肝药不能逆转门静脉高压
+
+* 【蓝】一级预防
+  * 乙肝筛查
+  * 规范抗病毒
+  * 避免停药
+  * 避免饮酒和肝毒性药物
+  * 定期肝癌筛查
+
+## 2. 发病机制
+
+* 【蓝】乙肝到肝硬化
+  * HBV 持续复制
+  * 免疫介导肝细胞损伤
+  * 炎症反复修复
+  * 星状细胞活化
+  * 胶原沉积
+  * 肝窦结构改变
+  * 门静脉阻力升高
+
+* 【蓝】门静脉高压形成
+  * 肝内血流阻力增加
+  * 门静脉压力升高
+  * 侧支循环开放
+  * 食管胃底静脉曲张
+  * 脾大和脾功能亢进
+  * 腹水风险增加
+
+* 【红】本病例出血机制
+  * 曲张静脉壁薄
+  * 压力持续升高
+  * 凝血因子合成减少
+  * 血小板可能下降
+  * 呕血和黑便
+  * 循环容量下降风险
+
+* 【蓝】失代偿机制
+  * 白蛋白合成下降
+  * 胆红素代谢障碍
+  * 凝血因子减少
+  * 肾灌注下降风险
+  * 肠源性毒素增加
+  * 肝性脑病风险
+
+* 【红】第三幕治疗回扣
+  * 恩替卡韦控制病因
+  * 保肝药减少二次损伤
+  * 奥曲肽降低门静脉压力
+  * 内镜处理局部出血点
+  * 补液维持循环灌注
+
+## 3. 诊断与病情评估
+
+* 【红】明确诊断方向
+  * 慢性乙肝相关肝硬化
+  * 已进入失代偿期
+  * 食管胃底静脉曲张破裂出血
+  * 需要长期管理
+
+* 【红】症状和体征证据
+  * 呕血
+  * 黑便
+  * 乏力
+  * 肝功能异常线索
+  * 失血和休克风险
+
+* 【蓝】实验室评估
+  * 血常规
+  * 肝功能
+  * 白蛋白
+  * 胆红素
+  * 胆碱酯酶
+  * 凝血功能
+  * 肾功能
+  * 电解质
+  * HBV DNA
+
+* 【蓝】影像和内镜评估
+  * 腹部超声或 CT
+  * 肝硬化形态
+  * 脾大和腹水
+  * 门静脉系统
+  * 胃镜明确曲张静脉
+  * 红色征和出血风险
+
+* 【蓝】分层评估
+  * Child-Pugh
+  * MELD
+  * 再出血风险
+  * 肝性脑病风险
+  * 肝肾综合征风险
+  * 肝癌风险
+
+* 【红】出院复查重点
+  * 白蛋白恢复情况
+  * 胆碱酯酶变化
+  * 总胆红素和分型胆红素
+  * 总胆固醇
+  * 肾功能和电解质
+  * 凝血功能
+
+## 4. 鉴别诊断
+
+* 【蓝】非静脉曲张性上消化道出血
+  * 消化性溃疡
+  * 急性胃黏膜病变
+  * 胃癌出血
+  * Mallory-Weiss 综合征
+  * 需胃镜鉴别
+
+* 【蓝】其他肝硬化病因
+  * 酒精性肝病
+  * 非酒精性脂肪性肝病
+  * 自身免疫性肝病
+  * 胆汁淤积性肝病
+  * 药物性肝损伤
+
+* 【蓝】胆红素升高原因
+  * 肝细胞摄取障碍
+  * 结合功能下降
+  * 胆汁排泄障碍
+  * 溶血或输血相关影响
+  * 出血吸收后胆红素负荷增加
+
+* 【蓝】感染与炎症
+  * 自发性细菌性腹膜炎
+  * 肺部感染
+  * 泌尿系感染
+  * 感染可诱发再失代偿
+  * 不能只看白细胞单项
+
+* 【橙】写作提醒
+  * 鉴别诊断不要写成散列表
+  * 要说明为什么本例更支持静脉曲张出血
+  * 也要说明哪些问题仍需继续排除
+
+## 5. 治疗与长期管理
+
+* 【蓝】急性出血处理
+  * 评估生命体征
+  * 建立静脉通路
+  * 补液扩容
+  * 必要时输血
+  * 保护气道
+  * 监测尿量
+
+* 【红】本例药物治疗
+  * 恩替卡韦抗病毒
+  * 多烯磷脂酰胆碱保肝
+  * 奥曲肽降低门静脉压力
+  * 酚磺乙胺等止血辅助
+  * 药物不能替代内镜
+
+* 【蓝】内镜治疗
+  * 食管静脉曲张套扎
+  * 硬化治疗
+  * 明确出血来源
+  * 控制活动性出血
+  * 预防早期再出血
+  * 告知穿孔、狭窄、再出血风险
+
+* 【蓝】三腔二囊管
+  * 临时压迫止血
+  * 适用于抢救过渡
+  * 不能长期留置
+  * 警惕误吸
+  * 警惕食管坏死
+  * 需要严密监护
+
+* 【蓝】二级预防
+  * 复查胃镜
+  * 重复套扎至曲张静脉消退
+  * 非选择性 β 受体阻滞剂评估
+  * 必要时 TIPS 评估
+  * 继续抗病毒
+  * 肝癌筛查
+
+* 【蓝】合理用药
+  * 避免 NSAIDs
+  * 避免自行加护肝偏方
+  * 根据肾功能调药
+  * 警惕电解质紊乱
+  * 警惕药物性肝损伤
+  * 不自行停抗病毒药
+
+## 6. 预后与并发症
+
+* 【红】有利因素
+  * 出血被识别
+  * 接受住院治疗
+  * 已启动抗病毒
+  * 已进行内镜干预
+  * 出院后有复查计划
+
+* 【红】不利因素
+  * 已经失代偿
+  * 曲张静脉出血提示高危
+  * 肝合成功能下降
+  * 再出血风险存在
+  * 肝癌风险未消失
+
+* 【蓝】近期并发症
+  * 再出血
+  * 休克
+  * 感染
+  * 肝性脑病
+  * 急性肾损伤
+  * 电解质紊乱
+
+* 【蓝】远期转归
+  * 再代偿
+  * 反复失代偿
+  * 曲张静脉再出血
+  * 肝肾综合征
+  * 原发性肝癌
+  * 终末期肝病
+  * 肝移植评估
+
+* 【蓝】预后决定因素
+  * HBV 控制情况
+  * Child-Pugh 和 MELD
+  * 白蛋白和胆红素
+  * 凝血功能
+  * 肾功能
+  * 是否坚持二级预防
+  * 随访依从性
+
+* 【红】整幕最终收束
+  * 病因主线：慢性乙肝推动肝硬化进展
+  * 机制主线：门静脉高压导致曲张静脉破裂出血
+  * 治疗主线：急性止血与长期病因控制必须同时做
+  * 管理主线：出院不是结束，而是二级预防和随访的开始
+    </script>
+  </div>
+
+  <script>
+    /*
+      脚本作用：
+      1. markmap 会把上面的 Markdown 自动渲染成 SVG 思维导图。
+      2. Markdown 节点里先保留【红】【橙】【蓝】【灰】这些人工标记。
+      3. 本脚本持续扫描渲染后的节点，把标记替换为颜色样式。
+      4. 这样后续只需要修改 Markdown 文本，不需要手工改 SVG。
+    */
+    setInterval(() => {
+      document.querySelectorAll('svg g').forEach(g => {
+        const textEls = g.querySelectorAll('text');
+        textEls.forEach(textEl => {
+          const text = textEl.textContent;
+          if (text.includes('【红】') || text.includes('【橙】') || text.includes('【蓝】') || text.includes('【灰】')) {
+            if (text.includes('【红】')) {
+              textEl.setAttribute('fill', '#e53e3e');
+              textEl.style.fontWeight = 'bold';
+            } else if (text.includes('【橙】')) {
+              textEl.setAttribute('fill', '#dd6b20');
+            } else if (text.includes('【蓝】')) {
+              textEl.setAttribute('fill', '#3182ce');
+            } else if (text.includes('【灰】')) {
+              textEl.setAttribute('fill', '#718096');
+            }
+            textEl.textContent = text.replace(/【红】|【橙】|【蓝】|【灰】/g, '');
+          }
+        });
+
+        const htmlEls = g.querySelectorAll('div');
+        htmlEls.forEach(el => {
+          const html = el.innerHTML;
+          if (html.includes('【红】') || html.includes('【橙】') || html.includes('【蓝】') || html.includes('【灰】')) {
+            if (html.includes('【红】')) {
+              el.style.color = '#e53e3e';
+              el.style.fontWeight = 'bold';
+            } else if (html.includes('【橙】')) {
+              el.style.color = '#dd6b20';
+            } else if (html.includes('【蓝】')) {
+              el.style.color = '#3182ce';
+            } else if (html.includes('【灰】')) {
+              el.style.color = '#718096';
+            }
+            el.innerHTML = html.replace(/【红】|【橙】|【蓝】|【灰】/g, '');
+          }
+        });
+      });
+    }, 100);
+  </script>
+</body>
+</html>
